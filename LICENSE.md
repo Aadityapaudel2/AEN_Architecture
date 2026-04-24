@@ -1,7 +1,9 @@
-# License Status
+Creative Commons Attribution 4.0 International Public License
 
-Copyright (c) 2026 Aaditya Paudel. All rights reserved.
+This staged repository follows the Zenodo record license: CC-BY-4.0.
 
-This staged repository mirrors the Zenodo preprint source for collaborator review.
-No public reuse license is granted unless this file is replaced by an explicit
-open license.
+Human-readable summary:
+https://creativecommons.org/licenses/by/4.0/
+
+Legal code:
+https://creativecommons.org/licenses/by/4.0/legalcode
