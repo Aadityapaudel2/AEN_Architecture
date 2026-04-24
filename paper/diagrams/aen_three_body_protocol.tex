@@ -1,0 +1,136 @@
+\definecolor{aennavy}{RGB}{18,31,74}
+\definecolor{aenink}{RGB}{25,31,46}
+\definecolor{aenmuted}{RGB}{78,86,112}
+\definecolor{aenpaper}{RGB}{248,250,255}
+\definecolor{aenline}{RGB}{31,47,93}
+\definecolor{aengreen}{RGB}{37,117,63}
+\definecolor{aenviolet}{RGB}{86,48,130}
+
+\begin{tikzpicture}[
+  font=\sffamily\scriptsize,
+  role/.style={
+    rounded corners=5pt,
+    draw=#1,
+    line width=0.75pt,
+    fill=#1!5,
+    align=center,
+    inner xsep=7pt,
+    inner ysep=6pt,
+    text width=3.15cm,
+    minimum height=1.30cm
+  },
+  controller/.style={
+    rounded corners=5pt,
+    draw=black,
+    line width=0.75pt,
+    fill=white,
+    align=center,
+    inner xsep=8pt,
+    inner ysep=7pt,
+    text width=4.05cm,
+    minimum height=1.25cm
+  },
+  smallbox/.style={
+    rounded corners=3pt,
+    draw=#1,
+    line width=0.65pt,
+    fill=#1!4,
+    align=left,
+    inner xsep=5pt,
+    inner ysep=5pt,
+    text width=2.05cm,
+    minimum height=0.72cm
+  },
+  band/.style={
+    rounded corners=5pt,
+    draw=aenline,
+    line width=0.75pt,
+    fill=aennavy!5,
+    align=center,
+    inner sep=7pt
+  },
+  arrow/.style={-{Latex[length=2mm]}, draw=black, line width=0.62pt},
+  softarrow/.style={-{Latex[length=1.8mm]}, draw=black!78, line width=0.55pt},
+  label/.style={font=\sffamily\tiny, text=aenink, fill=white, inner sep=1.5pt}
+]
+
+\fill[white] (-0.30,-0.55) rectangle (16.25,9.15);
+
+\node[font=\sffamily\bfseries\LARGE, text=black] at (8.05,8.70)
+  {AEN Three-Body Protocol};
+
+% Core role nodes.
+\node[role=aenline] (athena) at (8.05,7.10)
+  {{\large\bfseries\textcolor{aennavy}{Athena}}\\[2pt]
+   Problem preservation + synthesis\\[-1pt]
+   \rule{2.58cm}{0.25pt}\\[-1pt]
+   \begin{tabular}{@{}l@{}}
+   \(\bullet\) initial route\\
+   \(\bullet\) final reconciliation
+   \end{tabular}};
+
+\node[controller] (controller) at (8.05,4.88)
+  {{\large\bfseries AEN Controller Algorithm}\\[3pt]
+   turn order, source-of-truth injection,\\
+   transcript capture, candidate parsing,\\
+   final emission};
+
+\node[role=aengreen] (aria) at (4.00,3.02)
+  {{\large\bfseries\textcolor{aengreen}{Aria}}\\[2pt]
+   Proof structure + lemma pressure\\[-1pt]
+   \rule{2.58cm}{0.25pt}\\[-1pt]
+   \begin{tabular}{@{}l@{}}
+   \(\bullet\) attack route gaps\\
+   \(\bullet\) construct alternatives
+   \end{tabular}};
+
+\node[role=aenviolet] (artemis) at (12.10,3.02)
+  {{\large\bfseries\textcolor{aenviolet}{Artemis}}\\[2pt]
+   Computation audit + edge cases\\[-1pt]
+   \rule{2.58cm}{0.25pt}\\[-1pt]
+   \begin{tabular}{@{}l@{}}
+   \(\bullet\) arithmetic checks\\
+   \(\bullet\) counterexamples
+   \end{tabular}};
+
+% Boot memory and certification.
+\draw[draw=black, fill=white, line width=0.55pt] (0.08,5.03) rectangle (1.58,6.23);
+\draw[draw=black, fill=white, line width=0.55pt] (0.18,5.13) rectangle (1.68,6.33);
+\draw[draw=black, fill=white, line width=0.55pt] (0.28,5.23) rectangle (1.78,6.43);
+\node[align=center, font=\sffamily\scriptsize] at (1.03,5.83)
+  {Role-specific\\boot datasets};
+
+\node[smallbox=aengreen, anchor=north west] (cert) at (0.00,3.70)
+  {\(\checkmark\) Boot certification:\\memory active\\before solving};
+
+\draw[arrow] (1.90,5.78) -- node[label, above] {Runtime-at-Boot} node[label, below] {memory injection} (5.62,5.78);
+\draw[arrow] (0.98,5.22) -- (cert.north);
+\draw[arrow] (5.62,5.78) -- node[label, below] {\texttt{SOURCE\_OF\_TRUTH\_PROBLEM}} (controller.west);
+
+% Source-of-truth and role/report arrows.
+\draw[arrow] (controller.north west) -- node[label, above, sloped] {\texttt{SOURCE\_OF\_TRUTH\_PROBLEM}} (athena.south west);
+\draw[arrow] (controller.east) -- node[label, above] {\texttt{SOURCE\_OF\_TRUTH\_PROBLEM}} (artemis.north);
+\draw[arrow] (controller.south west) -- node[label, above, sloped] {reports +} node[label, below, sloped] {candidate answers} (aria.north east);
+\draw[arrow] (controller.south east) -- node[label, above, sloped] {reports +} node[label, below, sloped] {candidate answers} (artemis.north west);
+\draw[softarrow] (controller.north) -- node[label, left] {peer reports} (athena.south);
+\draw[softarrow] (athena.south) -- node[label, right] {synthesis +} node[label, below right] {final candidate} (controller.north);
+
+\draw[arrow] (aria.east) -- node[label, above] {peer critique / repair proposals} (artemis.west);
+\draw[softarrow] (artemis.west) -- ++(-1.30,0) -- ++(0,-0.30) -- ++(-4.55,0) -- (aria.east);
+
+% Long-context substrate and final output.
+\node[band, minimum width=13.20cm, minimum height=0.78cm] (substrate) at (8.05,1.08)
+  {\textbf{\textcolor{aennavy}{Long-context runtime substrate}}\\[2pt]
+   Qwen-family sessions \quad\(\vert\)\quad YaRN-enabled context
+   \quad\(\vert\)\quad \(\sim\)1M tokens per role
+   \quad\(\vert\)\quad \(\sim\)3M distributed context};
+
+\draw[softarrow] (aria.south) -- (substrate.north -| aria.south);
+\draw[softarrow] (controller.south) -- (substrate.north);
+\draw[softarrow] (artemis.south) -- (substrate.north -| artemis.south);
+
+\node[draw=black, line width=0.75pt, fill=white, align=center, inner xsep=14pt, inner ysep=8pt] (final) at (8.05,-0.17)
+  {\large\texttt{\textbackslash boxed\{integer\}\_confidence:[0--100]}};
+\draw[arrow] (substrate.south) -- (final.north);
+
+\end{tikzpicture}

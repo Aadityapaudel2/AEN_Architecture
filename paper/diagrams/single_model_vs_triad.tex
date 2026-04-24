@@ -1,0 +1,137 @@
+\definecolor{aennavy}{RGB}{18,31,74}
+\definecolor{aenink}{RGB}{34,43,72}
+\definecolor{aenmuted}{RGB}{92,102,132}
+\definecolor{aenpaper}{RGB}{250,251,255}
+\definecolor{aenline}{RGB}{214,221,244}
+\definecolor{aenblue}{RGB}{75,112,226}
+\definecolor{aenviolet}{RGB}{107,79,226}
+\definecolor{aenteal}{RGB}{20,156,132}
+\definecolor{aengreen}{RGB}{44,169,119}
+\definecolor{aenamber}{RGB}{245,184,55}
+\definecolor{aenrose}{RGB}{231,96,111}
+
+\begin{tikzpicture}[
+  font=\sffamily\scriptsize,
+  card/.style={
+    draw=aenline,
+    rounded corners=5pt,
+    fill=white,
+    align=flush left,
+    inner xsep=5pt,
+    inner ysep=4pt,
+    minimum height=0.72cm,
+    text width=2.58cm
+  },
+  smallcard/.style={
+    card,
+    text width=2.28cm,
+    minimum height=0.68cm
+  },
+  badge/.style={
+    circle,
+    inner sep=1pt,
+    minimum size=0.36cm,
+    draw=white,
+    line width=0.35pt,
+    text=white,
+    font=\sffamily\bfseries\tiny
+  },
+  arrow/.style={-{Latex[length=2mm]}, line width=0.68pt, draw=aenblue!78},
+  softarrow/.style={-{Latex[length=1.8mm]}, line width=0.56pt, draw=aenblue!52},
+  warnarrow/.style={-{Latex[length=1.8mm]}, line width=0.56pt, dashed, draw=aenrose!82}
+]
+
+\fill[aenpaper] (-0.45,0.22) rectangle (22.25,9.40);
+\foreach \x in {-0.20,0.35,...,22.10} {
+  \foreach \y in {0.45,1.00,...,9.20} {
+    \fill[aenblue!8] (\x,\y) circle (0.006);
+  }
+}
+
+\node[font=\sffamily\bfseries\Large, text=aennavy] at (10.90,8.88)
+  {One-Model Ensemble vs. Controller-Mediated Triad};
+\node[font=\sffamily\small, text=aenink] at (10.90,8.48)
+  {The distinction is not number of samples, but role ownership, evidence flow, and finalization ownership};
+
+% Panels.
+\draw[rounded corners=9pt, draw=aenrose!24, fill=white] (0.55,1.00) rectangle (10.65,7.95);
+\draw[rounded corners=9pt, draw=aengreen!28, fill=white] (11.25,1.00) rectangle (21.85,7.95);
+
+\node[font=\sffamily\bfseries\small, text=aennavy, anchor=west] at (0.90,7.58)
+  {A. Single-model sampled ensemble};
+\node[font=\sffamily\bfseries\small, text=aennavy, anchor=west] at (11.60,7.58)
+  {B. AEN true triad};
+
+% Left: sampled ensemble.
+\node[card, fill=aenamber!12] (lproblem) at (2.05,6.70)
+  {\textbf{Problem}\\same prompt surface};
+\node[smallcard, fill=aenrose!8] (attempt1) at (5.10,7.10)
+  {\textbf{Attempt 1}\\same model role};
+\node[smallcard, fill=aenrose!8] (attempt2) at (5.10,6.18)
+  {\textbf{Attempt 2}\\same model role};
+\node[smallcard, fill=aenrose!8] (attempt3) at (5.10,5.26)
+  {\textbf{Attempt 3}\\same model role};
+\node[card, fill=aenamber!12] (vote) at (8.25,6.18)
+  {\textbf{Agreement / Vote}\\select common or majority answer};
+\node[card, fill=aenblue!8] (lanswer) at (8.25,4.58)
+  {\textbf{Reported Answer}\\winner becomes output};
+
+\draw[softarrow] (lproblem.east) -- (attempt1.west);
+\draw[softarrow] (lproblem.east) -- (attempt2.west);
+\draw[softarrow] (lproblem.east) -- (attempt3.west);
+\draw[arrow] (attempt1.east) -- (vote.west);
+\draw[arrow] (attempt2.east) -- (vote.west);
+\draw[arrow] (attempt3.east) -- (vote.west);
+\draw[arrow] (vote) -- (lanswer);
+
+\draw[rounded corners=7pt, draw=aenrose!20, fill=aenrose!5] (1.00,1.42) rectangle (10.20,3.52);
+\node[anchor=west, font=\sffamily\bfseries\scriptsize, text=aennavy] at (1.28,3.18)
+  {What remains implicit};
+\node[smallcard, fill=white, text width=2.42cm] at (2.70,2.34)
+  {\textbf{Same role}\\route diversity may be sampling only};
+\node[smallcard, fill=white, text width=2.42cm] at (5.60,2.34)
+  {\textbf{Vote is not proof}\\frequency is not audit evidence};
+\node[smallcard, fill=white, text width=2.42cm] at (8.50,2.34)
+  {\textbf{Output risk}\\winner can become wrapper value};
+
+% Right: triad.
+\node[card, fill=aenamber!12] (controller) at (13.00,6.70)
+  {\textbf{Controller}\\boot, certify, dispatch};
+\node[smallcard, fill=aengreen!10] (athena) at (16.00,7.12)
+  {\textbf{Athena}\\solve and synthesize};
+\node[smallcard, fill=aenviolet!8] (aria) at (16.00,6.18)
+  {\textbf{Aria}\\proof route};
+\node[smallcard, fill=aenteal!9] (artemis) at (16.00,5.24)
+  {\textbf{Artemis}\\audit and compute};
+\node[card, fill=white] (reports) at (19.25,6.18)
+  {\textbf{Reports}\\support, gaps, candidate status};
+\node[card, fill=aengreen!10] (finalblock) at (16.00,4.02)
+  {\textbf{Athena Final Block}\\boxed-confidence candidate};
+\node[card, fill=aenamber!12] (parse) at (19.25,4.02)
+  {\textbf{Controller Parse}\\eligibility and mode};
+\node[card, fill=aenblue!8] (ranswer) at (19.25,2.92)
+  {\textbf{Emitted Answer}\\wrapper-facing value};
+
+\draw[softarrow] (controller.east) -- (athena.west);
+\draw[softarrow] (controller.east) -- (aria.west);
+\draw[softarrow] (controller.east) -- (artemis.west);
+\draw[arrow] (athena.east) -- (reports.west);
+\draw[arrow] (aria.east) -- (reports.west);
+\draw[arrow] (artemis.east) -- (reports.west);
+\draw[arrow] (reports.south west) -- (finalblock.east);
+\draw[arrow] (finalblock) -- (parse);
+\draw[arrow] (parse) -- (ranswer);
+
+\node[badge, fill=aengreen] at (17.06,7.42) {A};
+\node[badge, fill=aenviolet] at (17.06,6.48) {R};
+\node[badge, fill=aenteal] at (17.06,5.54) {T};
+\node[badge, fill=aenamber] at (20.30,4.33) {C};
+
+\node[smallcard, fill=aengreen!7, text width=2.55cm] at (13.10,1.78)
+  {\textbf{Role contracts}\\distinct prompts and reports};
+\node[smallcard, fill=aenblue!7, text width=2.55cm] at (16.55,1.78)
+  {\textbf{Audit object}\\transcripts and parser state};
+\node[smallcard, fill=aenamber!10, text width=2.55cm] at (20.00,1.78)
+  {\textbf{Final owner}\\controller emits wrapper value};
+
+\end{tikzpicture}

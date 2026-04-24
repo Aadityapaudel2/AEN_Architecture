@@ -1,0 +1,3 @@
+run,cases,correct,accuracy_percent,memory_condition,wall_seconds,avg_total_tokens,generated_token_cap_total
+VoE fresh run (no answer memory),25,15,60.0,No answer-bearing golden VoE prompt rows,12336.25,466282.8,31232
+VoE memory-loaded certified replay,25,25,100.0,Version 18 golden prompt rows for the ten missed cases certified before solve-time replay,,,31232

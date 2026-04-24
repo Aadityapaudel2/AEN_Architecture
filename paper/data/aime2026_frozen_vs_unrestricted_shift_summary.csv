@@ -1,0 +1,4 @@
+outcome_shift,cases,mean_delta_seconds,mean_delta_completion_tokens,mean_delta_transcript_chars
+Both correct,15,131.20181333333332,5339.8,16854.066666666666
+Recovered by unrestricted,7,280.2020857142857,14029.57142857143,33817.71428571428
+Both missed,8,249.10684999999998,12231.875,34588.5

@@ -1,0 +1,5 @@
+problem_band,cases,frozen_correct,frozen_accuracy,unrestricted_correct,unrestricted_accuracy
+1-8,8,8,1.0,8,1.0
+9-15,7,0,0.0,2,0.2857142857142857
+16-22,7,4,0.5714285714285714,6,0.8571428571428571
+23-30,8,3,0.375,6,0.75

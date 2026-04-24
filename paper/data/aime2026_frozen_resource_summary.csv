@@ -1,0 +1,2 @@
+cases,correct,accuracy,wall_seconds_total,mean_seconds_per_problem,median_seconds_per_problem,mean_total_tokens,mean_prompt_tokens,mean_completion_tokens,rab_passed
+30,15,0.5,5489.579,182.98090999999994,187.5903,711100.3666666667,703333.3,7767.066666666667,True

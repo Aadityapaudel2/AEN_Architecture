@@ -1,0 +1,26 @@
+BookNo,PuzzleID,PuzzleTitle,AnswerKey,Gemini 3,Le Chat,Meta,DeepSeek 3.2,Qwen 3 Max,GPT 5.2,Nova,Grok 4.1,Claude Sonnet 4.5,Gemini PRO,GPT PRO,AEN triadic runtime,trusted_model_solve_count,trusted_model_solve_rate,AEN RAB memory-certified,AEN recovered by certified memory
+1,p01,High-Card Poker: ``Lower Than Six'',33\%,0,0,0,0,1,0,0,0,1,0,0,0,2,0.1818181818181818,1,1
+2,p05,High-Card Poker: The Claimed Jack,$13\%~(R)$,1,1,0,1,1,1,0,0,0,1,1,0,7,0.6363636363636364,1,1
+3,p07,The Missing Treasure,QUILL,1,0,0,1,1,1,0,0,0,1,1,1,6,0.5454545454545454,1,0
+4,p08,"Two Clues, One Suspect",$-37$,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0,1,1
+5,p03,The Jade Serpent,Kestrel,1,1,1,1,1,1,0,0,1,1,1,1,9,0.8181818181818182,1,0
+6,p04,The Violet Moon Rite,Sable,1,1,1,1,1,1,1,0,1,1,1,1,10,0.9090909090909092,1,0
+7,p14,The Clockwork Alibi Ledger,Aegis,0,0,1,1,1,0,1,1,0,1,1,0,7,0.6363636363636364,1,1
+8,p15,The Gallery Grid of Half-True Plaques,38216,0,0,0,1,1,1,0,0,0,1,1,0,5,0.4545454545454545,1,1
+9,p16,The Locksmith's Quintuple Code,24695,1,0,0,0,1,1,1,0,0,1,1,1,6,0.5454545454545454,1,0
+10,p06,The Divisibility \& Factorization Scroll,11011,1,0,0,1,1,0,1,0,0,1,1,1,6,0.5454545454545454,1,0
+11,p10,The Ledger of Five Seals,1111,1,1,1,1,1,1,0,0,1,1,1,1,9,0.8181818181818182,1,0
+12,p11,The Five Seals of the Linear Vault,38,1,0,0,1,1,1,1,0,0,1,1,1,7,0.6363636363636364,1,0
+13,p12,Five Lemmas from the Combinatorics Vault,11100,1,0,0,1,1,1,0,0,1,1,0,1,6,0.5454545454545454,1,0
+14,p17,$\Omega\uparrow\oplus$,4,1,0,1,1,1,1,0,1,1,1,1,1,9,0.8181818181818182,1,0
+15,p21,The Oath of Two Echoes,62,1,1,0,1,1,1,1,1,1,1,1,1,10,0.9090909090909092,1,0
+16,p23,The Twin-Wick Corridor,4096,1,0,0,1,1,1,0,0,0,1,1,1,6,0.5454545454545454,1,0
+17,p02,The Mirror Gate of Caldera,\(\delta=\dfrac{19\pi}{32}\).,1,0,0,1,1,1,1,0,1,1,1,1,8,0.7272727272727273,1,0
+18,p09,The Brass Protractor Rite,277,0,0,0,0,0,0,0,0,0,0,1,0,1,0.0909090909090909,1,1
+19,p13,The Three Bead Readings,5,0,0,0,1,0,1,0,0,0,0,1,1,3,0.2727272727272727,1,0
+20,p18,The Staircase Registry,99165300000000,0,0,0,0,0,0,0,0,0,1,1,0,2,0.1818181818181818,1,1
+21,p19,The Nine Lenses,Aletheia,1,1,1,1,1,0,0,0,0,0,0,0,5,0.4545454545454545,1,1
+22,p20,The Talon Plates,167,0,0,0,0,0,0,0,0,0,1,0,0,1,0.0909090909090909,1,1
+23,p22,The Mirror Lemma Key,1013,0,1,1,0,1,0,0,0,1,1,0,1,5,0.4545454545454545,1,0
+24,p24,The Balancer's Verdict,AXIOM,1,0,0,0,1,1,1,0,1,1,1,1,7,0.6363636363636364,1,0
+25,p25,The Tangent-Wrought Five-Count Seal,89477120,0,0,0,0,0,0,0,0,0,1,1,0,2,0.1818181818181818,1,1

@@ -1,0 +1,148 @@
+\definecolor{aennavy}{RGB}{18,31,74}
+\definecolor{aenink}{RGB}{34,43,72}
+\definecolor{aenmuted}{RGB}{92,102,132}
+\definecolor{aenpaper}{RGB}{250,251,255}
+\definecolor{aenline}{RGB}{214,221,244}
+\definecolor{aenblue}{RGB}{75,112,226}
+\definecolor{aenviolet}{RGB}{107,79,226}
+\definecolor{aenteal}{RGB}{20,156,132}
+\definecolor{aengreen}{RGB}{44,169,119}
+\definecolor{aenamber}{RGB}{245,184,55}
+\definecolor{aenrose}{RGB}{231,96,111}
+
+\begin{tikzpicture}[
+  font=\sffamily\scriptsize,
+  card/.style={
+    draw=aenline,
+    rounded corners=5pt,
+    fill=white,
+    align=flush left,
+    inner xsep=5pt,
+    inner ysep=4pt,
+    minimum height=0.72cm,
+    text width=2.70cm
+  },
+  rolecard/.style={
+    card,
+    text width=2.85cm,
+    minimum height=0.86cm
+  },
+  panelitem/.style={
+    anchor=west,
+    text=aenink,
+    font=\sffamily\scriptsize,
+    text width=3.10cm
+  },
+  badge/.style={
+    circle,
+    inner sep=1pt,
+    minimum size=0.38cm,
+    draw=white,
+    line width=0.35pt,
+    text=white,
+    font=\sffamily\bfseries\tiny
+  },
+  arrow/.style={-{Latex[length=2mm]}, line width=0.68pt, draw=aenblue!78},
+  branch/.style={-{Latex[length=1.8mm]}, line width=0.58pt, dashed, draw=aenrose!80}
+]
+
+\fill[aenpaper] (-0.50,0.20) rectangle (22.95,9.65);
+\foreach \x in {-0.20,0.35,...,22.80} {
+  \foreach \y in {0.45,1.00,...,9.50} {
+    \fill[aenblue!9] (\x,\y) circle (0.006);
+  }
+}
+
+\node[font=\sffamily\bfseries\Large, text=aennavy] at (11.15,9.10)
+  {AEN Triadic Runtime Workflow};
+\node[font=\sffamily\small, text=aenink] at (11.15,8.68)
+  {Runtime-at-Boot memory \(\rightarrow\) certification \(\rightarrow\) Athena/Aria/Artemis loop \(\rightarrow\) controller-owned finalization};
+
+% Boot and certification lane.
+\node[card, fill=aenblue!7] (dataset) at (1.55,7.55)
+  {\textbf{Runtime Dataset}\\boot lines and safe memory};
+\node[card, fill=aenamber!12] (memory) at (5.05,7.55)
+  {\textbf{Controller Memory}\\session prompt memory};
+\node[card, fill=aenblue!7] (inject) at (8.55,7.55)
+  {\textbf{Boot Injection}\\role memory loaded at runtime};
+\node[card, fill=aenviolet!7] (cert) at (12.05,7.55)
+  {\textbf{Certification Gate}\\role recall probes};
+\node[card, fill=aengreen!10] (pass) at (15.55,7.55)
+  {\textbf{Eligible Roles}\\proceed to solving};
+\node[card, fill=aenrose!8, text width=2.55cm] (blocked) at (12.05,6.43)
+  {\textbf{If Blocked}\\mark role ineligible};
+
+\draw[arrow] (dataset) -- (memory);
+\draw[arrow] (memory) -- (inject);
+\draw[arrow] (inject) -- (cert);
+\draw[arrow] (cert) -- (pass);
+\draw[branch] (cert) -- (blocked);
+
+% Solve lane.
+\node[card, fill=aenamber!12] (question) at (15.55,5.40)
+  {\textbf{Question Dispatch}\\controller sends problem};
+\node[rolecard, fill=aengreen!10] (athena) at (12.05,5.40)
+  {\textbf{Athena}\\primary solve, decomposition, synthesis plan};
+\node[rolecard, fill=aenviolet!8] (aria) at (8.55,5.98)
+  {\textbf{Aria}\\proof structure and alternate derivation};
+\node[rolecard, fill=aenteal!9] (artemis) at (8.55,4.82)
+  {\textbf{Artemis}\\computation, checks, audit obligations};
+\node[card, fill=white] (loop) at (5.05,5.40)
+  {\textbf{Loop Controller}\\\(L=1\) constrained; \(L>1\) eligible};
+\node[card, fill=white] (reports) at (1.55,5.40)
+  {\textbf{Role Reports}\\support, gaps, candidate state};
+
+\draw[arrow] (pass) -- (question);
+\draw[arrow] (question) -- (athena);
+\draw[arrow] (athena.west) -- (aria.east);
+\draw[arrow] (athena.west) -- (artemis.east);
+\draw[arrow] (aria.west) -- (loop.east);
+\draw[arrow] (artemis.west) -- (loop.east);
+\draw[arrow] (loop) -- (reports);
+
+% Finalization lane.
+\node[rolecard, fill=aengreen!10] (synth) at (1.55,2.75)
+  {\textbf{Athena}\\receives reports and synthesizes};
+\node[card, fill=aengreen!10] (candidate) at (5.05,2.75)
+  {\textbf{Athena Block}\\answer plus confidence};
+\node[card, fill=aenamber!12] (logic) at (8.55,2.75)
+  {\textbf{Controller Parse}\\confidence and eligibility};
+\node[card, fill=aenblue!8] (final) at (12.05,2.75)
+  {\textbf{Final Answer}\\evaluator-facing value};
+\node[card, fill=white] (audit) at (15.55,2.75)
+  {\textbf{Artifact Audit}\\transcript, modes, outputs};
+
+\draw[arrow] (reports) -- (synth);
+\draw[arrow] (synth) -- (candidate);
+\draw[arrow] (candidate) -- (logic);
+\draw[arrow] (logic) -- (final);
+\draw[arrow] (final) -- (audit);
+
+% Role badges placed inside the lane, not as extra semantic arrows.
+\node[badge, fill=aengreen] at (13.25,5.78) {A};
+\node[badge, fill=aenviolet] at (9.75,6.34) {R};
+\node[badge, fill=aenteal] at (9.75,5.18) {T};
+\node[badge, fill=aenamber] at (9.75,3.10) {C};
+
+% Side panel: what makes this not a one-model voting ensemble.
+\draw[rounded corners=8pt, draw=aenblue!22, fill=white] (18.00,2.00) rectangle (22.55,7.20);
+\node[font=\sffamily\bfseries\small, text=aennavy, anchor=west] at (18.32,6.84)
+  {Core Contracts};
+
+\node[badge, fill=aengreen] at (18.48,6.20) {1};
+\node[panelitem] at (18.88,6.20)
+  {\textbf{True triad}\\distinct solver, proof, and audit roles};
+
+\node[badge, fill=aenviolet] at (18.48,5.22) {2};
+\node[panelitem] at (18.88,5.22)
+  {\textbf{Certified boot}\\runtime role recall before solving};
+
+\node[badge, fill=aenamber] at (18.48,4.24) {3};
+\node[panelitem] at (18.88,4.24)
+  {\textbf{Controller finalizes}\\model prose is not the wrapper answer};
+
+\node[badge, fill=aenblue] at (18.48,3.26) {4};
+\node[panelitem] at (18.88,3.26)
+  {\textbf{Auditable artifacts}\\prompts, transcripts, modes, outputs};
+
+\end{tikzpicture}

@@ -1,0 +1,155 @@
+\definecolor{aennavy}{RGB}{18,31,74}
+\definecolor{aenink}{RGB}{34,43,72}
+\definecolor{aenmuted}{RGB}{92,102,132}
+\definecolor{aenpaper}{RGB}{250,251,255}
+\definecolor{aenline}{RGB}{214,221,244}
+\definecolor{aenblue}{RGB}{75,112,226}
+\definecolor{aenviolet}{RGB}{107,79,226}
+\definecolor{aenteal}{RGB}{20,156,132}
+\definecolor{aengreen}{RGB}{44,169,119}
+\definecolor{aenamber}{RGB}{245,184,55}
+\definecolor{aenrose}{RGB}{231,96,111}
+
+\begin{tikzpicture}[
+  font=\sffamily\scriptsize,
+  card/.style={
+    draw=aenline,
+    rounded corners=5pt,
+    fill=white,
+    align=flush left,
+    inner xsep=5pt,
+    inner ysep=4pt,
+    minimum height=0.74cm,
+    text width=2.42cm
+  },
+  role/.style={
+    card,
+    text width=2.56cm,
+    minimum height=0.82cm
+  },
+  panelitem/.style={
+    anchor=west,
+    text=aenink,
+    font=\sffamily\scriptsize,
+    text width=3.35cm
+  },
+  badge/.style={
+    circle,
+    inner sep=1pt,
+    minimum size=0.38cm,
+    draw=white,
+    line width=0.35pt,
+    text=white,
+    font=\sffamily\bfseries\tiny
+  },
+  arrow/.style={-{Latex[length=2mm]}, line width=0.68pt, draw=aenblue!78},
+  softarrow/.style={-{Latex[length=1.8mm]}, line width=0.58pt, draw=aenblue!58},
+  branch/.style={-{Latex[length=1.8mm]}, line width=0.58pt, dashed, draw=aenrose!82}
+]
+
+\fill[aenpaper] (-0.45,2.54) rectangle (22.45,9.80);
+\foreach \x in {-0.20,0.35,...,22.30} {
+  \foreach \y in {2.76,3.31,...,9.65} {
+    \fill[aenblue!9] (\x,\y) circle (0.006);
+  }
+}
+
+\node[font=\sffamily\bfseries\Large, text=aennavy] at (10.10,9.25)
+  {Budgeted Triadic Turn Protocol};
+\node[font=\sffamily\small, text=aenink] at (10.10,8.84)
+  {The deployed \(L=1\) setting is a budget choice; the controller loop is defined for \(1\leq i\leq L\)};
+
+% Soft stage backplanes.
+\draw[rounded corners=8pt, draw=aenamber!28, fill=aenamber!7] (0.42,6.95) rectangle (6.95,8.25);
+\draw[rounded corners=8pt, draw=aenviolet!25, fill=white] (7.22,4.92) rectangle (17.20,8.25);
+\draw[rounded corners=8pt, draw=aengreen!26, fill=aengreen!5] (0.42,2.85) rectangle (17.20,4.50);
+
+\node[font=\sffamily\bfseries\scriptsize, text=aennavy, anchor=west] at (0.70,8.05)
+  {Stage 1: controller setup};
+\node[font=\sffamily\bfseries\scriptsize, text=aennavy, anchor=west] at (7.50,8.05)
+  {Stage 2: repeat triadic work for loop \(i\)};
+\node[font=\sffamily\bfseries\scriptsize, text=aennavy, anchor=west] at (0.70,4.30)
+  {Stage 3: closeout and artifact emission};
+
+% Stage 1.
+\node[card, fill=aenamber!12] (input) at (1.55,7.45)
+  {\textbf{Controller Input}\\question plus safe memory};
+\node[card, fill=aenamber!12] (budget) at (4.70,7.45)
+  {\textbf{Loop Budget}\\set \(L\) and wall-time cap};
+
+% Stage 2.
+\node[card, fill=white] (entry) at (8.45,7.45)
+  {\textbf{Loop Entry}\\\(1\leq i\leq L\)};
+\node[role, fill=aengreen!10] (athena) at (11.45,7.45)
+  {\textbf{Athena}\\decompose, route, draft candidate};
+\node[role, fill=aenviolet!8] (aria) at (14.45,7.83)
+  {\textbf{Aria}\\proof route and alternate derivation};
+\node[role, fill=aenteal!9] (artemis) at (14.45,6.65)
+  {\textbf{Artemis}\\computation and audit checks};
+\node[card, fill=white] (reports) at (16.00,5.55)
+  {\textbf{Role Reports}\\support, gaps, candidate state};
+\node[card, fill=aenteal!8] (gate) at (12.70,5.55)
+  {\textbf{Controller Gate}\\close or continue};
+\node[card, fill=aenrose!8] (continue) at (9.45,5.55)
+  {\textbf{Continue}\\unresolved and budget remains};
+
+% Stage 3.
+\node[role, fill=aengreen!10] (synth) at (2.95,3.62)
+  {\textbf{Athena Synthesis}\\combine eligible reports};
+\node[card, fill=aengreen!10] (slot) at (6.05,3.62)
+  {\textbf{Athena Final Block}\\fills boxed-confidence slot};
+\node[card, fill=aenamber!12] (logic) at (9.15,3.62)
+  {\textbf{Controller Parse}\\eligibility, confidence, selection};
+\node[card, fill=aenblue!8] (final) at (12.25,3.62)
+  {\textbf{Final Answer}\\evaluator-facing value};
+\node[card, fill=white] (audit) at (15.35,3.62)
+  {\textbf{Artifact Audit}\\transcript, modes, output};
+
+% Flow.
+\draw[arrow] (input) -- (budget);
+\draw[arrow] (budget) -- (entry);
+\draw[arrow] (entry) -- (athena);
+\draw[arrow] (athena.east) -- (aria.west);
+\draw[arrow] (athena.east) -- (artemis.west);
+\draw[softarrow] (aria.south east) -- (reports.north);
+\draw[softarrow] (artemis.east) -- (reports.west);
+\draw[arrow] (reports.west) -- (gate.east);
+
+\draw[branch] (gate.west) -- node[above, font=\sffamily\tiny, text=aenrose] {continue} (continue.east);
+\draw[branch, rounded corners=8pt]
+  (continue.north) -- ++(0,0.58) -- ++(-1.00,0) -- node[above, font=\sffamily\tiny, text=aenrose] {next \(i\)} (entry.south);
+
+\draw[arrow, rounded corners=8pt]
+  (gate.south) -- ++(0,-0.62) -- ++(-8.18,0) -- (synth.north east);
+\draw[arrow] (synth) -- (slot);
+\draw[arrow] (slot) -- (logic);
+\draw[arrow] (logic) -- (final);
+\draw[arrow] (final) -- (audit);
+
+\node[badge, fill=aengreen] at (12.55,7.78) {A};
+\node[badge, fill=aenviolet] at (15.54,8.16) {R};
+\node[badge, fill=aenteal] at (15.54,6.98) {T};
+\node[badge, fill=aenamber] at (13.80,5.88) {C};
+
+% Side panel.
+\draw[rounded corners=8pt, draw=aenblue!22, fill=white] (17.85,2.95) rectangle (21.95,8.25);
+\node[font=\sffamily\bfseries\small, text=aennavy, anchor=west] at (18.15,7.88)
+  {Loop Semantics};
+
+\node[badge, fill=aenamber] at (18.28,7.25) {1};
+\node[panelitem] at (18.65,7.25)
+  {\textbf{Constrained run}\\use \(L=1\) when wall time and final format dominate};
+
+\node[badge, fill=aenviolet] at (18.28,6.15) {2};
+\node[panelitem] at (18.65,6.15)
+  {\textbf{Research run}\\allow \(L>1\) only with logged continuation reasons};
+
+\node[badge, fill=aengreen] at (18.28,5.05) {3};
+\node[panelitem] at (18.65,5.05)
+  {\textbf{Boxed slot}\\controller asks Athena to fill final confidence line};
+
+\node[badge, fill=aenblue] at (18.28,3.95) {4};
+\node[panelitem] at (18.65,3.95)
+  {\textbf{Controller owns final}\\peers report evidence; wrapper emission is parsed state};
+
+\end{tikzpicture}

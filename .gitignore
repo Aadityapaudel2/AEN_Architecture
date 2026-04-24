@@ -1,0 +1,16 @@
+# LaTeX build scratch
+paper/*.aux
+paper/*.blg
+paper/*.fdb_latexmk
+paper/*.fls
+paper/*.log
+paper/*.out
+paper/*.synctex.gz
+paper/*.toc
+paper/main.pdf
+
+# Local editor/OS noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

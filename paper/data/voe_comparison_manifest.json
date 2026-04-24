@@ -1,0 +1,15 @@
+{
+  "created_csv": [
+    "voe_trusted_benchmark_problem_matrix.csv",
+    "voe_trusted_benchmark_aen_comparison.csv"
+  ],
+  "charts": [
+    "voe_trusted_benchmark_comparison.png",
+    "voe_problem_difficulty_comparison.png",
+    "voe_aen_runtime_vs_difficulty.png",
+    "evaluation_resource_comparison.png"
+  ],
+  "aen_canonical_voe_score": "15/25",
+  "trusted_workbook": "N:\\Puzzle book Project\\voep3\\paper\\data\\trusted_benchmark.xlsx",
+  "kaggle_dataset_url": "https://www.kaggle.com/datasets/aadityapaudel/runtimeatboot"
+}

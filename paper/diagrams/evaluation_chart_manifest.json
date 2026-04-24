@@ -1,0 +1,36 @@
+{
+  "charts": [
+    "voe25_diagnostic_dashboard.png",
+    "voe25_runtime_tokens.png",
+    "evaluation_resource_comparison.png",
+    "token_budget_envelope.png"
+  ],
+  "voe25_strict_integer_score": "12/25",
+  "voe25_with_raw_bitstring_credit": "15/25",
+  "summary": [
+    {
+      "run": "VoE25\nintegerized audit",
+      "cases": 25,
+      "wall_hours": 3.426736111111111,
+      "avg_tokens_k": 466.2828,
+      "correct": 12,
+      "accuracy_pct": 48.0
+    },
+    {
+      "run": "VoE clean19\nfresh control",
+      "cases": 19,
+      "wall_hours": 0.8960636944444444,
+      "avg_tokens_k": 525.4143157894737,
+      "correct": 4,
+      "accuracy_pct": 21.05263157894737
+    },
+    {
+      "run": "AIME 2026\nfrozen run",
+      "cases": 30,
+      "wall_hours": 1.5248830555555555,
+      "avg_tokens_k": 711.1003666666667,
+      "correct": 15,
+      "accuracy_pct": 50.0
+    }
+  ]
+}

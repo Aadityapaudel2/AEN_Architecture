@@ -1,0 +1,4 @@
+closeout_mode,cases,correct,average_seconds,average_total_tokens,average_transcript_chars,incorrect,accuracy
+Strict consensus,16,14,166.49045625,705717.375,17483.9375,2,0.875
+Majority vote,7,1,193.68302857142857,714599.4285714285,21728.714285714286,6,0.14285714285714285
+Highest confidence,7,0,209.97125714285716,719905.2857142857,22314.0,7,0.0

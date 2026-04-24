@@ -1,0 +1,10 @@
+phase,role,purpose,max_generated_tokens,approx_seconds_at_1023_tps
+Athena open,Athena,opening route / decomposition,1024,1.001
+Aria exchange 1,Aria,proof-route pressure,1280,1.251
+Artemis exchange 1,Artemis,audit / computation pressure,1280,1.251
+Aria exchange 2,Aria,repair / closure pressure,1280,1.251
+Artemis exchange 2,Artemis,independent closeout check,1280,1.251
+Aria report,Aria,proof report,1024,1.001
+Artemis report,Artemis,audit report,1024,1.001
+Athena synthesis,Athena,reconciliation,768,0.751
+Athena final,Athena/controller,one-line final emission,128,0.125

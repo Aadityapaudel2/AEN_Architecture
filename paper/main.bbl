@@ -1,0 +1,388 @@
+\begin{thebibliography}{37}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[{AIMO Prize}(2025)]{aimoprize2025third}
+{AIMO Prize}.
+\newblock {Third \$2.2 Million AIMO Progress Prize Launched}.
+\newblock AIMO Prize update, November 2025.
+\newblock URL
+  \url{https://aimoprize.com/updates/2025-11-19-third-progress-prize-launched}.
+\newblock Describes AIMO3 and the shift to five-digit answers. Accessed
+  2026-04-22.
+
+\bibitem[{Art of Problem Solving}(2000)]{aops2000aime}
+{Art of Problem Solving}.
+\newblock {2000 AIME I Problems}.
+\newblock Contest archive, 2000.
+\newblock URL
+  \url{https://wiki.artofproblemsolving.com/wiki/index.php/2000_AIME_I_Problems}.
+\newblock Archived instructions state that AIME answers are integers from 000
+  to 999 inclusive. Accessed 2026-04-22.
+
+\bibitem[Brown et~al.(2020)Brown, Mann, Ryder, Subbiah, Kaplan, Dhariwal,
+  Neelakantan, Shyam, Sastry, Askell, Agarwal, Herbert-Voss, Krueger, Henighan,
+  Child, Ramesh, Ziegler, Wu, Winter, Hesse, Chen, Sigler, Litwin, Gray, Chess,
+  Clark, Berner, McCandlish, Radford, Sutskever, and Amodei]{brown2020fewshot}
+Tom~B. Brown, Benjamin Mann, Nick Ryder, Melanie Subbiah, Jared Kaplan,
+  Prafulla Dhariwal, Arvind Neelakantan, Pranav Shyam, Girish Sastry, Amanda
+  Askell, Sandhini Agarwal, Ariel Herbert-Voss, Gretchen Krueger, Tom Henighan,
+  Rewon Child, Aditya Ramesh, Daniel~M. Ziegler, Jeffrey Wu, Clemens Winter,
+  Christopher Hesse, Mark Chen, Eric Sigler, Mateusz Litwin, Scott Gray,
+  Benjamin Chess, Jack Clark, Christopher Berner, Sam McCandlish, Alec Radford,
+  Ilya Sutskever, and Dario Amodei.
+\newblock Language models are few-shot learners.
+\newblock \emph{arXiv preprint arXiv:2005.14165}, 2020.
+\newblock \doi{10.48550/arXiv.2005.14165}.
+\newblock URL \url{https://arxiv.org/abs/2005.14165}.
+
+\bibitem[Chen et~al.(2025)Chen, Raventos, Cheng, Ganguli, and
+  Druckmann]{chen2025rethinking}
+Feng Chen, Allan Raventos, Nan Cheng, Surya Ganguli, and Shaul Druckmann.
+\newblock Rethinking fine-tuning when scaling test-time compute: Limiting
+  confidence improves mathematical reasoning.
+\newblock \emph{arXiv preprint arXiv:2502.07154}, 2025.
+\newblock \doi{10.48550/arXiv.2502.07154}.
+\newblock URL \url{https://arxiv.org/abs/2502.07154}.
+
+\bibitem[Chen et~al.(2021)Chen, Tworek, Jun, Yuan, Pinto, Kaplan, Edwards,
+  Burda, Joseph, Brockman, Ray, Puri, Krueger, Petrov, Khlaaf, Sastry, Mishkin,
+  Chan, Gray, Ryder, Pavlov, Power, Kaiser, Bavarian, Winter, Tillet, Such,
+  Cummings, Plappert, Chantzis, Barnes, Herbert-Voss, Guss, Nichol, Paino,
+  Tezak, Tang, Babuschkin, Balaji, Jain, Saunders, Hesse, Carr, Leike, Achiam,
+  Misra, Morikawa, Radford, Knight, Brundage, Murati, Mayer, Welinder, McGrew,
+  Amodei, McCandlish, Sutskever, and Zaremba]{chen2021codex}
+Mark Chen, Jerry Tworek, Heewoo Jun, Qiming Yuan, Henrique Ponde de~Oliveira
+  Pinto, Jared Kaplan, Harri Edwards, Yuri Burda, Nicholas Joseph, Greg
+  Brockman, Alex Ray, Raul Puri, Gretchen Krueger, Michael Petrov, Heidy
+  Khlaaf, Girish Sastry, Pamela Mishkin, Brooke Chan, Scott Gray, Nick Ryder,
+  Mikhail Pavlov, Alethea Power, Lukasz Kaiser, Mohammad Bavarian, Clemens
+  Winter, Philippe Tillet, Felipe~Petroski Such, Dave Cummings, Matthias
+  Plappert, Fotios Chantzis, Elizabeth Barnes, Ariel Herbert-Voss,
+  William~Hebgen Guss, Alex Nichol, Alex Paino, Nikolas Tezak, Jie Tang, Igor
+  Babuschkin, Suchir Balaji, Shantanu Jain, William Saunders, Christopher
+  Hesse, Andrew~N. Carr, Jan Leike, Josh Achiam, Vedant Misra, Evan Morikawa,
+  Alec Radford, Matthew Knight, Miles Brundage, Mira Murati, Katie Mayer, Peter
+  Welinder, Bob McGrew, Dario Amodei, Sam McCandlish, Ilya Sutskever, and
+  Wojciech Zaremba.
+\newblock Evaluating large language models trained on code.
+\newblock \emph{arXiv preprint arXiv:2107.03374}, 2021.
+\newblock \doi{10.48550/arXiv.2107.03374}.
+\newblock URL \url{https://arxiv.org/abs/2107.03374}.
+
+\bibitem[Christiano et~al.(2017)Christiano, Leike, Brown, Martic, Legg, and
+  Amodei]{christiano2017deep}
+Paul~F. Christiano, Jan Leike, Tom~B. Brown, Miljan Martic, Shane Legg, and
+  Dario Amodei.
+\newblock Deep reinforcement learning from human preferences.
+\newblock \emph{arXiv preprint arXiv:1706.03741}, 2017.
+\newblock \doi{10.48550/arXiv.1706.03741}.
+\newblock URL \url{https://arxiv.org/abs/1706.03741}.
+
+\bibitem[Chung et~al.(2022)Chung, Hou, Longpre, Zoph, Tay, Fedus, Li, Wang,
+  Dehghani, Brahma, Webson, Gu, Dai, Suzgun, Chen, Chowdhery, Castro-Ros,
+  Pellat, Robinson, Valter, Narang, Mishra, Yu, Zhao, Huang, Dai, Yu, Petrov,
+  Chi, Dean, Devlin, Roberts, Zhou, Le, and Wei]{chung2022scaling}
+Hyung~Won Chung, Le~Hou, Shayne Longpre, Barret Zoph, Yi~Tay, William Fedus,
+  Yunxuan Li, Xuezhi Wang, Mostafa Dehghani, Siddhartha Brahma, Albert Webson,
+  Shixiang~Shane Gu, Zhuyun Dai, Mirac Suzgun, Xinyun Chen, Aakanksha
+  Chowdhery, Alex Castro-Ros, Marie Pellat, Kevin Robinson, Dasha Valter,
+  Sharan Narang, Gaurav Mishra, Adams Yu, Vincent Zhao, Yanping Huang, Andrew
+  Dai, Hongkun Yu, Slav Petrov, Ed~H. Chi, Jeff Dean, Jacob Devlin, Adam
+  Roberts, Denny Zhou, Quoc~V. Le, and Jason Wei.
+\newblock Scaling instruction-finetuned language models.
+\newblock \emph{arXiv preprint arXiv:2210.11416}, 2022.
+\newblock \doi{10.48550/arXiv.2210.11416}.
+\newblock URL \url{https://arxiv.org/abs/2210.11416}.
+
+\bibitem[Dong et~al.(2024)Dong, Yuan, Lu, Li, Xue, Liu, Wang, Yuan, Zhou, and
+  Zhou]{dong2024abilities}
+Guanting Dong, Hongyi Yuan, Keming Lu, Chengpeng Li, Mingfeng Xue, Dayiheng
+  Liu, Wei Wang, Zheng Yuan, Chang Zhou, and Jingren Zhou.
+\newblock How abilities in large language models are affected by supervised
+  fine-tuning data composition.
+\newblock \emph{arXiv preprint arXiv:2310.05492}, 2024.
+\newblock \doi{10.48550/arXiv.2310.05492}.
+\newblock URL \url{https://arxiv.org/abs/2310.05492}.
+\newblock Accepted to ACL 2024 Main Conference.
+
+\bibitem[Du et~al.(2023)Du, Li, Torralba, Tenenbaum, and
+  Mordatch]{du2023multiagentdebate}
+Yilun Du, Shuang Li, Antonio Torralba, Joshua~B. Tenenbaum, and Igor Mordatch.
+\newblock Improving factuality and reasoning in language models through
+  multiagent debate.
+\newblock \emph{arXiv preprint arXiv:2305.14325}, 2023.
+\newblock \doi{10.48550/arXiv.2305.14325}.
+\newblock URL \url{https://arxiv.org/abs/2305.14325}.
+
+\bibitem[{Harvard--MIT Mathematics Tournament}(2026)]{hmmtTesting}
+{Harvard--MIT Mathematics Tournament}.
+\newblock {Testing Information}.
+\newblock HMMT tournament documentation, 2026.
+\newblock URL \url{https://www.hmmt.org/www/tournaments/testing}.
+\newblock Describes individual tests as single-value short-answer tests and
+  links acceptable answer forms. Accessed 2026-04-22.
+
+\bibitem[{HMMT Head Graders}(2012)]{hmmtAcceptableAnswers}
+{HMMT Head Graders}.
+\newblock {HMMT Acceptable Answer Forms}.
+\newblock HMMT grading guidelines, 2012.
+\newblock URL
+  \url{https://hmmt-prod.s3.amazonaws.com/static/acceptable_answers.pdf}.
+\newblock Allows arithmetic expressions, fractions, radicals, trigonometric
+  functions, and other accepted answer forms where appropriate. Accessed
+  2026-04-22.
+
+\bibitem[Hu et~al.(2021)Hu, Shen, Wallis, Allen-Zhu, Li, Wang, Wang, and
+  Chen]{hu2021lora}
+Edward~J. Hu, Yelong Shen, Phillip Wallis, Zeyuan Allen-Zhu, Yuanzhi Li, Shean
+  Wang, Lu~Wang, and Weizhu Chen.
+\newblock {LoRA}: Low-rank adaptation of large language models.
+\newblock \emph{arXiv preprint arXiv:2106.09685}, 2021.
+\newblock \doi{10.48550/arXiv.2106.09685}.
+\newblock URL \url{https://arxiv.org/abs/2106.09685}.
+
+\bibitem[Huang et~al.(2023)Huang, Chen, Mishra, Zheng, Yu, Song, and
+  Zhou]{huang2023selfcorrect}
+Jie Huang, Xinyun Chen, Swaroop Mishra, Huaixiu~Steven Zheng, Adams~Wei Yu,
+  Xinying Song, and Denny Zhou.
+\newblock Large language models cannot self-correct reasoning yet.
+\newblock \emph{arXiv preprint arXiv:2310.01798}, 2023.
+\newblock \doi{10.48550/arXiv.2310.01798}.
+\newblock URL \url{https://arxiv.org/abs/2310.01798}.
+
+\bibitem[Lampinen et~al.(2025)Lampinen, Chaudhry, Chan, Wild, Wan, Ku,
+  Bornschein, Pascanu, Shanahan, and McClelland]{lampinen2025generalization}
+Andrew~K. Lampinen, Arslan Chaudhry, Stephanie C.~Y. Chan, Cody Wild, Diane
+  Wan, Alex Ku, J{\"o}rg Bornschein, Razvan Pascanu, Murray Shanahan, and
+  James~L. McClelland.
+\newblock On the generalization of language models from in-context learning and
+  finetuning: A controlled study.
+\newblock \emph{arXiv preprint arXiv:2505.00661}, 2025.
+\newblock \doi{10.48550/arXiv.2505.00661}.
+\newblock URL \url{https://arxiv.org/abs/2505.00661}.
+
+\bibitem[Li et~al.(2023)Li, Hammoud, Itani, Khizbullin, and
+  Ghanem]{li2023camel}
+Guohao Li, Hasan Abed Al~Kader Hammoud, Hani Itani, Dmitrii Khizbullin, and
+  Bernard Ghanem.
+\newblock {CAMEL}: Communicative agents for ``mind'' exploration of large scale
+  language model society.
+\newblock \emph{arXiv preprint arXiv:2303.17760}, 2023.
+\newblock \doi{10.48550/arXiv.2303.17760}.
+\newblock URL \url{https://arxiv.org/abs/2303.17760}.
+
+\bibitem[Liu et~al.(2024)Liu, Lin, Hewitt, Paranjape, Bevilacqua, Petroni, and
+  Liang]{liu2024lostmiddle}
+Nelson~F. Liu, Kevin Lin, John Hewitt, Ashwin Paranjape, Michele Bevilacqua,
+  Fabio Petroni, and Percy Liang.
+\newblock Lost in the middle: How language models use long contexts.
+\newblock \emph{Transactions of the Association for Computational Linguistics},
+  12:\penalty0 157--173, 2024.
+\newblock \doi{10.1162/tacl_a_00638}.
+\newblock URL \url{https://doi.org/10.1162/tacl_a_00638}.
+
+\bibitem[Longpre et~al.(2023)Longpre, Hou, Vu, Webson, Chung, Tay, Zhou, Le,
+  Zoph, Wei, and Roberts]{longpre2023flan}
+Shayne Longpre, Le~Hou, Tu~Vu, Albert Webson, Hyung~Won Chung, Yi~Tay, Denny
+  Zhou, Quoc~V. Le, Barret Zoph, Jason Wei, and Adam Roberts.
+\newblock The flan collection: Designing data and methods for effective
+  instruction tuning.
+\newblock \emph{arXiv preprint arXiv:2301.13688}, 2023.
+\newblock \doi{10.48550/arXiv.2301.13688}.
+\newblock URL \url{https://arxiv.org/abs/2301.13688}.
+
+\bibitem[Madaan et~al.(2023)Madaan, Tandon, Gupta, Hallinan, Gao, Wiegreffe,
+  Alon, Dziri, Prabhumoye, Yang, Gupta, Majumder, Hermann, Welleck,
+  Yazdanbakhsh, and Clark]{madaan2023selfrefine}
+Aman Madaan, Niket Tandon, Prakhar Gupta, Skyler Hallinan, Luyu Gao, Sarah
+  Wiegreffe, Uri Alon, Nouha Dziri, Shrimai Prabhumoye, Yiming Yang, Shashank
+  Gupta, Bodhisattwa~Prasad Majumder, Katherine Hermann, Sean Welleck, Amir
+  Yazdanbakhsh, and Peter Clark.
+\newblock Self-refine: Iterative refinement with self-feedback.
+\newblock \emph{arXiv preprint arXiv:2303.17651}, 2023.
+\newblock \doi{10.48550/arXiv.2303.17651}.
+\newblock URL \url{https://arxiv.org/abs/2303.17651}.
+
+\bibitem[Munjal et~al.(2026)Munjal, Christophe, Rajan, and
+  Kanithi]{munjal2026instructiontuned}
+Prateek Munjal, Clement Christophe, Ronnie Rajan, and Praveenkumar Kanithi.
+\newblock Do instruction-tuned models always perform better than base models?
+  evidence from math and domain-shifted benchmarks.
+\newblock \emph{arXiv preprint arXiv:2601.13244}, 2026.
+\newblock \doi{10.48550/arXiv.2601.13244}.
+\newblock URL \url{https://arxiv.org/abs/2601.13244}.
+
+\bibitem[Ouyang et~al.(2022)Ouyang, Wu, Jiang, Almeida, Wainwright, Mishkin,
+  Zhang, Agarwal, Slama, Ray, Schulman, Hilton, Kelton, Miller, Simens, Askell,
+  Welinder, Christiano, Leike, and Lowe]{ouyang2022training}
+Long Ouyang, Jeff Wu, Xu~Jiang, Diogo Almeida, Carroll~L. Wainwright, Pamela
+  Mishkin, Chong Zhang, Sandhini Agarwal, Katarina Slama, Alex Ray, John
+  Schulman, Jacob Hilton, Fraser Kelton, Luke Miller, Maddie Simens, Amanda
+  Askell, Peter Welinder, Paul Christiano, Jan Leike, and Ryan Lowe.
+\newblock Training language models to follow instructions with human feedback.
+\newblock \emph{arXiv preprint arXiv:2203.02155}, 2022.
+\newblock \doi{10.48550/arXiv.2203.02155}.
+\newblock URL \url{https://arxiv.org/abs/2203.02155}.
+
+\bibitem[Paudel(2026{\natexlab{a}})]{paudel2026canon}
+Aaditya Paudel.
+\newblock {Canon DSL V2.1: Metadata-First Distillation for Synthetic
+  Mathematical Data}.
+\newblock Zenodo, April 2026{\natexlab{a}}.
+\newblock URL \url{https://doi.org/10.5281/zenodo.19694800}.
+\newblock Version v2.1. Published 22 April 2026.
+
+\bibitem[Paudel(2026{\natexlab{b}})]{paudel2026runtimeatbootdataset}
+Aaditya Paudel.
+\newblock {RuntimeAtBoot}.
+\newblock Kaggle dataset, 2026{\natexlab{b}}.
+\newblock URL
+  \url{https://www.kaggle.com/datasets/aadityapaudel/runtimeatboot}.
+\newblock Public dataset package containing the RuntimeAtBoot test surface used
+  by the AEN notebook. Accessed 2026-04-22.
+
+\bibitem[Paudel(2026{\natexlab{c}})]{paudel2026twollm}
+Aaditya Paudel.
+\newblock {Two LLM Model Evaluator}.
+\newblock GitHub repository, 2026{\natexlab{c}}.
+\newblock URL \url{https://github.com/Aadityapaudel2/Two_LLM_Model_Evaluator/}.
+\newblock Public software artifact for the two-body solver/verifier evaluator
+  lineage. Accessed 2026-04-22.
+
+\bibitem[Paudel(2026{\natexlab{d}})]{paudel2026wheels}
+Aaditya Paudel.
+\newblock {Wheels}.
+\newblock Kaggle dataset, 2026{\natexlab{d}}.
+\newblock URL \url{https://www.kaggle.com/datasets/aadityapaudel/wheels}.
+\newblock Offline wheel bundle used for vLLM and notebook runtime dependency
+  installation. Accessed 2026-04-22.
+
+\bibitem[Paudel and Acharya(2026)]{paudel2026uinative}
+Aaditya Paudel and P.~Acharya.
+\newblock {UI-Native One-Shot Benchmarking for Mathematical Reasoning in
+  Chat-Based LLM Systems}.
+\newblock Zenodo, January 2026.
+\newblock URL \url{https://doi.org/10.5281/zenodo.18216959}.
+\newblock Version v1. Published 12 January 2026.
+
+\bibitem[Peng et~al.(2023)Peng, Quesnelle, Fan, and Shippole]{peng2023yarn}
+Bowen Peng, Jeffrey Quesnelle, Honglu Fan, and Enrico Shippole.
+\newblock {YaRN}: Efficient context window extension of large language models.
+\newblock \emph{arXiv preprint arXiv:2309.00071}, 2023.
+\newblock \doi{10.48550/arXiv.2309.00071}.
+\newblock URL \url{https://arxiv.org/abs/2309.00071}.
+
+\bibitem[Qian et~al.(2023)Qian, Liu, Liu, Chen, Dang, Li, Yang, Chen, Su, Cong,
+  Xu, Li, Liu, and Sun]{qian2023chatdev}
+Chen Qian, Wei Liu, Hongzhang Liu, Nuo Chen, Yufan Dang, Jiahao Li, Cheng Yang,
+  Weize Chen, Yusheng Su, Xin Cong, Juyuan Xu, Dahai Li, Zhiyuan Liu, and
+  Maosong Sun.
+\newblock {ChatDev}: Communicative agents for software development.
+\newblock \emph{arXiv preprint arXiv:2307.07924}, 2023.
+\newblock \doi{10.48550/arXiv.2307.07924}.
+\newblock URL \url{https://arxiv.org/abs/2307.07924}.
+
+\bibitem[{Qwen Team}(2025)]{qwen2025qwen25oneMcard}
+{Qwen Team}.
+\newblock {Qwen2.5-7B-Instruct-1M} model card.
+\newblock Hugging Face model card, 2025.
+\newblock URL \url{https://huggingface.co/Qwen/Qwen2.5-7B-Instruct-1M}.
+\newblock Accessed 2026-04-22.
+
+\bibitem[Su et~al.(2021)Su, Lu, Pan, Murtadha, Wen, and Liu]{su2021roformer}
+Jianlin Su, Yu~Lu, Shengfeng Pan, Ahmed Murtadha, Bo~Wen, and Yunfeng Liu.
+\newblock {RoFormer}: Enhanced transformer with rotary position embedding.
+\newblock \emph{arXiv preprint arXiv:2104.09864}, 2021.
+\newblock \doi{10.48550/arXiv.2104.09864}.
+\newblock URL \url{https://arxiv.org/abs/2104.09864}.
+
+\bibitem[Wang et~al.(2022)Wang, Wei, Schuurmans, Le, Chi, Narang, Chowdhery,
+  and Zhou]{wang2022selfconsistency}
+Xuezhi Wang, Jason Wei, Dale Schuurmans, Quoc~V. Le, Ed~H. Chi, Sharan Narang,
+  Aakanksha Chowdhery, and Denny Zhou.
+\newblock Self-consistency improves chain of thought reasoning in language
+  models.
+\newblock \emph{arXiv preprint arXiv:2203.11171}, 2022.
+\newblock \doi{10.48550/arXiv.2203.11171}.
+\newblock URL \url{https://arxiv.org/abs/2203.11171}.
+
+\bibitem[Wei et~al.(2021)Wei, Bosma, Zhao, Guu, Yu, Lester, Du, Dai, and
+  Le]{wei2021finetuned}
+Jason Wei, Maarten Bosma, Vincent~Y. Zhao, Kelvin Guu, Adams~Wei Yu, Brian
+  Lester, Nan Du, Andrew~M. Dai, and Quoc~V. Le.
+\newblock Finetuned language models are zero-shot learners.
+\newblock \emph{arXiv preprint arXiv:2109.01652}, 2021.
+\newblock \doi{10.48550/arXiv.2109.01652}.
+\newblock URL \url{https://arxiv.org/abs/2109.01652}.
+
+\bibitem[Wei et~al.(2022)Wei, Wang, Schuurmans, Bosma, Ichter, Xia, Chi, Le,
+  and Zhou]{wei2022cot}
+Jason Wei, Xuezhi Wang, Dale Schuurmans, Maarten Bosma, Brian Ichter, Fei Xia,
+  Ed~Chi, Quoc Le, and Denny Zhou.
+\newblock Chain-of-thought prompting elicits reasoning in large language
+  models.
+\newblock \emph{arXiv preprint arXiv:2201.11903}, 2022.
+\newblock \doi{10.48550/arXiv.2201.11903}.
+\newblock URL \url{https://arxiv.org/abs/2201.11903}.
+
+\bibitem[Wu et~al.(2023)Wu, Bansal, Zhang, Wu, Li, Zhu, Jiang, Zhang, Zhang,
+  Liu, Awadallah, White, Burger, and Wang]{wu2023autogen}
+Qingyun Wu, Gagan Bansal, Jieyu Zhang, Yiran Wu, Beibin Li, Erkang Zhu,
+  Li~Jiang, Xiaoyun Zhang, Shaokun Zhang, Jiale Liu, Ahmed~Hassan Awadallah,
+  Ryen~W. White, Doug Burger, and Chi Wang.
+\newblock {AutoGen}: Enabling next-gen {LLM} applications via multi-agent
+  conversation.
+\newblock \emph{arXiv preprint arXiv:2308.08155}, 2023.
+\newblock \doi{10.48550/arXiv.2308.08155}.
+\newblock URL \url{https://arxiv.org/abs/2308.08155}.
+
+\bibitem[Yang et~al.(2025)Yang, Yu, Li, Liu, Huang, Huang, Jiang, Tu, Zhang,
+  Zhou, Lin, Dang, Yang, Yu, Li, Sun, Zhu, Men, He, Xu, Yin, Yu, Qiu, Ren,
+  Yang, Li, Xu, and Zhang]{yang2025qwen25oneM}
+An~Yang, Bowen Yu, Chengyuan Li, Dayiheng Liu, Fei Huang, Haoyan Huang,
+  Jiandong Jiang, Jianhong Tu, Jianwei Zhang, Jingren Zhou, Junyang Lin, Kai
+  Dang, Kexin Yang, Le~Yu, Mei Li, Minmin Sun, Qin Zhu, Rui Men, Tao He, Weijia
+  Xu, Wenbiao Yin, Wenyuan Yu, Xiafei Qiu, Xingzhang Ren, Xinlong Yang, Yong
+  Li, Zhiying Xu, and Zipeng Zhang.
+\newblock {Qwen2.5-1M} technical report.
+\newblock \emph{arXiv preprint arXiv:2501.15383}, 2025.
+\newblock \doi{10.48550/arXiv.2501.15383}.
+\newblock URL \url{https://arxiv.org/abs/2501.15383}.
+
+\bibitem[Yuan et~al.(2023)Yuan, Yuan, Li, Dong, Lu, Tan, Zhou, and
+  Zhou]{yuan2023scalingmath}
+Zheng Yuan, Hongyi Yuan, Chengpeng Li, Guanting Dong, Keming Lu, Chuanqi Tan,
+  Chang Zhou, and Jingren Zhou.
+\newblock Scaling relationship on learning mathematical reasoning with large
+  language models.
+\newblock \emph{arXiv preprint arXiv:2308.01825}, 2023.
+\newblock \doi{10.48550/arXiv.2308.01825}.
+\newblock URL \url{https://arxiv.org/abs/2308.01825}.
+
+\bibitem[Zhou et~al.(2023{\natexlab{a}})Zhou, Liu, Xu, Iyer, Sun, Mao, Ma,
+  Efrat, Yu, Yu, Zhang, Ghosh, Lewis, Zettlemoyer, and Levy]{zhou2023lima}
+Chunting Zhou, Pengfei Liu, Puxin Xu, Srini Iyer, Jiao Sun, Yuning Mao, Xuezhe
+  Ma, Avia Efrat, Ping Yu, Lili Yu, Susan Zhang, Gargi Ghosh, Mike Lewis, Luke
+  Zettlemoyer, and Omer Levy.
+\newblock Lima: Less is more for alignment.
+\newblock \emph{arXiv preprint arXiv:2305.11206}, 2023{\natexlab{a}}.
+\newblock \doi{10.48550/arXiv.2305.11206}.
+\newblock URL \url{https://arxiv.org/abs/2305.11206}.
+
+\bibitem[Zhou et~al.(2023{\natexlab{b}})Zhou, Sch{\"a}rli, Hou, Wei, Scales,
+  Wang, Schuurmans, Cui, Bousquet, Le, and Chi]{zhou2022leasttomost}
+Denny Zhou, Nathanael Sch{\"a}rli, Le~Hou, Jason Wei, Nathan Scales, Xuezhi
+  Wang, Dale Schuurmans, Claire Cui, Olivier Bousquet, Quoc Le, and Ed~Chi.
+\newblock Least-to-most prompting enables complex reasoning in large language
+  models.
+\newblock In \emph{International Conference on Learning Representations},
+  2023{\natexlab{b}}.
+\newblock \doi{10.48550/arXiv.2205.10625}.
+\newblock URL \url{https://arxiv.org/abs/2205.10625}.
+\newblock arXiv:2205.10625.
+
+\end{thebibliography}

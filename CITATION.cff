@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this paper or source package, please cite it using this metadata."
+title: "Artificial Evaluation Network (AEN): Runtime-at-Boot, Certified Context Loading, and Triadic Controller Algorithms for Mathematical Reasoning"
+type: article
+authors:
+  - family-names: Paudel
+    given-names: Aaditya
+version: "v1.0-preprint-2026-04-22"
+date-released: "2026-04-22"
+keywords:
+  - Artificial Evaluation Network
+  - Runtime-at-Boot
+  - mathematical reasoning
+  - multi-agent systems
+  - long-context inference
+  - exact-answer evaluation

@@ -1,0 +1,4 @@
+closeout_mode,frozen_cases,frozen_correct,frozen_accuracy,unrestricted_cases,unrestricted_correct,unrestricted_accuracy
+Strict consensus,16,14,0.875,16,14,0.875
+Majority vote,7,1,0.1428571428571428,13,8,0.6153846153846154
+Highest confidence,7,0,0.0,1,0,0.0
