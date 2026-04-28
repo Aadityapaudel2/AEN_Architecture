@@ -1,0 +1,22 @@
+run_key,run_label,slice,cases,correct,losses,accuracy,mean_total_tokens,mean_seconds
+frozen,Paper frozen pruned,Q1-Q5,5,5,0,1.0,705054.0,165.388
+frozen,Paper frozen pruned,Q6-Q10,5,3,2,0.6,709823.6,180.373
+frozen,Paper frozen pruned,Q11-Q15,5,0,5,0.0,717360.0,200.761
+frozen,Paper frozen pruned,Q16-Q20,5,2,3,0.4,707411.0,172.089
+frozen,Paper frozen pruned,Q21-Q25,5,4,1,0.8,711664.8,184.623
+frozen,Paper frozen pruned,Q26-Q30,5,1,4,0.2,715288.8,194.652
+frozen,Paper frozen pruned,Q1-Q30,30,15,15,0.5,711100.4,182.981
+unrestricted,Paper unrestricted,Q1-Q5,5,5,0,1.0,1045881.6,250.739
+unrestricted,Paper unrestricted,Q6-Q10,5,3,2,0.6,1116613.8,342.494
+unrestricted,Paper unrestricted,Q11-Q15,5,2,3,0.4,1155106.0,417.869
+unrestricted,Paper unrestricted,Q16-Q20,5,4,1,0.8,1117573.6,388.871
+unrestricted,Paper unrestricted,Q21-Q25,5,5,0,1.0,1161708.2,428.496
+unrestricted,Paper unrestricted,Q26-Q30,5,3,2,0.6,1155820.2,453.876
+unrestricted,Paper unrestricted,Q1-Q30,30,22,8,0.7333,1125450.6,380.391
+current,Current Apr27 0.2.3,Q1-Q5,5,4,1,0.8,105312.4,250.548
+current,Current Apr27 0.2.3,Q6-Q10,5,3,2,0.6,125234.0,328.867
+current,Current Apr27 0.2.3,Q11-Q15,5,4,1,0.8,142504.8,393.491
+current,Current Apr27 0.2.3,Q16-Q20,5,4,1,0.8,125639.2,323.177
+current,Current Apr27 0.2.3,Q21-Q25,5,4,1,0.8,131015.8,355.427
+current,Current Apr27 0.2.3,Q26-Q30,5,2,3,0.4,142041.8,409.935
+current,Current Apr27 0.2.3,Q1-Q30,30,21,9,0.7,128624.7,343.574

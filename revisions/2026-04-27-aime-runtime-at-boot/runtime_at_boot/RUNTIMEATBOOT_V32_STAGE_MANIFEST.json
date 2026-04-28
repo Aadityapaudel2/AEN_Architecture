@@ -1,0 +1,63 @@
+{
+  "package_id": "runtimeatboot_v32_stage_20260427",
+  "status": "replacement_ready_stage_not_published",
+  "created": "2026-04-27",
+  "dataset_version": 32,
+  "base_dataset": "N:\\Research\\runtimeatbootdataset",
+  "staged_dataset": "N:\\Research\\Updates_to_AEN\\runtimeatboot_v32_stage_20260427\\runtimeatbootdataset",
+  "v32_source_manifest": "N:\\Research\\Updates_to_AEN\\bootupdates\\v32_class_strengthening_20260427\\MANIFEST_AIME_V32_CLASS_STRENGTHENING_20260427.json",
+  "replacement_mode": "canonical_filenames_with_v32_rows_prepended",
+  "v33_memory_probe_included": false,
+  "certification_harness_audit_status": "passed",
+  "certification_harness_total_answer_distribution": {
+    "A": 4,
+    "B": 4,
+    "C": 5,
+    "D": 5
+  },
+  "line_counts": [
+    {
+      "role": "athena",
+      "study_base_count": 100,
+      "study_v32_overlay_count": 6,
+      "study_staged_count": 106,
+      "cert_base_count": 200,
+      "cert_v32_overlay_count": 6,
+      "cert_staged_count": 206,
+      "study_staged_path": "Updates_to_AEN\\runtimeatboot_v32_stage_20260427\\runtimeatbootdataset\\boot\\athena\\Athena_epistemic_boot_100_final_hq.ndjson",
+      "cert_staged_path": "Updates_to_AEN\\runtimeatboot_v32_stage_20260427\\runtimeatbootdataset\\boot\\athena\\Athena_epistemic_boot_100_final_certification_hq.ndjson"
+    },
+    {
+      "role": "aria",
+      "study_base_count": 95,
+      "study_v32_overlay_count": 6,
+      "study_staged_count": 101,
+      "cert_base_count": 190,
+      "cert_v32_overlay_count": 6,
+      "cert_staged_count": 196,
+      "study_staged_path": "Updates_to_AEN\\runtimeatboot_v32_stage_20260427\\runtimeatbootdataset\\boot\\aria\\Aria_problem_proof_boot_100_final.ndjson",
+      "cert_staged_path": "Updates_to_AEN\\runtimeatboot_v32_stage_20260427\\runtimeatbootdataset\\boot\\aria\\Aria_problem_proof_boot_100_final_mcq_2q.ndjson"
+    },
+    {
+      "role": "artemis",
+      "study_base_count": 95,
+      "study_v32_overlay_count": 6,
+      "study_staged_count": 101,
+      "cert_base_count": 190,
+      "cert_v32_overlay_count": 6,
+      "cert_staged_count": 196,
+      "study_staged_path": "Updates_to_AEN\\runtimeatboot_v32_stage_20260427\\runtimeatbootdataset\\boot\\artemis\\Artemis_problem_proof_boot_100_final_hq.ndjson",
+      "cert_staged_path": "Updates_to_AEN\\runtimeatboot_v32_stage_20260427\\runtimeatbootdataset\\boot\\artemis\\Artemis_problem_proof_boot_100_final_hq_mcq.ndjson"
+    }
+  ],
+  "key_files": {
+    "replacement_plan": "N:\\Research\\Updates_to_AEN\\runtimeatboot_v32_stage_20260427\\RUNTIMEATBOOT_V32_REPLACEMENT_PLAN.md",
+    "formal_contract": "N:\\Research\\Updates_to_AEN\\runtimeatboot_v32_stage_20260427\\RUNTIMEATBOOT_V32_FORMAL_CONTRACT.md",
+    "global_directive": "N:\\Research\\Updates_to_AEN\\runtimeatboot_v32_stage_20260427\\GLOBAL_DIRECTIVE_V32_CLASS_STRENGTHENING.md",
+    "certification_harness_audit_json": "N:\\Research\\Updates_to_AEN\\runtimeatboot_v32_stage_20260427\\CERTIFICATION_HARNESS_AUDIT_V32.json",
+    "certification_harness_audit_md": "N:\\Research\\Updates_to_AEN\\runtimeatboot_v32_stage_20260427\\CERTIFICATION_HARNESS_AUDIT_V32.md",
+    "inventory": "N:\\Research\\Updates_to_AEN\\runtimeatboot_v32_stage_20260427\\STAGE_FILE_INVENTORY.csv",
+    "staged_runtime_manifest": "N:\\Research\\Updates_to_AEN\\runtimeatboot_v32_stage_20260427\\runtimeatbootdataset\\runtimeatboot_manifest.json",
+    "staged_boundary": "N:\\Research\\Updates_to_AEN\\runtimeatboot_v32_stage_20260427\\runtimeatbootdataset\\SANITIZED_BOOT_MEMORY_BOUNDARY.json"
+  }
+}

@@ -1,0 +1,91 @@
+run_key,run_label,idx,id,answer,expected_answer,correct,status,closeout_mode,total_tokens,time_taken_seconds,turns,loops,total_prompt_tokens,total_completion_tokens
+frozen,Paper frozen pruned,1,aime2026_01,277,277,True,closed_out_exact_integer_consensus_strict_confidence_on_athena_finalization,Strict consensus,695404,139.609,9,1,690401,5003
+frozen,Paper frozen pruned,2,aime2026_02,62,62,True,closed_out_exact_integer_consensus_strict_confidence_on_athena_finalization,Strict consensus,710845,184.0094,9,1,702957,7888
+frozen,Paper frozen pruned,3,aime2026_03,79,79,True,closed_out_exact_integer_consensus_strict_confidence_on_athena_finalization,Strict consensus,702855,157.0014,9,1,696709,6146
+frozen,Paper frozen pruned,4,aime2026_04,70,70,True,closed_out_exact_integer_consensus_strict_confidence_on_athena_finalization,Strict consensus,699345,149.9743,9,1,693650,5695
+frozen,Paper frozen pruned,5,aime2026_05,65,65,True,closed_out_exact_integer_consensus_strict_confidence_on_athena_finalization,Strict consensus,716821,196.3436,9,1,708239,8582
+frozen,Paper frozen pruned,6,aime2026_06,441,441,True,closed_out_exact_integer_consensus_strict_confidence_on_athena_finalization,Strict consensus,697554,143.9269,9,1,692265,5289
+frozen,Paper frozen pruned,7,aime2026_07,396,396,True,closed_out_hierarchical_fallback_majority_vote,Majority vote,709711,181.2938,9,1,701994,7717
+frozen,Paper frozen pruned,8,aime2026_08,244,244,True,closed_out_exact_integer_consensus_strict_confidence_on_athena_finalization,Strict consensus,703053,159.9178,9,1,696753,6300
+frozen,Paper frozen pruned,9,aime2026_09,239,29,False,closed_out_hierarchical_fallback_majority_vote,Majority vote,719314,206.9014,9,1,710038,9276
+frozen,Paper frozen pruned,10,aime2026_10,195,156,False,closed_out_hierarchical_fallback_highest_confidence,Highest confidence,719486,209.8239,9,1,710002,9484
+frozen,Paper frozen pruned,11,aime2026_11,8,896,False,closed_out_exact_integer_consensus_strict_confidence_on_athena_finalization,Strict consensus,711396,179.6747,9,1,703866,7530
+frozen,Paper frozen pruned,12,aime2026_12,37,161,False,closed_out_hierarchical_fallback_highest_confidence,Highest confidence,720114,209.9483,9,1,710631,9483
+frozen,Paper frozen pruned,13,aime2026_13,58,39,False,closed_out_hierarchical_fallback_highest_confidence,Highest confidence,720072,210.0039,9,1,710589,9483
+frozen,Paper frozen pruned,14,aime2026_14,382,681,False,closed_out_hierarchical_fallback_majority_vote,Majority vote,716369,198.8761,9,1,707625,8744
+frozen,Paper frozen pruned,15,aime2026_15,1,83,False,closed_out_hierarchical_fallback_majority_vote,Majority vote,718849,205.3026,9,1,709645,9204
+frozen,Paper frozen pruned,16,aime2026_16,178,178,True,closed_out_exact_integer_consensus_strict_confidence_on_athena_finalization,Strict consensus,695300,139.2602,9,1,690292,5008
+frozen,Paper frozen pruned,17,aime2026_17,10,243,False,closed_out_hierarchical_fallback_highest_confidence,Highest confidence,721538,210.1997,9,1,712055,9483
+frozen,Paper frozen pruned,18,aime2026_18,999,503,False,closed_out_hierarchical_fallback_majority_vote,Majority vote,719602,209.4867,9,1,710151,9451
+frozen,Paper frozen pruned,19,aime2026_19,271,279,False,closed_out_hierarchical_fallback_majority_vote,Majority vote,701936,157.6949,9,1,695780,6156
+frozen,Paper frozen pruned,20,aime2026_20,190,190,True,closed_out_exact_integer_consensus_strict_confidence_on_athena_finalization,Strict consensus,698679,143.8037,9,1,693462,5217
+frozen,Paper frozen pruned,21,aime2026_21,50,50,True,closed_out_exact_integer_consensus_strict_confidence_on_athena_finalization,Strict consensus,717023,201.8727,9,1,708050,8973
+frozen,Paper frozen pruned,22,aime2026_22,754,754,True,closed_out_exact_integer_consensus_strict_confidence_on_athena_finalization,Strict consensus,710160,175.6814,9,1,702849,7311
+frozen,Paper frozen pruned,23,aime2026_23,125,245,False,closed_out_hierarchical_fallback_highest_confidence,Highest confidence,719205,209.8621,9,1,709721,9484
+frozen,Paper frozen pruned,24,aime2026_24,669,669,True,closed_out_exact_integer_consensus_strict_confidence_on_athena_finalization,Strict consensus,708800,174.6898,9,1,701565,7235
+frozen,Paper frozen pruned,25,aime2026_25,850,850,True,closed_out_exact_integer_consensus_strict_confidence_on_athena_finalization,Strict consensus,703136,161.0107,9,1,696752,6384
+frozen,Paper frozen pruned,26,aime2026_26,132,132,True,closed_out_exact_integer_consensus_strict_confidence_on_athena_finalization,Strict consensus,706251,165.9005,9,1,699561,6690
+frozen,Paper frozen pruned,27,aime2026_27,97,223,False,closed_out_exact_integer_consensus_strict_confidence_on_athena_finalization,Strict consensus,714856,191.1712,9,1,706600,8256
+frozen,Paper frozen pruned,28,aime2026_28,4040,107,False,closed_out_hierarchical_fallback_highest_confidence,Highest confidence,719067,209.9312,9,1,709582,9485
+frozen,Paper frozen pruned,29,aime2026_29,65,157,False,closed_out_hierarchical_fallback_majority_vote,Majority vote,716415,196.2257,9,1,707844,8571
+frozen,Paper frozen pruned,30,aime2026_30,153,393,False,closed_out_hierarchical_fallback_highest_confidence,Highest confidence,719855,210.0297,9,1,710371,9484
+unrestricted,Paper unrestricted,1,aime2026_01,277,277,True,closed_out_exact_integer_consensus_strict_confidence_on_athena_finalization,Strict consensus,1049170,252.5908,11,1,1039760,9410
+unrestricted,Paper unrestricted,2,aime2026_02,62,62,True,closed_out_exact_integer_consensus_strict_confidence_on_athena_finalization,Strict consensus,1074559,282.5942,11,1,1063348,11211
+unrestricted,Paper unrestricted,3,aime2026_03,79,79,True,closed_out_exact_integer_consensus_strict_confidence_on_athena_finalization,Strict consensus,1031930,241.3054,11,1,1023013,8917
+unrestricted,Paper unrestricted,4,aime2026_04,70,70,True,closed_out_hierarchical_fallback_majority_vote,Majority vote,1038493,244.3833,11,1,1029439,9054
+unrestricted,Paper unrestricted,5,aime2026_05,65,65,True,closed_out_hierarchical_fallback_majority_vote,Majority vote,1035256,232.8215,11,1,1026891,8365
+unrestricted,Paper unrestricted,6,aime2026_06,441,441,True,closed_out_exact_integer_consensus_strict_confidence_on_athena_finalization,Strict consensus,1055694,259.121,11,1,1045831,9863
+unrestricted,Paper unrestricted,7,aime2026_07,396,396,True,closed_out_exact_integer_consensus_strict_confidence_on_athena_finalization,Strict consensus,1068798,289.676,11,1,1057136,11662
+unrestricted,Paper unrestricted,8,aime2026_08,244,244,True,closed_out_exact_integer_consensus_strict_confidence_on_athena_finalization,Strict consensus,1127006,356.8205,11,1,1111510,15496
+unrestricted,Paper unrestricted,9,aime2026_09,13,29,False,closed_out_exact_integer_consensus_strict_confidence_on_athena_finalization,Strict consensus,1155566,385.4591,11,1,1138535,17031
+unrestricted,Paper unrestricted,10,aime2026_10,134,156,False,closed_out_exact_integer_consensus_strict_confidence_on_athena_finalization,Strict consensus,1176005,421.3933,11,1,1156783,19222
+unrestricted,Paper unrestricted,11,aime2026_11,896,896,True,closed_out_exact_integer_consensus_strict_confidence_on_athena_finalization,Strict consensus,1112040,306.0137,11,1,1099658,12382
+unrestricted,Paper unrestricted,12,aime2026_12,161,161,True,closed_out_exact_integer_consensus_strict_confidence_on_athena_finalization,Strict consensus,1204749,463.928,11,1,1183237,21512
+unrestricted,Paper unrestricted,13,aime2026_13,79,39,False,closed_out_hierarchical_fallback_majority_vote,Majority vote,1131323,344.241,11,1,1116546,14777
+unrestricted,Paper unrestricted,14,aime2026_14,676,681,False,closed_out_hierarchical_fallback_majority_vote,Majority vote,1205032,563.2667,11,1,1176947,28085
+unrestricted,Paper unrestricted,15,aime2026_15,2,83,False,closed_out_hierarchical_fallback_majority_vote,Majority vote,1122386,411.8932,11,1,1103226,19160
+unrestricted,Paper unrestricted,16,aime2026_16,178,178,True,closed_out_exact_integer_consensus_strict_confidence_on_athena_finalization,Strict consensus,1023191,236.3964,11,1,1014542,8649
+unrestricted,Paper unrestricted,17,aime2026_17,243,243,True,closed_out_hierarchical_fallback_majority_vote,Majority vote,1228745,696.3507,11,1,1192697,36048
+unrestricted,Paper unrestricted,18,aime2026_18,997,503,False,closed_out_hierarchical_fallback_majority_vote,Majority vote,1186776,450.3463,11,1,1165931,20845
+unrestricted,Paper unrestricted,19,aime2026_19,279,279,True,closed_out_exact_integer_consensus_strict_confidence_on_athena_finalization,Strict consensus,1104156,314.4924,11,1,1091207,12949
+unrestricted,Paper unrestricted,20,aime2026_20,190,190,True,closed_out_hierarchical_fallback_majority_vote,Majority vote,1045000,246.7681,11,1,1035890,9110
+unrestricted,Paper unrestricted,21,aime2026_21,50,50,True,closed_out_hierarchical_fallback_majority_vote,Majority vote,1125454,340.5646,11,1,1110990,14464
+unrestricted,Paper unrestricted,22,aime2026_22,754,754,True,closed_out_exact_integer_consensus_strict_confidence_on_athena_finalization,Strict consensus,1097586,310.0993,11,1,1084909,12677
+unrestricted,Paper unrestricted,23,aime2026_23,245,245,True,closed_out_hierarchical_fallback_majority_vote,Majority vote,1259225,715.0727,11,1,1222416,36809
+unrestricted,Paper unrestricted,24,aime2026_24,669,669,True,closed_out_hierarchical_fallback_majority_vote,Majority vote,1176383,437.7933,11,1,1156120,20263
+unrestricted,Paper unrestricted,25,aime2026_25,850,850,True,closed_out_exact_integer_consensus_strict_confidence_on_athena_finalization,Strict consensus,1149893,338.951,11,1,1135781,14112
+unrestricted,Paper unrestricted,26,aime2026_26,132,132,True,closed_out_hierarchical_fallback_majority_vote,Majority vote,1143561,372.437,11,1,1127279,16282
+unrestricted,Paper unrestricted,27,aime2026_27,223,223,True,closed_out_exact_integer_consensus_strict_confidence_on_athena_finalization,Strict consensus,1105662,309.0078,11,1,1093093,12569
+unrestricted,Paper unrestricted,28,aime2026_28,107,107,True,closed_out_exact_integer_consensus_strict_confidence_on_athena_finalization,Strict consensus,1182933,525.0314,11,1,1157118,25815
+unrestricted,Paper unrestricted,29,aime2026_29,34,157,False,closed_out_hierarchical_fallback_highest_confidence,Highest confidence,1177801,512.7946,11,1,1152813,24988
+unrestricted,Paper unrestricted,30,aime2026_30,367,393,False,closed_out_hierarchical_fallback_majority_vote,Majority vote,1169144,550.1106,11,1,1141700,27444
+current,Current Apr27 0.2.3,1,aime2025_01,277,277,True,closed_out_simple_answer_arbitration,Simple answer arbitration,98267,212.0145,12,1,82415,15852
+current,Current Apr27 0.2.3,2,aime2025_02,62,62,True,closed_out_simple_answer_arbitration,Simple answer arbitration,117945,309.283,12,1,94705,23240
+current,Current Apr27 0.2.3,3,aime2025_03,79,79,True,closed_out_simple_answer_arbitration,Simple answer arbitration,114524,294.0366,12,1,92356,22168
+current,Current Apr27 0.2.3,4,aime2025_04,137,70,False,closed_out_simple_answer_arbitration,Simple answer arbitration,99911,227.6769,12,1,82829,17082
+current,Current Apr27 0.2.3,5,aime2025_05,65,65,True,closed_out_simple_answer_arbitration,Simple answer arbitration,95915,209.7284,12,1,80574,15341
+current,Current Apr27 0.2.3,6,aime2025_06,441,441,True,closed_out_simple_answer_arbitration,Simple answer arbitration,111256,265.0972,12,1,91371,19885
+current,Current Apr27 0.2.3,7,aime2025_07,396,396,True,closed_out_simple_answer_arbitration,Simple answer arbitration,94277,206.6352,12,1,78763,15514
+current,Current Apr27 0.2.3,8,aime2025_08,244,244,True,closed_out_simple_answer_arbitration,Simple answer arbitration,125208,313.1025,12,1,101737,23471
+current,Current Apr27 0.2.3,9,aime2025_09,6,29,False,closed_out_simple_answer_arbitration,Simple answer arbitration,152775,433.0795,12,1,120368,32407
+current,Current Apr27 0.2.3,10,aime2025_10,54,156,False,closed_out_simple_answer_arbitration,Simple answer arbitration,142654,426.4196,12,1,110681,31973
+current,Current Apr27 0.2.3,11,aime2025_11,896,896,True,closed_out_simple_answer_arbitration,Simple answer arbitration,130556,366.894,12,1,102942,27614
+current,Current Apr27 0.2.3,12,aime2025_12,161,161,True,closed_out_simple_answer_arbitration,Simple answer arbitration,130977,341.0977,12,1,105426,25551
+current,Current Apr27 0.2.3,13,aime2025_13,39,39,True,closed_out_simple_answer_arbitration,Simple answer arbitration,145768,404.061,12,1,115524,30244
+current,Current Apr27 0.2.3,14,aime2025_14,681,681,True,closed_out_simple_answer_arbitration,Simple answer arbitration,143609,391.578,12,1,114236,29373
+current,Current Apr27 0.2.3,15,aime2025_15,2,83,False,closed_out_simple_answer_arbitration,athena_mandatory_final_answer_turn,161614,463.8268,12,1,126859,34755
+current,Current Apr27 0.2.3,16,aime2025_16,178,178,True,closed_out_simple_answer_arbitration,athena_mandatory_final_answer_turn,83367,172.3122,12,1,70444,12923
+current,Current Apr27 0.2.3,17,aime2025_17,198,243,False,closed_out_simple_answer_arbitration,athena_mandatory_final_answer_turn,159387,470.4052,12,1,124146,35241
+current,Current Apr27 0.2.3,18,aime2025_18,503,503,True,closed_out_simple_answer_arbitration,athena_mandatory_final_answer_turn,150956,423.3091,12,1,119241,31715
+current,Current Apr27 0.2.3,19,aime2025_19,279,279,True,closed_out_simple_answer_arbitration,athena_mandatory_final_answer_turn,117174,283.2916,12,1,95904,21270
+current,Current Apr27 0.2.3,20,aime2025_20,190,190,True,closed_out_simple_answer_arbitration,athena_mandatory_final_answer_turn,117312,266.5648,12,1,97376,19936
+current,Current Apr27 0.2.3,21,aime2025_21,37,50,False,closed_out_simple_answer_arbitration,,116816,286.3699,12,1,95314,21502
+current,Current Apr27 0.2.3,22,aime2025_22,754,754,True,closed_out_simple_answer_arbitration,,132885,415.823,12,1,101557,31328
+current,Current Apr27 0.2.3,23,aime2025_23,245,245,True,closed_out_simple_answer_arbitration,,148306,409.0882,12,1,117696,30610
+current,Current Apr27 0.2.3,24,aime2025_24,669,669,True,closed_out_simple_answer_arbitration,,128769,332.2487,12,1,103835,24934
+current,Current Apr27 0.2.3,25,aime2025_25,850,850,True,closed_out_simple_answer_arbitration,,128303,333.6053,12,1,103277,25026
+current,Current Apr27 0.2.3,26,aime2025_26,132,132,True,closed_out_simple_answer_arbitration,,150118,415.7565,12,1,118947,31171
+current,Current Apr27 0.2.3,27,aime2025_27,67,223,False,closed_out_simple_answer_arbitration,,142291,448.917,12,1,108356,33935
+current,Current Apr27 0.2.3,28,aime2025_28,107,107,True,closed_out_simple_answer_arbitration,,145529,407.9371,12,1,114919,30610
+current,Current Apr27 0.2.3,29,aime2025_29,8,157,False,closed_out_simple_answer_arbitration,,128377,364.4512,12,1,100942,27435
+current,Current Apr27 0.2.3,30,aime2025_30,70,393,False,closed_out_simple_answer_arbitration,,143894,412.6145,12,1,112854,31040

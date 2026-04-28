@@ -1,0 +1,17 @@
+name: Reproducibility Question
+description: Ask about rerunning, auditing, or interpreting an AEN result artifact.
+title: "Reproducibility: "
+labels: [reproducibility]
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+      description: What are you trying to reproduce or audit?
+    validations:
+      required: true
+  - type: input
+    id: path
+    attributes:
+      label: Artifact or path
+      description: Repo-relative file or folder, if applicable.

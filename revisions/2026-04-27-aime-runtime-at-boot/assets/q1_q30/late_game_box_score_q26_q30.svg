@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="430" viewBox="0 0 1040 430">
+<rect width="100%" height="100%" fill="#101820"/>
+<style>text{font-family:Segoe UI,Arial,sans-serif;fill:#f7fafc}.kicker{font-size:13px;font-weight:700;fill:#ffcc33;letter-spacing:1px}.title{font-size:34px;font-weight:800}.subtitle{font-size:14px;fill:#cbd5e1}.label{font-size:13px}.small{font-size:11px;fill:#cbd5e1}.tiny{font-size:9px;fill:#cbd5e1}.score{font-size:58px;font-weight:900}.team{font-size:19px;font-weight:800}.red{fill:#ef4444}.green{fill:#22c55e}.blue{fill:#60a5fa}.gold{fill:#fbbf24}.muted{fill:#334155}.panel{fill:#17212f;stroke:#334155;stroke-width:1}.good{fill:#1f7a4d;stroke:#58d68d}.bad{fill:#9b2c2c;stroke:#f87171}.warn{fill:#8a6d1f;stroke:#fbbf24}.grid{stroke:#334155;stroke-width:1}.axis{stroke:#94a3b8;stroke-width:1}</style>
+<text x="28.0" y="38.0" class="kicker" text-anchor="start">LATE-GAME BOX SCORE</text>
+<text x="28.0" y="72.0" class="title" text-anchor="start">Q26-Q30 Current Run</text>
+<text x="45.0" y="110.0" class="small" text-anchor="start">Q</text>
+<text x="105.0" y="110.0" class="small" text-anchor="start">Result</text>
+<text x="205.0" y="110.0" class="small" text-anchor="start">Submitted</text>
+<text x="325.0" y="110.0" class="small" text-anchor="start">Expected</text>
+<text x="460.0" y="110.0" class="small" text-anchor="start">Peer State</text>
+<text x="690.0" y="110.0" class="small" text-anchor="start">Class</text>
+<text x="860.0" y="110.0" class="small" text-anchor="start">Closeout</text>
+<rect x="28.0" y="115.0" width="980.0" height="42.0" rx="6" class="good"/>
+<text x="45.0" y="141.0" class="team" text-anchor="start">26</text>
+<text x="105.0" y="141.0" class="team" text-anchor="start">W</text>
+<text x="205.0" y="141.0" class="label" text-anchor="start">132</text>
+<text x="325.0" y="141.0" class="label" text-anchor="start">132</text>
+<text x="460.0" y="141.0" class="small" text-anchor="start">peer_aligned_waiting_athena</text>
+<text x="690.0" y="141.0" class="small" text-anchor="start">control</text>
+<text x="860.0" y="141.0" class="small" text-anchor="start">ready=False</text>
+<rect x="28.0" y="167.0" width="980.0" height="42.0" rx="6" class="bad"/>
+<text x="45.0" y="193.0" class="team" text-anchor="start">27</text>
+<text x="105.0" y="193.0" class="team" text-anchor="start">L</text>
+<text x="205.0" y="193.0" class="label" text-anchor="start">67</text>
+<text x="325.0" y="193.0" class="label" text-anchor="start">223</text>
+<text x="460.0" y="193.0" class="small" text-anchor="start">insufficient_peer_validation</text>
+<text x="690.0" y="193.0" class="small" text-anchor="start">geometry center-distance closure</text>
+<text x="860.0" y="193.0" class="small" text-anchor="start">ready=False</text>
+<rect x="28.0" y="219.0" width="980.0" height="42.0" rx="6" class="good"/>
+<text x="45.0" y="245.0" class="team" text-anchor="start">28</text>
+<text x="105.0" y="245.0" class="team" text-anchor="start">W</text>
+<text x="205.0" y="245.0" class="label" text-anchor="start">107</text>
+<text x="325.0" y="245.0" class="label" text-anchor="start">107</text>
+<text x="460.0" y="245.0" class="small" text-anchor="start">peer_aligned_waiting_athena</text>
+<text x="690.0" y="245.0" class="small" text-anchor="start">control</text>
+<text x="860.0" y="245.0" class="small" text-anchor="start">ready=False</text>
+<rect x="28.0" y="271.0" width="980.0" height="42.0" rx="6" class="bad"/>
+<text x="45.0" y="297.0" class="team" text-anchor="start">29</text>
+<text x="105.0" y="297.0" class="team" text-anchor="start">L</text>
+<text x="205.0" y="297.0" class="label" text-anchor="start">8</text>
+<text x="325.0" y="297.0" class="label" text-anchor="start">157</text>
+<text x="460.0" y="297.0" class="small" text-anchor="start">disagreement_open</text>
+<text x="690.0" y="297.0" class="small" text-anchor="start">state recurrence with recovery</text>
+<text x="860.0" y="297.0" class="small" text-anchor="start">ready=False</text>
+<rect x="28.0" y="323.0" width="980.0" height="42.0" rx="6" class="bad"/>
+<text x="45.0" y="349.0" class="team" text-anchor="start">30</text>
+<text x="105.0" y="349.0" class="team" text-anchor="start">L</text>
+<text x="205.0" y="349.0" class="label" text-anchor="start">70</text>
+<text x="325.0" y="349.0" class="label" text-anchor="start">393</text>
+<text x="460.0" y="349.0" class="small" text-anchor="start">disagreement_open</text>
+<text x="690.0" y="349.0" class="small" text-anchor="start">modular enumeration completeness</text>
+<text x="860.0" y="349.0" class="small" text-anchor="start">ready=False</text>
+<text x="28.0" y="396.0" class="subtitle" text-anchor="start">New misses: Q27 geometry closure, Q29 signed-state recurrence, Q30 modular enumeration completeness.</text>
+</svg>

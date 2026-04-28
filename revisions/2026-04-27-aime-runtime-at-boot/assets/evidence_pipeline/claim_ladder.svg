@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="360" viewBox="0 0 980 360" role="img" aria-labelledby="title desc">
+  <title id="title">April 27 revision claim ladder</title>
+  <desc id="desc">A five-step ladder separating archived score, token compression, YAML study rows, RuntimeAtBoot certification, and pending corrected run.</desc>
+  <style>
+    .bg { fill: #f8fafc; }
+    .title { font: 700 28px Arial, sans-serif; fill: #111827; }
+    .subtitle { font: 15px Arial, sans-serif; fill: #475569; }
+    .box { fill: #ffffff; stroke: #cbd5e1; stroke-width: 1.5; rx: 8; }
+    .box-strong { fill: #ecfeff; stroke: #0891b2; stroke-width: 2; rx: 8; }
+    .label { font: 700 16px Arial, sans-serif; fill: #0f172a; }
+    .small { font: 13px Arial, sans-serif; fill: #334155; }
+    .warn { fill: #fff7ed; stroke: #f97316; stroke-width: 1.5; rx: 8; }
+    .arrow { stroke: #64748b; stroke-width: 2; marker-end: url(#arrow); }
+  </style>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#64748b"/>
+    </marker>
+  </defs>
+  <rect class="bg" x="0" y="0" width="980" height="360"/>
+  <text class="title" x="40" y="52">Claim ladder for the April 27 revision</text>
+  <text class="subtitle" x="40" y="78">Promising architecture evidence is separated from the still-pending corrected full run.</text>
+
+  <rect class="box" x="40" y="116" width="160" height="118"/>
+  <text class="label" x="60" y="146">Archived score</text>
+  <text class="small" x="60" y="174">Current Q1-Q30</text>
+  <text class="small" x="60" y="196">is 21/30</text>
+  <text class="small" x="60" y="218">not final rerun</text>
+
+  <line class="arrow" x1="208" y1="175" x2="246" y2="175"/>
+
+  <rect class="box-strong" x="254" y="116" width="160" height="118"/>
+  <text class="label" x="274" y="146">Compression</text>
+  <text class="small" x="274" y="174">~128k mean</text>
+  <text class="small" x="274" y="196">~140k high end</text>
+  <text class="small" x="274" y="218">vs ~1M prior</text>
+
+  <line class="arrow" x1="422" y1="175" x2="460" y2="175"/>
+
+  <rect class="box" x="468" y="116" width="160" height="118"/>
+  <text class="label" x="488" y="146">YAML studies</text>
+  <text class="small" x="488" y="174">schema and route</text>
+  <text class="small" x="488" y="196">without exact givens</text>
+  <text class="small" x="488" y="218">or answer values</text>
+
+  <line class="arrow" x1="636" y1="175" x2="674" y2="175"/>
+
+  <rect class="box-strong" x="682" y="116" width="160" height="118"/>
+  <text class="label" x="702" y="146">RuntimeAtBoot</text>
+  <text class="small" x="702" y="174">v32 certification</text>
+  <text class="small" x="702" y="196">is net positive</text>
+  <text class="small" x="702" y="218">with transcript audit</text>
+
+  <rect class="warn" x="308" y="266" width="364" height="56"/>
+  <text class="label" x="332" y="290">Boundary</text>
+  <text class="small" x="332" y="312">Corrected full Q1-Q30 run is pending while live execution continues.</text>
+
+  <line class="arrow" x1="762" y1="238" x2="672" y2="280"/>
+</svg>

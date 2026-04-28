@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="620" viewBox="0 0 1120 620">
+<rect width="100%" height="100%" fill="#101820"/>
+<style>text{font-family:Segoe UI,Arial,sans-serif;fill:#f7fafc}.kicker{font-size:13px;font-weight:700;fill:#ffcc33;letter-spacing:1px}.title{font-size:34px;font-weight:800}.subtitle{font-size:14px;fill:#cbd5e1}.label{font-size:13px}.small{font-size:11px;fill:#cbd5e1}.tiny{font-size:9px;fill:#cbd5e1}.score{font-size:58px;font-weight:900}.team{font-size:19px;font-weight:800}.red{fill:#ef4444}.green{fill:#22c55e}.blue{fill:#60a5fa}.gold{fill:#fbbf24}.muted{fill:#334155}.panel{fill:#17212f;stroke:#334155;stroke-width:1}.good{fill:#1f7a4d;stroke:#58d68d}.bad{fill:#9b2c2c;stroke:#f87171}.warn{fill:#8a6d1f;stroke:#fbbf24}.grid{stroke:#334155;stroke-width:1}.axis{stroke:#94a3b8;stroke-width:1}</style>
+<text x="28.0" y="38.0" class="kicker" text-anchor="start">FILM ROOM</text>
+<text x="28.0" y="72.0" class="title" text-anchor="start">Current Misses By V32 Training Class</text>
+<text x="48.0" y="110.0" class="small" text-anchor="start">Q</text>
+<text x="105.0" y="110.0" class="small" text-anchor="start">Submitted/Expected</text>
+<text x="265.0" y="110.0" class="small" text-anchor="start">Class</text>
+<text x="455.0" y="110.0" class="small" text-anchor="start">Failure Mode</text>
+<text x="820.0" y="110.0" class="small" text-anchor="start">Peer State</text>
+<rect x="28.0" y="120.0" width="1060.0" height="38.0" rx="6" class="panel"/>
+<text x="48.0" y="145.0" class="team" text-anchor="start">4</text>
+<text x="105.0" y="145.0" class="label" text-anchor="start">137/70</text>
+<text x="265.0" y="145.0" class="small" text-anchor="start">C1 image vs witness</text>
+<text x="455.0" y="145.0" class="small" text-anchor="start">image_vs_witness_count</text>
+<text x="820.0" y="145.0" class="small" text-anchor="start">answer_aligned_waiting_confidence</text>
+<rect x="28.0" y="164.0" width="1060.0" height="38.0" rx="6" class="panel"/>
+<text x="48.0" y="189.0" class="team" text-anchor="start">9</text>
+<text x="105.0" y="189.0" class="label" text-anchor="start">6/29</text>
+<text x="265.0" y="189.0" class="small" text-anchor="start">C2 conditional ledger</text>
+<text x="455.0" y="189.0" class="small" text-anchor="start">conditional_denominator_and_closeout</text>
+<text x="820.0" y="189.0" class="small" text-anchor="start">disagreement_open</text>
+<rect x="28.0" y="208.0" width="1060.0" height="38.0" rx="6" class="panel"/>
+<text x="48.0" y="233.0" class="team" text-anchor="start">10</text>
+<text x="105.0" y="233.0" class="label" text-anchor="start">54/156</text>
+<text x="265.0" y="233.0" class="small" text-anchor="start">C4 geometry closure</text>
+<text x="455.0" y="233.0" class="small" text-anchor="start">coordinate_arithmetic_closeout</text>
+<text x="820.0" y="233.0" class="small" text-anchor="start">disagreement_open</text>
+<rect x="28.0" y="252.0" width="1060.0" height="38.0" rx="6" class="panel"/>
+<text x="48.0" y="277.0" class="team" text-anchor="start">15</text>
+<text x="105.0" y="277.0" class="label" text-anchor="start">2/83</text>
+<text x="265.0" y="277.0" class="small" text-anchor="start">C5 exact-cover completeness</text>
+<text x="455.0" y="277.0" class="small" text-anchor="start">tiling_exact_cover_completeness</text>
+<text x="820.0" y="277.0" class="small" text-anchor="start">confidence_aligned</text>
+<rect x="28.0" y="296.0" width="1060.0" height="38.0" rx="6" class="panel"/>
+<text x="48.0" y="321.0" class="team" text-anchor="start">17</text>
+<text x="105.0" y="321.0" class="label" text-anchor="start">198/243</text>
+<text x="265.0" y="321.0" class="small" text-anchor="start">C3 endpoint recurrence</text>
+<text x="455.0" y="321.0" class="small" text-anchor="start">endpoint_path_recurrence_and_closeout</text>
+<text x="820.0" y="321.0" class="small" text-anchor="start">insufficient_peer_validation</text>
+<rect x="28.0" y="340.0" width="1060.0" height="38.0" rx="6" class="panel"/>
+<text x="48.0" y="365.0" class="team" text-anchor="start">21</text>
+<text x="105.0" y="365.0" class="label" text-anchor="start">37/50</text>
+<text x="265.0" y="365.0" class="small" text-anchor="start">C4 answer contract</text>
+<text x="455.0" y="365.0" class="small" text-anchor="start">answer_contract_mismatch_noninteger_expression</text>
+<text x="820.0" y="365.0" class="small" text-anchor="start">disagreement_open</text>
+<rect x="28.0" y="384.0" width="1060.0" height="38.0" rx="6" class="panel"/>
+<text x="48.0" y="409.0" class="team" text-anchor="start">27</text>
+<text x="105.0" y="409.0" class="label" text-anchor="start">67/223</text>
+<text x="265.0" y="409.0" class="small" text-anchor="start">C4 geometry center-distance closure</text>
+<text x="455.0" y="409.0" class="small" text-anchor="start">geometry_center_distance_closure</text>
+<text x="820.0" y="409.0" class="small" text-anchor="start">insufficient_peer_validation</text>
+<rect x="28.0" y="428.0" width="1060.0" height="38.0" rx="6" class="panel"/>
+<text x="48.0" y="453.0" class="team" text-anchor="start">29</text>
+<text x="105.0" y="453.0" class="label" text-anchor="start">8/157</text>
+<text x="265.0" y="453.0" class="small" text-anchor="start">C3 state recurrence with recovery</text>
+<text x="455.0" y="453.0" class="small" text-anchor="start">state_recurrence_negative_recovery</text>
+<text x="820.0" y="453.0" class="small" text-anchor="start">disagreement_open</text>
+<rect x="28.0" y="472.0" width="1060.0" height="38.0" rx="6" class="panel"/>
+<text x="48.0" y="497.0" class="team" text-anchor="start">30</text>
+<text x="105.0" y="497.0" class="label" text-anchor="start">70/393</text>
+<text x="265.0" y="497.0" class="small" text-anchor="start">C5 modular enumeration completeness</text>
+<text x="455.0" y="497.0" class="small" text-anchor="start">modular_enumeration_incomplete</text>
+<text x="820.0" y="497.0" class="small" text-anchor="start">disagreement_open</text>
+<text x="28.0" y="590.0" class="subtitle" text-anchor="start">The class coverage is coherent: C1/C2/C3/C4/C5 all appear, with C4 and C5 now carrying the most late-run weight.</text>
+</svg>

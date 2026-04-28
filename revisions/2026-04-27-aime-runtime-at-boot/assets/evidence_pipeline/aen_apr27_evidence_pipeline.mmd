@@ -1,0 +1,7 @@
+flowchart LR
+    F[Paper frozen pruned<br/>15/30 full<br/>8/15 on Q1-Q15] --> C[Current Apr27 0.2.3<br/>Q1-Q5 4/5<br/>Q6-Q10 3/5<br/>Q11-Q15 4/5]
+    U[Paper unrestricted<br/>22/30 full, 73.33%<br/>10/15 on Q1-Q15] --> C
+    C --> R[Q4 regression<br/>137 vs 70<br/>count object mismatch]
+    C --> P[Q9-Q10 persistent misses<br/>Q15 remains missed<br/>closed despite weak diagnostics]
+    R --> O[Update package<br/>reports, CSVs, visualizations]
+    P --> O

@@ -1,0 +1,45 @@
+{
+  "event": "runtimeatboot_dataset_boot_memory_boundary_sanitized",
+  "date": "2026-04-27",
+  "status": "v32_class_strengthening_stage_with_certification_keys_separated",
+  "archive_root": "D:\\AthenaPlayground\\AthenaV5\\kaggle_aimo3\\results\\runtime_dataset_archives\\voe_removed_20260419-200335",
+  "legacy_smoke_test1_archive_root": "D:\\AthenaPlayground\\AthenaV5\\kaggle_aimo3\\results\\runtime_dataset_archives\\legacy_smoke_test1_removed_20260419-2058",
+  "boot_counts_after": {
+    "athena_study": 106,
+    "athena_certification": 206,
+    "aria_study": 101,
+    "aria_certification": 196,
+    "artemis_study": 101,
+    "artemis_certification": 196
+  },
+  "embedded_clean_eval": {
+    "relative_root": "test/voe_eval_clean19",
+    "csv": "test/voe_eval_clean19/voe_clean19_integer.csv",
+    "key_csv": "test/voe_eval_clean19/voe_clean19_integer_key.csv",
+    "rows": 19
+  },
+  "residual_answer_bearing_voe_golden_boot_rows": 0,
+  "certification_files_contain_mcq_answer_keys": true,
+  "solve_prompt_contract": "Solve prompts may ingest v32 study rows as explicit RuntimeAtBoot memory. Certification rows contain answer keys and must remain certification-only unless converted to answer-free study text.",
+  "note": "The dataset may contain clean evaluation files under test/, but boot/ contains no answer-bearing VoE golden transcript rows. Certification files contain MCQ answer keys for the boot gate only.",
+  "v32_overlay": {
+    "included": true,
+    "rows_per_role": 6,
+    "position": "prepended",
+    "type": "non_isomorphic_problem_class_artifacts",
+    "memory_probe_shards_included": false
+  },
+  "certification_harness_contract": {
+    "purpose": "Prove the v32 class artifacts were read and are available for targeted study.",
+    "scoring": "single-letter MCQ is allowed for speed",
+    "anti_pattern": "Do not use a fixed answer-letter track or certification-only recall as evidence of live reasoning.",
+    "required_cert_row_fields": [
+      "certification_contract",
+      "expected_reasoning",
+      "rubric",
+      "option_diagnostics",
+      "harness_tightening"
+    ],
+    "v33_memory_probe_status": "not_included"
+  }
+}

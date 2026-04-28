@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="470" viewBox="0 0 1180 470">
+<rect width="100%" height="100%" fill="#101820"/>
+<style>text{font-family:Segoe UI,Arial,sans-serif;fill:#f7fafc}.kicker{font-size:13px;font-weight:700;fill:#ffcc33;letter-spacing:1px}.title{font-size:34px;font-weight:800}.subtitle{font-size:14px;fill:#cbd5e1}.label{font-size:13px}.small{font-size:11px;fill:#cbd5e1}.tiny{font-size:9px;fill:#cbd5e1}.score{font-size:58px;font-weight:900}.team{font-size:19px;font-weight:800}.red{fill:#ef4444}.green{fill:#22c55e}.blue{fill:#60a5fa}.gold{fill:#fbbf24}.muted{fill:#334155}.panel{fill:#17212f;stroke:#334155;stroke-width:1}.good{fill:#1f7a4d;stroke:#58d68d}.bad{fill:#9b2c2c;stroke:#f87171}.warn{fill:#8a6d1f;stroke:#fbbf24}.grid{stroke:#334155;stroke-width:1}.axis{stroke:#94a3b8;stroke-width:1}</style>
+<text x="28.0" y="38.0" class="kicker" text-anchor="start">AIME 2026 SCORECENTER</text>
+<text x="28.0" y="78.0" class="title" text-anchor="start">Unrestricted Wins The 30-Question Board</text>
+<text x="30.0" y="102.0" class="subtitle" text-anchor="start">Current finishes second: 21/30 overall after a 2/5 final chunk.</text>
+<rect x="38.0" y="130.0" width="320.0" height="190.0" rx="6" class="panel"/>
+<rect x="38.0" y="130.0" width="320.0" height="12.0" rx="0" fill="#1d4ed8"/>
+<text x="58.0" y="172.0" class="team" text-anchor="start">Unrestricted</text>
+<text x="58.0" y="246.0" class="score" text-anchor="start">22</text>
+<text x="166.0" y="246.0" class="title" text-anchor="start">/ 30</text>
+<text x="58.0" y="282.0" class="subtitle" text-anchor="start">Final chunk: 3-2</text>
+<text x="58.0" y="306.0" class="small" text-anchor="start">Mean tokens: 1,125,450</text>
+<rect x="398.0" y="130.0" width="320.0" height="190.0" rx="6" class="panel"/>
+<rect x="398.0" y="130.0" width="320.0" height="12.0" rx="0" fill="#16a34a"/>
+<text x="418.0" y="172.0" class="team" text-anchor="start">Current 0.2.3</text>
+<text x="418.0" y="246.0" class="score" text-anchor="start">21</text>
+<text x="526.0" y="246.0" class="title" text-anchor="start">/ 30</text>
+<text x="418.0" y="282.0" class="subtitle" text-anchor="start">Final chunk: 2-3</text>
+<text x="418.0" y="306.0" class="small" text-anchor="start">Mean tokens: 128,624</text>
+<rect x="758.0" y="130.0" width="320.0" height="190.0" rx="6" class="panel"/>
+<rect x="758.0" y="130.0" width="320.0" height="12.0" rx="0" fill="#64748b"/>
+<text x="778.0" y="172.0" class="team" text-anchor="start">Frozen</text>
+<text x="778.0" y="246.0" class="score" text-anchor="start">15</text>
+<text x="886.0" y="246.0" class="title" text-anchor="start">/ 30</text>
+<text x="778.0" y="282.0" class="subtitle" text-anchor="start">Final chunk: 1-4</text>
+<text x="778.0" y="306.0" class="small" text-anchor="start">Mean tokens: 711,100</text>
+<rect x="38.0" y="350.0" width="1040.0" height="70.0" rx="6" class="panel"/>
+<text x="60.0" y="382.0" class="kicker" text-anchor="start">HEADLINE</text>
+<text x="60.0" y="408.0" class="team" text-anchor="start">Current tied unrestricted through Q25, then lost the final segment by one problem.</text>
+<text x="662.0" y="408.0" class="subtitle" text-anchor="start">Q27/Q29/Q30 became the new tape to study.</text>
+</svg>

@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1050" height="490" viewBox="0 0 1050 490">
+<rect width="100%" height="100%" fill="#101820"/>
+<style>text{font-family:Segoe UI,Arial,sans-serif;fill:#f7fafc}.kicker{font-size:13px;font-weight:700;fill:#ffcc33;letter-spacing:1px}.title{font-size:34px;font-weight:800}.subtitle{font-size:14px;fill:#cbd5e1}.label{font-size:13px}.small{font-size:11px;fill:#cbd5e1}.tiny{font-size:9px;fill:#cbd5e1}.score{font-size:58px;font-weight:900}.team{font-size:19px;font-weight:800}.red{fill:#ef4444}.green{fill:#22c55e}.blue{fill:#60a5fa}.gold{fill:#fbbf24}.muted{fill:#334155}.panel{fill:#17212f;stroke:#334155;stroke-width:1}.good{fill:#1f7a4d;stroke:#58d68d}.bad{fill:#9b2c2c;stroke:#f87171}.warn{fill:#8a6d1f;stroke:#fbbf24}.grid{stroke:#334155;stroke-width:1}.axis{stroke:#94a3b8;stroke-width:1}</style>
+<text x="28.0" y="38.0" class="kicker" text-anchor="start">QUARTER-BY-QUARTER</text>
+<text x="28.0" y="72.0" class="title" text-anchor="start">Five-Question Chunk Accuracy</text>
+<line x1="86.0" y1="386.0" x2="956.0" y2="386.0" class="grid"/>
+<text x="76.0" y="390.0" class="small" text-anchor="end">0%</text>
+<line x1="86.0" y1="328.0" x2="956.0" y2="328.0" class="grid"/>
+<text x="76.0" y="332.0" class="small" text-anchor="end">20%</text>
+<line x1="86.0" y1="270.0" x2="956.0" y2="270.0" class="grid"/>
+<text x="76.0" y="274.0" class="small" text-anchor="end">40%</text>
+<line x1="86.0" y1="212.0" x2="956.0" y2="212.0" class="grid"/>
+<text x="76.0" y="216.0" class="small" text-anchor="end">60%</text>
+<line x1="86.0" y1="154.0" x2="956.0" y2="154.0" class="grid"/>
+<text x="76.0" y="158.0" class="small" text-anchor="end">80%</text>
+<line x1="86.0" y1="96.0" x2="956.0" y2="96.0" class="grid"/>
+<text x="76.0" y="100.0" class="small" text-anchor="end">100%</text>
+<text x="154.0" y="411.0" class="small" text-anchor="middle">Q1-Q5</text>
+<rect x="114.0" y="96.0" width="25.0" height="290.0" rx="6" fill="#94a3b8"/>
+<text x="126.5" y="91.0" class="tiny" text-anchor="middle">5/5</text>
+<rect x="146.0" y="96.0" width="25.0" height="290.0" rx="6" fill="#60a5fa"/>
+<text x="158.5" y="91.0" class="tiny" text-anchor="middle">5/5</text>
+<rect x="178.0" y="154.0" width="25.0" height="232.0" rx="6" fill="#22c55e"/>
+<text x="190.5" y="149.0" class="tiny" text-anchor="middle">4/5</text>
+<text x="299.0" y="411.0" class="small" text-anchor="middle">Q6-Q10</text>
+<rect x="259.0" y="212.0" width="25.0" height="174.0" rx="6" fill="#94a3b8"/>
+<text x="271.5" y="207.0" class="tiny" text-anchor="middle">3/5</text>
+<rect x="291.0" y="212.0" width="25.0" height="174.0" rx="6" fill="#60a5fa"/>
+<text x="303.5" y="207.0" class="tiny" text-anchor="middle">3/5</text>
+<rect x="323.0" y="212.0" width="25.0" height="174.0" rx="6" fill="#22c55e"/>
+<text x="335.5" y="207.0" class="tiny" text-anchor="middle">3/5</text>
+<text x="444.0" y="411.0" class="small" text-anchor="middle">Q11-Q15</text>
+<rect x="404.0" y="386.0" width="25.0" height="0.0" rx="6" fill="#94a3b8"/>
+<text x="416.5" y="381.0" class="tiny" text-anchor="middle">0/5</text>
+<rect x="436.0" y="270.0" width="25.0" height="116.0" rx="6" fill="#60a5fa"/>
+<text x="448.5" y="265.0" class="tiny" text-anchor="middle">2/5</text>
+<rect x="468.0" y="154.0" width="25.0" height="232.0" rx="6" fill="#22c55e"/>
+<text x="480.5" y="149.0" class="tiny" text-anchor="middle">4/5</text>
+<text x="589.0" y="411.0" class="small" text-anchor="middle">Q16-Q20</text>
+<rect x="549.0" y="270.0" width="25.0" height="116.0" rx="6" fill="#94a3b8"/>
+<text x="561.5" y="265.0" class="tiny" text-anchor="middle">2/5</text>
+<rect x="581.0" y="154.0" width="25.0" height="232.0" rx="6" fill="#60a5fa"/>
+<text x="593.5" y="149.0" class="tiny" text-anchor="middle">4/5</text>
+<rect x="613.0" y="154.0" width="25.0" height="232.0" rx="6" fill="#22c55e"/>
+<text x="625.5" y="149.0" class="tiny" text-anchor="middle">4/5</text>
+<text x="734.0" y="411.0" class="small" text-anchor="middle">Q21-Q25</text>
+<rect x="694.0" y="154.0" width="25.0" height="232.0" rx="6" fill="#94a3b8"/>
+<text x="706.5" y="149.0" class="tiny" text-anchor="middle">4/5</text>
+<rect x="726.0" y="96.0" width="25.0" height="290.0" rx="6" fill="#60a5fa"/>
+<text x="738.5" y="91.0" class="tiny" text-anchor="middle">5/5</text>
+<rect x="758.0" y="154.0" width="25.0" height="232.0" rx="6" fill="#22c55e"/>
+<text x="770.5" y="149.0" class="tiny" text-anchor="middle">4/5</text>
+<text x="879.0" y="411.0" class="small" text-anchor="middle">Q26-Q30</text>
+<rect x="839.0" y="328.0" width="25.0" height="58.0" rx="6" fill="#94a3b8"/>
+<text x="851.5" y="323.0" class="tiny" text-anchor="middle">1/5</text>
+<rect x="871.0" y="212.0" width="25.0" height="174.0" rx="6" fill="#60a5fa"/>
+<text x="883.5" y="207.0" class="tiny" text-anchor="middle">3/5</text>
+<rect x="903.0" y="270.0" width="25.0" height="116.0" rx="6" fill="#22c55e"/>
+<text x="915.5" y="265.0" class="tiny" text-anchor="middle">2/5</text>
+<rect x="730.0" y="410.0" width="14.0" height="14.0" rx="3" fill="#94a3b8"/>
+<text x="752.0" y="421.0" class="small" text-anchor="start">Frozen</text>
+<rect x="730.0" y="430.0" width="14.0" height="14.0" rx="3" fill="#60a5fa"/>
+<text x="752.0" y="441.0" class="small" text-anchor="start">Unrestricted</text>
+<rect x="730.0" y="450.0" width="14.0" height="14.0" rx="3" fill="#22c55e"/>
+<text x="752.0" y="461.0" class="small" text-anchor="start">Current 0.2.3</text>
+</svg>

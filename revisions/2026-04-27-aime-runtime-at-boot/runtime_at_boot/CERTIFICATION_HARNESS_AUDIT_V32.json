@@ -1,0 +1,123 @@
+{
+  "audit_id": "runtimeatboot-v32-certification-harness-audit-20260427",
+  "status": "passed",
+  "dataset_version": 32,
+  "created": "2026-04-27",
+  "scope": "first six prepended v32 certification rows per role in staged RuntimeAtBoot payload",
+  "ideal_runtimeatboot_contract": "In the best-world run, RuntimeAtBoot study rows are fully injected into live context, certification proves the model read the class artifacts, and the resulting AIME score should be 30/30 by educated targeted studying rather than benchmark-answer recall.",
+  "mcq_policy": {
+    "single_letter_allowed": true,
+    "intentionally_not_hard": true,
+    "anti_answer_track": "Answer slots are role-rotated and balanced; passing by always choosing one letter should fail.",
+    "manual_audit_expectation": "When transcripts are available, verify that the role invokes the invariant or ledger, not only the letter."
+  },
+  "required_cert_rich_fields": [
+    "certification_contract",
+    "expected_reasoning",
+    "rubric",
+    "option_diagnostics",
+    "harness_tightening"
+  ],
+  "total_answer_distribution": {
+    "A": 4,
+    "B": 4,
+    "C": 5,
+    "D": 5
+  },
+  "total_balance_span": 1,
+  "per_role": [
+    {
+      "role": "athena",
+      "cert_rows_checked": 6,
+      "answer_distribution": {
+        "A": 1,
+        "B": 2,
+        "C": 2,
+        "D": 1
+      },
+      "answer_sequence": [
+        "B",
+        "C",
+        "D",
+        "A",
+        "B",
+        "C"
+      ],
+      "answer_position_policies": [
+        "role_rotated_balanced_for_audit"
+      ],
+      "rich_fields_required": [
+        "certification_contract",
+        "expected_reasoning",
+        "rubric",
+        "option_diagnostics",
+        "harness_tightening"
+      ],
+      "missing_rich_fields": [],
+      "balance_span": 1,
+      "passed": true
+    },
+    {
+      "role": "aria",
+      "cert_rows_checked": 6,
+      "answer_distribution": {
+        "A": 1,
+        "B": 1,
+        "C": 2,
+        "D": 2
+      },
+      "answer_sequence": [
+        "C",
+        "D",
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer_position_policies": [
+        "role_rotated_balanced_for_audit"
+      ],
+      "rich_fields_required": [
+        "certification_contract",
+        "expected_reasoning",
+        "rubric",
+        "option_diagnostics",
+        "harness_tightening"
+      ],
+      "missing_rich_fields": [],
+      "balance_span": 1,
+      "passed": true
+    },
+    {
+      "role": "artemis",
+      "cert_rows_checked": 6,
+      "answer_distribution": {
+        "A": 2,
+        "B": 1,
+        "C": 1,
+        "D": 2
+      },
+      "answer_sequence": [
+        "D",
+        "A",
+        "B",
+        "C",
+        "D",
+        "A"
+      ],
+      "answer_position_policies": [
+        "role_rotated_balanced_for_audit"
+      ],
+      "rich_fields_required": [
+        "certification_contract",
+        "expected_reasoning",
+        "rubric",
+        "option_diagnostics",
+        "harness_tightening"
+      ],
+      "missing_rich_fields": [],
+      "balance_span": 1,
+      "passed": true
+    }
+  ]
+}

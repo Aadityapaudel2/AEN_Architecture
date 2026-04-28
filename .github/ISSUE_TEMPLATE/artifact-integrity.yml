@@ -1,0 +1,17 @@
+name: Artifact Integrity
+description: Report a checksum, packaging, link, or provenance issue.
+title: "Artifact integrity: "
+labels: [artifact-integrity]
+body:
+  - type: textarea
+    id: issue
+    attributes:
+      label: Issue
+      description: Describe the checksum, link, provenance, or packaging problem.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What should the artifact or documentation say instead?

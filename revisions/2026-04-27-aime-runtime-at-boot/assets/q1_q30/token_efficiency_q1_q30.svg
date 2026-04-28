@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="420" viewBox="0 0 980 420">
+<rect width="100%" height="100%" fill="#101820"/>
+<style>text{font-family:Segoe UI,Arial,sans-serif;fill:#f7fafc}.kicker{font-size:13px;font-weight:700;fill:#ffcc33;letter-spacing:1px}.title{font-size:34px;font-weight:800}.subtitle{font-size:14px;fill:#cbd5e1}.label{font-size:13px}.small{font-size:11px;fill:#cbd5e1}.tiny{font-size:9px;fill:#cbd5e1}.score{font-size:58px;font-weight:900}.team{font-size:19px;font-weight:800}.red{fill:#ef4444}.green{fill:#22c55e}.blue{fill:#60a5fa}.gold{fill:#fbbf24}.muted{fill:#334155}.panel{fill:#17212f;stroke:#334155;stroke-width:1}.good{fill:#1f7a4d;stroke:#58d68d}.bad{fill:#9b2c2c;stroke:#f87171}.warn{fill:#8a6d1f;stroke:#fbbf24}.grid{stroke:#334155;stroke-width:1}.axis{stroke:#94a3b8;stroke-width:1}</style>
+<text x="28.0" y="38.0" class="kicker" text-anchor="start">EFFICIENCY RATING</text>
+<text x="28.0" y="72.0" class="title" text-anchor="start">Wins Per Token Dollar</text>
+<text x="55.0" y="142.0" class="team" text-anchor="start">Frozen</text>
+<rect x="245.0" y="120.0" width="610.0" height="32.0" rx="6" class="muted"/>
+<rect x="245.0" y="120.0" width="385.4" height="32.0" rx="6" fill="#94a3b8"/>
+<text x="870.0" y="142.0" class="small" text-anchor="start">711,100 tok/problem</text>
+<text x="245.0" y="180.0" class="small" text-anchor="start">15/30 correct (50.0%)</text>
+<text x="55.0" y="230.0" class="team" text-anchor="start">Unrestricted</text>
+<rect x="245.0" y="208.0" width="610.0" height="32.0" rx="6" class="muted"/>
+<rect x="245.0" y="208.0" width="610.0" height="32.0" rx="6" fill="#60a5fa"/>
+<text x="870.0" y="230.0" class="small" text-anchor="start">1,125,450 tok/problem</text>
+<text x="245.0" y="268.0" class="small" text-anchor="start">22/30 correct (73.3%)</text>
+<text x="55.0" y="318.0" class="team" text-anchor="start">Current 0.2.3</text>
+<rect x="245.0" y="296.0" width="610.0" height="32.0" rx="6" class="muted"/>
+<rect x="245.0" y="296.0" width="69.7" height="32.0" rx="6" fill="#22c55e"/>
+<text x="870.0" y="318.0" class="small" text-anchor="start">128,624 tok/problem</text>
+<text x="245.0" y="356.0" class="small" text-anchor="start">21/30 correct (70.0%)</text>
+<text x="55.0" y="386.0" class="subtitle" text-anchor="start">Current is ~8.9x lighter than unrestricted by mean total tokens, but trails by one answer.</text>
+</svg>

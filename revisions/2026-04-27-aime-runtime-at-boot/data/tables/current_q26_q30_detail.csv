@@ -1,0 +1,6 @@
+idx,id,answer,expected_answer,correct,status,peer_validation_ready,peer_validation_status,athena_confidence_pct,controller_confidence_ceiling,turn_contract_damage_count,aria_candidate,artemis_candidate,total_tokens,time_taken_seconds,class,class_label
+26,aime2025_26,132,132,True,closed_out_simple_answer_arbitration,False,peer_aligned_waiting_athena,95,92,6,132,132,150118,415.757,,
+27,aime2025_27,67,223,False,closed_out_simple_answer_arbitration,False,insufficient_peer_validation,95,60,7,none,none,142291,448.917,C4,geometry center-distance closure
+28,aime2025_28,107,107,True,closed_out_simple_answer_arbitration,False,peer_aligned_waiting_athena,100,92,4,107,107,145529,407.937,,
+29,aime2025_29,8,157,False,closed_out_simple_answer_arbitration,False,disagreement_open,100,78,5,none,8,128377,364.451,C3,state recurrence with recovery
+30,aime2025_30,70,393,False,closed_out_simple_answer_arbitration,False,disagreement_open,95,78,7,none,70,143894,412.615,C5,modular enumeration completeness

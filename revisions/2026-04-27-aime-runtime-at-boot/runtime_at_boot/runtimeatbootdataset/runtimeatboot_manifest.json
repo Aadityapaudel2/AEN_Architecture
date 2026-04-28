@@ -1,0 +1,114 @@
+{
+  "dataset_name": "runtimeatboot",
+  "dataset_folder": "runtimeatbootdataset",
+  "dataset_root": "N:\\Research\\Updates_to_AEN\\runtimeatboot_v32_stage_20260427\\runtimeatbootdataset",
+  "status": "runtimeatboot_v32_class_strengthening_staged",
+  "updated_at_local": "2026-04-27",
+  "notes": [
+    "Version 32 stage: prepends five v32 class-strengthening rows plus one controller closeout overlay per role.",
+    "Version 32 deliberately excludes v33 memory-shard probes; memory testing is a separate later run.",
+    "V32 rows are non-isomorphic problem-class artifacts, not source-problem answer memory.",
+    "Updated on 2026-04-22: Athena boot rows now keep five VoE golden memory rows, five compact role rows, eight full redacted Canon exemplars, and schema-only redacted Canon rows.",
+    "Most Canon rows are intentionally stripped to YAML metadata-schema shape only: no question text, no exact givens/ask, no final answer values.",
+    "Eight full redacted Canon exemplars are retained: two number_theory, two combinatorics, two algebra, and two geometry rows.",
+    "The first five golden rows remain answer-bearing by design for Runtime-at-Boot recall."
+  ],
+  "boot": {
+    "live_canonical": {
+      "athena_study_path": "N:\\Research\\Updates_to_AEN\\runtimeatboot_v32_stage_20260427\\runtimeatbootdataset\\boot\\athena\\Athena_epistemic_boot_100_final_hq.ndjson",
+      "athena_study_count": 106,
+      "athena_certification_path": "N:\\Research\\Updates_to_AEN\\runtimeatboot_v32_stage_20260427\\runtimeatbootdataset\\boot\\athena\\Athena_epistemic_boot_100_final_certification_hq.ndjson",
+      "athena_certification_count": 206,
+      "athena_first15_layout": {
+        "v32_problem_class_rows": 5,
+        "v32_controller_overlay_rows": 1,
+        "base_dataset_rows_after_v32": 9
+      },
+      "aria_study_path": "N:\\Research\\Updates_to_AEN\\runtimeatboot_v32_stage_20260427\\runtimeatbootdataset\\boot\\aria\\Aria_problem_proof_boot_100_final.ndjson",
+      "aria_study_count": 101,
+      "aria_certification_path": "N:\\Research\\Updates_to_AEN\\runtimeatboot_v32_stage_20260427\\runtimeatbootdataset\\boot\\aria\\Aria_problem_proof_boot_100_final_mcq_2q.ndjson",
+      "aria_certification_count": 196,
+      "aria_first15_layout": {
+        "v32_problem_class_rows": 5,
+        "v32_controller_overlay_rows": 1,
+        "base_dataset_rows_after_v32": 9
+      },
+      "artemis_study_path": "N:\\Research\\Updates_to_AEN\\runtimeatboot_v32_stage_20260427\\runtimeatbootdataset\\boot\\artemis\\Artemis_problem_proof_boot_100_final_hq.ndjson",
+      "artemis_study_count": 101,
+      "artemis_certification_path": "N:\\Research\\Updates_to_AEN\\runtimeatboot_v32_stage_20260427\\runtimeatbootdataset\\boot\\artemis\\Artemis_problem_proof_boot_100_final_hq_mcq.ndjson",
+      "artemis_certification_count": 196,
+      "artemis_first15_layout": {
+        "v32_problem_class_rows": 5,
+        "v32_controller_overlay_rows": 1,
+        "base_dataset_rows_after_v32": 9
+      },
+      "athena_canonathena_source_path": "D:\\AthenaPlayground\\AthenaV5\\kaggle_aimo3\\runtimeatbootdataset\\canonathena\\Athena_100_HQ_canon_v21_schema.ndjson",
+      "athena_first20_layout": {
+        "v32_problem_class_rows": 5,
+        "v32_controller_overlay_rows": 1,
+        "base_dataset_rows_after_v32": 14,
+        "recommended_certification_line_limit": 20
+      },
+      "athena_legacy_first15_layout_before_v32": {
+        "golden_answer_memory_rows": 5,
+        "role_prompt_rows": 5,
+        "full_redacted_canon_exemplar_rows_in_first15": 5,
+        "schema_only_canon_rows": 82
+      },
+      "aria_legacy_first15_layout_before_v32": {
+        "golden_answer_memory_rows": 5,
+        "existing_proof_boot_rows": 10
+      },
+      "artemis_legacy_first15_layout_before_v32": {
+        "golden_answer_memory_rows": 5,
+        "existing_problem_boot_rows": 10
+      },
+      "v32_layout": {
+        "overlay_position": "prepended_first_rows",
+        "v32_study_rows_per_role": 6,
+        "v32_certification_rows_per_role": 6,
+        "problem_class_rows": 5,
+        "controller_overlay_rows": 1,
+        "recommended_v32_only_certification_line_limit": 6,
+        "recommended_v32_plus_existing_first15_line_limit": 21
+      }
+    },
+    "notebook_contract": {
+      "certification_lines_recommended_for_memory_probe": 15,
+      "certification_probe_limit": 2,
+      "prompt_memory": "Notebook prompts may include role boot study rows under FACTUAL_MEMORY.",
+      "certified_answer_memory": "If BOOT_APPEND_CERTIFIED_MEMORY remains true, passed certification probes are appended as compact CERTIFIED_BOOT_MEMORY.",
+      "note": "Set ATHENA_BOOT_CERTIFICATION_LINE_LIMIT, ARTEMIS_BOOT_CERTIFICATION_LINE_LIMIT, and ARIA_BOOT_CERTIFICATION_LINE_LIMIT to 15 for the intended mixed golden/role/method memory probe.",
+      "v32_memory_injection": {
+        "study_rows_are_prepended": true,
+        "certification_rows_are_prepended": true,
+        "recommended_min_line_limit_for_v32_overlay": 6,
+        "solve_prompt_requirement": "Inject study rows, not certification answer keys, into live solve context.",
+        "certification_requirement": "Certification must read rich v32 cert rows; answer letters are role-rotated and must not be treated as a fixed answer track.",
+        "best_world_target": "With full RuntimeAtBoot study-row injection and certification proving rows were read, v32 is intended to give the system the targeted class tools needed to score 30/30 on an AIME-style run without source-answer recall.",
+        "v33_memory_probe_status": "not_included_in_v32_stage"
+      }
+    }
+  },
+  "smoke": {
+    "runtimeatboot_easy10_path": "D:\\AthenaPlayground\\AthenaV5\\kaggle_aimo3\\runtimeatbootdataset\\smoke\\runtimeatboot_easy10.json",
+    "runtimeatboot_easy10_count": 10,
+    "runtimeatboot_easy10_kaggle_test_csv_path": "D:\\AthenaPlayground\\AthenaV5\\kaggle_aimo3\\runtimeatbootdataset\\smoke\\runtimeatboot_easy10_kaggle_test.csv",
+    "runtimeatboot_easy10_kaggle_test_count": 10
+  },
+  "test": {
+    "voe_clean19_root": "D:\\AthenaPlayground\\AthenaV5\\kaggle_aimo3\\runtimeatbootdataset\\test\\voe_eval_clean19",
+    "voe_clean19_csv_path": "D:\\AthenaPlayground\\AthenaV5\\kaggle_aimo3\\runtimeatbootdataset\\test\\voe_eval_clean19\\voe_clean19_integer.csv",
+    "voe_clean19_key_csv_path": "D:\\AthenaPlayground\\AthenaV5\\kaggle_aimo3\\runtimeatbootdataset\\test\\voe_eval_clean19\\voe_clean19_integer_key.csv",
+    "voe_clean19_count": 19,
+    "legacy_smoke_test1_archive_root": "D:\\AthenaPlayground\\AthenaV5\\kaggle_aimo3\\results\\runtime_dataset_archives\\legacy_smoke_test1_removed_20260419-2058",
+    "boundary_note": "test/ files are for post-boot evaluation/export only and are not part of ordinary boot-study memory, except where explicit golden rows are deliberately copied into boot/ for the memory probe."
+  },
+  "publish_hygiene": {
+    "exclude_from_version_payload": [
+      "__pycache__",
+      "archive"
+    ]
+  },
+  "dataset_version": 32
+}

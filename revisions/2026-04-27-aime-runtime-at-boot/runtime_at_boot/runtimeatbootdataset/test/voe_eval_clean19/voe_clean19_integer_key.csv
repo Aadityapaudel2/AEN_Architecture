@@ -1,0 +1,2206 @@
+id,source_file,answer,original_answer,integer_output_rule,problem,worked_solution
+p01,p01.tex,33,33\%,"Submit a single integer only. If the final result is written as D% or D%(R/I), submit D without the percent sign or direction tag.","\Lore{The Grand Archive Casino hosts a simple game: the higher card wins, and ties pay nothing.
+
+Each table is sleeved in green felt, inlaid with walnut dark as old tea and a seam of obsidian that catches the light like a blade. The cards are linen-backed, worn smooth by centuries of hands. The chandeliers do not merely flicker; they \emph{remember}. Here, a remark is never just a remark. It is a move.
+
+Around the chamber hang paintings---twenty of them---none newer than the truths they suggest. The house permits ornament, but it forbids invention. Every detail in this room is placed on purpose, and every placement is recorded.
+
+\begin{quote}
+\textit{``A faithful replica of Van Gogh's \emph{Cafe Terrace at Night}. Van Gogh portrayed the reality of life through his painting---here, all descriptions are literal.''}
+\end{quote}
+
+To \textbf{Cyrene}'s right, the cafe glows under an indigo sky. Three figures sit at a table near the center, faces unfinished, conversation lost to time. A glass catches a thin blade of gold. The frame is heavy gilt---polished, too perfect, and therefore not old. It is expensive in the way a mask is expensive.
+
+To her left hangs something that does not bother with beauty. It is a panel, pigment laid straight onto rough grain, held in a cradle of dark wood. No signature. No gallery stamp. A circular table, mid-shuffle. No hands. An overturned glass. The shadows fall in quiet blocks, the kind that look, at a distance, like numbers.
+
+At the bottom of that frame, etched into a narrow strip of brass---dulled by touch---is a line the house has not polished away:
+
+\begin{quote}
+\textit{Did you know? In over 10{,}000 observed games, comparative statements spoken \emph{during play} are correct only one time in four.}
+\end{quote}
+
+The dealer burns one card. The room goes still enough to hear the felt breathe.}
+
+\Problem
+
+\textbf{High-card rules.} Each player holds exactly one card from a standard 52-card deck. Ranks are ordered
+\[
+2<3<\cdots<10<J<Q<K<A.
+\]
+Suits do not matter. \textbf{Cyrene} \emph{wins} if and only if her rank is \emph{strictly higher} than \textbf{Irin}'s rank. (A tie is not a win.)
+
+\medskip
+
+Cyrene looks down at \(8\clubsuit\). Irin draws one card uniformly at random from the remaining \(51\) cards and keeps it hidden.
+
+\medskip
+
+Irin makes exactly one comparative claim about his rank relative to \(6\): either ``my card is lower than \(6\)'' or ``my card is \(6\) or higher.'' Cyrene hears Irin say:
+\[
+\text{``My card is lower than \(6\), Cyrene. Your move.''}
+\]
+
+\medskip
+
+\textbf{Plaque rule.} Treat the brass-plaque statistic as binding for this exact two-option claim.
+
+\VaultDirective{What is the probability that Cyrene wins given Irin's claim? Give your answer as a percentage rounded to the nearest whole percent.
+
+Convert the final result to the benchmark integer using this rule: Submit a single integer only. If the final result is written as D% or D%(R/I), submit D without the percent sign or direction tag.}
+
+\textbf{Controller Output Rule.}
+Submit one integer only.","Let \(L\) be the event ``Irin's rank is below \(6\)'' (i.e.\ \(2,3,4,5\)), and let \(S\) be the event ``Irin says `lower than \(6\)'.''
+
+By the plaque rule,
+\[
+P(S\mid L)=\frac14,\qquad P(S\mid \neg L)=\frac34.
+\]
+
+\medskip
+
+\textbf{Priors.}
+
+Cyrene holds \(8\clubsuit\), so Irin draws uniformly from the remaining \(51\) cards. There are \(16\) cards of ranks \(2\)–\(5\), hence
+\[
+P(L)=\frac{16}{51},\qquad P(\neg L)=\frac{35}{51}.
+\]
+
+\medskip
+
+\textbf{Bayes.}
+
+\[
+P(S)=\frac14\cdot\frac{16}{51}+\frac34\cdot\frac{35}{51}=\frac{121}{204}.
+\]
+So
+\[
+P(L\mid S)=\frac{(\frac14)(\frac{16}{51})}{\frac{121}{204}}=\frac{16}{121},
+\qquad
+P(\neg L\mid S)=\frac{105}{121}.
+\]
+
+\medskip
+
+\textbf{Win chance.}
+
+If \(L\) occurs, then Irin holds a \(2,3,4,\) or \(5\), so Cyrene's \(8\) wins surely:
+\[
+P(\text{win}\mid L,S)=1.
+\]
+
+If \(\neg L\) occurs, Irin's card lies among the \(35\) remaining cards with ranks \(6,7,8,9,10,J,Q,K,A\) (excluding \(8\clubsuit\)).
+Cyrene's \(8\) beats only ranks \(6\) and \(7\), i.e.\ \(8\) winning cards, so
+\[
+P(\text{win}\mid \neg L,S)=\frac{8}{35}.
+\]
+
+Therefore,
+\[
+P(\text{win}\mid S)=\frac{16}{121}\cdot 1+\frac{105}{121}\cdot\frac{8}{35}
+=\frac{40}{121}\approx 0.33058.
+\]"
+p02,p02.tex,51,\(\delta=\dfrac{19\pi}{32}\).,"Submit a single integer only. If your result is a reduced rational multiple of pi written as aπ/b, submit the integer a+b.","\Lore{
+In Caldera’s basalt gate, three seams look as if they were drawn with light and then cooled into stone: two slanting rails and one vertical spine at \(x=1\).
+Near the rails, someone has scratched the numbers \(7\) and \(13\) like a reminder left for the next worker.
+
+A soot-stained slip has been wedged into the mortar at ankle height:
+
+\begin{quote}
+\textit{At the spine, take the sharp split. At the right side, take the wide. When a choice remains, keep the ray that points where it’s told.}
+\end{quote}
+
+Arin’s rule is simple: every “mirror” line demands an internal bisector, and the gate remembers the choices.
+}
+
+\Problem
+In the usual $xy$--coordinate plane, the Gate's inscription is
+\[
+\bigl((x-y)^2-20(x-y)+91\bigr)(x-1)=0.
+\]
+
+\textbf{Direction-angle convention.}
+The \emph{direction angle} of a \emph{ray} is the angle in $[0^\circ,360^\circ)$ measured counterclockwise from the positive $x$--axis to that ray.
+The direction angle of a \emph{line} is defined to be the direction angle of its ray with positive $y$--component (so it lies in $[0^\circ,180^\circ)$; a vertical line has direction angle $90^\circ$).
+
+The set of points satisfying the inscription is the union of three lines.
+Call the vertical line the \textsf{Spine} $s$.
+Call the two parallel slanted lines $\ell_{\odot}$ and $\ell_{\mathrm{M}}$ so that $\ell_{\odot}$ is closer to the origin.
+
+Now build mirrors as follows (each mirror is a line through the indicated hinge-point):
+\begin{itemize}[leftmargin=1.2em]
+\item At $\ell_{\odot}\cap s$, place mirror $h$ along the \emph{internal} bisector of the \emph{acute} angle between $\ell_{\odot}$ and $s$.
+\item At $\ell_{\mathrm{M}}\cap s$, look in the half-plane $x>1$ and take the \emph{obtuse} angle formed there by the rays of $\ell_{\mathrm{M}}$ and $s$; place mirror $g$ along its \emph{internal} bisector.
+\item Mirror $h$ meets $\ell_{\mathrm{M}}$ at a point away from the Gate. There, place mirror $j$ along the \emph{internal} angle bisector of $\ell_{\mathrm{M}}$ and $h$ \emph{whose ray with positive $y$--component points into the half-plane $x>1$}.
+\item Mirrors $j$ and $g$ intersect; place the final mirror $m$ along the \emph{internal} angle bisector of $j$ and $g$ \emph{whose ray with positive $y$--component points into the half-plane $x<1$}.
+\end{itemize}
+
+Let $\delta$ be the direction angle of mirror $m$ (in the line sense above).
+
+\VaultDirective{Determine $\delta$ as a reduced rational multiple of $\pi$.
+
+Convert the final result to the benchmark integer using this rule: Submit a single integer only. If your result is a reduced rational multiple of pi written as aπ/b, submit the integer a+b.}
+
+\textbf{Controller Output Rule.}
+Submit one integer only.","\small
+Factor the inscription using \(t=x-y\):
+\[
+(t^2-20t+91)(x-1)=0=(t-7)(t-13)(x-1),
+\]
+so \(\ell_{\odot}:y=x-7\), \(\ell_{\mathrm{M}}:y=x-13\) (both direction \(45^\circ\)), and \(s:x=1\) (direction \(90^\circ\)).
+
+\smallskip
+\(h\): acute bisector of \(45^\circ\) and \(90^\circ\), so \(\theta_h=67.5^\circ=\frac{135}{2}^\circ\).
+
+\(g\): in \(x>1\), the obtuse angle is between the \(45^\circ\) ray of \(\ell_{\mathrm{M}}\) and the downward vertical ray \(270^\circ\), of size \(135^\circ\).
+Its bisecting ray has direction \(270^\circ+67.5^\circ=337.5^\circ\); as a \emph{line} we take the opposite direction with positive \(y\)-component:
+\(\theta_g=337.5^\circ-180^\circ=157.5^\circ=\frac{315}{2}^\circ\).
+
+\(j\): internal bisectors between \(45^\circ\) and \(67.5^\circ\) are \(56.25^\circ\) and \(146.25^\circ\); the \(x>1\) rule selects
+\(\theta_j=56.25^\circ=\frac{225}{4}^\circ\).
+
+\(m\): internal bisectors between \(56.25^\circ\) and \(157.5^\circ\) are
+\[
+\frac{56.25^\circ+157.5^\circ}{2}=106.875^\circ \quad\text{and}\quad 16.875^\circ;
+\]
+the \(x<1\) rule selects \(\delta=106.875^\circ=\frac{855}{8}^\circ\).
+Thus
+\[
+\delta=\frac{855}{8}\cdot\frac{\pi}{180}=\frac{19\pi}{32}.
+\]
+
+\begin{center}
+\includegraphics[width=0.55\linewidth]{figures/p02_1.png}
+\end{center}"
+p05,p05.tex,13,$13\%~(R)$,"Submit a single integer only. If the final result is written as D% or D%(R/I), submit D without the percent sign or direction tag.","\Lore{
+
+In the Archive Casino, a named claim is treated as a financial instrument.
+
+The high-card side duel is simple: one card each, higher rank takes the pot, ties return the stake without profit. What complicates the table is not the game, but the archive. The house maintains a ledger of named claims and will not permit a player to name a card unless the claim is governed by the published policy for that table.
+
+A brass plate is bolted to the rail. It does not list probabilities; it lists governance.
+
+First, the record:
+
+\begin{quote}
+\textit{Named-claim record (last 1200): truth:lie odds = 1:2.}
+\end{quote}
+
+Second, the adjustment:
+
+\begin{quote}
+\textit{Before pricing a new name, enter the Primer: one Truth and one Lie.}
+\end{quote}
+
+The table does not debate what the Primer means. The clerk amends the ledger accordingly and treats the amended fraction of Truth as the trust placed in the next named claim.
+
+False names are regulated by mechanism rather than discretion. If a player is not speaking the card they hold, the dealer invokes the Wheel: a balanced device that selects a card-identity uniformly from all identities except the one actually held. The Wheel disregards what is already visible on the felt; it excludes only the card in hand.
+
+}
+
+\Problem
+
+\textbf{High-card rules.} A standard deck has \(52\) distinct cards. Each player holds exactly one card. Ranks are ordered
+\[
+2<3<\cdots<10<J<Q<K<A.
+\]
+Suits do not matter. Higher rank wins; a tie is not a win.
+
+\medskip
+
+\textbf{Deal.} Raven draws \(7\clubsuit\) and leaves it face-up. Sable draws one card uniformly at random from the remaining \(51\) cards and keeps it hidden. Before any reveal, Sable announces:
+
+\begin{quote}
+``My card is \(J\diamondsuit\).''
+\end{quote}
+
+\medskip
+
+\textbf{Named-claim policy.} Interpret the reliability of Sable's announcement, and the distribution of a false announcement, exactly as specified on the brass plate described in the Lore.
+
+\VaultDirective{By how many percentage points does Raven's probability of a strict win change after hearing the announcement, compared to the no-announcement baseline?
+
+Report the magnitude as a whole-number percentage in the form \(D\%~(R)\) if the announcement reduces Raven's winning chance, or \(D\%~(I)\) if it increases it.
+
+Convert the final result to the benchmark integer using this rule: Submit a single integer only. If the final result is written as D% or D%(R/I), submit D without the percent sign or direction tag.}
+
+\textbf{Controller Output Rule.}
+Submit one integer only.","Let \(S\) be the event ``Sable says \(J\diamondsuit\),'' and \(A\) the event ``Sable actually holds \(J\diamondsuit\).''
+
+\medskip
+
+\textbf{Baseline (no announcement).}
+Among the \(51\) possible hidden cards, Raven's \(7\) wins exactly against ranks \(2\) through \(6\), i.e.\ \(5\) ranks \(\times 4\) suits \(=20\) cards. Hence
+\[
+W_0=\frac{20}{51}\approx 0.3921569.
+\]
+
+\medskip
+
+\textbf{Trust level from the brass plate.}
+Truth:lie odds \(1:2\) over \(1200\) hands gives \(400\) truths and \(800\) lies. The Primer adds one truth and one lie, so the trust level for the next named claim is
+\[
+p=\frac{401}{1202}.
+\]
+
+\medskip
+
+\textbf{Hearing \(J\diamondsuit\).}
+Since Raven holds \(7\clubsuit\),
+\[
+P(A)=\frac{1}{51},\qquad P(\neg A)=\frac{50}{51}.
+\]
+Also
+\[
+P(S\mid A)=p,\qquad P(S\mid \neg A)=(1-p)\cdot\frac{1}{51},
+\]
+because in false-mode the Wheel selects uniformly among the \(51\) identities not equal to the card in hand (including identities already visible on the felt).
+
+Bayes gives
+\[
+P(\neg A\mid S)=\frac{P(S\mid \neg A)P(\neg A)}{P(S\mid \neg A)P(\neg A)+P(S\mid A)P(A)}
+=\frac{50(1-p)}{50(1-p)+51p}
+=\frac{13350}{20167}.
+\]
+
+\medskip
+
+\textbf{Win after the announcement.}
+Raven loses if \(A\) occurs since \(J>7\). If \(\neg A\) occurs under \(S\), Sable's actual card is uniform among the \(50\) cards excluding \(J\diamondsuit\) and excluding Raven's \(7\clubsuit\). Raven wins against \(20\) of these cards, so
+\[
+W_1=P(\neg A\mid S)\cdot\frac{20}{50}
+=\frac{13350}{20167}\cdot\frac{2}{5}
+=\frac{5340}{20167}\approx 0.2647890.
+\]
+
+\medskip
+
+\textbf{Change in percentage points.}
+\[
+100(W_1-W_0)\approx 26.47890-39.21569\approx -12.73679.
+\]
+The magnitude rounds to \(13\), and the sign is a reduction."
+p06,p06.tex,27,11011,"Submit a single integer only. When you determine the final bitstring, interpret it as a base-2 integer and submit its decimal value.","\Lore{A scroll of copper foil lies on the lectern, etched with five claims.
+
+The Archivist does not ask for proofs here.
+
+\textit{“Only mark what is true. The Vault reads patterns, not prose.”}}
+
+\Problem
+
+For a positive integer $n$, let:
+\begin{itemize}
+  \item $\mu(n)$ be the Möbius function,
+  \item $\varphi(n)$ be Euler's totient,
+  \item $\sigma(n)=\sum_{d\mid n} d$ be the sum-of-divisors function,
+  \item $\operatorname{rad}(n)=\prod_{p\mid n} p$ be the product of distinct primes dividing $n$.
+\end{itemize}
+
+For integers $q\ge 1$ and $n$, define the Ramanujan sum
+\[
+ c_q(n)=\sum_{\substack{1\le k\le q\\(k,q)=1}} e^{2\pi i kn/q}.
+\]
+
+For $n\ge 1$, define the $n$th cyclotomic polynomial
+\[
+\Phi_n(x)=\prod_{\substack{1\le k\le n\\(k,n)=1}}\left(x-e^{2\pi i k/n}\right).
+\]
+
+\medskip
+
+Consider the following statements.
+
+\begin{enumerate}[label=\textbf{(\arabic*)},leftmargin=*]
+\item \textbf{(Möbius--radical transform.)} For all $n\ge 1$,
+\[
+\sum_{d\mid n} \mu(d)\,\operatorname{rad}(n/d)=\varphi(n)
+\quad\Longleftrightarrow\quad
+n\text{ is squarefree}.
+\]
+
+\item \textbf{(Möbius inversion for $\sigma$.)} For all $n\ge 1$,
+\[
+\sum_{d\mid n} \mu(d)\,\sigma(n/d)=n.
+\]
+
+\item \textbf{(Radical as an exponent-weighted divisor product.)} For all $n\ge 1$,
+\[
+\prod_{d\mid n} d^{\mu(n/d)}=\operatorname{rad}(n).
+\]
+
+\item \textbf{(Ramanujan divisor sum.)} For all $q\ge 1$ and integers $n$,
+\[
+\sum_{d\mid q} c_d(n)=
+\begin{cases}
+q,& q\mid n,\\
+0,& q\nmid n.
+\end{cases}
+\]
+
+\item \textbf{(Cyclotomic Möbius product.)} For all $n\ge 1$,
+\[
+\Phi_n(x)=\prod_{d\mid n} (x^d-1)^{\mu(n/d)}.
+\]
+\end{enumerate}
+
+\medskip
+
+\VaultDirective{Let $t_i=1$ if statement $(i)$ is true and $t_i=0$ if it is false. Output the 5-bit string $t_1t_2t_3t_4t_5$.
+
+Convert the final result to the benchmark integer using this rule: Submit a single integer only. When you determine the final bitstring, interpret it as a base-2 integer and submit its decimal value.}
+
+\textbf{Controller Output Rule.}
+Submit one integer only.","\begin{enumerate}[label=\textbf{\arabic*.},leftmargin=*]
+
+\item \textbf{True.}
+Let $R=\operatorname{rad}(n)$. Since $\mu(d)=0$ unless $d$ is squarefree, only divisors $d\mid R$ contribute, and for such $d$ we have $\operatorname{rad}(n/d)=R/d$. Hence
+\[
+\sum_{d\mid n}\mu(d)\,\operatorname{rad}(n/d)=\sum_{d\mid R}\mu(d)\,\frac{R}{d}
+=R\prod_{p\mid R}\left(1-\frac1p\right)=\varphi(R).
+\]
+So the left-hand side equals $\varphi(R)$ always, and it equals $\varphi(n)$ iff $\varphi(R)=\varphi(n)$.
+But $\varphi(n)=\varphi(R)\prod_{p^a\| n}p^{a-1}$, so equality holds iff every $a=1$, i.e. $n$ is squarefree.
+
+\item \textbf{True.}
+This is the Dirichlet convolution identity $\mu*\sigma=\mathrm{id}$, i.e.
+\[
+\sum_{d\mid n}\mu(d)\,\sigma(n/d)=n.
+\]
+
+\item \textbf{False.}
+Take $n=12$. Then the product is
+\[
+\prod_{d\mid 12} d^{\mu(12/d)}
+=2^{\mu(6)}\,4^{\mu(3)}\,6^{\mu(2)}\,12^{\mu(1)}
+=2\cdot 4^{-1}\cdot 6^{-1}\cdot 12
+=1,\]
+while $\operatorname{rad}(12)=2\cdot 3=6$.
+
+\item \textbf{True.}
+Let $\zeta_q=e^{2\pi i/q}$. The $q$th roots of unity split into disjoint sets of primitive $d$th roots as $d$ ranges over divisors of $q$.
+Therefore
+\[
+\sum_{d\mid q} c_d(n)
+=\sum_{\zeta^q=1} \zeta^n
+=\begin{cases}q,& q\mid n,\\ 0,& q\nmid n,\end{cases}
+\]
+since it is the full geometric sum over $q$th roots.
+
+\item \textbf{True.}
+From the factorization $x^n-1=\prod_{d\mid n}\Phi_d(x)$ and Möbius inversion on the divisor lattice,
+\[
+\Phi_n(x)=\prod_{d\mid n}(x^d-1)^{\mu(n/d)}.
+\]
+\end{enumerate}
+
+Thus $(t_1,t_2,t_3,t_4,t_5)=(1,1,0,1,1)$ and the Scroll Output is
+\[
+\boxed{11011}.
+\]"
+p08,p08.tex,37,\(\displaystyle -37\),"Submit a single integer only. If the computed final value is negative, submit its absolute value.","\Lore{
+The Archivists call it \textit{the Walk of Three Gates}.
+
+Frames first: one wrong shadow spoils the rest.
+Crossings next: safe paths are counted, never guessed.
+Last, the Prime Dial: it turns only when a prime agrees to be two squares.
+
+A bowl of coins waits on the Crucible table, bisected by a single scratched line.
+The Initiate is told to ignore the noise, and compute what remains after both coins fall.
+}
+
+\Problem
+\small
+Two suspects are considered for the theft: \textbf{Eld} and \textbf{Nyra}.
+\[
+P(\text{Eld})=\frac25,\qquad P(\text{Nyra})=\frac35.
+\]
+If Nyra is guilty, she may mirror Eld's style. Let \(H=\) “Nyra mirrors”, with
+\[
+P(H\mid\text{Nyra})=\frac12.
+\]
+
+\medskip
+\noindent\textbf{Gate I (frames).}
+A \emph{frame} is an axis-aligned rectangle with positive side lengths.
+A set \(B_1,\dots,B_F\) is arranged so that
+\[
+B_i\cap B_j\neq\varnothing \iff i\not\equiv j\pm1\pmod F,
+\]
+and the thief always uses as many frames as possible (so \(F\) is maximal).
+The \textbf{Frame Coin} is flipped by choosing an unordered pair of distinct frames uniformly;
+let \(E=\) “the chosen pair is disjoint”.
+Eld always uses the cyclic rule above. If Nyra is guilty: if \(H\), she uses the same rule; if \(\neg H\),
+she uses a \emph{chain} rule in which the disjoint pairs are exactly
+\(\{(B_1,B_2),\dots,(B_{F-1},B_F)\}\).
+
+\medskip
+\noindent\textbf{Gate II (crossings).}
+Using the same \(F\), draw \(F\) lines in the plane, no two parallel and no three concurrent,
+and choose a point \(O\) on no line.
+A crossing \(X\) (intersection of two lines) is \emph{clear} if the open segment \((OX)\) meets at most \(F-3\) lines.
+Let \(C\) be the minimum number of clear crossings that must exist (this minimum is known to be sharp).
+
+\medskip
+\noindent\textbf{Gate III (prime dial).}
+Set \(P=4C+1\) (for the value of \(C\) above, \(P\) is prime), and define
+\[
+W\equiv (2C)!\pmod P,\qquad 1\le W\le \frac{P-1}{2},\qquad
+Y=\frac{W^2+1}{P}\in\mathbb Z_{>0}.
+\]
+The Prime Gate certifies that there exist nonnegative integers \(g<h\) and \(m,n\) such that
+\[
+P=g^2+h^2,\qquad Y=m^2+n^2,\qquad W=gm+hn.
+\]
+The \textbf{Prime Coin} is flipped by choosing one of the \(P\) dial detents uniformly;
+let \(J=\) “the detent is dangerous”, with
+\[
+P(J\mid\text{Eld})=\frac{h}{P},\quad
+P(J\mid\text{Nyra},\neg H)=\frac{g}{P},\quad
+P(J\mid\text{Nyra},H)=\frac{g+h}{P}.
+\]
+
+\medskip
+\noindent\textbf{Dependence.}
+Assume \(E\) and \(J\) are independent conditional on \(\text{Eld}\), and also independent conditional on
+\((\text{Nyra},H)\) and \((\text{Nyra},\neg H)\).
+
+\medskip
+You observe \emph{both} \(E\) and \(J\).
+
+\medskip
+\VaultDirective{Let $P(\text{Eld}\mid E,J)=\frac{A}{B}$ in lowest terms. Compute $A-B$.
+
+Convert the final result to the benchmark integer using this rule: Submit a single integer only. If the computed final value is negative, submit its absolute value.}
+
+\textbf{Controller Output Rule.}
+Submit one integer only.","\scriptsize
+
+\textbf{Roadmap.} Write \(EJ:=E\cap J\). We compute \(F\to C\to(P,W,Y)\to(g,h)\), then the likelihoods
+\(P(EJ\mid\text{Eld})\) and \(P(EJ\mid\text{Nyra})\) (Nyra is a \(\tfrac12/\tfrac12\) mixture over \(H\)),
+and finish with Bayes.
+
+\medskip
+\textbf{Gate I: find \(F\).}
+Let \(X_i=[a_i,b_i]=\mathrm{proj}_x(B_i)\) and \(Y_i=[c_i,d_i]=\mathrm{proj}_y(B_i)\).
+If \(B_i\cap B_j\neq\varnothing\) then \(X_i\cap X_j\neq\varnothing\) and \(Y_i\cap Y_j\neq\varnothing\); hence
+\[
+B_i\cap B_{i+1}=\varnothing \ \Rightarrow\ (X_i\cap X_{i+1}=\varnothing)\ \text{or}\ (Y_i\cap Y_{i+1}=\varnothing).
+\tag{$\ast$}
+\]
+Choose indices so that \(a_1=\max\{a_1,\dots,a_F\}\). Then for every \(i\not\equiv 2,F\pmod F\),
+the rule forces \(B_i\cap B_1\neq\varnothing\), hence \(a_1\in X_i\); in particular
+\(X_i\cap X_{i+1}\neq\varnothing\) for \(3\le i\le F-2\).
+Thus only the four cyclic pairs
+\(X_1\cap X_2,\,X_2\cap X_3,\,X_{F-1}\cap X_F,\,X_F\cap X_1\) can be empty, and not all four can be
+(empty \(X_1\cap X_2\) and \(X_2\cap X_3\) would force \(X_2\cap X_{F-1}=\varnothing\), contradicting the
+required intersection \(B_2\cap B_{F-1}\neq\varnothing\)).
+Hence \(\#\{i: X_i\cap X_{i+1}=\varnothing\}\le 3\), and similarly \(\#\{i: Y_i\cap Y_{i+1}=\varnothing\}\le 3\).
+By \((\ast)\), each of the \(F\) disjoint adjacent frame-pairs is witnessed by an empty \(X\)-adjacency or \(Y\)-adjacency, so
+$
+F\le 3+3=6.
+$
+A configuration with \(F=6\) exists, so the maximal value is \(F=6\).
+
+\medskip
+\textbf{Gate II: find \(C\).}
+Set \(t:=F-3\). The Crossing-Map lemma gives at least \(\frac12(t+1)(t+2)\) clear crossings, and this bound is sharp.
+Induction spine: pick a line \(\ell\) closest to \(O\); choose \(P\in\ell\) so \((OP)\) meets no line.
+Along each ray of \(\ell\) from \(P\), the number of lines crossed by \((OX)\) changes by at most \(1\) between consecutive
+intersection points, yielding at least \(t+1\) clear crossings on \(\ell\); removing \(\ell\) reduces \(t\) by \(1\).
+With \(F=6\), \(t=3\), so
+$
+C=\frac12(4)(5)=10.
+$
+
+\medskip
+\textbf{Gate III: compute \(P,W,Y,g,h\).}
+Now \(P=4C+1=41\) (prime) and \(W\equiv (2C)!\equiv 20!\pmod{41}\) with \(1\le W\le 20\).
+By Wilson,
+\[
+40!\equiv -1\pmod{41},\qquad 40!=(20!)\,(21\cdots 40)\equiv (20!)^2\pmod{41},
+\]
+so \(W^2\equiv -1\pmod{41}\) and hence \(Y=(W^2+1)/41\in\mathbb Z_{>0}\).
+Compute
+\[
+20!=\prod_{i=1}^{10} i(21-i)\equiv
+20\cdot38\cdot13\cdot27\cdot39\cdot8\cdot16\cdot22\cdot26\cdot28 \pmod{41}.
+\]
+Grouping,
+\[
+(20\cdot39)(38\cdot27)(13\cdot28)(8\cdot16)(22\cdot26)\equiv
+1\cdot1\cdot(-5)\cdot 5\cdot(-2)=50\equiv 9\pmod{41},
+\]
+so \(W=9\) and \(Y=(81+1)/41=2\). Now \(W^2+1=PY\) gives \(PY-W^2=1\).
+Applying the \((xy-z^2=1)\Rightarrow\) “two-squares” lemma (the Prime Gate’s certificate),
+there exist \(g<h\) and \(m,n\ge 0\) with
+\[
+P=g^2+h^2,\qquad Y=m^2+n^2,\qquad W=gm+hn.
+\]
+Since \(Y=2\), we have \((m,n)=(1,1)\), so \(W=g+h\).
+With \(g^2+h^2=41\) and \(g+h=9\), we get \(gh=20\), hence \((g,h)=(4,5)\).
+
+\medskip
+\textbf{Likelihoods: }
+With \(F=6\),
+$
+P(E\mid\text{cyclic})=\frac{F}{\binom{F}{2}}=\frac{2}{F-1}=\frac25,\qquad
+P(E\mid\text{chain})=\frac{F-1}{\binom{F}{2}}=\frac{2}{F}=\frac13.
+$
+
+
+Thus
+$
+P(E\mid\text{Eld})=\frac25,\quad P(E\mid\text{Nyra},H)=\frac25,\quad P(E\mid\text{Nyra},\neg H)=\frac13,
+$
+and
+\[
+P(J\mid\text{Eld})=\frac{h}{P}=\frac{5}{41},\quad
+P(J\mid\text{Nyra},\neg H)=\frac{g}{P}=\frac{4}{41},\quad
+P(J\mid\text{Nyra},H)=\frac{g+h}{P}=\frac{9}{41}.
+\]
+Independence gives
+\[
+P(EJ\mid\text{Eld})=\frac25\cdot\frac{5}{41}=\frac{2}{41},
+\]
+\[
+P(EJ\mid\text{Nyra})=\frac12\!\left(\frac25\cdot\frac{9}{41}\right)+\frac12\!\left(\frac13\cdot\frac{4}{41}\right)
+=\frac{9}{205}+\frac{2}{123}=\frac{37}{615}.
+\]
+
+\medskip
+\textbf{Bayes: }
+\[
+P(\text{Eld}\mid E,J)=
+\frac{\frac25\cdot\frac{2}{41}}{\frac25\cdot\frac{2}{41}+\frac35\cdot\frac{37}{615}}
+=\frac{\frac{4}{205}}{\frac{4}{205}+\frac{111}{3075}}
+=\frac{60}{60+111}
+=\frac{20}{57}.
+\]
+So \(A=20\), \(B=57\), hence \(A-B=-37\)."
+p09,p09.tex,277,277,Submit the final answer as a single integer.,"\Lore{
+
+The archivists recovered no diagram—only a sequence of geometric rites etched into vellum and sealed in brass.
+
+Each segment, arc, and reflection had been chosen not for ornament, but for invocation. The angles were not decoration. They were a signature.
+
+They say Athena devised the ritual herself—not to guard the Vault, but to remind it what precision feels like.
+
+To unlock the seal, one must reconstruct her rite and calculate the sacred total.
+
+}
+
+\Problem
+
+All angles \(\angle XYZ\) denote the \emph{smaller} angle at vertex \(Y\) (between \(0^\circ\) and \(180^\circ\)).
+
+A courtyard designer performs the following straightedge-and-compass construction:
+
+\begin{enumerate}
+  \item Begin with a square labeled clockwise as \(S_1, T_1, U_1, R_1\).
+  \item On side \(R_1U_1\), construct an equilateral triangle \(\triangle R_1V_1U_1\) with apex \(V_1\) chosen \emph{outside} the square.
+  \item Draw the circle centered at \(R_1\) with radius \(R_1U_1\).
+  \item Using segment \(R_1V_1\) as a side, construct a regular pentagon
+        \(R_1V_1W_1Z_1A_2\) in clockwise order, chosen so that the pentagon lies in the half-plane
+        determined by line \(R_1V_1\) \emph{opposite} \(U_1\).
+  \item Since \(A_2\) lies on the circle centered at \(R_1\), draw the tangent to that circle at \(A_2\).
+        Let this tangent meet the extension of line \(Z_1W_1\) at \(B_2\).
+  \item Draw the circle centered at \(S_1\) with radius \(S_1T_1\).
+  \item Let \(C_2\) be the intersection point of the two circles (centered at \(R_1\) and \(S_1\), equal radii)
+        that lies \emph{outside} the square and in the same open half-plane bounded by line \(R_1S_1\) as \(Z_1\).
+        Draw the tangent to the circle centered at \(S_1\) at \(C_2\).
+        Let this tangent meet line \(R_1A_2\) at \(D_2\).
+  \item Let the same tangent line from \(C_2\) meet line \(V_1W_1\) at \(E_2\).
+  \item Let \(M_2\) be the intersection point of the two tangents (the tangent at \(A_2\) to the circle centered at \(R_1\),
+        and the tangent at \(C_2\) to the circle centered at \(S_1\)).
+  \item Reflect point \(B_2\) across the tangent line at \(C_2\) (i.e., across the line \(C_2D_2\)), and call the image \(G_2\).
+  \item Reflect point \(A_2\) about point \(C_2\) (a half-turn about \(C_2\)), and call the image \(H_2\).
+\end{enumerate}
+
+\VaultDirective{Compute
+\[
+\angle Z_1B_2A_2\;+\;\angle D_2M_2A_2\;+\;\angle D_2E_2V_1\;+\;\angle R_1G_2U_1\;+\;\angle S_1C_2H_2,
+\]
+and report the value to the \emph{nearest whole degree}.
+
+Convert the final result to the benchmark integer using this rule: Submit the final answer as a single integer.}
+
+\textbf{Controller Output Rule.}
+Submit one integer only.","\begingroup\small
+Fix the square side to \(1\) with \(S_1(0,0)\), \(T_1(1,0)\), \(U_1(1,1)\), \(R_1(0,1)\). The equilateral apex is \(V_1(\tfrac12,\ 1+\tfrac{\sqrt3}{2})\). The circles meet at \(C_2(-\tfrac{\sqrt3}{2},\ \tfrac12)\); the tangent there is \(-\sqrt3x+y=2\).
+
+Constructing the regular pentagon \(R_1V_1W_1Z_1A_2\) determines the tangent at \(A_2\) and the lines \(Z_1W_1\) and \(V_1W_1\). Solving for the intersections yields \(B_2, D_2, E_2, M_2\). Reflections yield \(G_2\) and \(H_2\). Calculating vector angles gives:
+\[
+\angle Z_1B_2A_2=54^\circ,\quad
+\angle D_2M_2A_2=18^\circ,\quad
+\angle D_2E_2V_1=72^\circ,\quad
+\angle S_1C_2H_2=51^\circ,
+\]
+and the irrational angle \(\angle R_1G_2U_1\approx 81.9786^\circ\).
+The sum is \(54+18+72+51+81.9786\dots = 276.9786\dots^\circ\), which rounds to \textbf{277}.
+\endgroup
+
+\begin{center}
+\includegraphics[width=0.75\linewidth]{figures/p09_277_geometry.png}
+\end{center}"
+p10,p10.tex,15,01111,"Submit a single integer only. When you determine the final bitstring, interpret it as a base-2 integer and submit its decimal value.","\Lore{
+The Ledger of the Five Seals is written in a cramped hand, the kind of handwriting that only appears when someone is trying to make a rule survive an emergency.
+
+It lists five charms. Each charm can be set to one of two states.
+The margin note—underlined twice—says:
+
+\begin{quote}
+\textit{Only the full five-bit signature opens the door. Nothing else.}
+\end{quote}
+
+The clerk asks for the signature itself and nothing more.
+}
+
+\Problem
+
+For each of the following five statements, assign a truth value: assign $1$ if the statement is true and $0$ if it is false.
+Express your final answer as a $1\times 5$ matrix
+\[
+T=[t_A,t_B,t_C,t_D,t_E].
+\]
+
+\begin{enumerate}[label=\textbf{\Alph*.},leftmargin=*]
+
+\item \textbf{No-new-prime claim for odd prime exponents.}
+
+Let $m$ and $n$ be coprime positive \emph{odd} integers with $m>n$, and let $k\ge 5$ be an \emph{odd prime}.
+\emph{Claim:} For every prime $r$ dividing $m^k-n^k$, there exists a \emph{proper divisor} $j$ of $k$ (so $1\le j<k$ and $j\mid k$) such that
+\[
+r\mid m^j-n^j.
+\]
+
+\item \textbf{Cubic non-residue inverse-sum.}
+
+Let $p$ be a prime with $p\equiv 1\pmod 3$ and $p>7$. Define
+\[
+CR_p=\{a\in\{1,2,\dots,p-1\}:\ a\text{ is \emph{not} a cubic residue modulo }p\}.
+\]
+(For $a\in\{1,\dots,p-1\}$, write $a^{-1}$ for the multiplicative inverse of $a$ modulo $p$.)
+\emph{Claim:}
+\[
+\sum_{a\in CR_p} a^{-1} \equiv 0 \pmod p.
+\]
+
+\item \textbf{Triangle-free graph edge bound.}
+
+Let $G=(V,E)$ be a simple graph on $n$ vertices.
+\emph{Claim:} If $G$ is triangle-free, then
+\[
+|E|\le \left\lfloor \frac{n^2}{4}\right\rfloor.
+\]
+
+\item \textbf{Subset pairing symmetry lemma (interior $k$ only).}
+
+Let $n\ge 3$ and let $S$ be a finite set with $|S|=n$, and let $f:S\to\mathbb{R}$.
+For each $k$ with $0\le k\le n$, define
+\[
+F(k)=\sum_{\substack{T\subseteq S\\ |T|=k}}\ \sum_{x\in T} f(x).
+\]
+\emph{Claim:}
+\[
+\bigl(\forall\,k\in\{1,2,\dots,n-1\},\ F(k)=F(n-k)\bigr)\ \Longleftrightarrow\ \left(\sum_{x\in S} f(x)=0\right).
+\]
+
+\item \textbf{Ultimate monotonic subsequence lemma.}
+
+Let $n$ be a positive integer and let $A=(a_1,a_2,\dots,a_{n^2+1})$ be any sequence of $n^2+1$ distinct real numbers.
+Let $\ell_{\mathrm{inc}}(A)$ and $\ell_{\mathrm{dec}}(A)$ denote the lengths of the longest strictly increasing and strictly decreasing subsequences, respectively.
+\emph{Claim:}
+\[
+\max\{\ell_{\mathrm{inc}}(A),\ell_{\mathrm{dec}}(A)\}\ge n+1.
+\]
+
+\end{enumerate}
+
+\VaultDirective{Output the 5-bit signature $t_A t_B t_C t_D t_E$.
+
+Convert the final result to the benchmark integer using this rule: Submit a single integer only. When you determine the final bitstring, interpret it as a base-2 integer and submit its decimal value.}
+
+\textbf{Controller Output Rule.}
+Submit one integer only.","\small
+\begin{enumerate}[label=\textbf{\Alph*.},leftmargin=*]
+
+\item \textbf{False.}
+Since $k$ is an odd prime, its only proper divisor is $j=1$, so the claim reduces to:
+
+\emph{every prime divisor $r$ of $m^k-n^k$ must divide $m-n$.}
+
+Counterexample: take $m=3$, $n=1$, $k=5$ (coprime, odd, and $k$ is an odd prime).
+Then
+\[
+3^5-1^5=243-1=242=2\cdot 11^2.
+\]
+The prime $11$ divides $3^5-1^5$, but $11\nmid (3-1)=2$.
+So the claim fails.
+
+\item \textbf{True.}
+Let $G=\mathbb{F}_p^\times$, a cyclic group of order $p-1$.
+Since $p\equiv 1\pmod 3$, the set of nonzero cubes forms a subgroup $H\le G$ of index $3$, with
+\[
+|H|=\frac{p-1}{3}>1 \quad (\text{since }p>7).
+\]
+Thus $CR_p$ is exactly the union of the two nontrivial cosets of $H$.
+
+First, $\sum_{h\in H} h\equiv 0\pmod p$:
+the elements of $H$ are precisely the roots in $\mathbb{F}_p$ of $x^{|H|}-1$, whose $x^{|H|-1}$ coefficient is $0$, so the sum of its roots is $0$.
+Hence for any $g\in G$, the coset $gH$ sums to
+\[
+\sum_{x\in gH} x = g\sum_{h\in H} h \equiv 0 \pmod p.
+\]
+Therefore the sum of all elements of $CR_p$ is $0\pmod p$.
+
+Now observe that inversion permutes $CR_p$:
+if $a\notin H$, then $a\in gH$ or $a\in g^2H$ for some $g\notin H$, and $a^{-1}\in (gH)^{-1}=g^{-1}H=g^2H$, still outside $H$.
+So $\{a^{-1}:a\in CR_p\}=CR_p$, and
+\[
+\sum_{a\in CR_p} a^{-1}\equiv \sum_{a\in CR_p} a \equiv 0\pmod p.
+\]
+
+\item \textbf{True.}
+This is Mantel’s theorem: among triangle-free graphs on $n$ vertices, the maximum number of edges is attained by the complete bipartite graph with parts as equal as possible, giving $\lfloor n^2/4\rfloor$.
+
+\item \textbf{True.}
+For $k\ge 1$, each $x\in S$ appears in exactly $\binom{n-1}{k-1}$ subsets $T\subseteq S$ of size $k$, so
+\[
+F(k)=\binom{n-1}{k-1}\sum_{x\in S} f(x).
+\]
+In particular,
+\[
+F(1)=\sum_{x\in S} f(x),
+\qquad
+F(n-1)=\binom{n-1}{n-2}\sum_{x\in S} f(x)=(n-1)\sum_{x\in S} f(x).
+\]
+If $F(1)=F(n-1)$ and $n\ge 3$, then
+\[
+\sum f(x)=(n-1)\sum f(x)\ \Longrightarrow\ (n-2)\sum f(x)=0\ \Longrightarrow\ \sum f(x)=0.
+\]
+Conversely, if $\sum f(x)=0$, then $F(k)=0$ for every $k\ge 1$, so $F(k)=F(n-k)$ holds for all $k=1,\dots,n-1$.
+
+\item \textbf{True.}
+This is exactly the Erd\H{o}s--Szekeres monotone subsequence theorem for sequences of length $n^2+1$ of distinct real numbers.
+
+\end{enumerate}
+
+Therefore,
+\[
+T=[0,1,1,1,1].
+\]"
+p11,p11.tex,38,38,Submit the final answer as a single integer.,"\Lore{
+At the last door of the Linear Vault, Eryn finds a mercy carved into the lintel:
+
+\begin{quote}
+\textit{Do not speak the whole verdict. Speak only its height.}
+\end{quote}
+
+Five seals must still be set—staircase, mirror, choir, black--white wall, and the imaginary bolt—
+but the tribute is not the determinant itself.
+
+The Vault asks only for how many times the verdict can be halved before an odd number remains.
+}
+
+\Problem
+Athena must forge the \emph{Spine Matrix} $\Omega$ from five interlocked seals.
+
+\noindent\textbf{(I) The Staircase Seal.}
+Let
+\[
+J=\begin{pmatrix}
+1&1&0&0\\
+0&1&1&0\\
+0&0&1&1\\
+0&0&0&1
+\end{pmatrix}.
+\]
+Let \(u\) be the \((1,2)\) entry of \(J^5\).
+
+\noindent\textbf{(II) The Mirror Seal.}
+Using this \(u\), define the \(4\times 4\) matrix
+\[
+L(u)=\begin{pmatrix}
+2u&2&u&u\\
+u&1&1&1\\
+2&2&u^2&u\\
+1&1&u&1
+\end{pmatrix}.
+\]
+
+\noindent\textbf{(III) The Choir Seal.}
+Set \(n=u-2\) and \(\alpha=\dfrac{\pi}{n+1}\). Define the \(n\times n\) matrix
+\[
+A_{m,j}=\sin(mj\alpha)\qquad(1\le m,j\le n),
+\]
+and the \(2n\times 2n\) matrix
+\[
+S=\begin{pmatrix}
+0&A\\
+A&0
+\end{pmatrix}.
+\]
+
+\noindent\textbf{(IV) The Black--White Wall.}
+Let \(m=2u+1\) and define the \(m\times m\) matrix \(W\) by
+\[
+W_{i,j}=\begin{cases}
+1,& i\le j,\\
+-1,& i>j.
+\end{cases}
+\]
+
+\noindent\textbf{(V) The Imaginary Bolt.}
+Define the \(2m\times 2m\) matrix
+\[
+C=\begin{pmatrix}
+W&-W\\
+W&W
+\end{pmatrix}.
+\]
+
+\noindent\textbf{The Spine.}
+Let
+\[
+\Omega=\mathrm{diag}\bigl(L(u),\,S,\,C\bigr).
+\]
+
+\noindent\textbf{Vault Format.}
+There is a unique integer \(E\ge 0\) and a unique odd integer \(Q\) such that
+\[
+\det(\Omega)=Q\cdot 2^{E}.
+\]
+
+\VaultDirective{Output $E$, the height of the verdict.
+
+Convert the final result to the benchmark integer using this rule: Submit the final answer as a single integer.}
+
+\textbf{Controller Output Rule.}
+Submit one integer only.","\(\Omega\) is block diagonal, so
+\[
+\det(\Omega)=\det(L(u))\det(S)\det(C),
+\]
+and \(E=\nu_2(\det L)+\nu_2(\det S)+\nu_2(\det C)\).
+
+\smallskip
+\textbf{Staircase.} \(J=I+N\) with \(N^4=0\). Then \(J^5=\sum_{k=0}^3\binom{5}{k}N^k\), so the \((1,2)\) entry is \(\binom51=5\). Thus \(u=5\), hence \(n=u-2=3\), \(m=2u+1=11\).
+
+\smallskip
+\textbf{Mirror.} The built-in identity \(\det(L(u))=(u-1)^2(u-2)^2\) gives
+\[
+\det(L(5))=4^2\cdot 3^2=9\cdot 2^4\ \Rightarrow\ \nu_2=4.
+\]
+
+\smallskip
+\textbf{Choir.} For \(n=3\), \(\alpha=\pi/4\). Standard sine orthogonality yields \(A^2=\frac{n+1}{2}I=2I\), so \(\det(A)^2=\det(2I_3)=2^3\).
+Also \(\det\!\begin{psmallmatrix}0&A\\A&0\end{psmallmatrix}=(-1)^n\det(A)^2\), hence \(\det(S)=-2^3\) and \(\nu_2=3\).
+
+\smallskip
+\textbf{Bolt.} For the “wall” matrix \(W\) of size \(m=11\), one has \(\det(W)=2^{m-1}=2^{10}\) (row-add then triangularize).
+Now
+\[
+C=\begin{pmatrix}W&-W\\W&W\end{pmatrix}\ \xrightarrow{\text{row }2\leftarrow 2+1}\
+\begin{pmatrix}W&-W\\2W&0\end{pmatrix},
+\]
+so factoring \(2\) from the bottom \(m\) rows gives \(\det(C)=2^{m}\det\!\begin{psmallmatrix}W&-W\\W&0\end{psmallmatrix}\).
+Since \(W\) is invertible, the Schur complement gives \(\det\!\begin{psmallmatrix}W&-W\\W&0\end{psmallmatrix}=\det(W)^2\).
+Thus
+\[
+\det(C)=2^{11}\cdot (2^{10})^2=2^{31}\ \Rightarrow\ \nu_2=31.
+\]
+
+Therefore \(E=4+3+31=38\)."
+p12,p12.tex,28,11100,"Submit a single integer only. When you determine the final bitstring, interpret it as a base-2 integer and submit its decimal value.","\Lore{
+A brass plate hangs from a chain in the Combinatorics Vault, scratched with five “lemmas.”
+Some are real, copied from old seminar notes; some are traps that survive only until someone tries one careful example.
+
+A rim inscription fixes the ground rules the way the Vault likes them fixed:
+\begin{quote}
+\textit{Count lattice points only in \(\mathbb{Z}^d\). “Residue class mod \(p\)” means \(r+p\mathbb{Z}^d\) with \(r\in\{0,1,\dots,p-1\}^d\).}
+\end{quote}
+
+The clerk below the plate does not argue. The clerk only asks for a mark on each line: working key or broken one.
+}
+
+\Problem
+For each of the following five statements, assign a truth value: assign $1$ if the statement is true and $0$ if it is false. Express your final answer as a $1\times 5$ matrix
+\[
+T=[t_1,t_2,t_3,t_4,t_5].
+\]
+
+\begin{enumerate}[label=\textbf{\arabic*.},leftmargin=*]
+
+\item \textbf{Antichain equality-case lemma.}
+Let $\mathcal{A}\subseteq 2^{[n]}$ be an antichain (no set contains another). Define the Lubell--Yamamoto--Meshalkin weight
+\[
+W(\mathcal{A})=\sum_{A\in\mathcal{A}}\frac{1}{\binom{n}{|A|}}.
+\]
+\emph{Claim:} If $W(\mathcal{A})=1$, then $\mathcal{A}$ is exactly the full $k$-th level $\binom{[n]}{k}$ for some $k$.
+
+\item \textbf{Symmetric incidence matrix lemma.}
+Let $M$ be an $n\times n$ matrix with entries in $\{0,1\}$. Assume each column has exactly $r$ ones, and for any two distinct columns, the number of rows in which they both have a $1$ is exactly $\lambda$.
+\emph{Claim:} Every row also has exactly $r$ ones, and necessarily
+\[
+r(r-1)=\lambda(n-1).
+\]
+
+\item \textbf{Derangement cycle alternation lemma.}
+For $n\ge 2$, let $D_n\subset S_n$ be the set of derangements (permutations with no fixed points). For $\pi\in S_n$, let $c(\pi)$ be the number of cycles of $\pi$ in its disjoint cycle decomposition (including fixed points).
+\emph{Claim:}
+\[
+\sum_{\pi\in D_n} (-1)^{c(\pi)}=-(n-1).
+\]
+
+\item \textbf{Residue class uniformity lemma.}
+Let $P\subset \mathbb{R}^d$ be a centrally symmetric convex polytope (i.e.\ $x\in P\Rightarrow -x\in P$). Let $p$ be prime, and let
+\[
+|P|:=|P\cap\mathbb{Z}^d|
+\]
+denote the number of lattice points in $P$ (including boundary points).
+If
+\[
+|P|=m\,p^d,
+\]
+\emph{Claim:} for every residue vector $r\in(\mathbb{Z}/p\mathbb{Z})^d$ we have
+\[
+\bigl|P\cap (r+p\mathbb{Z}^d)\bigr|=m.
+\]
+
+\item \textbf{Alternating binomial dominance lemma.}
+Let $a_0,\dots,a_n$ be nonnegative real numbers. If
+\[
+\sum_{k=0}^n (-1)^k \binom{n}{k}\,a_k=0,
+\]
+\emph{Claim:} there exists a \emph{unique} index $j$ such that
+\[
+\binom{n}{j}a_j>\binom{n}{k}a_k\qquad \text{for all }k\ne j.
+\]
+
+\end{enumerate}
+
+\VaultDirective{Output the 5-bit string $t_1t_2t_3t_4t_5$.
+
+Convert the final result to the benchmark integer using this rule: Submit a single integer only. When you determine the final bitstring, interpret it as a base-2 integer and submit its decimal value.}
+
+\textbf{Controller Output Rule.}
+Submit one integer only.","\begin{enumerate}[label=\textbf{\arabic*.},leftmargin=*]
+\item \textbf{True.} LYM gives \(W(\mathcal A)\le1\) for any antichain, and equality forces \(\mathcal A=\binom{[n]}{k}\) for some \(k\).
+
+\item \textbf{True.} Column sums \(=r\) and constant pairwise intersections \(\lambda\) imply
+\(M^{\mathsf T}M=(r-\lambda)I+\lambda J\). Hence \(M^{\mathsf T}M\mathbf1=(r+\lambda(n-1))\mathbf1\), so the row-sum vector is constant; counting ones gives every row sum \(=r\).
+Double-count ordered triples \((\text{row},i\ne j)\) with a \(1\) in both columns:
+by columns: \(n(n-1)\lambda\); by rows: \(nr(r-1)\). Thus \(r(r-1)=\lambda(n-1)\).
+
+\item \textbf{True.} Using \(\sum_{\pi\in S_m}x^{c(\pi)}=x(x+1)\cdots(x+m-1)\), we get \(\sum_{\pi\in S_m}(-1)^{c(\pi)}=0\) for \(m\ge2\), while \(S_0=1,S_1=-1\).
+Inclusion--exclusion over fixed points yields
+\[
+\sum_{\pi\in D_n}(-1)^{c(\pi)}=\sum_{j=0}^n\binom{n}{j}S_{n-j}=S_0+nS_1=-(n-1).
+\]
+
+\item \textbf{False.} For \(d=2,p=3\), take the centrally symmetric lattice parallelogram with vertices \((-3,-6),(-5,-3),(3,6),(5,3)\).
+It has \(|P|=45=5\cdot3^2\) (e.g. Pick’s theorem), but the class \((1,1)\bmod3\) contributes only \(3\) lattice points in \(P\), not \(5\).
+
+\item \textbf{False.} Let \(n=3\) and \(a_0=a_1=a_2=a_3=1\). Then \(\sum_{k=0}^3(-1)^k\binom3k a_k=1-3+3-1=0\), but \(\binom31a_1=\binom32a_2\), so there is no unique maximizing \(j\).
+\end{enumerate}
+Therefore \(T=[1,1,1,0,0]\)."
+p13,p13.tex,5,5,Submit the final answer as a single integer.,"\Lore{
+In the Astral Annex, diviners read geometry the way accountants read ledgers: by invariants.
+
+A sphere of radius \(R=9\) is suspended on three chains. Four beads \(W,X,Y,Z\) are fixed to the glass, and a fifth point \(P\) may wander.
+The diviners do not measure angles directly. They measure \emph{lengths} and \emph{powers}, then declare whether a reading can be made.
+
+Three bead-readings are written in the margin: the squared distances between the midpoints of opposite bead-pairs.
+The rest, they claim, can be deduced.
+}
+
+\Problem
+
+The vault’s \emph{heart} is the point \(H\) that is equally distant from every point of the wall; that common distance is \(9\).
+
+A lantern is held at a point \(P\) strictly inside the vault. For each nail (say \(W\)), extend the straight line through \(W\) and \(P\) until it meets the wall again on the far side; call that second intersection \(W_1\neq W\). Define the \emph{weighing} of nail \(W\) to be the ratio
+\[
+\frac{WP}{PW_1},
+\]
+where both lengths are measured along the same straight line \(W\!-\!P\!-\!W_1\).
+Thus the four weighings are \(\frac{WP}{PW_1},\frac{XP}{PX_1},\frac{YP}{PY_1},\frac{ZP}{PZ_1}\).
+
+The brass rule says the sum of the four weighings equals \(4\):
+\[
+\frac{WP}{PW_1}+\frac{XP}{PX_1}+\frac{YP}{PY_1}+\frac{ZP}{PZ_1}=4.
+\]
+
+Separately, the ledger describes the keeper’s \emph{pairing ritual}:
+
+\begin{itemize}
+\item On a night, the keeper connects two disjoint pairs of nails with taut wire (so every nail is used exactly once that night).
+\item The keeper presses a wax bead to the midpoint of each wire.
+\item The keeper measures the straight distance between the two beads.
+\item The keeper repeats until, across all nights, \emph{every pair of nails has been connected exactly once}.
+\end{itemize}
+
+The three recorded bead-distances (in no particular order) are
+\[
+12,\quad 8,\quad 4.
+\]
+
+The Archive claims that the set of all lantern-positions $P$ obeying the brass rule forms one perfectly round \emph{inner shell}.
+\VaultDirective{What is the \textbf{diameter length} of that inner shell?
+
+Convert the final result to the benchmark integer using this rule: Submit the final answer as a single integer.}
+
+\textbf{Controller Output Rule.}
+Submit one integer only.","\small
+Let \(H\) be the sphere’s center (\(R=9\)). For any bead \(A\in\{W,X,Y,Z\}\), the secant through \(P\) meets the sphere again at \(A_1\), and
+\[
+P A\cdot P A_1=R^2-HP^2 \quad\Rightarrow\quad \frac{PA}{PA_1}=\frac{PA^2}{R^2-HP^2}.
+\]
+So the Oracle equation
+\(\sum_{A}\frac{PA}{PA_1}=4\) is equivalent to
+\[
+\sum_A PA^2=4(R^2-HP^2). \tag{1}
+\]
+
+Let \(C\) be the centroid of \(WXYZ\). The identity \(\sum_A \overrightarrow{PA} = 4\overrightarrow{PC}\) implies the quadratic decomposition
+\[
+\sum_A PA^2 = 4\,PC^2+\sum_A CA^2. \tag{2}
+\]
+Apply (2) at \(P=H\): since \(HA=R\) for all beads,
+\[
+4R^2=\sum_A HA^2 = 4\,HC^2+\sum_A CA^2 \ \Rightarrow\ \sum_A CA^2=4(R^2-HC^2). \tag{3}
+\]
+Substitute (2) and (3) into (1):
+\[
+4PC^2+4(R^2-HC^2)=4(R^2-HP^2)
+\ \Longrightarrow\
+HP^2+PC^2=HC^2.
+\]
+Thus the locus of \(P\) is exactly the sphere whose diameter is \(HC\). So the asked diameter is \(HC\).
+
+Let \(a_W,a_X,a_Y,a_Z\) be the position vectors of the beads and \(c=\frac{a_W+a_X+a_Y+a_Z}{4}\) (\(|c|=HC\)).
+Then
+\[
+\sum_{i<j}\|a_i-a_j\|^2=4\sum_i\|a_i\|^2-\Bigl\|\sum_i a_i\Bigr\|^2
+=16R^2-16HC^2=16(R^2-HC^2). \tag{4}
+\]
+For midpoints \(M_{WX},M_{YZ}\) etc.,
+\[
+\|M_{WX}-M_{YZ}\|^2=\tfrac14\|(W+X)-(Y+Z)\|^2,
+\]
+and summing the three “opposite-midpoint” squares gives
+\[
+d_1^2+d_2^2+d_3^2=\tfrac14\sum_{i<j}\|a_i-a_j\|^2. \tag{5}
+\]
+Given $d_1=12,d_2=8,d_3=4$, we have $d_1^2+d_2^2+d_3^2=12^2+8^2+4^2=224$, so by (5) and (4):
+\[
+224=\tfrac14\cdot 16(R^2-HC^2)\ \Rightarrow\ R^2-HC^2=56.
+\]
+With \(R^2=81\), we get \(HC^2=25\), so \(HC=5\). Therefore the locus sphere has radius \(HC/2=\boxed{\tfrac52}\), so its \emph{diameter} is \(\boxed{5}\)."
+p15,p15.tex,38216,38216,Submit the final answer as a single integer.,"\Lore{
+
+Five niches, five wards, five keepers.
+
+Each alcove bears a two-line plaque: one sentence in brass, one in stone.
+The Vault was built by skeptics, so every plaque lies once and tells truth once.
+
+Tonight, the gallery is not merely locked.
+A seized launch-capsule sits behind the eastern wall, and its countermand pad accepts \emph{five digits}---no more---before the failsafe seals.
+
+The ledger that should have named the relics is scraped clean.
+Only the half-true plaques remain, and the corridor will not forgive a single contradiction.
+
+\textit{“Trust the grid. Then trust the order.”}
+
+}
+
+
+
+\Problem
+
+\begingroup\scriptsize
+
+Five niches lie in a straight row from west to east, labeled I, II, III, IV, V.
+Each niche holds exactly one artifact, placed by exactly one custodian, at exactly one stamped time, sealed by exactly one ward.
+Each artifact, custodian, time, and ward is used exactly once.
+
+\medskip
+
+\noindent\textbf{Artifacts:}
+Obsidian Spindle; Ivory Lark; Jade Censer; Copper Astrolabe; Ashglass Urn.
+
+\noindent\textbf{Custodians:}
+Aegis; Athena; Kestrel; Quill; Sable.
+
+\noindent\textbf{Times:}
+21:11; 21:14; 21:17; 21:20; 21:23.
+
+\noindent\textbf{Wards:}
+Ash; Brass; Mirror; Salt; Thread.
+
+\medskip
+
+\noindent\textbf{Archivist’s fixed notes (all true).}
+\begin{enumerate}[leftmargin=*]
+\item The Mirror-warded niche is immediately to the west of the Ash-warded niche, and the Ash ward is on an \emph{end} niche (I or V).
+\item The Thread ward is not on an end niche.
+\item The Mirror ward was set at the latest time.
+\item The Brass ward was set exactly three minutes after the Ash ward.
+\item The Thread ward was set at a time \emph{strictly} between the Brass ward’s time and the Mirror ward’s time (so Brass $<$ Thread $<$ Mirror).
+\item The Obsidian Spindle is the artifact sealed with Salt.
+\item The Obsidian Spindle sits somewhere west of the Jade Censer.
+\item The Jade Censer is \emph{not} in niche IV, and it is in a niche adjacent to the Copper Astrolabe.
+\item The Ashglass Urn sits somewhere west of the Ivory Lark, and the Ivory Lark was placed earlier than the Jade Censer.
+\item Exactly one of these two statements is true: \emph{Sable carried the Copper Astrolabe}; \emph{Kestrel carried the Ivory Lark}.
+\item If Quill did \emph{not} carry the Obsidian Spindle, then Quill’s time was 21:14.
+\item Sable did not use the Mirror ward and did not use the Thread ward.
+\item In the signet registry, the names sort alphabetically as
+Aegis \(\prec\) Athena \(\prec\) Kestrel \(\prec\) Quill \(\prec\) Sable.
+The custodian who set the Mirror ward comes \emph{later} in that order than the custodian who set the Thread ward.
+\end{enumerate}
+
+\medskip
+
+\noindent\textbf{The five plaques (each plaque has exactly one true line).}
+\begin{enumerate}[leftmargin=*]
+\item \textbf{Plaque One:}
+\begin{itemize}
+\item The Mirror ward stands immediately to the right of the Brass ward.
+\item Aegis worked the middle niche (III).
+\end{itemize}
+
+\item \textbf{Plaque Two:}
+\begin{itemize}
+\item Athena set the Salt ward.
+\item The Ash ward was set at 21:20.
+\end{itemize}
+
+\item \textbf{Plaque Three:}
+\begin{itemize}
+\item The Jade Censer is not in an end niche (I or V).
+\item Quill carried the Ashglass Urn.
+\end{itemize}
+
+\item \textbf{Plaque Four:}
+\begin{itemize}
+\item The Thread ward is in niche II.
+\item The Copper Astrolabe is in niche V.
+\end{itemize}
+
+\item \textbf{Plaque Five:}
+\begin{itemize}
+\item The Ivory Lark’s time was exactly six minutes earlier than the Thread ward’s time.
+\item Aegis carried the Ivory Lark.
+\end{itemize}
+\end{enumerate}
+
+\medskip
+
+\noindent\textbf{Countermand protocol (how to extract the 5-digit PIN).}
+
+After you determine the unique full assignment, order the \emph{five placements by time} from earliest to latest.
+Let $r(\cdot)$ be the alphabetical rank from Note 13:
+\[
+r(\text{Aegis})=1,\ r(\text{Athena})=2,\ r(\text{Kestrel})=3,\ r(\text{Quill})=4,\ r(\text{Sable})=5.
+\]
+For each placement at time $21{:}mm$ by custodian $C$, form one digit as the \emph{units digit} of $mm+r(C)$.
+Concatenate the five digits (earliest to latest) to obtain the PIN.
+
+\endgroup
+
+\VaultDirective{Determine the five-digit countermand PIN. (You will need to deduce the complete assignment of artifact, custodian, time, and ward to each niche.)
+
+Convert the final result to the benchmark integer using this rule: Submit the final answer as a single integer.}
+
+\textbf{Controller Output Rule.}
+Submit one integer only.","\scriptsize
+
+From Note 1, Ash is an end niche and Mirror is immediately to its west, so
+\[
+V=\text{Ash},\qquad IV=\text{Mirror}.
+\]
+By Note 3, \(t(IV)=21{:}23\). Notes 4--5 give \(t(\text{Brass})=t(\text{Ash})+3\) and \(t(\text{Brass})<t(\text{Thread})<21{:}23\), so \(t(\text{Ash})\in\{21{:}11,21{:}14\}\).
+
+Plaque 2 is half-true. If \(t(\text{Ash})=21{:}20\) then Brass would be \(21{:}23\), leaving no time strictly between Brass and Mirror, contradicting Note 5; hence the second line of Plaque 2 is false and the first is true:
+$
+\textbf{Athena set Salt.}
+$
+By Note 6, Salt seals the Obsidian Spindle, so Athena carried the Spindle.
+
+By Note 11, Quill did not carry the Spindle, hence \(t(\text{Quill})=21{:}14\). If \(t(\text{Ash})=21{:}11\), then \(t(\text{Brass})=21{:}14\) and Quill would be the Brass custodian; under Notes 7--9 this forces the Jade Censer into niche \(IV\), contradicting Note 8 (\(\text{Jade}\neq IV\)). Therefore
+\[
+t(\text{Ash})=21{:}14,\quad t(\text{Brass})=21{:}17,\quad t(\text{Thread})=21{:}20,\quad t(\text{Salt})=21{:}11,
+\]
+and in particular Quill is the Ash custodian in niche \(V\).
+
+Plaque 4 is half-true. If the Copper Astrolabe were in \(V\), then by Note 8 the Jade Censer would be adjacent to \(V\) and hence in \(IV\), again contradicting Note 8. Thus the second line of Plaque 4 is false and the first is true:
+\[
+II=\text{Thread}.
+\]
+
+Plaque 1 is half-true and \(IV=\text{Mirror}\). Hence ``Mirror immediately right of Brass'' forces Brass in \(III\), so the other line is false:
+\[
+III=\text{Brass},\qquad \text{Aegis}\neq III.
+\]
+
+By Note 12, Sable used neither Mirror nor Thread, so Sable is not in \(IV\) or \(II\). With \(I\) and \(V\) occupied by Athena and Quill, this forces
+\[
+\text{Sable in }III.
+\]
+
+Plaque 5 is half-true. Since \(t(\text{Thread})=21{:}20\), its first line asserts \(t(\text{Ivory})=21{:}14\), i.e.\ Ivory lies in niche \(V\). If instead the second line were true (Aegis carried Ivory), then Ivory would not be in \(V\), contradicting the time forced by Note 9 together with the ward-time skeleton already fixed. Hence the second line is false and the first is true:
+\[
+V=\text{Ivory Lark}.
+\]
+So Quill carried the Ivory Lark, and in Note 10 the clause ``Kestrel carried the Ivory Lark'' is false; therefore the other clause is true:
+\[
+\text{Sable carried the Copper Astrolabe}.
+\]
+Thus niche \(III\) holds the Copper Astrolabe.
+
+By Note 8, the Jade Censer is adjacent to Copper (in \(III\)) and not in \(IV\), so
+\[
+II=\text{Jade Censer},\qquad IV=\text{Ashglass Urn}.
+\]
+
+The remaining custodians for \(II\) and \(IV\) are Aegis and Kestrel. By Note 13, the Mirror custodian (niche \(IV\)) is later alphabetically than the Thread custodian (niche \(II\)), so
+\[
+II=\text{Aegis},\qquad IV=\text{Kestrel}.
+\]
+
+Therefore the unique assignment is
+\[
+\renewcommand{\arraystretch}{1.05}
+\begin{array}{|c|l|l|c|l|}
+\hline
+\textbf{Niche} & \textbf{Artifact} & \textbf{Custodian} & \textbf{Time} & \textbf{Ward}\\
+\hline
+\text{I}   & \text{Obsidian Spindle} & \text{Athena}  & 21{:}11 & \text{Salt}\\
+\text{II}  & \text{Jade Censer}      & \text{Aegis}   & 21{:}20 & \text{Thread}\\
+\text{III} & \text{Copper Astrolabe} & \text{Sable}   & 21{:}17 & \text{Brass}\\
+\text{IV}  & \text{Ashglass Urn}     & \text{Kestrel} & 21{:}23 & \text{Mirror}\\
+\text{V}   & \text{Ivory Lark}       & \text{Quill}   & 21{:}14 & \text{Ash}\\
+\hline
+\end{array}
+\]
+
+\medskip
+
+\noindent\textbf{PIN.}
+Chronological order:
+$21{:}11(\text{Athena}),\,21{:}14(\text{Quill}),\,21{:}17(\text{Sable}),\,21{:}20(\text{Aegis}),\,21{:}23(\text{Kestrel}).$
+
+Units digit of minute$+$rank:
+$11{+}2\to3,\ 14{+}4\to8,\ 17{+}5\to2,\ 20{+}1\to1,\ 23{+}3\to6,$
+hence $\boxed{38216}$."
+p16,p16.tex,24695,24695,Submit the final answer as a single integer.,"\Lore{
+The Locksmith’s door has a pin-code style key. It takes five dials—five small problems—each one stamped into bronze with a promise:
+\begin{quote}\textit{Turn me correctly and I will not argue with the next.}\end{quote}
+
+Each dial yields a single digit. Together they form the code that releases the latch.
+}
+
+\Problem
+Five dials (I--V) each output one decimal digit.  Let those digits be \(d_1,d_2,d_3,d_4,d_5\).
+The Vault code is the 5-digit integer \(\overline{d_1d_2d_3d_4d_5}\).
+
+\medskip
+\noindent\textbf{Dial I (Free-term collar).}
+A collar of integer index \(a\ge 1\) used for \(n\ge 1\) full torque cycles stamps the difference
+\[
+\Delta=a^{n+1}-(a+1)^n.
+\]
+The sleeve shows \(\Delta=223137\).  Dial I outputs
+\[
+d_1=n.
+\]
+
+\medskip
+\noindent\textbf{Dial II (Marriage minimum).}
+Let \(N=2^{\,d_1+1}\).
+At a party there are \(N\) boys and \(N\) girls.  Each boy knows at least \(m\) girls, and each girl knows at least \(m\) boys.
+Define \(m_\ast(N)\) to be the \emph{smallest} integer \(m\) such that a complete pairing (a matching of all boys to distinct acquainted girls) is guaranteed for \emph{every} such acquaintance pattern.
+Dial II outputs
+\[
+d_2=m_\ast(N).
+\]
+
+\medskip
+\noindent\textbf{Dial III (The pegboard).}
+On an \(N\times N\) grid with rows and columns indexed \(1,2,\dots,N\), a peg is present in cell \((i,j)\) iff \(i+j\) is even.
+Let \(P\) be the number of ways to choose \(N\) pegs so that no two chosen pegs lie in the same row or the same column.
+Dial III outputs
+\[
+d_3 \equiv P \pmod{10}.
+\]
+
+\medskip
+\noindent\textbf{Dial IV (Commutator strip).}
+Let \(t=d_2-1\).
+Let \(X\) and \(B_0\) be \(t\times t\) real matrices, and define
+\[
+B_{k}=B_{k-1}X-XB_{k-1}\qquad(k\ge 1).
+\]
+Assume \(B_{t^2}=X\).
+Dial IV outputs
+\[
+d_4=t^2.
+\]
+
+\medskip
+\noindent\textbf{Dial V (Factorial determinant).}
+Let \(M=d_4+1\).
+Define a sequence \((u_n)_{n\ge 0}\) by \(u_0=u_1=u_2=1\) and, for every \(n\ge 0\),
+\[
+\det\!\begin{pmatrix}
+u_{n+3} & u_{n+2}\\
+u_{n+1} & u_n
+\end{pmatrix}
+=n!.
+\]
+Dial V outputs
+\[
+d_5 \equiv u_M \pmod{10}.
+\]
+
+\medskip
+\VaultDirective{Determine the 5-digit code \(\overline{d_1d_2d_3d_4d_5}\).
+
+Convert the final result to the benchmark integer using this rule: Submit the final answer as a single integer.}
+
+\textbf{Controller Output Rule.}
+Submit one integer only.","We compute the dials in order.
+
+\smallskip
+\textbf{Dial I.} If \(a^{n+1}-(a+1)^n=223137\) with integers \(a,n\ge1\), then \(a\) is an integer root of
+\(f(x)=x^{n+1}-(x+1)^n-223137\), so \(a\mid f(0)=223138=2\cdot31\cdot59\cdot61\).
+Modulo \(3\), \(223137\equiv0\), forcing \(a\equiv1\pmod3\) and \(n\) even.
+Modulo \(4\), \(a\) must be odd and then \(a\equiv1\pmod4\).
+Among odd divisors of \(31\cdot59\cdot61\), the congruences \(a\equiv1\pmod3\) and \(a\equiv1\pmod4\) force \(a=61\).
+Then
+\[
+61^{n+1}-62^n=223137.
+\]
+Check \(n=2\): \(61^3-62^2=226981-3844=223137\).
+If \(n\ge4\) even, then \(62^n\equiv0\pmod8\), so \(61^{n+1}\equiv223137\equiv1\pmod8\), but \(61\equiv5\pmod8\) and \(n+1\) odd gives \(61^{n+1}\equiv5\pmod8\), contradiction.
+Hence \(n=2\), so \(d_1=2\).
+
+\smallskip
+\textbf{Dial II.} \(N=2^{d_1+1}=2^3=8\).
+Sharpness: for even \(N\), split boys into \(B_1,B_2\) of size \(N/2\) and girls into \(G_1\) of size \(N/2-1\) and \(G_2\) of size \(N/2+1\). Connect every boy to every girl in \(G_1\), and connect \(B_1\) also to all girls in \(G_2\). Then every vertex has degree \(\ge N/2-1\), but \(B_2\) has neighborhood \(G_1\) of size \(N/2-1\), so Hall fails and no perfect matching exists. Hence \(m_\ast(N)\ge N/2\). Hall’s condition shows \(m_\ast(N)\le N/2\): if every vertex has degree \(\ge N/2\), then for any set \(X\) of boys, either \(|X|\le N/2\) and \(|N(X)|\ge N/2\ge|X|\), or \(|X|>N/2\) and then \(N(X)\) is all girls (otherwise some girl has degree \(<N/2\)). Thus \(m_\ast(8)=4\), i.e. \(d_2=4\).
+
+\smallskip
+\textbf{Dial III.} The even-parity cells form two \(4\times4\) blocks after permuting rows/cols by parity.
+Choosing \(8\) nonattacking pegs means choosing a permutation in each block, so
+\(P=(4!)^2=576\), hence \(d_3\equiv 6\pmod{10}\), i.e. \(d_3=6\).
+
+\smallskip
+\textbf{Dial IV.} \(t=d_2-1=3\), so \(t^2=9\).
+Let \(V\) be the vector space of \(t\times t\) matrices (\(\dim V=t^2\)).
+With \(T(Y)=YX-XY\), we have \(B_{k}=T^k(B_0)\).
+The \(t^2+1\) vectors \(B_0,\dots,B_{t^2}\) are dependent; take a dependence with smallest index \(k\) having nonzero coefficient.
+Applying \(T\) repeatedly shifts the dependence and forces \(B_{t^2}\) to be a linear combination of \(B_{t^2+1},B_{t^2+2},\dots\).
+But \(B_{t^2}=X\) and \(B_{t^2+1}=[X,X]=0\), hence all later \(B\)’s are \(0\), so the only possibility is \(B_{t^2}=0\), i.e. \(X=0\).
+Therefore Dial IV outputs \(d_4=t^2=9\).
+
+\smallskip
+\textbf{Dial V.} \(M=d_4+1=10\).
+The determinant rule is \(u_{n+3}u_n-u_{n+2}u_{n+1}=n!\), which yields the closed form
+\(u_n=(n-1)(n-3)\cdots\) (same-parity descending product), hence
+\(u_{10}=9\cdot7\cdot5\cdot3\cdot1=945\), so \(d_5\equiv5\pmod{10}\), i.e. \(d_5=5\).
+
+Thus the code is \(\overline{d_1d_2d_3d_4d_5}=24695\)."
+p17,p17.tex,4,4,Submit the final answer as a single integer.,"\Lore{
+$\tau=22{:}20,\ \Phi=\varnothing.\qquad
+S=\{1,2,3,4\}.\qquad
+\exists i\in S\bigl(L(i)\land \forall j\in S\,(j\ne i\to \neg L(j))\bigr),\qquad
+\exists i\in S\bigl(G(i)\land \forall j\in S\,(j\ne i\to \neg G(j))\bigr).\\
+\forall i\in S\ \forall k\in\{1,2,3\}:\ (T(i)\to \sigma_{i,k})\land(L(i)\to \neg\sigma_{i,k}).
+\qquad \kappa,\lambda,\Delta.$
+}
+\Problem
+
+\[
+S=\{1,2,3,4\}.
+\]
+
+\[
+T(i):=L(i)\uparrow L(i).
+\qquad
+p\uparrow q := \neg(p\land q).
+\qquad
+p\oplus q := (p\lor q)\land\neg(p\land q).
+\]
+
+\[
+(\exists i\in S\,L(i))\land(\forall a\in S\,\forall b\in S:\ (a\neq b)\to\neg(L(a)\land L(b))).
+\]
+\[
+(\exists i\in S\,G(i))\land(\forall a\in S\,\forall b\in S:\ (a\neq b)\to\neg(G(a)\land G(b))).
+\]
+\[
+\forall i\in S\ \forall k\in\{1,2,3\}:\ (T(i)\to\sigma_{i,k})\land(L(i)\to\neg\sigma_{i,k}).
+\]
+
+\[
+\begin{array}{rcl}
+\sigma_{1,1}&:=&(L(3)\oplus G(4))\uparrow(L(3)\oplus G(4))\\
+\sigma_{1,2}&:=&L(2)\uparrow G(2)\\
+\sigma_{1,3}&:=&L(4)\uparrow (G(1)\uparrow G(1))\\[2pt]
+\sigma_{2,1}&:=&L(1)\oplus G(4)\\
+\sigma_{2,2}&:=&G(1)\uparrow (L(3)\uparrow L(3))\\
+\sigma_{2,3}&:=&L(3)\uparrow G(2)\\[2pt]
+\sigma_{3,1}&:=&G(4)\uparrow G(4)\\
+\sigma_{3,2}&:=&L(1)\oplus L(2)\\
+\sigma_{3,3}&:=&G(4)\oplus L(3)\\[2pt]
+\sigma_{4,1}&:=&L(3)\uparrow G(2)\\
+\sigma_{4,2}&:=&(G(4)\oplus(G(1)\uparrow G(1)))\uparrow(G(4)\oplus(G(1)\uparrow G(1)))\\
+\sigma_{4,3}&:=&L(3)\uparrow G(1)
+\end{array}
+\]
+
+\VaultDirective{$i^\star:=\iota i\in S\;G(i)$. $i^\star$?.
+
+Convert the final result to the benchmark integer using this rule: Submit the final answer as a single integer.}
+
+\textbf{Controller Output Rule.}
+Submit one integer only.","\[
+\forall a\in S\,\forall b\in S:\ (a\neq b)\to\neg(L(a)\land L(b)).
+\qquad
+\forall a\in S\,\forall b\in S:\ (a\neq b)\to\neg(G(a)\land G(b)).
+\]
+
+\[
+\boxed{L(1)}
+\Rightarrow \neg\sigma_{1,2}
+\Rightarrow \neg(L(2)\uparrow G(2))
+\Rightarrow (L(2)\land G(2))
+\Rightarrow (L(1)\land L(2))
+\Rightarrow \bot.
+\]
+
+\[
+\boxed{L(2)}
+\Rightarrow \neg\sigma_{2,2}
+\Rightarrow \neg\bigl(G(1)\uparrow(L(3)\uparrow L(3))\bigr)
+\Rightarrow \bigl(G(1)\land(L(3)\uparrow L(3))\bigr).
+\]
+\[
+L(2)\Rightarrow T(1)\land T(3)
+\Rightarrow \sigma_{1,1}\land \sigma_{3,3}.
+\]
+\[
+\sigma_{1,1}\land (L(3)\uparrow L(3)) \Rightarrow (G(4)\uparrow G(4)),
+\qquad
+\sigma_{3,3}\land (L(3)\uparrow L(3)) \Rightarrow G(4),
+\]
+\[
+\Rightarrow \bot.
+\]
+
+\[
+\boxed{L(4)}
+\Rightarrow \neg\sigma_{4,1}
+\Rightarrow \neg(L(3)\uparrow G(2))
+\Rightarrow (L(3)\land G(2))
+\Rightarrow (L(3)\land L(4))
+\Rightarrow \bot.
+\]
+
+\[
+\Rightarrow L(3).
+\]
+\[
+L(3)\Rightarrow \neg\sigma_{3,1}
+\Rightarrow \neg(G(4)\uparrow G(4))
+\Rightarrow G(4).
+\]
+\[
+\forall a\in S\,\forall b\in S:\ (a\neq b)\to\neg(G(a)\land G(b))
+\Rightarrow i^\star=4.
+\]"
+p18,p18.tex,99165300615000,99165300615000,Submit the final answer as a single integer.,"\Lore{
+A torn folio from the annex shows three headings, written in the same steady hand:
+
+\textit{Echo. Feast. Bindings.}
+
+Under \textit{Echo} are three probes and three even replies.
+Under \textit{Feast} is a single line: \textit{“Make the weak quartets as many as possible.”}
+Under \textit{Bindings} is the old staircase of wardens and seals.
+
+In the margin: \textit{“If any step is guessed, the next one fails.”}
+}
+
+\Problem
+\textbf{I. The Echo-Ruler.}
+A witness secretly chooses an ordered triple \((u,v,w)\) with \(0\le u,v,w\le 9\).
+A probe is a triple \((a,b,c)\) with \(0\le a,b,c\le 9\), and the reply is
+\[
+R(a,b,c)=|u+v-a-b|+|v+w-b-c|+|w+u-c-a|.
+\]
+Let \(M\) be the minimum number of probes needed to guarantee determining \((u,v,w)\) in the worst case.
+
+The folio records that the auditor used \(M\) probes and obtained:
+\[
+R(0,0,0)=22,\qquad R(9,2,0)=14,\qquad R(4,0,7)=10.
+\]
+
+\medskip
+\textbf{II. The Feast of Friends.}
+Set \(N:=100+10u+v\).
+Among \(N\) people, some pairs are friends. A \emph{weak quartet} is a set of four people containing
+\emph{exactly one} friendship pair.
+Let \(Q(N)\) be the maximum possible number of weak quartets over all friendship graphs on \(N\) vertices.
+Let \(k\) be the number of connected components (cliques) in an extremal configuration attaining \(Q(N)\).
+
+\medskip
+\textbf{III. The Staircase Registry.}
+There are \(15\) wardens \(W_1,\dots,W_{15}\) and \(29\) seals \(S_1,\dots,S_{29}\).
+A \emph{binding} of size \(r\) is a set of \(r\) disjoint Warden--Seal pairs.
+It is \emph{legal} if \(W_i\) may only bind to seals \(S_j\) with \(j\le 2i-1\).
+Let \(A(15,r)\) be the number of legal bindings of size \(r\).
+Define
+\[
+r:=M+k+w,\qquad V:=A(15,r)-Q(N).
+\]
+
+\medskip
+\VaultDirective{Compute \(V\).
+
+Convert the final result to the benchmark integer using this rule: Submit the final answer as a single integer.}
+
+\textbf{Controller Output Rule.}
+Submit one integer only.","\small
+
+\textbf{I (Echo).}
+Each reply is even and lies in \([0,54]\), so there are at most \(28\) possible replies; hence two probes give
+\(\le 28^2=784<10^3\) outcomes, so \(M\ge 3\). The folio lists \(M\) probes and shows three, hence \(M=3\).
+
+From \(R(0,0,0)=22\) we get \(u+v+w=11\).
+For \((9,2,0)\),
+\[
+14=R(9,2,0)=|u{+}v{-}11|+|v{+}w{-}2|+|u{+}w{-}9|
+= w+(9-u)+|u+w-9|,
+\]
+so \(14=2w\) if \(u+w\ge 9\), and \(14=18-2u\) if \(u+w<9\); thus \(w=7\) or \(u=2\).
+For \((4,0,7)\),
+\[
+10=R(4,0,7)=|u{+}v{-}4|+|v{+}w{-}7|+|u{+}w{-}11|
+=|7-w|+|4-u|+v.
+\]
+If \(w=7\) then \(u+v=4\) and \(R=|4-u|+v\in\{0,2,4,6,8\}\), contradiction; hence \(u=2\).
+Then \(v+w=9\) and \(10=|7-w|+2+v=|v-2|+v+2\), giving \(v=5\), \(w=4\).
+So \((u,v,w)=(2,5,4)\).
+
+\medskip
+\textbf{II (Feast).}
+Now \(N=100+10u+v=125\).
+By the copying/symmetrization inequality \(2q(G)\le q(G_x)+q(G_y)\), an extremal graph is a disjoint union of cliques.
+With clique sizes \(a_1,\dots,a_n\) (\(\sum a_i=N\)),
+\[
+q(G)=\sum_{i=1}^n \binom{a_i}{2}\sum_{\substack{j<\ell\\ j,\ell\neq i}} a_j a_\ell.
+\]
+For fixed \(n\), \(q(G)\) is maximized when the nonzero \(a_i\) differ by \(\le 1\); for equal size \(a=N/n\),
+\[
+q_n=n\binom{a}{2}\binom{n-1}{2}a^2=\frac{N^3}{4}\cdot \frac{(n-1)(n-2)(N-n)}{n^3}.
+\]
+For \(N=125\), the factor \(f(n)=\frac{(n-1)(n-2)(125-n)}{n^3}\) satisfies
+\(f(4)=\frac{726}{64}<f(5)=\frac{1440}{125}\) and \(f(6)=\frac{2380}{216}<f(5)\), so the maximum is at \(n=5\).
+Since \(125=5\cdot 25\), an extremal configuration has \(k=5\) cliques of size \(25\), and
+\[
+Q(125)=5\binom{25}{2}\binom{4}{2}25^2=5\cdot 300\cdot 6\cdot 625=5{,}625{,}000.
+\]
+
+\medskip
+\textbf{III (Registry).}
+\(r=M+k+w=3+5+4=12\).
+The staircase recurrence gives \(A(n,r)=(2n-r)A(n-1,r-1)+A(n-1,r)\), hence \(A(n,r)=\binom{n}{r}^2 r!\).
+Thus
+\[
+A(15,12)=\binom{15}{3}^2\,12!=455^2\cdot 12!=99{,}165{,}306{,}240{,}000,
+\]
+so
+\[
+V=A(15,12)-Q(125)=99{,}165{,}306{,}240{,}000-5{,}625{,}000
+=99{,}165{,}300{,}615{,}000.
+\]
+
+\normalsize"
+p20,p20.tex,167,167,Submit the final answer as a single integer.,"\Lore{
+The Archive Casino keeps a repair corridor: a brass runway scored into unit squares.
+
+The steward slides a tray of identical talon plates---six unit-squares fused into a crooked claw.
+At the bend of every claw is a pocket: a deliberate void the metal leans around but does not cover.
+
+Some chambers accept the claws cleanly; others reject them no matter how patiently the pieces are turned.
+The copper strip below does not ask \textit{how}; it asks only which chambers can be sealed.
+}
+
+\Problem
+A \textbf{talon plate} is the fixed six-square shape below (filled squares are covered; the $\circ$ is the \emph{pocket square} and is \emph{not} covered):
+
+\[
+\begin{array}{ccc}
+\blacksquare & \blacksquare & \blacksquare\\
+\blacksquare & \circ         & \blacksquare\\
+\blacksquare & \phantom{\blacksquare} & \phantom{\blacksquare}
+\end{array}
+\]
+
+A talon may be translated, rotated, or reflected.
+
+A rectangle of size $m\times n$ is called \textbf{sealable} if its $mn$ unit squares can be tiled by talon plates with no overlaps and no gaps.
+
+\medskip
+The copper strip lists the following chambers:
+
+\[
+\begin{array}{c|c}
+\text{Rectangle} & \text{Rune}\\\hline
+14\times18 & 11\\
+8\times15 & 17\\
+10\times30 & 19\\
+12\times7 & 29\\
+6\times20 & 37\\
+22\times18 & 31\\
+16\times9 & 41\\
+12\times11 & 43\\
+18\times18 & 23
+\end{array}
+\]
+
+\VaultDirective{Sum the runes of the sealable chambers.
+
+Convert the final result to the benchmark integer using this rule: Submit the final answer as a single integer.}
+
+\textbf{Controller Output Rule.}
+Submit one integer only.","\scriptsize
+We give two necessary conditions (local forcing and a mod-$4$ obstruction), then tile exactly the chambers that pass.
+
+\textbf{Linked-pair involution $\Rightarrow 12\mid mn$.}
+
+Fix a tiling of an $m\times n$ rectangle.
+For any plate $H$, let $P(H)$ be its \emph{pocket square}: the unique unit square adjacent to three covered squares of $H$.
+Let $M(H)$ be the \emph{mouth square} of that pocket: the unique side-adjacent neighbor of $P(H)$ not covered by $H$.
+
+Because the rectangle is perfectly tiled, $P(H)$ is covered by exactly one other plate; call it $f(H)$.
+(So $f(H)\ne H$.)
+
+\noindent\emph{Local forcing:}
+If $K=f(H)$ covers $P(H)$, then $K$ must also cover $M(H)$ (it is the only available neighbor of $P(H)$ not already blocked by $H$).
+Checking the finitely many placements of a talon that cover two adjacent squares $P(H)$ and $M(H)$ without overlapping $H$,
+one finds that the only placements extendable to a full tiling are exactly those in which $H$ covers the pocket square $P(K)$.
+Equivalently, $f(f(H))=H$.
+
+Thus the plates partition into \emph{linked pairs} $\{H,f(H)\}$.
+Each linked pair covers $12$ squares, so $mn$ must be a multiple of $12$.
+
+\textbf{If $12\mid mn$ but $4\nmid m$ and $4\nmid n$, then the rectangle is not sealable.}
+
+Assume $12\mid mn$ and $4\nmid m,4\nmid n$.
+Then $m\equiv n\equiv 2\pmod 4$, so the number of linked pairs is
+\[\frac{mn}{12},\]
+which is odd.
+
+A direct finite check shows that, up to rotation/reflection, the union of any linked pair is one of the following four $12$-square shapes:
+\[
+\begin{array}{c@{\qquad}c@{\qquad}c@{\qquad}c}
+\text{(I)}\ \begin{array}{cccc}
+\blacksquare&\blacksquare&\blacksquare&\blacksquare\\
+\blacksquare&\blacksquare&\blacksquare&\blacksquare\\
+\blacksquare&\blacksquare&\blacksquare&\blacksquare
+\end{array}
+&
+\text{(II)}\ \begin{array}{ccc}
+\blacksquare&\blacksquare&\blacksquare\\
+\blacksquare&\blacksquare&\blacksquare\\
+\blacksquare&\blacksquare&\blacksquare\\
+\blacksquare&\blacksquare&\blacksquare
+\end{array}
+&
+\text{(III)}\ \begin{array}{cccc}
+\phantom{\blacksquare}&\blacksquare&\blacksquare&\phantom{\blacksquare}\\
+\blacksquare&\blacksquare&\blacksquare&\blacksquare\\
+\blacksquare&\blacksquare&\blacksquare&\blacksquare\\
+\phantom{\blacksquare}&\blacksquare&\blacksquare&\phantom{\blacksquare}
+\end{array}
+&
+\text{(IV)}\ \begin{array}{cccc}
+\phantom{\blacksquare}&\blacksquare&\blacksquare&\blacksquare\\
+\phantom{\blacksquare}&\blacksquare&\blacksquare&\blacksquare\\
+\blacksquare&\blacksquare&\blacksquare&\phantom{\blacksquare}\\
+\blacksquare&\blacksquare&\blacksquare&\phantom{\blacksquare}
+\end{array}
+\end{array}
+\]
+
+\noindent Now color the rectangle by making every $4$th \emph{column} black (columns $4,8,12,\dots$).
+Since $n\equiv 2\pmod4$, the number of black columns is $\lfloor n/4\rfloor$, so the total number of black squares is
+\[m\cdot\lfloor n/4\rfloor,\]
+and since $m$ is even, this number is even.
+
+In a linked pair of type (I) or (III), the shape spans $4$ consecutive columns and has exactly $3$ squares in each of those columns,
+so it covers exactly $3$ squares in the unique black column among them---an \emph{odd} number.
+In a linked pair of type (II) or (IV), every column contains an even number of squares, so it covers an \emph{even} number of black squares.
+
+Therefore the number of linked pairs of type (I)/(III) must be even.
+But the total number of linked pairs is odd, so the number of linked pairs of type (II)/(IV) is odd.
+
+Now repeat the argument with every $4$th \emph{row} colored black.
+The total number of black squares is $n\cdot\lfloor m/4\rfloor$, again even.
+Pairs of type (II)/(IV) span $4$ consecutive rows and have $3$ squares in each row, so each such pair covers an odd number of black squares,
+while pairs of type (I)/(III) cover an even number.
+Hence the number of type (II)/(IV) pairs must be even---contradiction.
+
+So if $12\mid mn$, at least one of $m,n$ must be divisible by $4$.
+
+\textbf{Constructions.}
+
+From type (I) above, two talons tile a $3\times4$ rectangle.
+Therefore any rectangle whose side lengths are multiples of $3$ and $4$ is sealable by partitioning it into $3\times4$ blocks.
+
+Also, since $12$ is a multiple of $3$ and $4$, any $12\times t$ rectangle with $t$ a sum of $3$'s and $4$'s is sealable by splitting into $12\times3$ and $12\times4$ strips.
+In particular:
+\[
+12\times7=(12\times3)+(12\times4),\qquad
+12\times11=(12\times3)+(12\times4)+(12\times4).
+\]
+
+\textbf{Evaluate the nine chambers.}
+
+All nine rectangles have area divisible by $12$.
+By Step 2, any rectangle with both side lengths $\equiv 2\pmod4$ is not sealable.
+Thus
+\[
+14\times18,\ 10\times30,\ 22\times18,\ 18\times18\quad\text{are not sealable.}
+\]
+
+The remaining five are sealable by Step 3:
+\[
+8\times15,\ 12\times7,\ 6\times20,\ 16\times9\ \text{(multiples of $3$ and $4$)},\quad\text{and}\quad 12\times11.
+\]
+
+So the required rune-sum is
+\[
+17+29+37+41+43=167.
+\]"
+p21,p21.tex,62,62,Submit the final answer as a single integer.,"\Lore{
+The Algebra Vault sells “bonds” on roots the way a bazaar sells grain: by weight, not by story.
+
+A quartic \(f(x)\in\mathbb Z[x]\) is posted on the wall, and four roots \(r_1,r_2,r_3,r_4\) are recorded—two rational, two irrational, all distinct.
+The clerk will not sell the roots themselves. The clerk sells only two products:
+\(B_1=r_1r_2\) and \(B_2=r_3r_4\).
+
+The price is old-fashioned: if \(B=p/q\) in lowest terms, you pay \(p+q\) coins.
+}
+
+\Problem
+The Echo Gauge is governed by the plate
+\[
+169x^4 - 39x^3 + 428x^2 + 89x + 203.
+\]
+It has exactly four echoes \(r_1,r_2,r_3,r_4\) (not necessarily real): these are the four values of \(x\) that make the gauge’s hum vanish,
+i.e. the four roots of the equation
+\[
+169x^4 - 39x^3 + 428x^2 + 89x + 203=0.
+\]
+
+You are told that, after relabeling if needed,
+\[
+r_1+r_2=\frac{8}{13}
+\qquad\text{and}\qquad
+r_3+r_4\ne r_1+r_2.
+\]
+
+Define the two \textbf{bond-prices}
+\[
+B_1:=r_1r_2,\qquad B_2:=r_3r_4.
+\]
+The Vault mints coins by the rule:
+
+\begin{quote}
+Write each bond-price \(B_i\) as a reduced fraction \(\frac{p_i}{q_i}\) with \(\gcd(p_i,q_i)=1\) and \(q_i>0\).
+The bond costs \(p_i+q_i\) coins.
+\end{quote}
+
+\VaultDirective{Output the total number of coins required to buy both bonds.
+
+Convert the final result to the benchmark integer using this rule: Submit the final answer as a single integer.}
+
+\textbf{Controller Output Rule.}
+Submit one integer only.","Let the elementary symmetric sums be
+\[
+s_1=r_1+r_2+r_3+r_4=-\frac{b}{a},\quad
+s_2=\sum_{i<j}r_ir_j=\frac{c}{a},\quad
+s_3=\sum_{i<j<k}r_ir_jr_k=-\frac{d}{a}.
+\]
+Given \(r_1+r_2=u=\frac{8}{13}\), and since \(s_1=-\frac{b}{a}=\frac{39}{169}=\frac{3}{13}\), we have \(r_3+r_4=v=s_1-u=-\frac{5}{13}\). In particular \(u\ne v\).
+
+Set \(x=r_1r_2=B_1\), \(y=r_3r_4=B_2\).
+Then
+\[
+s_2 = (r_1r_2+r_3r_4) + (r_1+r_2)(r_3+r_4)=x+y+uv,
+\]
+so \(x+y=s_2-uv\) is rational.
+Also
+\[
+s_3=r_1r_2(r_3+r_4)+r_3r_4(r_1+r_2)=vx+uy,
+\]
+so \((x,y)\) solves the \(2\times2\) linear system
+\[
+\begin{cases}
+x+y=s_2-uv,\\
+vx+uy=s_3,
+\end{cases}
+\]
+whose determinant \(u-v\neq0\). Hence \(x,y\in\mathbb Q\) uniquely.
+
+Now plug in the given \(s_2=\frac{428}{169}\), \(s_3=-\frac{89}{169}\), \(u=\frac{8}{13}\), \(v=-\frac{5}{13}\):
+\[
+uv=-\frac{40}{169}\ \Rightarrow\ x+y=\frac{468}{169}.
+\]
+And \(vx+uy=s_3\) becomes \(-5x+8y=-\frac{89}{13}\).
+Solving gives \(x=\frac{29}{13}\), \(y=\frac{7}{13}\).
+
+Prices: \((29+13)+(7+13)=42+20=62\)."
+p22,p22.tex,1013,1013,Submit the final answer as a single integer.,"\Lore{
+On a high hook in the Vault hangs a ring of glass like a crown, its rim cut into \(2026\) facets that catch the lamp in cold, steady flashes.
+
+A pilgrim named Irin is given charcoal and a straightedge and told to cut the ring into triangles, nothing more.
+
+When a triangle settles the glass in just the right way, the crown answers with a clean tone that seems to come from inside the material.
+
+Each tone advances the Mirror Lemma Key by a single click.
+
+The ring does not care how elegant the drawing is---only how many true tones can be forced.
+}
+
+\Problem
+
+Let \(\Omega\) be a regular \(2026\)-gon.
+
+A segment joining two vertices of \(\Omega\) (either a side or a diagonal) is called \textbf{mirror-true}
+if its endpoints split the boundary of \(\Omega\) into two arcs, each consisting of an \emph{odd} number of sides of \(\Omega\).
+
+Irin draws \(2023\) diagonals of \(\Omega\), no two intersecting in the interior, thereby dissecting \(\Omega\) into \(2024\) triangles.
+
+A triangle in the dissection is called a \textbf{true-tone} triangle if:
+\begin{itemize}
+  \item it is isosceles, and
+  \item exactly two of its sides are mirror-true.
+\end{itemize}
+
+\VaultDirective{What is the \textbf{maximum possible} number of true-tone triangles in such a dissection?
+
+Convert the final result to the benchmark integer using this rule: Submit the final answer as a single integer.}
+
+\textbf{Controller Output Rule.}
+Submit one integer only.","Label vertices \(1,2,\dots,2026\) cyclically, \(N=2026\). For \(i,j\), let \(s(i,j)=\min(|i-j|,N-|i-j|)\).
+The chord \(ij\) splits the boundary into arcs of lengths \(s(i,j)\) and \(N-s(i,j)\), which have the same parity since \(N\) is even.
+So \(ij\) is mirror-true iff \(s(i,j)\) is odd iff \(|i-j|\) is odd, i.e., iff \(i,j\) have opposite parity. In particular, every polygon side is mirror-true.
+
+\smallskip
+In any triangle, either all three vertices share a parity (then \(0\) mirror-true sides) or exactly one differs (then exactly the two incident sides are mirror-true). Hence every triangle has \(0\) or \(2\) mirror-true sides.
+
+\smallskip
+In a regular \(N\)-gon, chord length depends only on \(s(i,j)\), so equal sides have step sizes of the same parity. Therefore in a true-tone triangle (two mirror-true sides, one non-true side), the equal sides must be the two mirror-true sides; the base is the unique non-true side, hence a diagonal (not a polygon side).
+
+\smallskip
+Let \(T\) be the dual graph of the triangulation (a tree on \(2024\) triangles, \(2023\) edges). Let \(k\) be the number of mirror-true diagonals among the drawn diagonals, and delete from \(T\) the \(k\) edges corresponding to those diagonals, obtaining a forest \(F\) with \(k+1\) components.
+A triangle with \(0\) mirror-true sides contains no polygon side (all polygon sides are mirror-true), hence all three of its sides are diagonals, all non-true; so it has degree \(3\) in \(F\).
+A triangle with \(2\) mirror-true sides has exactly one non-true side, necessarily a diagonal, so has degree \(1\) in \(F\).
+Thus every component of \(F\) is a \(\{1,3\}\)-degree tree. If such a tree has \(n\) vertices and \(L\) leaves, then
+\(L+3(n-L)=2(n-1)\Rightarrow L=\frac{n+2}{2}\).
+Summing over components (\(\sum n=2024\)) gives total leaves
+\[
+\sum \frac{n_i+2}{2}=\frac{2024+2(k+1)}{2}=1013+k,
+\]
+so there are \(1013+k\) triangles with \(2\) mirror-true sides.
+
+\smallskip
+A mirror-true diagonal \(XY\) cannot border two true-tone triangles. Let \(s=s(X,Y)\), which is odd. In a true-tone triangle, the mirror-true sides are the equal sides, so \(XY\) must be an equal side and the apex is \(X\) or \(Y\). If the apex is \(X\), then the third vertex must be the other vertex (if any) at step size \(s\) from \(X\); if the apex is \(Y\), it must be the other vertex (if any) at step size \(s\) from \(Y\). In both cases that third vertex lies on the same boundary arc between \(X\) and \(Y\), hence on the same side of chord \(XY\). Since the dissection has two triangles adjacent to \(XY\) on opposite sides, at most one is true-tone. Hence at least \(k\) of the \(1013+k\) leaves are not true-tone, so
+\[
+\#(\text{true-tone})\le (1013+k)-k=1013.
+\]
+
+\smallskip
+Construction: draw the \(1013\) noncrossing diagonals \((1,3),(3,5),\dots,(2025,1)\), carving off the \(1013\) ear triangles \((1,2,3),(3,4,5),\dots,(2025,2026,1)\).
+Each ear is isosceles with exactly two mirror-true sides (the polygon sides). The remaining region uses only odd vertices, so has \(0\) mirror-true sides in every triangle. Thus \(1013\) is achievable.
+
+Therefore the maximum is \(\boxed{1013}\)."
+p23,p23.tex,4096,4096,Submit the final answer as a single integer.,"\Lore{
+The Corridor of Wicks is lit in pairs: each station a matched cradle of brass with a single number stamped deep enough to catch soot.
+
+At every station a Sun wick and a Shade wick share that number; a pull flips the state with a soft click, lit to dark and dark to lit.
+
+The steward keeps the corridor quiet, because the sound of toggling carries.
+
+An old line is etched into the iron at eye height:
+\begin{quote}
+\textit{``The Shade must never shine---unless you walk the reckless road.''}
+\end{quote}
+
+Two rites are copied in the ledger. The Vault accepts only their ratio.
+}
+
+\Problem
+
+There are \textbf{9 numbered stations}, labeled \(1,2,\dots,9\).
+At each station \(i\) there are exactly two wicks: a \textbf{Sun} wick and a \textbf{Shade} wick.
+All wicks start \textbf{dark}.
+
+A \textbf{pull} chooses a station \(i\) and then chooses \emph{exactly one} of its two wicks; that wick flips state (dark \(\leftrightarrow\) lit).
+
+A \textbf{rite} is a sequence of exactly \textbf{21 pulls}.
+Two rites are distinct iff they differ at some pull index.
+
+At the end of the 21 pulls, the door demands:
+\begin{itemize}
+  \item all 9 Sun wicks are \textbf{lit}, and
+  \item all 9 Shade wicks are \textbf{dark}.
+\end{itemize}
+
+Define:
+\begin{itemize}
+  \item \(N\): the number of \textbf{Reckless Rites} that satisfy the final demand (Shade wicks may be lit during the rite).
+  \item \(M\): the number of \textbf{Oathbound Rites} that satisfy the final demand and in which
+  \textbf{after every prefix of the 21 pulls, all 9 Shade wicks are dark}.
+\end{itemize}
+
+\VaultDirective{Compute the integer factor $\dfrac{N}{M}$.
+
+Convert the final result to the benchmark integer using this rule: Submit the final answer as a single integer.}
+
+\textbf{Controller Output Rule.}
+Submit one integer only.","A wick ends \textbf{lit} exactly when it is pulled an \emph{odd} number of times, and ends \textbf{dark} exactly when it is pulled an \emph{even} number of times.
+
+\medskip
+\textbf{ Oathbound rites never pull Shade.}
+
+In an Oathbound rite, each Shade wick is dark after every prefix.
+Since every Shade wick starts dark, pulling a Shade wick even once would make it lit immediately after that pull, violating the oath.
+So in an Oathbound rite, \emph{no Shade wick is ever pulled}.
+
+Therefore an Oathbound rite consists of 21 pulls on Sun wicks only.
+To satisfy the final demand, each Sun wick must be pulled an odd number of times.
+So \(M\) counts exactly the length-21 sequences of Sun-pulls in which each of the 9 Sun wicks is used an odd number of times.
+
+\medskip
+\textbf{The station-number skeleton.}
+
+Given any rite, forget whether each pull was Sun or Shade and record only its station number.
+This produces a length-21 \emph{skeleton} word in \(\{1,2,\dots,9\}\).
+
+For a successful Reckless rite, fix a station \(i\) and write
+\[
+s_i=\#(\text{Sun pulls at station }i),\qquad h_i=\#(\text{Shade pulls at station }i),\qquad c_i=s_i+h_i.
+\]
+The final demand requires \(s_i\) to be odd (Sun ends lit) and \(h_i\) to be even (Shade ends dark), hence \(c_i\) is odd.
+So in the skeleton, each symbol \(i\) appears an odd number of times.
+
+Conversely, any skeleton in which each \(i\in\{1,\dots,9\}\) appears an odd number of times determines exactly one Oathbound rite:
+at each occurrence of \(i\), pull the \emph{Sun} wick at station \(i\).
+This is valid and satisfies the final demand.
+
+Hence the set of possible skeletons is in bijection with the set of Oathbound rites, so the number of skeletons is exactly \(M\).
+
+\medskip
+\textbf{Expanding one skeleton into Reckless rites.}
+
+Fix one skeleton, and let \(c_i\) be the number of occurrences of station \(i\) in it.
+Then each \(c_i\) is odd (hence \(c_i\ge 1\)) and \(\sum_{i=1}^9 c_i=21\).
+
+To obtain a successful Reckless rite from this skeleton, for each station \(i\) we must decide, among the \(c_i\) occurrences of \(i\),
+which are \emph{Shade} pulls (the rest are \emph{Sun} pulls).
+The final demand requires the Shade wick to end dark, so the number of Shade pulls at station \(i\) must be even.
+Thus we must choose an even-sized subset of the \(c_i\) occurrences.
+
+Among the \(2^{c_i}\) subsets, exactly half have even size (toggle a distinguished occurrence to pair even and odd subsets),
+so there are \(2^{c_i-1}\) valid choices for station \(i\).
+
+These choices are independent across stations, so the number of successful Reckless rites with this fixed skeleton is
+\[
+\prod_{i=1}^9 2^{c_i-1}
+=2^{(c_1+\cdots+c_9)-9}
+=2^{21-9}
+=2^{12}
+=4096.
+\]
+
+Thus each skeleton contributes exactly \(4096\) Reckless rites. Since the number of skeletons is \(M\), we have \(N=4096\,M\), and therefore
+\[
+\frac{N}{M}=4096.
+\]"
+p25,p25.tex,89477120,89477120,Submit the final answer as a single integer.,"\Lore{
+A chalked circle is scratched into the brass: \textit{radius by squares; direction by tangent}.
+
+Behind it sits a five-toothed wheel, heavy in the palm---each tooth stamped with a recurrence instead of a numeral.
+
+A second inscription runs along the axle, shallow under lamplight:
+\textit{When the reader alternates, only the last tooth speaks.}
+
+The seal accepts one number and refuses the rest.
+}
+
+\Problem
+\begingroup\footnotesize
+
+For a nonzero integer \(x\), let \(\nu(x)\) be the largest \(t\ge 0\) such that \(2^t\mid x\), and set \(\nu(x)=\nu(|x|)\).
+
+\smallskip
+\noindent\textbf{Geometry key.}
+In the coordinate plane, let
+\[
+\mathcal C:\ x^2+y^2=25,\qquad \mathcal L:\ x+y=7.
+\]
+Let \(P\) be the intersection point of \(\mathcal C\) and \(\mathcal L\) in the first quadrant with \(y>x\).
+Let \(\ell\) be the tangent line to \(\mathcal C\) at \(P\), and write its slope in lowest terms as
+\[
+\operatorname{slope}(\ell)=-\frac{u}{v},\qquad u,v\in\mathbb Z_{>0},\ \gcd(u,v)=1.
+\]
+Define the \emph{scale} \(\kappa=v^2\) and the \emph{count} \(m=OP\) (distance from the origin to \(P\); in this configuration \(m\) is an integer).
+
+\smallskip
+\noindent\textbf{The teeth.}
+Define a sequence \((t_j)_{j\ge 0}\) by
+\[
+t_0=u,\qquad t_{j+1}=t_j^2-2t_j+2\quad (j\ge 0),
+\]
+and form the set of \(m\) scaled teeth
+\[
+T=\{\kappa t_0,\kappa t_1,\dots,\kappa t_{m-1}\}.
+\]
+
+\smallskip
+\noindent\textbf{The alternating reader.}
+For any subset \(A\subseteq T\), list its elements in \emph{strictly decreasing} order \(a_1>\cdots>a_p\) and define
+\[
+r(A)=\sum_{k=1}^{p}(-1)^{k-1}a_k,\qquad r(\varnothing)=0.
+\]
+Let
+\[
+R=\sum_{A\subseteq T} r(A),\qquad e=\nu(R),\qquad n=e+1.
+\]
+
+\smallskip
+\noindent\textbf{Two auxiliary locks.}
+Define \((b_k)_{k\ge 0}\) by
+\[
+b_0=0,\quad b_1=1,\quad b_k=2b_{k-1}+b_{k-2}\ (k\ge 2),
+\]
+and set
+\[
+B=2^{\nu(b_{2^n})},\qquad A=2^{\nu(u^{2^n}-1)}.
+\]
+Also define
+\[
+D=\gcd\!\left(u^{2^n}-1,\ 2^{2^m}-1\right).
+\]
+
+\smallskip
+\noindent\textbf{The clasp.}
+Let \(W\) be the (unique, if it exists) power of \(2\) that can be written as
+\[
+W=(a+b^2)(b+a^2)\quad\text{for some }a,b\in\mathbb Z_{>0}.
+\]
+
+\smallskip
+\noindent\textbf{Seal-number.}
+\[
+\mathcal N \;=\; 2^{e}\cdot \frac{A}{B}\cdot W\cdot D.
+\]
+
+\smallskip
+\endgroup
+
+\VaultDirective{Determine the exact value of $\mathcal N$.
+
+Convert the final result to the benchmark integer using this rule: Submit the final answer as a single integer.}
+
+\textbf{Controller Output Rule.}
+Submit one integer only.","\scriptsize
+\textbf{1) Geometry: \((u,v,\kappa,m)\).}
+From \(x^2+(7-x)^2=25\) we get \(x\in\{3,4\}\); with \(y>x\) take \(P=(3,4)\).
+The radius \(OP\) has slope \(4/3\), so the tangent has slope \(-3/4\). Hence
+\[
+u=3,\ v=4,\ \kappa=v^2=16,\ \text{and }m=OP=\sqrt{3^2+4^2}=5\in\mathbb Z.
+\]
+
+
+\textbf{2) Teeth: Fermat ladder and product.}
+From \(t_{j+1}=t_j^2-2t_j+2\),
+\[
+t_0=3,\ t_1=5,\ t_2=17,\ t_3=257,\ t_4=65537.
+\]
+Also \(t_{j+1}-2=t_j(t_j-2)\), so by induction
+\[
+t_0t_1\cdots t_{k-1}=t_k-2\qquad(k\ge 1).
+\]
+Since \(t_{j+1}=(t_j-1)^2+1\) and \(t_0=2^{2^0}+1\), we have \(t_j=2^{2^j}+1\), so \(t_5=2^{32}+1\) and
+\[
+t_0t_1t_2t_3t_4=t_5-2=2^{32}-1.
+\]
+The same identity gives \(\gcd(t_i,t_j)=1\) for \(i\ne j\).
+
+
+\textbf{3) Alternating reader: only the maximum survives.}
+For \(X=\{x_1<\cdots<x_m\}\),
+$
+\sum_{A\subseteq X} r(A)=2^{m-1}x_m.
+$
+Indeed, fixing \(x_i\), its total contribution is \(x_i\cdot 2^{i-1}(1-1)^{m-i}\), since there are \(2^{i-1}\) choices of smaller elements and the sign depends only on chosen larger elements. This vanishes unless \(i=m\).
+
+Here \(T\) has \(m=5\) elements and \(\max(T)=\kappa t_4=16\cdot 65537\), so
+\[
+R=2^{4}\cdot 16\cdot 65537=2^{8}\cdot 65537,\quad e=\nu(R)=8,\quad n=e+1=9.
+\]
+
+
+\textbf{4) Hinge valuation: \(\nu(b_k)=\nu(k)\).}
+Write \((1+\sqrt2)^k=U_k+b_k\sqrt2\) with integers \(U_k,b_k\). Then \(b_k\) satisfies the given recurrence and \(U_k\) is odd.
+Squaring gives \(b_{2k}=2U_kb_k\), hence \(\nu(b_{2k})=1+\nu(b_k)\). Since \(b_k\) is odd iff \(k\) is odd, repeated halving yields \(\nu(b_k)=\nu(k)\). Therefore
+\[
+\nu(b_{2^n})=n,\qquad B=2^{\nu(b_{2^n})}=2^n=2^9=512.
+\]
+
+
+\textbf{5) Dyadic depth of \(3^{2^n}-1\).}
+For \(n\ge 1\) we claim \(3^{2^n}-1\equiv 2^{n+2}\pmod{2^{n+3}}\), hence \(\nu(3^{2^n}-1)=n+2\). For \(n=1\), \(3^2-1=8\equiv 2^3\pmod{16}\). If \(3^{2^n}\equiv 1+2^{n+2}\pmod{2^{n+3}}\), then squaring gives \(3^{2^{n+1}}\equiv 1+2^{n+3}\pmod{2^{n+4}}\).
+With \(n=9\),
+\[
+\nu(3^{512}-1)=11,\qquad A=2^{11}=2048,\qquad \frac{A}{B}=\frac{2048}{512}=4.
+\]
+
+\textbf{6) The clasp.}
+If \((a+b^2)(b+a^2)=2^t\), then \(a+b^2=2^m\) and \(b+a^2=2^k\).
+Since \(2^m\) is even, \(a\equiv b\pmod 2\), so \(a+b-1\) is odd. WLOG \(m\ge k\); subtracting gives
+\[
+2^m-2^k=(b-a)(a+b-1).
+\]
+Because \(a+b-1\) is odd, \(\nu(2^m-2^k)=k\) forces \(2^k\mid (b-a)\).
+But \(0\le b-a<b<2^k\) (since \(b+a^2=2^k>b\)), so \(b=a\).
+Then \(a+b^2=a+a^2=a(a+1)\) is a power of \(2\), so \(a\) and \(a+1\) are both powers of \(2\), hence \(a=1\).
+Thus \(W=4\).
+
+\textbf{7) The latch \(D=\gcd(3^{512}-1,2^{32}-1)\).}
+By Step 2, \(2^{32}-1=t_0t_1t_2t_3t_4\) with coprime factors, so
+\[
+D=\prod_{0\le i\le 4,\ t_i\mid(3^{512}-1)} t_i.
+\]
+Now:
+\[
+3\nmid(3^{512}-1),\qquad 3^4\equiv 1\pmod 5, \ 3^8\equiv -1\pmod{17}\ \Rightarrow\ 3^{16}\equiv 1\pmod{17},
+\]
+\[
+3^8\equiv 136,\ 3^{16}\equiv -8,\ 3^{32}\equiv 64,\ 3^{64}\equiv -16,\ 3^{128}\equiv -1\pmod{257}\ \Rightarrow\ 3^{256}\equiv 1\pmod{257},
+\]
+and repeated squaring modulo \(65537\) yields \(3^{16}\equiv -11088\), \(3^{32}\equiv 61869\), \(3^{64}\equiv 19139\), \(3^{128}\equiv 15028\), \(3^{256}\equiv 282\pmod{65537}\). Since \(282\not\equiv \pm 1\pmod{65537}\), we have \(3^{512}\not\equiv 1\pmod{65537}\), so \(65537\nmid(3^{512}-1)\).
+Hence
+\[
+D=5\cdot 17\cdot 257=21845.
+\]
+
+\textbf{8) Assemble.}
+\[
+\mathcal N=2^e\cdot \frac{A}{B}\cdot W\cdot D
+=256\cdot 4\cdot 4\cdot 21845
+=4096\cdot 21845
+=89{,}477{,}120.
+\]"

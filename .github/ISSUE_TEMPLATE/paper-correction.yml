@@ -1,0 +1,17 @@
+name: Paper Correction
+description: Suggest a correction to the frozen paper or a revision note.
+title: "Paper correction: "
+labels: [paper-correction]
+body:
+  - type: textarea
+    id: correction
+    attributes:
+      label: Proposed correction
+      description: Include the section, figure, table, or revision page.
+    validations:
+      required: true
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Rationale
+      description: Why is this correction needed?

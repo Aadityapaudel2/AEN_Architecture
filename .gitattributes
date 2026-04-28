@@ -1,3 +1,4 @@
+.gitattributes text eol=lf
 *.bib text eol=lf
 *.cff text eol=lf
 *.csv text eol=lf
@@ -10,3 +11,9 @@
 *.png binary
 *.jpg binary
 *.jpeg binary
+*.ndjson text eol=lf
+*.svg text eol=lf
+*.mmd text eol=lf
+*.py text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf

@@ -1,0 +1,6 @@
+title: Artificial Evaluation Network
+description: AEN paper, frozen canon, and April 27 RuntimeAtBoot revision package
+remote_theme: pages-themes/primer@v0.6.0
+plugins:
+  - jekyll-remote-theme
+show_downloads: false
