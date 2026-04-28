@@ -83,15 +83,16 @@ The prior successful run let Artemis correct the route to the factor/chain model
 The next executable path is not another full Q1-Q30 run. It is one-question gating:
 
 ```text
-CB4 -> CB6 -> CB6.5 -> CB7 -> CB7.5 -> CB8 v1.5.0 ack-gated 75-cert -> CB11.5 r4 -> CB12 one-question Q28
+CB4 -> CB6 -> CB6.5 -> CB7 -> CB7.5 -> CB8 v1.5.1 strict-ack owned-hooks 75-cert -> CB11.5 r4 -> CB12 one-question Q28
 ```
 
-CB8 v1.5.0 is included under [`code/cb08_runtimeatboot_bootcert_v1_5_0_ack_gated.py`](code/cb08_runtimeatboot_bootcert_v1_5_0_ack_gated.py). It changes the failure mode directly:
+CB8 v1.5.1 is included under [`code/cb08_runtimeatboot_bootcert_v1_5_1_strict_ack_owned_hooks.py`](code/cb08_runtimeatboot_bootcert_v1_5_1_strict_ack_owned_hooks.py). It changes the failure mode directly:
 
 - default certification returns to the frozen-style 75-line cap,
-- study acknowledgement is counted and must pass before baseline capture,
+- study acknowledgement is exact-only and must pass before baseline capture,
 - `memory_studied: true` cannot coexist with `ack_success_count: 0`,
 - failed study returns a blocked boot gate rather than a poisoned baseline,
+- stale notebook globals cannot reuse old CB8 context/validation hooks,
 - validation rows expose `ack_success_count` and `ack_passed`.
 
 ## Data Layer

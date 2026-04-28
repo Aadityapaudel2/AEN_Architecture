@@ -15,7 +15,7 @@ import time
 from pathlib import Path
 from typing import Any, Callable, cast
 
-CB08_RUNTIME_REVISION = "2026-04-28-cb08-runtimeatboot-ack-gated-75cert-v1.5.0"
+CB08_RUNTIME_REVISION = "2026-04-28-cb08-runtimeatboot-strict-ack-owned-hooks-75cert-v1.5.1"
 CB08_JSON_LOGS = bool(globals().get("CB08_JSON_LOGS", False))
 
 
@@ -240,20 +240,12 @@ def _cb8_ack_normalized(value: Any) -> str:
 
 
 def _cb8_boot_memory_ack_success(value: Any, expected: str) -> bool:
+    # Strict gate: the model must return the requested acknowledgement exactly
+    # after normalization. Apr28 showed that accepting "I have read" or a
+    # truncated prefix lets failed study masquerade as certified memory.
     observed = _cb8_ack_normalized(value)
     target = _cb8_ack_normalized(expected)
-    if not observed or not target:
-        return False
-    if observed == target:
-        return True
-    accepted = {
-        target,
-        _cb8_ack_normalized("I have read"),
-        _cb8_ack_normalized("BOOT_MEMORY_STUDIED"),
-    }
-    if target.startswith(observed) and len(observed) >= 10:
-        return True
-    return observed in accepted
+    return bool(observed and target and observed == target)
 
 
 def _cb8_bool_global(name: str, default: bool) -> bool:
@@ -813,23 +805,16 @@ def _cb8_default_append_boot_certified_memory_to_session(session: Any, report: d
     return str(memory_report.get("status", ""))
 
 
-apply_context_runtime_boot_overrides = cast(
-    Callable[..., dict[str, Any]],
-    globals().get("apply_context_runtime_boot_overrides") or _cb8_default_apply_context_runtime_boot_overrides,
-)
-run_context_runtime_boot_validation = cast(
-    Callable[..., dict[str, Any]],
-    globals().get("run_context_runtime_boot_validation") or _cb8_default_run_context_runtime_boot_validation,
-)
-run_boot_certification_gate = cast(
-    Callable[..., dict[str, Any]],
-    globals().get("run_boot_certification_gate") or _cb8_default_run_boot_certification_gate,
-)
-append_boot_certified_memory_to_session = cast(
-    Callable[..., str],
-    globals().get("append_boot_certified_memory_to_session") or _cb8_default_append_boot_certified_memory_to_session,
-)
-
+# Own these hooks inside CB8. Reusing stale globals from an earlier CB8 kernel
+# produced mixed logs: new revision strings with old context/validation logic.
+apply_context_runtime_boot_overrides = cast(Callable[..., dict[str, Any]], _cb8_default_apply_context_runtime_boot_overrides)
+run_context_runtime_boot_validation = cast(Callable[..., dict[str, Any]], _cb8_default_run_context_runtime_boot_validation)
+run_boot_certification_gate = cast(Callable[..., dict[str, Any]], _cb8_default_run_boot_certification_gate)
+append_boot_certified_memory_to_session = cast(Callable[..., str], _cb8_default_append_boot_certified_memory_to_session)
+globals()["apply_context_runtime_boot_overrides"] = apply_context_runtime_boot_overrides
+globals()["run_context_runtime_boot_validation"] = run_context_runtime_boot_validation
+globals()["run_boot_certification_gate"] = run_boot_certification_gate
+globals()["append_boot_certified_memory_to_session"] = append_boot_certified_memory_to_session
 
 DEPENDENCY_BLOCK_HINTS = {
     "cleanup_runtime": "CB6",
