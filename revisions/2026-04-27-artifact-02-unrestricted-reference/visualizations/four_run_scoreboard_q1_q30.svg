@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="410" viewBox="0 0 900 410">
+<style>
+  text { font-family: Arial, Helvetica, sans-serif; fill: #1f2933; }
+  .title { font-size: 24px; font-weight: 700; }
+  .subtitle { font-size: 13px; fill: #667085; }
+  .label { font-size: 12px; }
+  .small { font-size: 10px; fill: #667085; }
+  .num { font-size: 18px; font-weight: 700; }
+</style>
+<rect width="100%" height="100%" fill="#fbfaf7"/>
+<text x="28" y="38" class="title" text-anchor="start" style="">AIME 2026 Four-Run Scoreboard</text>
+<text x="28" y="60" class="subtitle" text-anchor="start" style="">Official run is the Apr28 boot-certified artifact; bars show score out of 30 plus resource profile.</text>
+<text x="28" y="117" class="label" text-anchor="start" style="">Frozen pruned</text>
+<rect x="230" y="95" width="560" height="30" rx="3" fill="#eef2f6" stroke="none" opacity="1"/>
+<rect x="230" y="95" width="280.0" height="30" rx="3" fill="#6b7280" stroke="none" opacity="1"/>
+<text x="808" y="117" class="num" text-anchor="start" style="">15/30</text>
+<text x="230" y="145" class="small" text-anchor="start" style="">avg tokens 711,100 | avg seconds 183.0 | tokens/correct 1,422,201</text>
+<text x="28" y="189" class="label" text-anchor="start" style="">Unrestricted</text>
+<rect x="230" y="167" width="560" height="30" rx="3" fill="#eef2f6" stroke="none" opacity="1"/>
+<rect x="230" y="167" width="410.6666666666667" height="30" rx="3" fill="#1565c0" stroke="none" opacity="1"/>
+<text x="808" y="189" class="num" text-anchor="start" style="">22/30</text>
+<text x="230" y="217" class="small" text-anchor="start" style="">avg tokens 1,125,451 | avg seconds 380.4 | tokens/correct 1,534,705</text>
+<text x="28" y="261" class="label" text-anchor="start" style="">Apr27 current 0.2.3</text>
+<rect x="230" y="239" width="560" height="30" rx="3" fill="#eef2f6" stroke="none" opacity="1"/>
+<rect x="230" y="239" width="392.0" height="30" rx="3" fill="#6a1b9a" stroke="none" opacity="1"/>
+<text x="808" y="261" class="num" text-anchor="start" style="">21/30</text>
+<text x="230" y="289" class="small" text-anchor="start" style="">avg tokens 128,625 | avg seconds 343.6 | tokens/correct 183,750</text>
+<text x="28" y="333" class="label" text-anchor="start" style="">Apr28 official boot run</text>
+<rect x="230" y="311" width="560" height="30" rx="3" fill="#eef2f6" stroke="none" opacity="1"/>
+<rect x="230" y="311" width="317.3333333333333" height="30" rx="3" fill="#e65100" stroke="none" opacity="1"/>
+<text x="808" y="333" class="num" text-anchor="start" style="">17/30</text>
+<text x="230" y="361" class="small" text-anchor="start" style="">avg tokens 134,446 | avg seconds 385.2 | tokens/correct 237,258</text>
+</svg>

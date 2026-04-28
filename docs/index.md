@@ -8,17 +8,17 @@ AEN studies whether multi-role model architectures can turn reusable reasoning s
 | --- | --- |
 | Frozen paper source | [paper/](https://github.com/Aadityapaudel2/AEN_Architecture/tree/main/paper) |
 | Rendered preprint | [AEN_RAB_source_snapshot.pdf](https://github.com/Aadityapaudel2/AEN_Architecture/blob/main/artifacts/AEN_RAB_source_snapshot.pdf) |
-| April 27 revision | [RuntimeAtBoot AIME revision](https://github.com/Aadityapaudel2/AEN_Architecture/tree/main/revisions/2026-04-27-aime-runtime-at-boot) |
-| Reproducibility | [revision reproducibility](https://github.com/Aadityapaudel2/AEN_Architecture/blob/main/revisions/2026-04-27-aime-runtime-at-boot/REPRODUCIBILITY.md) |
-| Claim ladder | [revision story](https://github.com/Aadityapaudel2/AEN_Architecture/blob/main/revisions/2026-04-27-aime-runtime-at-boot/STORY.md) |
+| Revision ledger | [dated AIME artifacts](https://github.com/Aadityapaudel2/AEN_Architecture/tree/main/revisions) |
+| April 27 benchmarkgrade | [Artifact 03](https://github.com/Aadityapaudel2/AEN_Architecture/tree/main/revisions/2026-04-27-artifact-03-benchmarkgrade-v023) |
+| April 28 RuntimeAtBoot experiment | [Artifact 04](https://github.com/Aadityapaudel2/AEN_Architecture/tree/main/revisions/2026-04-28-artifact-04-runtime-at-boot-v33-experiment) |
 
-## April 27 Revision Snapshot
+## Revision Snapshot
 
-| frozen canon | unrestricted reference | current Apr27 archive |
-| ---: | ---: | ---: |
-| 15/30 | 22/30 | 21/30 |
+| frozen pruned | unrestricted reference | Apr27 benchmarkgrade | Apr28 RuntimeAtBoot experiment |
+| ---: | ---: | ---: | ---: |
+| 15/30 | 22/30 | 21/30 | 17/30 |
 
-The April 27 package is a follow-on evidence layer: AIME Q1-Q30 tables, RuntimeAtBoot v32 staged data, diagrams, and the CB8/CB11.5 r4 correction for preserving studied boot memory across controller resets.
+The revision ledger is a follow-on evidence layer: AIME Q1-Q30 tables, RuntimeAtBoot staged data, diagrams, and the April 28 negative experiment showing that boot certification did not by itself preserve final-answer quality.
 
 ## Boundary
 

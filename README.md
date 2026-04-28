@@ -39,7 +39,16 @@ place.
 | --- | --- |
 | [`NAVIGATION.md`](NAVIGATION.md) | readable map of the paper, revision package, data, and Pages preview |
 | [`docs/`](docs/) | GitHub Pages source folder; enable Pages from `main` / `docs` in repository settings |
-| [`revisions/2026-04-27-aime-runtime-at-boot/`](revisions/2026-04-27-aime-runtime-at-boot/) | April 27 AIME/RuntimeAtBoot revision package |
-## April 27 Revision Package
+| [`revisions/`](revisions/) | dated artifact ledger for the AIME Q1-Q30 revision runs |
 
-A new reproducibility package lives at [`revisions/2026-04-27-aime-runtime-at-boot/`](revisions/2026-04-27-aime-runtime-at-boot/). It adds the April 27 AIME Q1-Q30 result layer, RuntimeAtBoot v32 staged payload, and the CB8/CB11.5 r4 boot-memory preservation correction while leaving the frozen Zenodo paper source intact.
+## Revision Artifacts
+
+The follow-on AIME evidence lives under [`revisions/`](revisions/). The folder is
+organized as dated artifacts rather than mutable labels:
+
+- Artifact 01: frozen pruned baseline.
+- Artifact 02: unrestricted reference.
+- Artifact 03: April 27 benchmarkgrade v0.2.3 run.
+- Artifact 04: April 28 RuntimeAtBoot v33 experiment.
+
+The frozen Zenodo paper source remains unchanged.

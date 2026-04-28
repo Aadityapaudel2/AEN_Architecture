@@ -1,0 +1,287 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="310" viewBox="0 0 900 310">
+<style>
+  text { font-family: Arial, Helvetica, sans-serif; fill: #1f2933; }
+  .title { font-size: 24px; font-weight: 700; }
+  .subtitle { font-size: 13px; fill: #667085; }
+  .label { font-size: 12px; }
+  .small { font-size: 10px; fill: #667085; }
+  .num { font-size: 18px; font-weight: 700; }
+</style>
+<rect width="100%" height="100%" fill="#fbfaf7"/>
+<text x="28" y="38" class="title" text-anchor="start" style="">Q1-Q30 Result Grid</text>
+<text x="28" y="60" class="subtitle" text-anchor="start" style="">Green = correct, red = missed. Numbers inside cells are submitted answers.</text>
+<text x="156.5" y="82" class="small" text-anchor="middle" style="">1</text>
+<text x="179.5" y="82" class="small" text-anchor="middle" style="">2</text>
+<text x="202.5" y="82" class="small" text-anchor="middle" style="">3</text>
+<text x="225.5" y="82" class="small" text-anchor="middle" style="">4</text>
+<text x="248.5" y="82" class="small" text-anchor="middle" style="">5</text>
+<text x="271.5" y="82" class="small" text-anchor="middle" style="">6</text>
+<text x="294.5" y="82" class="small" text-anchor="middle" style="">7</text>
+<text x="317.5" y="82" class="small" text-anchor="middle" style="">8</text>
+<text x="340.5" y="82" class="small" text-anchor="middle" style="">9</text>
+<text x="363.5" y="82" class="small" text-anchor="middle" style="">10</text>
+<text x="386.5" y="82" class="small" text-anchor="middle" style="">11</text>
+<text x="409.5" y="82" class="small" text-anchor="middle" style="">12</text>
+<text x="432.5" y="82" class="small" text-anchor="middle" style="">13</text>
+<text x="455.5" y="82" class="small" text-anchor="middle" style="">14</text>
+<text x="478.5" y="82" class="small" text-anchor="middle" style="">15</text>
+<text x="501.5" y="82" class="small" text-anchor="middle" style="">16</text>
+<text x="524.5" y="82" class="small" text-anchor="middle" style="">17</text>
+<text x="547.5" y="82" class="small" text-anchor="middle" style="">18</text>
+<text x="570.5" y="82" class="small" text-anchor="middle" style="">19</text>
+<text x="593.5" y="82" class="small" text-anchor="middle" style="">20</text>
+<text x="616.5" y="82" class="small" text-anchor="middle" style="">21</text>
+<text x="639.5" y="82" class="small" text-anchor="middle" style="">22</text>
+<text x="662.5" y="82" class="small" text-anchor="middle" style="">23</text>
+<text x="685.5" y="82" class="small" text-anchor="middle" style="">24</text>
+<text x="708.5" y="82" class="small" text-anchor="middle" style="">25</text>
+<text x="731.5" y="82" class="small" text-anchor="middle" style="">26</text>
+<text x="754.5" y="82" class="small" text-anchor="middle" style="">27</text>
+<text x="777.5" y="82" class="small" text-anchor="middle" style="">28</text>
+<text x="800.5" y="82" class="small" text-anchor="middle" style="">29</text>
+<text x="823.5" y="82" class="small" text-anchor="middle" style="">30</text>
+<text x="28" y="108" class="label" text-anchor="start" style="">Frozen</text>
+<rect x="145" y="92" width="20" height="24" rx="2" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="155.0" y="108" class="small" text-anchor="middle" style="fill:white;">277</text>
+<rect x="168" y="92" width="20" height="24" rx="2" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="178.0" y="108" class="small" text-anchor="middle" style="fill:white;">62</text>
+<rect x="191" y="92" width="20" height="24" rx="2" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="201.0" y="108" class="small" text-anchor="middle" style="fill:white;">79</text>
+<rect x="214" y="92" width="20" height="24" rx="2" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="224.0" y="108" class="small" text-anchor="middle" style="fill:white;">70</text>
+<rect x="237" y="92" width="20" height="24" rx="2" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="247.0" y="108" class="small" text-anchor="middle" style="fill:white;">65</text>
+<rect x="260" y="92" width="20" height="24" rx="2" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="270.0" y="108" class="small" text-anchor="middle" style="fill:white;">441</text>
+<rect x="283" y="92" width="20" height="24" rx="2" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="293.0" y="108" class="small" text-anchor="middle" style="fill:white;">396</text>
+<rect x="306" y="92" width="20" height="24" rx="2" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="316.0" y="108" class="small" text-anchor="middle" style="fill:white;">244</text>
+<rect x="329" y="92" width="20" height="24" rx="2" fill="#c62828" stroke="none" opacity="1"/>
+<text x="339.0" y="108" class="small" text-anchor="middle" style="fill:white;">239</text>
+<rect x="352" y="92" width="20" height="24" rx="2" fill="#c62828" stroke="none" opacity="1"/>
+<text x="362.0" y="108" class="small" text-anchor="middle" style="fill:white;">195</text>
+<rect x="375" y="92" width="20" height="24" rx="2" fill="#c62828" stroke="none" opacity="1"/>
+<text x="385.0" y="108" class="small" text-anchor="middle" style="fill:white;">8</text>
+<rect x="398" y="92" width="20" height="24" rx="2" fill="#c62828" stroke="none" opacity="1"/>
+<text x="408.0" y="108" class="small" text-anchor="middle" style="fill:white;">37</text>
+<rect x="421" y="92" width="20" height="24" rx="2" fill="#c62828" stroke="none" opacity="1"/>
+<text x="431.0" y="108" class="small" text-anchor="middle" style="fill:white;">58</text>
+<rect x="444" y="92" width="20" height="24" rx="2" fill="#c62828" stroke="none" opacity="1"/>
+<text x="454.0" y="108" class="small" text-anchor="middle" style="fill:white;">382</text>
+<rect x="467" y="92" width="20" height="24" rx="2" fill="#c62828" stroke="none" opacity="1"/>
+<text x="477.0" y="108" class="small" text-anchor="middle" style="fill:white;">1</text>
+<rect x="490" y="92" width="20" height="24" rx="2" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="500.0" y="108" class="small" text-anchor="middle" style="fill:white;">178</text>
+<rect x="513" y="92" width="20" height="24" rx="2" fill="#c62828" stroke="none" opacity="1"/>
+<text x="523.0" y="108" class="small" text-anchor="middle" style="fill:white;">10</text>
+<rect x="536" y="92" width="20" height="24" rx="2" fill="#c62828" stroke="none" opacity="1"/>
+<text x="546.0" y="108" class="small" text-anchor="middle" style="fill:white;">999</text>
+<rect x="559" y="92" width="20" height="24" rx="2" fill="#c62828" stroke="none" opacity="1"/>
+<text x="569.0" y="108" class="small" text-anchor="middle" style="fill:white;">271</text>
+<rect x="582" y="92" width="20" height="24" rx="2" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="592.0" y="108" class="small" text-anchor="middle" style="fill:white;">190</text>
+<rect x="605" y="92" width="20" height="24" rx="2" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="615.0" y="108" class="small" text-anchor="middle" style="fill:white;">50</text>
+<rect x="628" y="92" width="20" height="24" rx="2" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="638.0" y="108" class="small" text-anchor="middle" style="fill:white;">754</text>
+<rect x="651" y="92" width="20" height="24" rx="2" fill="#c62828" stroke="none" opacity="1"/>
+<text x="661.0" y="108" class="small" text-anchor="middle" style="fill:white;">125</text>
+<rect x="674" y="92" width="20" height="24" rx="2" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="684.0" y="108" class="small" text-anchor="middle" style="fill:white;">669</text>
+<rect x="697" y="92" width="20" height="24" rx="2" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="707.0" y="108" class="small" text-anchor="middle" style="fill:white;">850</text>
+<rect x="720" y="92" width="20" height="24" rx="2" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="730.0" y="108" class="small" text-anchor="middle" style="fill:white;">132</text>
+<rect x="743" y="92" width="20" height="24" rx="2" fill="#c62828" stroke="none" opacity="1"/>
+<text x="753.0" y="108" class="small" text-anchor="middle" style="fill:white;">97</text>
+<rect x="766" y="92" width="20" height="24" rx="2" fill="#c62828" stroke="none" opacity="1"/>
+<text x="776.0" y="108" class="small" text-anchor="middle" style="fill:white;">4040</text>
+<rect x="789" y="92" width="20" height="24" rx="2" fill="#c62828" stroke="none" opacity="1"/>
+<text x="799.0" y="108" class="small" text-anchor="middle" style="fill:white;">65</text>
+<rect x="812" y="92" width="20" height="24" rx="2" fill="#c62828" stroke="none" opacity="1"/>
+<text x="822.0" y="108" class="small" text-anchor="middle" style="fill:white;">153</text>
+<text x="28" y="152" class="label" text-anchor="start" style="">Unrestricted</text>
+<rect x="145" y="136" width="20" height="24" rx="2" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="155.0" y="152" class="small" text-anchor="middle" style="fill:white;">277</text>
+<rect x="168" y="136" width="20" height="24" rx="2" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="178.0" y="152" class="small" text-anchor="middle" style="fill:white;">62</text>
+<rect x="191" y="136" width="20" height="24" rx="2" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="201.0" y="152" class="small" text-anchor="middle" style="fill:white;">79</text>
+<rect x="214" y="136" width="20" height="24" rx="2" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="224.0" y="152" class="small" text-anchor="middle" style="fill:white;">70</text>
+<rect x="237" y="136" width="20" height="24" rx="2" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="247.0" y="152" class="small" text-anchor="middle" style="fill:white;">65</text>
+<rect x="260" y="136" width="20" height="24" rx="2" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="270.0" y="152" class="small" text-anchor="middle" style="fill:white;">441</text>
+<rect x="283" y="136" width="20" height="24" rx="2" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="293.0" y="152" class="small" text-anchor="middle" style="fill:white;">396</text>
+<rect x="306" y="136" width="20" height="24" rx="2" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="316.0" y="152" class="small" text-anchor="middle" style="fill:white;">244</text>
+<rect x="329" y="136" width="20" height="24" rx="2" fill="#c62828" stroke="none" opacity="1"/>
+<text x="339.0" y="152" class="small" text-anchor="middle" style="fill:white;">13</text>
+<rect x="352" y="136" width="20" height="24" rx="2" fill="#c62828" stroke="none" opacity="1"/>
+<text x="362.0" y="152" class="small" text-anchor="middle" style="fill:white;">134</text>
+<rect x="375" y="136" width="20" height="24" rx="2" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="385.0" y="152" class="small" text-anchor="middle" style="fill:white;">896</text>
+<rect x="398" y="136" width="20" height="24" rx="2" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="408.0" y="152" class="small" text-anchor="middle" style="fill:white;">161</text>
+<rect x="421" y="136" width="20" height="24" rx="2" fill="#c62828" stroke="none" opacity="1"/>
+<text x="431.0" y="152" class="small" text-anchor="middle" style="fill:white;">79</text>
+<rect x="444" y="136" width="20" height="24" rx="2" fill="#c62828" stroke="none" opacity="1"/>
+<text x="454.0" y="152" class="small" text-anchor="middle" style="fill:white;">676</text>
+<rect x="467" y="136" width="20" height="24" rx="2" fill="#c62828" stroke="none" opacity="1"/>
+<text x="477.0" y="152" class="small" text-anchor="middle" style="fill:white;">2</text>
+<rect x="490" y="136" width="20" height="24" rx="2" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="500.0" y="152" class="small" text-anchor="middle" style="fill:white;">178</text>
+<rect x="513" y="136" width="20" height="24" rx="2" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="523.0" y="152" class="small" text-anchor="middle" style="fill:white;">243</text>
+<rect x="536" y="136" width="20" height="24" rx="2" fill="#c62828" stroke="none" opacity="1"/>
+<text x="546.0" y="152" class="small" text-anchor="middle" style="fill:white;">997</text>
+<rect x="559" y="136" width="20" height="24" rx="2" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="569.0" y="152" class="small" text-anchor="middle" style="fill:white;">279</text>
+<rect x="582" y="136" width="20" height="24" rx="2" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="592.0" y="152" class="small" text-anchor="middle" style="fill:white;">190</text>
+<rect x="605" y="136" width="20" height="24" rx="2" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="615.0" y="152" class="small" text-anchor="middle" style="fill:white;">50</text>
+<rect x="628" y="136" width="20" height="24" rx="2" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="638.0" y="152" class="small" text-anchor="middle" style="fill:white;">754</text>
+<rect x="651" y="136" width="20" height="24" rx="2" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="661.0" y="152" class="small" text-anchor="middle" style="fill:white;">245</text>
+<rect x="674" y="136" width="20" height="24" rx="2" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="684.0" y="152" class="small" text-anchor="middle" style="fill:white;">669</text>
+<rect x="697" y="136" width="20" height="24" rx="2" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="707.0" y="152" class="small" text-anchor="middle" style="fill:white;">850</text>
+<rect x="720" y="136" width="20" height="24" rx="2" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="730.0" y="152" class="small" text-anchor="middle" style="fill:white;">132</text>
+<rect x="743" y="136" width="20" height="24" rx="2" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="753.0" y="152" class="small" text-anchor="middle" style="fill:white;">223</text>
+<rect x="766" y="136" width="20" height="24" rx="2" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="776.0" y="152" class="small" text-anchor="middle" style="fill:white;">107</text>
+<rect x="789" y="136" width="20" height="24" rx="2" fill="#c62828" stroke="none" opacity="1"/>
+<text x="799.0" y="152" class="small" text-anchor="middle" style="fill:white;">34</text>
+<rect x="812" y="136" width="20" height="24" rx="2" fill="#c62828" stroke="none" opacity="1"/>
+<text x="822.0" y="152" class="small" text-anchor="middle" style="fill:white;">367</text>
+<text x="28" y="196" class="label" text-anchor="start" style="">Current</text>
+<rect x="145" y="180" width="20" height="24" rx="2" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="155.0" y="196" class="small" text-anchor="middle" style="fill:white;">277</text>
+<rect x="168" y="180" width="20" height="24" rx="2" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="178.0" y="196" class="small" text-anchor="middle" style="fill:white;">62</text>
+<rect x="191" y="180" width="20" height="24" rx="2" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="201.0" y="196" class="small" text-anchor="middle" style="fill:white;">79</text>
+<rect x="214" y="180" width="20" height="24" rx="2" fill="#c62828" stroke="none" opacity="1"/>
+<text x="224.0" y="196" class="small" text-anchor="middle" style="fill:white;">137</text>
+<rect x="237" y="180" width="20" height="24" rx="2" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="247.0" y="196" class="small" text-anchor="middle" style="fill:white;">65</text>
+<rect x="260" y="180" width="20" height="24" rx="2" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="270.0" y="196" class="small" text-anchor="middle" style="fill:white;">441</text>
+<rect x="283" y="180" width="20" height="24" rx="2" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="293.0" y="196" class="small" text-anchor="middle" style="fill:white;">396</text>
+<rect x="306" y="180" width="20" height="24" rx="2" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="316.0" y="196" class="small" text-anchor="middle" style="fill:white;">244</text>
+<rect x="329" y="180" width="20" height="24" rx="2" fill="#c62828" stroke="none" opacity="1"/>
+<text x="339.0" y="196" class="small" text-anchor="middle" style="fill:white;">6</text>
+<rect x="352" y="180" width="20" height="24" rx="2" fill="#c62828" stroke="none" opacity="1"/>
+<text x="362.0" y="196" class="small" text-anchor="middle" style="fill:white;">54</text>
+<rect x="375" y="180" width="20" height="24" rx="2" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="385.0" y="196" class="small" text-anchor="middle" style="fill:white;">896</text>
+<rect x="398" y="180" width="20" height="24" rx="2" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="408.0" y="196" class="small" text-anchor="middle" style="fill:white;">161</text>
+<rect x="421" y="180" width="20" height="24" rx="2" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="431.0" y="196" class="small" text-anchor="middle" style="fill:white;">39</text>
+<rect x="444" y="180" width="20" height="24" rx="2" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="454.0" y="196" class="small" text-anchor="middle" style="fill:white;">681</text>
+<rect x="467" y="180" width="20" height="24" rx="2" fill="#c62828" stroke="none" opacity="1"/>
+<text x="477.0" y="196" class="small" text-anchor="middle" style="fill:white;">2</text>
+<rect x="490" y="180" width="20" height="24" rx="2" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="500.0" y="196" class="small" text-anchor="middle" style="fill:white;">178</text>
+<rect x="513" y="180" width="20" height="24" rx="2" fill="#c62828" stroke="none" opacity="1"/>
+<text x="523.0" y="196" class="small" text-anchor="middle" style="fill:white;">198</text>
+<rect x="536" y="180" width="20" height="24" rx="2" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="546.0" y="196" class="small" text-anchor="middle" style="fill:white;">503</text>
+<rect x="559" y="180" width="20" height="24" rx="2" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="569.0" y="196" class="small" text-anchor="middle" style="fill:white;">279</text>
+<rect x="582" y="180" width="20" height="24" rx="2" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="592.0" y="196" class="small" text-anchor="middle" style="fill:white;">190</text>
+<rect x="605" y="180" width="20" height="24" rx="2" fill="#c62828" stroke="none" opacity="1"/>
+<text x="615.0" y="196" class="small" text-anchor="middle" style="fill:white;">37</text>
+<rect x="628" y="180" width="20" height="24" rx="2" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="638.0" y="196" class="small" text-anchor="middle" style="fill:white;">754</text>
+<rect x="651" y="180" width="20" height="24" rx="2" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="661.0" y="196" class="small" text-anchor="middle" style="fill:white;">245</text>
+<rect x="674" y="180" width="20" height="24" rx="2" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="684.0" y="196" class="small" text-anchor="middle" style="fill:white;">669</text>
+<rect x="697" y="180" width="20" height="24" rx="2" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="707.0" y="196" class="small" text-anchor="middle" style="fill:white;">850</text>
+<rect x="720" y="180" width="20" height="24" rx="2" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="730.0" y="196" class="small" text-anchor="middle" style="fill:white;">132</text>
+<rect x="743" y="180" width="20" height="24" rx="2" fill="#c62828" stroke="none" opacity="1"/>
+<text x="753.0" y="196" class="small" text-anchor="middle" style="fill:white;">67</text>
+<rect x="766" y="180" width="20" height="24" rx="2" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="776.0" y="196" class="small" text-anchor="middle" style="fill:white;">107</text>
+<rect x="789" y="180" width="20" height="24" rx="2" fill="#c62828" stroke="none" opacity="1"/>
+<text x="799.0" y="196" class="small" text-anchor="middle" style="fill:white;">8</text>
+<rect x="812" y="180" width="20" height="24" rx="2" fill="#c62828" stroke="none" opacity="1"/>
+<text x="822.0" y="196" class="small" text-anchor="middle" style="fill:white;">70</text>
+<text x="28" y="240" class="label" text-anchor="start" style="">Official</text>
+<rect x="145" y="224" width="20" height="24" rx="2" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="155.0" y="240" class="small" text-anchor="middle" style="fill:white;">277</text>
+<rect x="168" y="224" width="20" height="24" rx="2" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="178.0" y="240" class="small" text-anchor="middle" style="fill:white;">62</text>
+<rect x="191" y="224" width="20" height="24" rx="2" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="201.0" y="240" class="small" text-anchor="middle" style="fill:white;">79</text>
+<rect x="214" y="224" width="20" height="24" rx="2" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="224.0" y="240" class="small" text-anchor="middle" style="fill:white;">70</text>
+<rect x="237" y="224" width="20" height="24" rx="2" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="247.0" y="240" class="small" text-anchor="middle" style="fill:white;">65</text>
+<rect x="260" y="224" width="20" height="24" rx="2" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="270.0" y="240" class="small" text-anchor="middle" style="fill:white;">441</text>
+<rect x="283" y="224" width="20" height="24" rx="2" fill="#c62828" stroke="none" opacity="1"/>
+<text x="293.0" y="240" class="small" text-anchor="middle" style="fill:white;">341</text>
+<rect x="306" y="224" width="20" height="24" rx="2" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="316.0" y="240" class="small" text-anchor="middle" style="fill:white;">244</text>
+<rect x="329" y="224" width="20" height="24" rx="2" fill="#c62828" stroke="none" opacity="1"/>
+<text x="339.0" y="240" class="small" text-anchor="middle" style="fill:white;">4133</text>
+<rect x="352" y="224" width="20" height="24" rx="2" fill="#c62828" stroke="none" opacity="1"/>
+<text x="362.0" y="240" class="small" text-anchor="middle" style="fill:white;">133</text>
+<rect x="375" y="224" width="20" height="24" rx="2" fill="#c62828" stroke="none" opacity="1"/>
+<text x="385.0" y="240" class="small" text-anchor="middle" style="fill:white;">584</text>
+<rect x="398" y="224" width="20" height="24" rx="2" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="408.0" y="240" class="small" text-anchor="middle" style="fill:white;">161</text>
+<rect x="421" y="224" width="20" height="24" rx="2" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="431.0" y="240" class="small" text-anchor="middle" style="fill:white;">39</text>
+<rect x="444" y="224" width="20" height="24" rx="2" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="454.0" y="240" class="small" text-anchor="middle" style="fill:white;">681</text>
+<rect x="467" y="224" width="20" height="24" rx="2" fill="#c62828" stroke="none" opacity="1"/>
+<text x="477.0" y="240" class="small" text-anchor="middle" style="fill:white;">1</text>
+<rect x="490" y="224" width="20" height="24" rx="2" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="500.0" y="240" class="small" text-anchor="middle" style="fill:white;">178</text>
+<rect x="513" y="224" width="20" height="24" rx="2" fill="#c62828" stroke="none" opacity="1"/>
+<text x="523.0" y="240" class="small" text-anchor="middle" style="fill:white;">69</text>
+<rect x="536" y="224" width="20" height="24" rx="2" fill="#c62828" stroke="none" opacity="1"/>
+<text x="546.0" y="240" class="small" text-anchor="middle" style="fill:white;">505</text>
+<rect x="559" y="224" width="20" height="24" rx="2" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="569.0" y="240" class="small" text-anchor="middle" style="fill:white;">279</text>
+<rect x="582" y="224" width="20" height="24" rx="2" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="592.0" y="240" class="small" text-anchor="middle" style="fill:white;">190</text>
+<rect x="605" y="224" width="20" height="24" rx="2" fill="#c62828" stroke="none" opacity="1"/>
+<text x="615.0" y="240" class="small" text-anchor="middle" style="fill:white;">18</text>
+<rect x="628" y="224" width="20" height="24" rx="2" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="638.0" y="240" class="small" text-anchor="middle" style="fill:white;">754</text>
+<rect x="651" y="224" width="20" height="24" rx="2" fill="#c62828" stroke="none" opacity="1"/>
+<text x="661.0" y="240" class="small" text-anchor="middle" style="fill:white;">125</text>
+<rect x="674" y="224" width="20" height="24" rx="2" fill="#c62828" stroke="none" opacity="1"/>
+<text x="684.0" y="240" class="small" text-anchor="middle" style="fill:white;">558</text>
+<rect x="697" y="224" width="20" height="24" rx="2" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="707.0" y="240" class="small" text-anchor="middle" style="fill:white;">850</text>
+<rect x="720" y="224" width="20" height="24" rx="2" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="730.0" y="240" class="small" text-anchor="middle" style="fill:white;">132</text>
+<rect x="743" y="224" width="20" height="24" rx="2" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="753.0" y="240" class="small" text-anchor="middle" style="fill:white;">223</text>
+<rect x="766" y="224" width="20" height="24" rx="2" fill="#c62828" stroke="none" opacity="1"/>
+<text x="776.0" y="240" class="small" text-anchor="middle" style="fill:white;">12</text>
+<rect x="789" y="224" width="20" height="24" rx="2" fill="#c62828" stroke="none" opacity="1"/>
+<text x="799.0" y="240" class="small" text-anchor="middle" style="fill:white;">5</text>
+<rect x="812" y="224" width="20" height="24" rx="2" fill="#c62828" stroke="none" opacity="1"/>
+<text x="822.0" y="240" class="small" text-anchor="middle" style="fill:white;">364</text>
+</svg>

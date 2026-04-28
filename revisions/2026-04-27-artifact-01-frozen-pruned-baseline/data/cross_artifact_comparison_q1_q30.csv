@@ -1,0 +1,31 @@
+idx,expected_answer,frozen_answer,frozen_correct,frozen_valid,frozen_tokens,frozen_seconds,unrestricted_answer,unrestricted_correct,unrestricted_valid,unrestricted_tokens,unrestricted_seconds,current_answer,current_correct,current_valid,current_tokens,current_seconds,official_answer,official_correct,official_valid,official_tokens,official_seconds,official_vs_current,four_run_outcome,class_code,class_note
+1,277,277,True,True,695404,139.609,277,True,True,1049170,252.591,277,True,True,98267,212.014,277,True,True,105380,228.912,same_correct,all_four_correct,,
+2,62,62,True,True,710845,184.009,62,True,True,1074559,282.594,62,True,True,117945,309.283,62,True,True,135253,357.715,same_correct,all_four_correct,,
+3,79,79,True,True,702855,157.001,79,True,True,1031930,241.305,79,True,True,114524,294.037,79,True,True,110137,273.909,same_correct,all_four_correct,,
+4,70,70,True,True,699345,149.974,70,True,True,1038493,244.383,137,False,True,99911,227.677,70,True,True,111291,279.119,official_fix_vs_current,official_fix_vs_current,C1,object/model setup
+5,65,65,True,True,716821,196.344,65,True,True,1035256,232.821,65,True,True,95915,209.728,65,True,True,116443,281.259,same_correct,all_four_correct,,
+6,441,441,True,True,697554,143.927,441,True,True,1055694,259.121,441,True,True,111256,265.097,441,True,True,110072,268.673,same_correct,all_four_correct,,
+7,396,396,True,True,709711,181.294,396,True,True,1068798,289.676,396,True,True,94277,206.635,341,False,True,99059,229.245,official_regression_vs_current,official_regression_vs_current,C3,sequence/recurrence
+8,244,244,True,True,703053,159.918,244,True,True,1127006,356.82,244,True,True,125208,313.103,244,True,True,105509,239.93,same_correct,all_four_correct,,
+9,29,239,False,True,719314,206.901,13,False,True,1155566,385.459,6,False,True,152775,433.079,4133,False,False,170542,579.213,same_wrong,all_four_missed,C2,conditional ledger / enumeration
+10,156,195,False,True,719486,209.824,134,False,True,1176005,421.393,54,False,True,142654,426.42,133,False,True,174336,569.088,same_wrong,all_four_missed,C4,geometry closure
+11,896,8,False,True,711396,179.675,896,True,True,1112040,306.014,896,True,True,130556,366.894,584,False,True,143201,384.999,official_regression_vs_current,official_regression_vs_current,C5,global count / constructive closure
+12,161,37,False,True,720114,209.948,161,True,True,1204749,463.928,161,True,True,130977,341.098,161,True,True,123315,324.288,same_correct,mixed_same_outcome,,
+13,39,58,False,True,720072,210.004,79,False,True,1131323,344.241,39,True,True,145768,404.061,39,True,True,165446,470.173,same_correct,official_beats_unrestricted_on_this_problem,,
+14,681,382,False,True,716369,198.876,676,False,True,1205032,563.267,681,True,True,143609,391.578,681,True,True,110315,359.246,same_correct,official_beats_unrestricted_on_this_problem,,
+15,83,1,False,True,718849,205.303,2,False,True,1122386,411.893,2,False,True,161614,463.827,1,False,True,106119,327.074,same_wrong,all_four_missed,C5,exact-cover completeness
+16,178,178,True,True,695300,139.26,178,True,True,1023191,236.396,178,True,True,83367,172.312,178,True,True,90200,192.13,same_correct,all_four_correct,,
+17,243,10,False,True,721538,210.2,243,True,True,1228745,696.351,198,False,True,159387,470.405,69,False,True,170895,570.247,same_wrong,official_regression_vs_unrestricted,C3,endpoint recurrence
+18,503,999,False,True,719602,209.487,997,False,True,1186776,450.346,503,True,True,150956,423.309,505,False,True,168772,491.127,official_regression_vs_current,official_regression_vs_current,C5,branch/existence closure
+19,279,271,False,True,701936,157.695,279,True,True,1104156,314.492,279,True,True,117174,283.292,279,True,True,122336,333.26,same_correct,mixed_same_outcome,,
+20,190,190,True,True,698679,143.804,190,True,True,1045000,246.768,190,True,True,117312,266.565,190,True,True,123833,301.008,same_correct,all_four_correct,,
+21,50,50,True,True,717023,201.873,50,True,True,1125454,340.565,37,False,True,116816,286.37,18,False,True,115795,354.395,same_wrong,official_regression_vs_unrestricted,C4,answer contract / object
+22,754,754,True,True,710160,175.681,754,True,True,1097586,310.099,754,True,True,132885,415.823,754,True,True,153697,419.668,same_correct,all_four_correct,,
+23,245,125,False,True,719205,209.862,245,True,True,1259225,715.073,245,True,True,148306,409.088,125,False,True,172481,592.714,official_regression_vs_current,official_regression_vs_current,C4,geometry/integer constraint
+24,669,669,True,True,708800,174.69,669,True,True,1176383,437.793,669,True,True,128769,332.249,558,False,True,123632,299.58,official_regression_vs_current,official_regression_vs_current,C5,count/invariant closure
+25,850,850,True,True,703136,161.011,850,True,True,1149893,338.951,850,True,True,128303,333.605,850,True,True,125317,341.206,same_correct,all_four_correct,,
+26,132,132,True,True,706251,165.9,132,True,True,1143561,372.437,132,True,True,150118,415.757,132,True,True,148839,483.858,same_correct,all_four_correct,,
+27,223,97,False,True,714856,191.171,223,True,True,1105662,309.008,67,False,True,142291,448.917,223,True,True,178898,554.076,official_fix_vs_current,official_fix_vs_current,C4,geometry center-distance closure
+28,107,4040,False,True,719067,209.931,107,True,True,1182933,525.031,107,True,True,145529,407.937,12,False,True,116594,391.047,official_regression_vs_current,official_regression_vs_current,C2,conditional/object ledger
+29,157,65,False,True,716415,196.226,34,False,True,1177801,512.795,8,False,True,128377,364.451,5,False,True,166739,532.232,same_wrong,all_four_missed,C3,state recurrence with recovery
+30,393,153,False,True,719855,210.03,367,False,True,1169144,550.111,70,False,True,143894,412.615,364,False,True,168932,527.685,same_wrong,all_four_missed,C5,modular enumeration completeness

@@ -11,6 +11,9 @@ stores are not bundled here. The paper references them as evidence artifacts,
 but this GitHub stage is limited to the Zenodo paper source package and the
 Zenodo PDF.
 
-## April 27 Revision
+## Revision Artifacts
 
-For the follow-on AIME/RuntimeAtBoot package, see [`revisions/2026-04-27-aime-runtime-at-boot/REPRODUCIBILITY.md`](revisions/2026-04-27-aime-runtime-at-boot/REPRODUCIBILITY.md). That folder adds public Q1-Q30 tables, SVG figures, RuntimeAtBoot v32 staged data, and the corrected CB8/CB11.5 execution path.
+For the follow-on AIME Q1-Q30 artifacts, start at [`revisions/`](revisions/).
+That directory contains the four dated artifact folders, shared CSV tables, and
+SVG figures. The preserved RuntimeAtBoot execution notes now live under
+[`revisions/2026-04-28-artifact-04-runtime-at-boot-v33-experiment/REPRODUCIBILITY.md`](revisions/2026-04-28-artifact-04-runtime-at-boot-v33-experiment/REPRODUCIBILITY.md).

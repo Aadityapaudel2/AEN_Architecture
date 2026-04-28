@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="950" height="420" viewBox="0 0 950 420">
+<style>
+  text { font-family: Arial, Helvetica, sans-serif; fill: #1f2933; }
+  .title { font-size: 24px; font-weight: 700; }
+  .subtitle { font-size: 13px; fill: #667085; }
+  .label { font-size: 12px; }
+  .small { font-size: 10px; fill: #667085; }
+  .num { font-size: 18px; font-weight: 700; }
+</style>
+<rect width="100%" height="100%" fill="#fbfaf7"/>
+<text x="28" y="38" class="title" text-anchor="start" style="">Official Boot Gate And Controller Shape</text>
+<text x="28" y="60" class="subtitle" text-anchor="start" style="">The boot gate passed, but solve-time closeout still used one-loop mandatory final arbitration.</text>
+<text x="35" y="118" class="label" text-anchor="start" style="">Artemis (clerk)</text>
+<rect x="210" y="100" width="150" height="25" rx="3" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="285" y="118" class="small" text-anchor="middle" style="fill:white;">25/25 certified</text>
+<text x="390" y="118" class="label" text-anchor="start" style="">memory lines 20 | baseline prompt tokens 45088</text>
+<text x="35" y="190" class="label" text-anchor="start" style="">Aria (agent)</text>
+<rect x="210" y="172" width="150" height="25" rx="3" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="285" y="190" class="small" text-anchor="middle" style="fill:white;">25/25 certified</text>
+<text x="390" y="190" class="label" text-anchor="start" style="">memory lines 20 | baseline prompt tokens 45503</text>
+<text x="35" y="262" class="label" text-anchor="start" style="">Athena (solver)</text>
+<rect x="210" y="244" width="150" height="25" rx="3" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="285" y="262" class="small" text-anchor="middle" style="fill:white;">25/25 certified</text>
+<text x="390" y="262" class="label" text-anchor="start" style="">memory lines 20 | baseline prompt tokens 57077</text>
+<text x="35" y="345" class="label" text-anchor="start" style="">Run controller: max_big_loops=1, inner exchanges=3, final closeout mode=athena_mandatory_final_answer_turn in payloads.</text>
+<text x="35" y="370" class="label" text-anchor="start" style="">Interpretation: boot certification worked; the failure mode is downstream arbitration/verification pressure.</text>
+</svg>

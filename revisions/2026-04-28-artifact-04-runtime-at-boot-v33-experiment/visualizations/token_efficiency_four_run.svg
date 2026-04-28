@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="420" viewBox="0 0 920 420">
+<style>
+  text { font-family: Arial, Helvetica, sans-serif; fill: #1f2933; }
+  .title { font-size: 24px; font-weight: 700; }
+  .subtitle { font-size: 13px; fill: #667085; }
+  .label { font-size: 12px; }
+  .small { font-size: 10px; fill: #667085; }
+  .num { font-size: 18px; font-weight: 700; }
+</style>
+<rect width="100%" height="100%" fill="#fbfaf7"/>
+<text x="28" y="38" class="title" text-anchor="start" style="">Token Efficiency And Score</text>
+<text x="28" y="60" class="subtitle" text-anchor="start" style="">Official is far cheaper than unrestricted, but lower score means it did not buy accuracy back.</text>
+<text x="28" y="121" class="label" text-anchor="start" style="">Frozen</text>
+<rect x="170" y="100" width="530" height="25" rx="3" fill="#eef2f6" stroke="none" opacity="1"/>
+<rect x="170" y="100" width="334.8731659086345" height="25" rx="3" fill="#6b7280" stroke="none" opacity="1"/>
+<text x="715" y="119" class="label" text-anchor="start" style="">711,100 avg tokens</text>
+<text x="170" y="148" class="small" text-anchor="start" style="">score 15/30, tokens per correct 1,422,201</text>
+<text x="28" y="191" class="label" text-anchor="start" style="">Unrestricted</text>
+<rect x="170" y="170" width="530" height="25" rx="3" fill="#eef2f6" stroke="none" opacity="1"/>
+<rect x="170" y="170" width="530.0" height="25" rx="3" fill="#1565c0" stroke="none" opacity="1"/>
+<text x="715" y="189" class="label" text-anchor="start" style="">1,125,451 avg tokens</text>
+<text x="170" y="218" class="small" text-anchor="start" style="">score 22/30, tokens per correct 1,534,705</text>
+<text x="28" y="261" class="label" text-anchor="start" style="">Current</text>
+<rect x="170" y="240" width="530" height="25" rx="3" fill="#eef2f6" stroke="none" opacity="1"/>
+<rect x="170" y="240" width="60.57225021907523" height="25" rx="3" fill="#6a1b9a" stroke="none" opacity="1"/>
+<text x="715" y="259" class="label" text-anchor="start" style="">128,625 avg tokens</text>
+<text x="170" y="288" class="small" text-anchor="start" style="">score 21/30, tokens per correct 183,750</text>
+<text x="28" y="331" class="label" text-anchor="start" style="">Official</text>
+<rect x="170" y="310" width="530" height="25" rx="3" fill="#eef2f6" stroke="none" opacity="1"/>
+<rect x="170" y="310" width="63.31361569945452" height="25" rx="3" fill="#e65100" stroke="none" opacity="1"/>
+<text x="715" y="329" class="label" text-anchor="start" style="">134,446 avg tokens</text>
+<text x="170" y="358" class="small" text-anchor="start" style="">score 17/30, tokens per correct 237,258</text>
+</svg>

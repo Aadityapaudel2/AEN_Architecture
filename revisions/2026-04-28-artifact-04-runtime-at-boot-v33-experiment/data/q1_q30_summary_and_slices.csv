@@ -1,0 +1,8 @@
+"run_key","run_label","slice","cases","correct","losses","accuracy","mean_total_tokens","mean_seconds","tokens_per_correct"
+"official","Apr28 official boot run","Q1-Q5","5","5","0","1.0","115700.8","284.183","115700.8"
+"official","Apr28 official boot run","Q6-Q10","5","2","3","0.4","131903.6","377.23","329759.0"
+"official","Apr28 official boot run","Q11-Q15","5","3","2","0.6","129679.2","373.156","216132.0"
+"official","Apr28 official boot run","Q16-Q20","5","3","2","0.6","135207.2","377.555","225345.3"
+"official","Apr28 official boot run","Q21-Q25","5","2","3","0.4","138184.4","401.513","345461.0"
+"official","Apr28 official boot run","Q26-Q30","5","2","3","0.4","156000.4","497.78","390001.0"
+"official","Apr28 official boot run","Q1-Q30","30","17","13","0.5667","134445.9","385.236","237257.5"

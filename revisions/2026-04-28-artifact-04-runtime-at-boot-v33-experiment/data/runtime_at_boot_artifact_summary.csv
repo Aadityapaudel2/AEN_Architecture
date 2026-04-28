@@ -1,0 +1,4 @@
+runtime_label,role_name,passed,certified_count,probe_count,certification_line_limit,memory_line_count,memory_chunk_count,study_passes,ack_count,ack_success_count,committed_prompt_tokens,elapsed_seconds,certification_source_path
+clerk,Artemis,True,25,25,25,20,4,2,8,0,45088,107.8148,/kaggle/input/runtimeatboot/boot/artemis/Artemis_problem_proof_boot_100_final_hq_mcq.ndjson
+agent,Aria,True,25,25,25,20,5,2,10,0,45503,113.6325,/kaggle/input/runtimeatboot/boot/aria/Aria_problem_proof_boot_100_final_mcq_2q.ndjson
+solver,Athena,True,25,25,25,20,6,2,12,0,57077,153.1803,/kaggle/input/runtimeatboot/boot/athena/Athena_epistemic_boot_100_final_certification_hq.ndjson

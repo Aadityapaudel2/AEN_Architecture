@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="249" viewBox="0 0 980 249">
+<style>
+  text { font-family: Arial, Helvetica, sans-serif; fill: #1f2933; }
+  .title { font-size: 24px; font-weight: 700; }
+  .subtitle { font-size: 13px; fill: #667085; }
+  .label { font-size: 12px; }
+  .small { font-size: 10px; fill: #667085; }
+  .num { font-size: 18px; font-weight: 700; }
+</style>
+<rect width="100%" height="100%" fill="#fbfaf7"/>
+<text x="28" y="38" class="title" text-anchor="start" style="">Official Miss Playbook</text>
+<text x="28" y="60" class="subtitle" text-anchor="start" style="">Mechanism buckets are inferred from result payload peer reports and scorer validity.</text>
+<text x="40" y="110" class="label" text-anchor="start" style="">mandatory final over peer blocker</text>
+<rect x="320" y="95" width="360" height="22" rx="3" fill="#eef2f6" stroke="none" opacity="1"/>
+<rect x="320" y="95" width="360.0" height="22" rx="3" fill="#d97706" stroke="none" opacity="1"/>
+<text x="695" y="111" class="num" text-anchor="start" style="">12</text>
+<text x="40" y="152" class="label" text-anchor="start" style="">invalid answer not blocked</text>
+<rect x="320" y="137" width="360" height="22" rx="3" fill="#eef2f6" stroke="none" opacity="1"/>
+<rect x="320" y="137" width="30.0" height="22" rx="3" fill="#c62828" stroke="none" opacity="1"/>
+<text x="695" y="153" class="num" text-anchor="start" style="">1</text>
+<text x="40" y="203" class="small" text-anchor="start" style="">Miss list: Q7=341 (exp 396), Q9=4133 (exp 29), Q10=133 (exp 156), Q11=584 (exp 896), Q15=1 (exp 83), Q17=69 (exp 243), Q18=505 (exp 503), Q21=18 (exp 50), Q23=125 (exp 245), Q24=558 (exp 669), Q28=12 (exp 107), Q29=5 (exp 157), Q30=364 (exp 393)</text>
+</svg>
