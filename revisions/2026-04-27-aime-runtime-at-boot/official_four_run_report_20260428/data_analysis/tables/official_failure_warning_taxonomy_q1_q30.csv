@@ -1,0 +1,14 @@
+idx,expected_answer,official_answer,valid_answer,current_answer,current_correct,unrestricted_correct,frozen_correct,delta_bucket,mechanism_bucket,class_code,class_note,athena_confidence_pct,peer_validation_ready,peer_candidates,peer_statuses,total_tokens,seconds
+7,396,341,True,396,True,True,True,lost_prior_current_win,mandatory_final_over_peer_blocker,C3,sequence/recurrence,,True,Aria:/; Artemis:/,Aria:; Artemis:,99059,229.245
+9,29,4133,False,6,False,False,False,shared_current_miss,invalid_answer_not_blocked,C2,conditional ledger / enumeration,,False,Aria:/; Artemis:/,Aria:; Artemis:,170542,579.213
+10,156,133,True,54,False,False,False,shared_current_miss,mandatory_final_over_peer_blocker,C4,geometry closure,,False,Aria:/; Artemis:/,Aria:; Artemis:,174336,569.088
+11,896,584,True,896,True,True,False,lost_prior_current_win,mandatory_final_over_peer_blocker,C5,global count / constructive closure,,False,Aria:/; Artemis:/,Aria:; Artemis:,143201,384.999
+15,83,1,True,2,False,False,False,shared_current_miss,mandatory_final_over_peer_blocker,C5,exact-cover completeness,,True,Aria:/; Artemis:/,Aria:; Artemis:,106119,327.074
+17,243,69,True,198,False,True,False,shared_current_miss,mandatory_final_over_peer_blocker,C3,endpoint recurrence,,False,Aria:/; Artemis:/,Aria:; Artemis:,170895,570.247
+18,503,505,True,503,True,False,False,lost_prior_current_win,mandatory_final_over_peer_blocker,C5,branch/existence closure,,False,Aria:/; Artemis:/,Aria:; Artemis:,168772,491.127
+21,50,18,True,37,False,True,True,shared_current_miss,mandatory_final_over_peer_blocker,C4,answer contract / object,,False,Aria:/; Artemis:/,Aria:; Artemis:,115795,354.395
+23,245,125,True,245,True,True,False,lost_prior_current_win,mandatory_final_over_peer_blocker,C4,geometry/integer constraint,,False,Aria:/; Artemis:/,Aria:; Artemis:,172481,592.714
+24,669,558,True,669,True,True,True,lost_prior_current_win,mandatory_final_over_peer_blocker,C5,count/invariant closure,,True,Aria:/; Artemis:/,Aria:; Artemis:,123632,299.58
+28,107,12,True,107,True,True,False,lost_prior_current_win,mandatory_final_over_peer_blocker,C2,conditional/object ledger,,False,Aria:/; Artemis:/,Aria:; Artemis:,116594,391.047
+29,157,5,True,8,False,False,False,shared_current_miss,mandatory_final_over_peer_blocker,C3,state recurrence with recovery,,False,Aria:/; Artemis:/,Aria:; Artemis:,166739,532.232
+30,393,364,True,70,False,False,False,shared_current_miss,mandatory_final_over_peer_blocker,C5,modular enumeration completeness,,False,Aria:/; Artemis:/,Aria:; Artemis:,168932,527.685

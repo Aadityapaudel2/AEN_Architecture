@@ -38,3 +38,6 @@ Status: staged replacement payload. The live `runtimeatbootdataset` folder was n
 ## Next Dataset Intake
 
 See NEXT_DATASET_NOTES_V33.md for the notes-only v33 curation intake. The active v32 replacement payload remains unchanged here.
+## Supersession Note: v33 Canon Payload
+
+After the v32 staged replacement work, the Apr 27 distinct all-role Runtime-at-Boot work was promoted into the active v33 canon dataset root at `N:\Research\runtimeatbootdataset`. See `NEXT_DATASET_NOTES_V33.md` and `RUNTIMEATBOOT_V33_CANON_SANITIZE.md`.

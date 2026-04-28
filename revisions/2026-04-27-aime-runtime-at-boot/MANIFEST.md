@@ -1,4 +1,4 @@
-# April 27 Revision Manifest
+﻿# April 27 Revision Manifest
 
 Package: `2026-04-27-aime-runtime-at-boot`
 
@@ -12,6 +12,7 @@ Package: `2026-04-27-aime-runtime-at-boot`
 | Three-run comparison | `N:\Research\Updates_to_AEN\AIME_20260427_three_run_comparison` | evidence-pipeline diagram |
 | RuntimeAtBoot v32 stage | `N:\Research\Updates_to_AEN\runtimeatboot_v32_stage_20260427` | docs, manifests, staged dataset payload |
 | Boot-update audit | `N:\Research\Updates_to_AEN\bootupdates` | summarized in analysis; original local files not copied except through v32 stage |
+| Official Apr28 four-run report | `N:\Research\Updates_to_AEN\AIME_20260428_official_four_run_report` | copied under `official_four_run_report_20260428/` |
 
 ## Included Paths
 
@@ -22,14 +23,16 @@ Package: `2026-04-27-aime-runtime-at-boot`
 - `CHANGELOG.md` - concise delta from the frozen canon.
 - `assets/q1_q30/*.svg` - current Q1-Q30 visual layer.
 - `assets/evidence_pipeline/*` - source evidence pipeline diagram.
-- `data/tables/*.csv` - small public analysis tables.
+- `data/tables/*.csv` - small public analysis tables, including Q28 token forensics.
+- `OFFICIAL_APR28_RUNTIMEATBOOT_REGRESSION_NOTE.md` - negative-result summary, Q28 diagnostic, and next experiment plan.
+- `official_four_run_report_20260428/` - official Apr28 four-run report, SVG figures, and CSV tables.
 - `runtime_at_boot/` - RuntimeAtBoot v32 contract, audit, stage manifest, and staged payload.
 - `code/` - extracted current CB8, CB11.5, and CB12 runner cells.
 - `notebooks/NOTEBOOK_PROVENANCE.md` - local notebook hashes.
 
 ## Important Boundary
 
-The Q1-Q30 score analysis describes archived April 27 current-run artifacts. The corrected CB8 v1.4.9 plus CB11.5 r4 path is included as the reproducibility correction for RuntimeAtBoot memory preservation. Do not conflate the old negative-control run, where boundary resets could wipe boot memory, with a completed corrected full benchmark unless a later artifact explicitly records that run.
+The Q1-Q30 score analysis describes archived April 27 current-run artifacts. The copied Apr28 official boot run is a negative/diagnostic result, not a successful RuntimeAtBoot transfer claim. The corrected CB8 v1.4.9 plus CB11.5 r4 path is included as the reproducibility correction for RuntimeAtBoot memory preservation. Do not conflate the old negative-control run, where boundary resets could wipe boot memory, with a completed corrected full benchmark unless a later artifact explicitly records that run.
 
 ## Added Diagnostic Note
 
@@ -37,4 +40,4 @@ The Q1-Q30 score analysis describes archived April 27 current-run artifacts. The
 
 ## Next Dataset Notes
 
-- untime_at_boot/NEXT_DATASET_NOTES_V33.md records the local v33 curation intake. This is notes-only and does not replace the committed v32 payload.
+- `runtime_at_boot/NEXT_DATASET_NOTES_V33.md` records the local v33 curation intake. This is notes-only and does not replace the committed v32 payload.

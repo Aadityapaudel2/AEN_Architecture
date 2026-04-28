@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="420" viewBox="0 0 900 420">
+<style>
+  text { font-family: Arial, Helvetica, sans-serif; fill: #1f2933; }
+  .title { font-size: 24px; font-weight: 700; }
+  .subtitle { font-size: 13px; fill: #667085; }
+  .label { font-size: 12px; }
+  .small { font-size: 10px; fill: #667085; }
+  .num { font-size: 18px; font-weight: 700; }
+</style>
+<rect width="100%" height="100%" fill="#fbfaf7"/>
+<text x="28" y="38" class="title" text-anchor="start" style="">Chunk Accuracy By Five-Problem Block</text>
+<text x="28" y="60" class="subtitle" text-anchor="start" style="">The official run held early easy wins, then fell behind in Q21-Q25.</text>
+<line x1="90" y1="350" x2="820" y2="350" stroke="#d0d5dd" stroke-width="1"/>
+<line x1="90" y1="350" x2="90" y2="120" stroke="#d0d5dd" stroke-width="1"/>
+<line x1="90" y1="350" x2="820" y2="350" stroke="#e5e7eb" stroke-width="1"/>
+<text x="78" y="354" class="small" text-anchor="end" style="">0%</text>
+<line x1="90" y1="304.0" x2="820" y2="304.0" stroke="#e5e7eb" stroke-width="1"/>
+<text x="78" y="308.0" class="small" text-anchor="end" style="">20%</text>
+<line x1="90" y1="258.0" x2="820" y2="258.0" stroke="#e5e7eb" stroke-width="1"/>
+<text x="78" y="262.0" class="small" text-anchor="end" style="">40%</text>
+<line x1="90" y1="212.0" x2="820" y2="212.0" stroke="#e5e7eb" stroke-width="1"/>
+<text x="78" y="216.0" class="small" text-anchor="end" style="">60%</text>
+<line x1="90" y1="166.0" x2="820" y2="166.0" stroke="#e5e7eb" stroke-width="1"/>
+<text x="78" y="170.0" class="small" text-anchor="end" style="">80%</text>
+<line x1="90" y1="120.0" x2="820" y2="120.0" stroke="#e5e7eb" stroke-width="1"/>
+<text x="78" y="124.0" class="small" text-anchor="end" style="">100%</text>
+<text x="145.0" y="378" class="small" text-anchor="middle" style="">Q1-Q5</text>
+<rect x="110.0" y="120.0" width="18" height="230.0" rx="2" fill="#6b7280" stroke="none" opacity="1"/>
+<rect x="132.0" y="120.0" width="18" height="230.0" rx="2" fill="#1565c0" stroke="none" opacity="1"/>
+<rect x="154.0" y="166.0" width="18" height="184.0" rx="2" fill="#6a1b9a" stroke="none" opacity="1"/>
+<rect x="176.0" y="120.0" width="18" height="230.0" rx="2" fill="#e65100" stroke="none" opacity="1"/>
+<text x="266.6666666666667" y="378" class="small" text-anchor="middle" style="">Q6-Q10</text>
+<rect x="231.66666666666669" y="212.0" width="18" height="138.0" rx="2" fill="#6b7280" stroke="none" opacity="1"/>
+<rect x="253.66666666666669" y="212.0" width="18" height="138.0" rx="2" fill="#1565c0" stroke="none" opacity="1"/>
+<rect x="275.6666666666667" y="212.0" width="18" height="138.0" rx="2" fill="#6a1b9a" stroke="none" opacity="1"/>
+<rect x="297.6666666666667" y="258.0" width="18" height="92.0" rx="2" fill="#e65100" stroke="none" opacity="1"/>
+<text x="388.33333333333337" y="378" class="small" text-anchor="middle" style="">Q11-Q15</text>
+<rect x="353.33333333333337" y="350.0" width="18" height="0.0" rx="2" fill="#6b7280" stroke="none" opacity="1"/>
+<rect x="375.33333333333337" y="258.0" width="18" height="92.0" rx="2" fill="#1565c0" stroke="none" opacity="1"/>
+<rect x="397.33333333333337" y="166.0" width="18" height="184.0" rx="2" fill="#6a1b9a" stroke="none" opacity="1"/>
+<rect x="419.33333333333337" y="212.0" width="18" height="138.0" rx="2" fill="#e65100" stroke="none" opacity="1"/>
+<text x="510.0" y="378" class="small" text-anchor="middle" style="">Q16-Q20</text>
+<rect x="475.0" y="258.0" width="18" height="92.0" rx="2" fill="#6b7280" stroke="none" opacity="1"/>
+<rect x="497.0" y="166.0" width="18" height="184.0" rx="2" fill="#1565c0" stroke="none" opacity="1"/>
+<rect x="519.0" y="166.0" width="18" height="184.0" rx="2" fill="#6a1b9a" stroke="none" opacity="1"/>
+<rect x="541.0" y="212.0" width="18" height="138.0" rx="2" fill="#e65100" stroke="none" opacity="1"/>
+<text x="631.6666666666667" y="378" class="small" text-anchor="middle" style="">Q21-Q25</text>
+<rect x="596.6666666666667" y="166.0" width="18" height="184.0" rx="2" fill="#6b7280" stroke="none" opacity="1"/>
+<rect x="618.6666666666667" y="120.0" width="18" height="230.0" rx="2" fill="#1565c0" stroke="none" opacity="1"/>
+<rect x="640.6666666666667" y="166.0" width="18" height="184.0" rx="2" fill="#6a1b9a" stroke="none" opacity="1"/>
+<rect x="662.6666666666667" y="258.0" width="18" height="92.0" rx="2" fill="#e65100" stroke="none" opacity="1"/>
+<text x="753.3333333333334" y="378" class="small" text-anchor="middle" style="">Q26-Q30</text>
+<rect x="718.3333333333334" y="304.0" width="18" height="46.0" rx="2" fill="#6b7280" stroke="none" opacity="1"/>
+<rect x="740.3333333333334" y="212.0" width="18" height="138.0" rx="2" fill="#1565c0" stroke="none" opacity="1"/>
+<rect x="762.3333333333334" y="258.0" width="18" height="92.0" rx="2" fill="#6a1b9a" stroke="none" opacity="1"/>
+<rect x="784.3333333333334" y="258.0" width="18" height="92.0" rx="2" fill="#e65100" stroke="none" opacity="1"/>
+<rect x="620" y="85" width="12" height="12" rx="3" fill="#6b7280" stroke="none" opacity="1"/>
+<text x="638" y="95" class="small" text-anchor="start" style="">Frozen</text>
+<rect x="620" y="105" width="12" height="12" rx="3" fill="#1565c0" stroke="none" opacity="1"/>
+<text x="638" y="115" class="small" text-anchor="start" style="">Unrestricted</text>
+<rect x="620" y="125" width="12" height="12" rx="3" fill="#6a1b9a" stroke="none" opacity="1"/>
+<text x="638" y="135" class="small" text-anchor="start" style="">Current</text>
+<rect x="620" y="145" width="12" height="12" rx="3" fill="#e65100" stroke="none" opacity="1"/>
+<text x="638" y="155" class="small" text-anchor="start" style="">Official</text>
+</svg>

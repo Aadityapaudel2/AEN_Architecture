@@ -1,58 +1,68 @@
-# Next RuntimeAtBoot Dataset Notes: v33 Curation Intake
+# RuntimeAtBoot Dataset Notes: v33 Canon Payload
 
-Status: `notes_only_not_promoted`
+Status: `promoted_to_canon_payload_ready`
 
-This note records the next RuntimeAtBoot dataset candidate after the April 27 v32 package. It does not replace the committed v32 payload and does not claim a finalized v33 dataset.
+This note supersedes the earlier v33 curation-intake note. The active Kaggle payload root has now been sanitized and promoted to Runtime-at-Boot canon dataset v33.
 
-## Local Intake Folder
-
-```text
-N:\Research\Updates_to_AEN\bootupdates\to_be_staged\runtimeatboot_v33_curation_20260428
-```
-
-## What Changed Locally
-
-A direct search under `N:\Research` found no literal finalized `runtimeatboot_v33` dataset folder. The ready-to-curate material is a v33 intake folder built from the strongest available candidate:
+## Canon Payload Root
 
 ```text
-N:\Research\Updates_to_AEN\bootupdates\to_be_staged\runtimeatboot_v321_distinct_100_all_roles_20260427
+N:\Research\runtimeatbootdataset
 ```
 
-The intake also includes reference audits from:
+This is the exact local root intended for Kaggle dataset publication as:
 
 ```text
-N:\Research\Updates_to_AEN\bootupdates\to_be_staged\sharpened_cert_datasets_20260427
-N:\Research\Updates_to_AEN\bootupdates\to_be_staged\cert_buff_linewise_swarm_20260427
+aadityapaudel/runtimeatboot
 ```
+
+Expected notebook mount path:
+
+```text
+/kaggle/input/runtimeatboot/runtimeatbootdataset
+```
+
+## GitHub Revision Snapshot
+
+A matching snapshot is mirrored in this revision directory:
+
+```text
+revisions/2026-04-27-aime-runtime-at-boot/runtime_at_boot/runtimeatbootdataset
+```
+
+The snapshot is documentation/provenance for the paper repo. The Kaggle push should use the active local payload root above.
+
+## What Changed
+
+- Promoted the Apr 27 distinct 100-slot all-role Runtime-at-Boot work into v33 canonical row identity.
+- Replaced the six canonical boot filenames in-place, preserving the established `boot/<role>/...` layout.
+- Removed prior staging duplicates, role staging audits, cache files, and the stale Apr 22 rebuild helper from the active payload root.
+- Regenerated `runtimeatboot_manifest.json`, `SANITIZED_BOOT_MEMORY_BOUNDARY.json`, `V33_ROLE_FILE_AUDIT.csv`, `V33_SANITIZE_REPORT.md`, and `SHA256SUMS.txt`.
 
 ## Verification Snapshot
 
-The intake checksum ledger verifies, and the copied source candidate matches the original source candidate byte-for-byte.
+| role | study rows | cert rows | study answer rows | cert answer balance | bad JSON |
+| --- | ---: | ---: | ---: | --- | ---: |
+| Athena | 100 | 100 | 0 | 25 A / 25 B / 25 C / 25 D | 0 |
+| Aria | 100 | 100 | 0 | 25 A / 25 B / 25 C / 25 D | 0 |
+| Artemis | 100 | 100 | 0 | 25 A / 25 B / 25 C / 25 D | 0 |
 
-`ROLE_FILE_AUDIT.csv` reports:
+`SHA256SUMS.txt` verifies against the payload files.
 
-| role | study rows | cert rows | bad JSON | cert answer balance |
-| --- | ---: | ---: | ---: | --- |
-| Athena | 100 | 100 | 0 | 25 A / 25 B / 25 C / 25 D |
-| Aria | 100 | 100 | 0 | 25 A / 25 B / 25 C / 25 D |
-| Artemis | 100 | 100 | 0 | 25 A / 25 B / 25 C / 25 D |
+## Study / Certification Boundary
 
-Study rows have no answer-letter fields in the quick audit.
+Study and certification remain separate by design. Study rows are answer-key-free memory rows that may become `SAFE_RUNTIME_BOOT_MEMORY`; certification rows are answer-bearing MCQ probes used only by the boot gate. The certification files must not be injected into ordinary solve prompts.
 
-## Curation Boundary
+## Backup
 
-The v32 replacement plan explicitly says v33 should be the memory-shard / recall-probe stage. The v32.1 distinct 100 all-role package is clean and balanced, but it should not be promoted as final v33 until one of these decisions is made:
-
-1. Add memory-shard and recall-probe rows.
-2. Rename the candidate as a distinctness-only v32.1/v32.2 continuation.
-3. Explicitly accept the 100-distinct all-role package as v33 and defer memory-shard probes.
-
-## Suggested Next Action
-
-Curate inside:
+The active local root was backed up before sanitize at:
 
 ```text
-N:\Research\Updates_to_AEN\bootupdates\to_be_staged\runtimeatboot_v33_curation_20260428\curation_workspace
+N:\Research\Updates_to_AEN\bootupdates\archives\runtimeatbootdataset_pre_v33_sanitize_20260427-214041
 ```
 
-Only move files into `promote_ready/` after the checklist clears study/cert separation, forbidden terms, answer balance, and the v33 memory-shard policy.
+The previous GitHub revision snapshot was backed up before mirroring at:
+
+```text
+N:\Research\Updates_to_AEN\bootupdates\archives\github_runtimeatbootdataset_pre_v33_sync_20260427-214517
+```

@@ -1,0 +1,73 @@
+{
+  "event": "official_four_run_report_built",
+  "official_run_dir": "N:\\Research\\colab_outputs\\AIME-2026_export_full_dataset_30q_20260428-022518",
+  "prior_three_run_report_dir": "N:\\Research\\Updates_to_AEN\\AIME_20260427_q1_q30_espn_report",
+  "output_dir": "N:\\Research\\Updates_to_AEN\\AIME_20260428_official_four_run_report",
+  "scores": {
+    "frozen": 15,
+    "unrestricted": 22,
+    "current": 21,
+    "official": 17
+  },
+  "official_correct": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    8,
+    12,
+    13,
+    14,
+    16,
+    19,
+    20,
+    22,
+    25,
+    26,
+    27
+  ],
+  "official_misses": [
+    7,
+    9,
+    10,
+    11,
+    15,
+    17,
+    18,
+    21,
+    23,
+    24,
+    28,
+    29,
+    30
+  ],
+  "official_fixes_vs_current": [
+    4,
+    27
+  ],
+  "official_regressions_vs_current": [
+    7,
+    11,
+    18,
+    23,
+    24,
+    28
+  ],
+  "mean_tokens": {
+    "frozen": 711100.4,
+    "unrestricted": 1125450.6,
+    "current": 128624.7,
+    "official": 134445.9
+  },
+  "mean_seconds": {
+    "frozen": 182.981,
+    "unrestricted": 380.391,
+    "current": 343.574,
+    "official": 385.236
+  },
+  "runtime_at_boot_passed": true,
+  "boot_revision": "2026-04-27-cb075-controller-section-wrapper-v1.5.1-closed-book-confidence",
+  "warning": "Official boot log certifies V32/golden/role probe rows; this artifact is not evidence of the later local v33 canon root unless Kaggle input was updated separately."
+}

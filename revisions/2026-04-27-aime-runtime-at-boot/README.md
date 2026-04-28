@@ -1,4 +1,4 @@
-# April 27 AIME RuntimeAtBoot Revision
+﻿# April 27 AIME RuntimeAtBoot Revision
 
 <div align="center">
 
@@ -22,6 +22,8 @@
 | [Reproducibility](REPRODUCIBILITY.md) | exact offline execution order and success signals |
 | [Revision Story](STORY.md) | claim ladder for the architectural leap, token compression, YAML-shaped studies, and pending corrected run |
 | [Analysis](ANALYSIS.md) | what improved, what failed, and why the reset bug matters |
+| [Official Apr28 Regression Note](OFFICIAL_APR28_RUNTIMEATBOOT_REGRESSION_NOTE.md) | negative RuntimeAtBoot result, Q28 failure, and next one-question experiments |
+| [Official Four-Run Report](official_four_run_report_20260428/OFFICIAL_FOUR_RUN_HEADLINE_REPORT.md) | copied Apr28 official tables and SVG visualizations |
 | [Changelog](CHANGELOG.md) | concise delta from the frozen canon |
 | [Manifest](MANIFEST.md) | source paths, included assets, and boundary notes |
 | [Next Dataset Notes](runtime_at_boot/NEXT_DATASET_NOTES_V33.md) | notes-only v33 curation intake boundary |
@@ -56,6 +58,7 @@ The April 27 branch is a natural extension of the paper rather than a replacemen
 | Paper frozen pruned | 15/30 | 50.00% | 711,100 |
 | Paper unrestricted | 22/30 | 73.33% | 1,125,451 |
 | Current Apr27 0.2.3 | 21/30 | 70.00% | 128,625 |
+| Official Apr28 boot run | 17/30 | 56.67% | 134,446 |
 
 Current was tied with the unrestricted run through Q25, then Q26-Q30 broke the tie: current went 2/5, unrestricted went 3/5, frozen went 1/5.
 
@@ -95,6 +98,9 @@ The public tables live in [`data/tables/`](data/tables/):
 - `all_runs_q1_q30_long.csv`
 - `current_q26_q30_detail.csv`
 - `current_failure_warning_taxonomy_q1_q30.csv`
+- `q28_token_forensics_apr28.csv`
+
+The official Apr28 report, including its copied figures and CSV tables, lives under [`official_four_run_report_20260428/`](official_four_run_report_20260428/).
 
 ## Boundary
 

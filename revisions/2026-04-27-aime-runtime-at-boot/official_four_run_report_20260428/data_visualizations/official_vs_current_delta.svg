@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="230" viewBox="0 0 900 230">
+<style>
+  text { font-family: Arial, Helvetica, sans-serif; fill: #1f2933; }
+  .title { font-size: 24px; font-weight: 700; }
+  .subtitle { font-size: 13px; fill: #667085; }
+  .label { font-size: 12px; }
+  .small { font-size: 10px; fill: #667085; }
+  .num { font-size: 18px; font-weight: 700; }
+</style>
+<rect width="100%" height="100%" fill="#fbfaf7"/>
+<text x="28" y="38" class="title" text-anchor="start" style="">Official vs Apr27 Current: Problem-Level Delta</text>
+<text x="28" y="60" class="subtitle" text-anchor="start" style="">Blue = official fixed a current miss; red = official lost a current win; gray = unchanged.</text>
+<rect x="70" y="110" width="22" height="34" rx="3" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="81" y="103" class="small" text-anchor="middle" style="">1</text>
+<text x="81" y="131" class="small" text-anchor="middle" style="fill:white;">WIN</text>
+<rect x="96" y="110" width="22" height="34" rx="3" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="107" y="103" class="small" text-anchor="middle" style="">2</text>
+<text x="107" y="131" class="small" text-anchor="middle" style="fill:white;">WIN</text>
+<rect x="122" y="110" width="22" height="34" rx="3" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="133" y="103" class="small" text-anchor="middle" style="">3</text>
+<text x="133" y="131" class="small" text-anchor="middle" style="fill:white;">WIN</text>
+<rect x="148" y="110" width="22" height="34" rx="3" fill="#1565c0" stroke="none" opacity="1"/>
+<text x="159" y="103" class="small" text-anchor="middle" style="">4</text>
+<text x="159" y="131" class="small" text-anchor="middle" style="fill:white;">FIX</text>
+<rect x="174" y="110" width="22" height="34" rx="3" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="185" y="103" class="small" text-anchor="middle" style="">5</text>
+<text x="185" y="131" class="small" text-anchor="middle" style="fill:white;">WIN</text>
+<rect x="200" y="110" width="22" height="34" rx="3" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="211" y="103" class="small" text-anchor="middle" style="">6</text>
+<text x="211" y="131" class="small" text-anchor="middle" style="fill:white;">WIN</text>
+<rect x="226" y="110" width="22" height="34" rx="3" fill="#c62828" stroke="none" opacity="1"/>
+<text x="237" y="103" class="small" text-anchor="middle" style="">7</text>
+<text x="237" y="131" class="small" text-anchor="middle" style="fill:white;">LOST</text>
+<rect x="252" y="110" width="22" height="34" rx="3" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="263" y="103" class="small" text-anchor="middle" style="">8</text>
+<text x="263" y="131" class="small" text-anchor="middle" style="fill:white;">WIN</text>
+<rect x="278" y="110" width="22" height="34" rx="3" fill="#9aa4b2" stroke="none" opacity="1"/>
+<text x="289" y="103" class="small" text-anchor="middle" style="">9</text>
+<text x="289" y="131" class="small" text-anchor="middle" style="fill:white;">MISS</text>
+<rect x="304" y="110" width="22" height="34" rx="3" fill="#9aa4b2" stroke="none" opacity="1"/>
+<text x="315" y="103" class="small" text-anchor="middle" style="">10</text>
+<text x="315" y="131" class="small" text-anchor="middle" style="fill:white;">MISS</text>
+<rect x="330" y="110" width="22" height="34" rx="3" fill="#c62828" stroke="none" opacity="1"/>
+<text x="341" y="103" class="small" text-anchor="middle" style="">11</text>
+<text x="341" y="131" class="small" text-anchor="middle" style="fill:white;">LOST</text>
+<rect x="356" y="110" width="22" height="34" rx="3" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="367" y="103" class="small" text-anchor="middle" style="">12</text>
+<text x="367" y="131" class="small" text-anchor="middle" style="fill:white;">WIN</text>
+<rect x="382" y="110" width="22" height="34" rx="3" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="393" y="103" class="small" text-anchor="middle" style="">13</text>
+<text x="393" y="131" class="small" text-anchor="middle" style="fill:white;">WIN</text>
+<rect x="408" y="110" width="22" height="34" rx="3" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="419" y="103" class="small" text-anchor="middle" style="">14</text>
+<text x="419" y="131" class="small" text-anchor="middle" style="fill:white;">WIN</text>
+<rect x="434" y="110" width="22" height="34" rx="3" fill="#9aa4b2" stroke="none" opacity="1"/>
+<text x="445" y="103" class="small" text-anchor="middle" style="">15</text>
+<text x="445" y="131" class="small" text-anchor="middle" style="fill:white;">MISS</text>
+<rect x="460" y="110" width="22" height="34" rx="3" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="471" y="103" class="small" text-anchor="middle" style="">16</text>
+<text x="471" y="131" class="small" text-anchor="middle" style="fill:white;">WIN</text>
+<rect x="486" y="110" width="22" height="34" rx="3" fill="#9aa4b2" stroke="none" opacity="1"/>
+<text x="497" y="103" class="small" text-anchor="middle" style="">17</text>
+<text x="497" y="131" class="small" text-anchor="middle" style="fill:white;">MISS</text>
+<rect x="512" y="110" width="22" height="34" rx="3" fill="#c62828" stroke="none" opacity="1"/>
+<text x="523" y="103" class="small" text-anchor="middle" style="">18</text>
+<text x="523" y="131" class="small" text-anchor="middle" style="fill:white;">LOST</text>
+<rect x="538" y="110" width="22" height="34" rx="3" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="549" y="103" class="small" text-anchor="middle" style="">19</text>
+<text x="549" y="131" class="small" text-anchor="middle" style="fill:white;">WIN</text>
+<rect x="564" y="110" width="22" height="34" rx="3" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="575" y="103" class="small" text-anchor="middle" style="">20</text>
+<text x="575" y="131" class="small" text-anchor="middle" style="fill:white;">WIN</text>
+<rect x="590" y="110" width="22" height="34" rx="3" fill="#9aa4b2" stroke="none" opacity="1"/>
+<text x="601" y="103" class="small" text-anchor="middle" style="">21</text>
+<text x="601" y="131" class="small" text-anchor="middle" style="fill:white;">MISS</text>
+<rect x="616" y="110" width="22" height="34" rx="3" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="627" y="103" class="small" text-anchor="middle" style="">22</text>
+<text x="627" y="131" class="small" text-anchor="middle" style="fill:white;">WIN</text>
+<rect x="642" y="110" width="22" height="34" rx="3" fill="#c62828" stroke="none" opacity="1"/>
+<text x="653" y="103" class="small" text-anchor="middle" style="">23</text>
+<text x="653" y="131" class="small" text-anchor="middle" style="fill:white;">LOST</text>
+<rect x="668" y="110" width="22" height="34" rx="3" fill="#c62828" stroke="none" opacity="1"/>
+<text x="679" y="103" class="small" text-anchor="middle" style="">24</text>
+<text x="679" y="131" class="small" text-anchor="middle" style="fill:white;">LOST</text>
+<rect x="694" y="110" width="22" height="34" rx="3" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="705" y="103" class="small" text-anchor="middle" style="">25</text>
+<text x="705" y="131" class="small" text-anchor="middle" style="fill:white;">WIN</text>
+<rect x="720" y="110" width="22" height="34" rx="3" fill="#2e7d32" stroke="none" opacity="1"/>
+<text x="731" y="103" class="small" text-anchor="middle" style="">26</text>
+<text x="731" y="131" class="small" text-anchor="middle" style="fill:white;">WIN</text>
+<rect x="746" y="110" width="22" height="34" rx="3" fill="#1565c0" stroke="none" opacity="1"/>
+<text x="757" y="103" class="small" text-anchor="middle" style="">27</text>
+<text x="757" y="131" class="small" text-anchor="middle" style="fill:white;">FIX</text>
+<rect x="772" y="110" width="22" height="34" rx="3" fill="#c62828" stroke="none" opacity="1"/>
+<text x="783" y="103" class="small" text-anchor="middle" style="">28</text>
+<text x="783" y="131" class="small" text-anchor="middle" style="fill:white;">LOST</text>
+<rect x="798" y="110" width="22" height="34" rx="3" fill="#9aa4b2" stroke="none" opacity="1"/>
+<text x="809" y="103" class="small" text-anchor="middle" style="">29</text>
+<text x="809" y="131" class="small" text-anchor="middle" style="fill:white;">MISS</text>
+<rect x="824" y="110" width="22" height="34" rx="3" fill="#9aa4b2" stroke="none" opacity="1"/>
+<text x="835" y="103" class="small" text-anchor="middle" style="">30</text>
+<text x="835" y="131" class="small" text-anchor="middle" style="fill:white;">MISS</text>
+<text x="70" y="180" class="label" text-anchor="start" style="">Official fixes: Q4, Q27. Official regressions vs current: Q7, Q11, Q18, Q23, Q24, Q28.</text>
+</svg>

@@ -1070,7 +1070,7 @@ Apply (2) at \(P=H\): since \(HA=R\) for all beads,
 Substitute (2) and (3) into (1):
 \[
 4PC^2+4(R^2-HC^2)=4(R^2-HP^2)
-\ \Longrightarrow\
+\ \Longrightarrow\ 
 HP^2+PC^2=HC^2.
 \]
 Thus the locus of \(P\) is exactly the sphere whose diameter is \(HC\). So the asked diameter is \(HC\).
@@ -2187,7 +2187,7 @@ D=\prod_{0\le i\le 4,\ t_i\mid(3^{512}-1)} t_i.
 Now:
 \[
 3\nmid(3^{512}-1),\qquad 3^4\equiv 1\pmod 5, \ 3^8\equiv -1\pmod{17}\ \Rightarrow\ 3^{16}\equiv 1\pmod{17},
-\]
+\] 
 \[
 3^8\equiv 136,\ 3^{16}\equiv -8,\ 3^{32}\equiv 64,\ 3^{64}\equiv -16,\ 3^{128}\equiv -1\pmod{257}\ \Rightarrow\ 3^{256}\equiv 1\pmod{257},
 \]

@@ -1,0 +1,9 @@
+﻿run,role,prompt_tokens,completion_tokens,total_tokens,delta_total_vs_apr27,interpretation
+Apr27 current Q28,Athena/solver,14974,5906,20880,,baseline successful run
+Apr27 current Q28,Aria/agent,41025,12468,53493,,baseline successful run
+Apr27 current Q28,Artemis/clerk,58920,12236,71156,,baseline successful run
+Apr27 current Q28,total,114919,30610,145529,,baseline successful run
+Apr28 official Q28,Athena/solver,22206,10456,32662,11782,more solver mass but wrong final route
+Apr28 official Q28,Aria/agent,30671,11621,42292,-11201,less peer exploration; left blocker open
+Apr28 official Q28,Artemis/clerk,34183,7457,41640,-29516,large loss in audit role that previously corrected Q28
+Apr28 official Q28,total,87060,29534,116594,-28935,lower solve-token total but worse governance and audit distribution

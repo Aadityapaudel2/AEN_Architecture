@@ -1,38 +1,43 @@
 runtimeatbootdataset
 
-Purpose:
-  boot/ is a role-certification dataset only.
-  test/ carries clean evaluation files for post-boot artifact export and scoring.
+Status:
+  Runtime-at-Boot canon dataset v33, ready as the active Kaggle payload root.
+
+Kaggle dataset:
+  aadityapaudel/runtimeatboot
 
 Expected Kaggle mount path:
   /kaggle/input/runtimeatboot/runtimeatbootdataset
 
-Local override for the notebook:
+Notebook override:
   RUNTIME_AT_BOOT_DATASET_FOLDER = "runtimeatbootdataset"
 
-Live boot files:
-  boot/athena/Athena_epistemic_boot_100_final_hq.ndjson
-  boot/athena/Athena_epistemic_boot_100_final_certification_hq.ndjson
-  boot/aria/Aria_problem_proof_boot_100_final.ndjson
-  boot/aria/Aria_problem_proof_boot_100_final_mcq_2q.ndjson
-  boot/artemis/Artemis_problem_proof_boot_100_final_hq.ndjson
-  boot/artemis/Artemis_problem_proof_boot_100_final_hq_mcq.ndjson
+Canon v33 boot files:
+  boot/athena/Athena_epistemic_boot_100_final_hq.ndjson                           100 study rows
+  boot/athena/Athena_epistemic_boot_100_final_certification_hq.ndjson             100 certification rows
+  boot/aria/Aria_problem_proof_boot_100_final.ndjson                              100 study rows
+  boot/aria/Aria_problem_proof_boot_100_final_mcq_2q.ndjson                       100 certification rows
+  boot/artemis/Artemis_problem_proof_boot_100_final_hq.ndjson                     100 study rows
+  boot/artemis/Artemis_problem_proof_boot_100_final_hq_mcq.ndjson                 100 certification rows
 
-Remaining smoke files:
-  smoke/runtimeatboot_easy10.json
-  smoke/runtimeatboot_easy10_kaggle_test.csv
+Why study and certification are separate:
+  Study rows are answer-key-free Runtime-at-Boot memory rows and may be converted into SAFE_RUNTIME_BOOT_MEMORY.
+  Certification rows are answer-bearing MCQ gates used to prove that the boot memory loaded correctly.
+  The certification files must not be injected into ordinary solve prompts.
 
-Remaining diagnostic test files:
-  test/voe_eval_clean19/voe_clean19_integer.csv
-  test/voe_eval_clean19/voe_clean19_integer_key.csv
-  test/voe_eval_clean19/voe_clean19_manifest.json
+Sanitization:
+  The Apr 27 distinct 100-slot all-role work has been promoted into v33 canonical filenames and v33 row identity.
+  Prior staging duplicates, role staging audits, cache files, and the stale Apr 22 rebuild helper were removed from the active root.
+  A full pre-sanitize backup was written under:
+    Updates_to_AEN/bootupdates/archives/runtimeatbootdataset_pre_v33_sanitize_20260427-214041
 
-Sanitization note:
-  Answer-bearing golden transcripts and obsolete smoke/test1 files were moved
-  to timestamped archives under:
-  kaggle_aimo3/results/runtime_dataset_archives/
+Retained non-boot material:
+  canondatabase/ is legacy/reference material and is not part of v33 boot memory injection.
+  test/ contains post-boot evaluation/export files and is not part of ordinary boot-study memory.
 
-Boundary note:
-  test/ files are not injected into solving prompts. CB12 reads test/voe_eval_clean19
-  after Runtime-at-Boot certification and first audits live solve prompts/dialogue for
-  contamination markers.
+Verification files:
+  runtimeatboot_manifest.json
+  SANITIZED_BOOT_MEMORY_BOUNDARY.json
+  V33_ROLE_FILE_AUDIT.csv
+  V33_SANITIZE_REPORT.md
+  SHA256SUMS.txt
