@@ -1,109 +1,111 @@
-﻿# April 27 AIME RuntimeAtBoot Revision
+﻿# April 27/28 AIME RuntimeAtBoot Revision
 
 <div align="center">
 
-# Frozen Canon To April 27
+# RuntimeAtBoot Negative Result And Repair Path
 
-**A reproducible revision package for the AEN architecture paper: AIME Q1-Q30 evidence, RuntimeAtBoot v32, and the boot-memory preservation correction.**
+**A reproducible revision package for the AEN architecture paper: AIME Q1-Q30 evidence, RuntimeAtBoot v33/v32 dataset curation, the Apr28 negative boot run, and the next ack-gated CB8 repair.**
 
-| Frozen canon | Unrestricted reference | Current Apr27 0.2.3 |
-| ---: | ---: | ---: |
-| **15/30** | **22/30** | **21/30** |
-| paper baseline | paper comparison run | archived April 27 current run |
+| Frozen canon | Unrestricted reference | Apr27 current 0.2.3 | Apr28 official boot run |
+| ---: | ---: | ---: | ---: |
+| **15/30** | **22/30** | **21/30** | **17/30** |
+| paper baseline | paper comparison run | low-token controller gain | negative RuntimeAtBoot diagnostic |
 
 </div>
 
 ---
 
+## Read This First
+
+The Apr28 official RuntimeAtBoot run did **not** validate the intended transfer claim. It degraded from the Apr27 current run at 21/30 to 17/30, even though per-problem solve tokens remained compact. That makes this revision more important, not less: it identifies a real certification/control failure instead of papering over it.
+
+The bad signature was visible in CB8:
+
+- `memory_studied: true`
+- `ack_success_count: 0`
+- baseline captured anyway
+- MCQ certification continued anyway
+- later, Q28 finalized despite `peer_validation_status: disagreement_open`
+
+That behavior is now treated as invalid. RuntimeAtBoot memory study must be acknowledged before baseline capture, and disagreement must not be allowed to masquerade as clean finalization.
+
 ## Start Here
 
 | read | why |
 | --- | --- |
-| [Reproducibility](REPRODUCIBILITY.md) | exact offline execution order and success signals |
-| [Revision Story](STORY.md) | claim ladder for the architectural leap, token compression, YAML-shaped studies, and pending corrected run |
-| [Analysis](ANALYSIS.md) | what improved, what failed, and why the reset bug matters |
-| [Official Apr28 Regression Note](OFFICIAL_APR28_RUNTIMEATBOOT_REGRESSION_NOTE.md) | negative RuntimeAtBoot result, Q28 failure, and next one-question experiments |
+| [Official Apr28 Regression Note](OFFICIAL_APR28_RUNTIMEATBOOT_REGRESSION_NOTE.md) | negative RuntimeAtBoot result, Q28 failure, token forensics, and next one-question experiments |
 | [Official Four-Run Report](official_four_run_report_20260428/OFFICIAL_FOUR_RUN_HEADLINE_REPORT.md) | copied Apr28 official tables and SVG visualizations |
-| [Changelog](CHANGELOG.md) | concise delta from the frozen canon |
+| [Analysis](ANALYSIS.md) | what improved, what failed, and why reset/validation bugs matter |
+| [Reproducibility](REPRODUCIBILITY.md) | exact offline execution order and success signals |
+| [Revision Story](STORY.md) | original Apr27 architectural-leap narrative, now bounded by Apr28 negative evidence |
 | [Manifest](MANIFEST.md) | source paths, included assets, and boundary notes |
-| [Next Dataset Notes](runtime_at_boot/NEXT_DATASET_NOTES_V33.md) | notes-only v33 curation intake boundary |
+| [Next Dataset Notes](runtime_at_boot/NEXT_DATASET_NOTES_V33.md) | v33 curation intake boundary |
 
-## The Visual Story
-
-<table>
-<tr>
-<td width="50%"><img src="assets/q1_q30/headline_scoreboard_q1_q30.svg" alt="Q1-Q30 headline scoreboard"></td>
-<td width="50%"><img src="assets/q1_q30/q1_q30_result_grid.svg" alt="Q1-Q30 result grid"></td>
-</tr>
-<tr>
-<td width="50%"><img src="assets/q1_q30/chunk_accuracy_q1_q30.svg" alt="Q1-Q30 chunk accuracy"></td>
-<td width="50%"><img src="assets/q1_q30/current_miss_playbook_q1_q30.svg" alt="Current miss playbook"></td>
-</tr>
-</table>
-
-## What Changed
-
-The April 27 branch is a natural extension of the paper rather than a replacement for it. The paper release remains frozen at the repository root. This folder adds the next evidence layer:
-
-- Q1-Q30 current-run comparison against the frozen and unrestricted paper references.
-- A small public table layer for scores, slices, token volume, late-game outcomes, and failure taxonomy.
-- RuntimeAtBoot v32 staged dataset payload and certification harness audit.
-- Extracted CB8 and CB11.5 cells that fix the boot-memory preservation path.
-- A clear warning about the negative-control run where certified memory could be reset away before solving.
-
-## Headline Result
+## What The Four Runs Say
 
 | run | score | accuracy | mean total tokens |
 | --- | ---: | ---: | ---: |
 | Paper frozen pruned | 15/30 | 50.00% | 711,100 |
 | Paper unrestricted | 22/30 | 73.33% | 1,125,451 |
-| Current Apr27 0.2.3 | 21/30 | 70.00% | 128,625 |
-| Official Apr28 boot run | 17/30 | 56.67% | 134,446 |
+| Apr27 current 0.2.3 | 21/30 | 70.00% | 128,625 |
+| Apr28 official boot run | 17/30 | 56.67% | 134,446 |
 
-Current was tied with the unrestricted run through Q25, then Q26-Q30 broke the tie: current went 2/5, unrestricted went 3/5, frozen went 1/5.
+Apr27 showed a real controller/token-compression gain. Apr28 showed that the RuntimeAtBoot study/certification layer, as actually run, could damage performance. The strongest conclusion is not "more boot memory is better". The stronger conclusion is: boot memory must be compact, acknowledged, preserved, and subordinate to hard validation gates.
 
-## RuntimeAtBoot v32
+## Visual Story
 
-RuntimeAtBoot v32 is staged under [`runtime_at_boot/`](runtime_at_boot/). The intended semantics are strict:
+<table>
+<tr>
+<td width="50%"><img src="official_four_run_report_20260428/data_visualizations/four_run_scoreboard_q1_q30.svg" alt="Four-run headline scoreboard"></td>
+<td width="50%"><img src="official_four_run_report_20260428/data_visualizations/q1_q30_four_run_result_grid.svg" alt="Four-run result grid"></td>
+</tr>
+<tr>
+<td width="50%"><img src="official_four_run_report_20260428/data_visualizations/official_vs_current_delta.svg" alt="Official versus current deltas"></td>
+<td width="50%"><img src="official_four_run_report_20260428/data_visualizations/token_efficiency_four_run.svg" alt="Token efficiency by run"></td>
+</tr>
+</table>
 
-- study rows are injected into live role context,
-- certification rows are used only for certification,
-- answer letters are rotated and audited,
-- solve transcripts should demonstrate use of the class invariant, not answer recall.
+## Q28 Is The Diagnostic
 
-The five problem-class overlays are image-vs-witness counts, conditional ledgers, endpoint/state recurrences, geometry closure, and exact-cover/enumeration completeness. A sixth overlay governs controller closeout.
+Q28 expected answer was `107`.
 
-## Corrected Execution Path
+| run | answer | correct | total tokens |
+| --- | ---: | --- | ---: |
+| Frozen pruned | 4040 | false | 719,067 |
+| Unrestricted | 107 | true | 1,182,933 |
+| Apr27 current 0.2.3 | 107 | true | 145,529 |
+| Apr28 official boot run | 12 | false | 116,594 |
 
-Use this revision order:
+The prior successful run let Artemis correct the route to the factor/chain model `4040 = 2^3 * 5 * 101`, yielding `1 + 1 + 1 + 4 + 100 = 107`. The official Apr28 run converged on the false capacity answer `12`; Aria left an exact-count feasibility blocker open, yet finalization still accepted the wrong integer.
+
+## Current Repair Path
+
+The next executable path is not another full Q1-Q30 run. It is one-question gating:
 
 ```text
-CB4 -> CB6 -> CB6.5 -> CB7 -> CB7.5 -> CB8 v1.4.9 -> CB11.5 r4 -> CB12
+CB4 -> CB6 -> CB6.5 -> CB7 -> CB7.5 -> CB8 v1.5.0 ack-gated 75-cert -> CB11.5 r4 -> CB12 one-question Q28
 ```
 
-CB12 stays unchanged. The required correction is that CB8 captures the boot-memory baseline and CB11.5 r4 restores it across both outer problem boundaries and the controller question reset before solving.
+CB8 v1.5.0 is included under [`code/cb08_runtimeatboot_bootcert_v1_5_0_ack_gated.py`](code/cb08_runtimeatboot_bootcert_v1_5_0_ack_gated.py). It changes the failure mode directly:
 
-## Evidence Pipeline
-
-<img src="assets/evidence_pipeline/aen_apr27_evidence_pipeline.svg" alt="April 27 evidence pipeline">
-
-<img src="assets/evidence_pipeline/claim_ladder.svg" alt="April 27 claim ladder">
+- default certification returns to the frozen-style 75-line cap,
+- study acknowledgement is counted and must pass before baseline capture,
+- `memory_studied: true` cannot coexist with `ack_success_count: 0`,
+- failed study returns a blocked boot gate rather than a poisoned baseline,
+- validation rows expose `ack_success_count` and `ack_passed`.
 
 ## Data Layer
 
-The public tables live in [`data/tables/`](data/tables/):
+The public tables live in [`data/tables/`](data/tables/) and [`official_four_run_report_20260428/data_analysis/tables/`](official_four_run_report_20260428/data_analysis/tables/).
 
-- `run_summary_q1_q30_and_slices.csv`
-- `three_run_q1_q30_comparison.csv`
-- `all_runs_q1_q30_long.csv`
-- `current_q26_q30_detail.csv`
-- `current_failure_warning_taxonomy_q1_q30.csv`
-- `q28_token_forensics_apr28.csv`
+Key additions:
 
-The official Apr28 report, including its copied figures and CSV tables, lives under [`official_four_run_report_20260428/`](official_four_run_report_20260428/).
+- `official_four_run_report_20260428/data_analysis/tables/four_run_q1_q30_comparison.csv`
+- `official_four_run_report_20260428/data_analysis/tables/official_runtime_at_boot_summary.csv`
+- `data/tables/q28_token_forensics_apr28.csv`
 
 ## Boundary
 
-This package is careful about claims. The Q1-Q30 result is an archived April 27 current-run result. The CB8 v1.4.9 and CB11.5 r4 files are the corrected path for preserving RuntimeAtBoot memory in future/repeated runs. A run that passes boot certification but lacks preserved boot baselines is an invalid RuntimeAtBoot transfer test.
+This package must be read as a negative/diagnostic RuntimeAtBoot revision. It supports the Apr27 low-token architectural improvement claim and the Apr28 finding that the boot-study/certification/control path was not yet safe. It does **not** claim a successful corrected full RuntimeAtBoot benchmark.
 
-The corrected full Q1-Q30 RuntimeAtBoot run remains pending while live execution is ongoing. The current package supports an architectural-leap claim and a net-positive study/certification claim, not a final corrected-score claim.
+The next success criterion is narrow: Q28 must pass with acknowledged memory study, preserved baseline, and clean peer validation before any new full benchmark should be trusted.
