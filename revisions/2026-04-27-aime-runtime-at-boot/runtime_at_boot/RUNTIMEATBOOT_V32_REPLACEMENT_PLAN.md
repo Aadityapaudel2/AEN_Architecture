@@ -34,3 +34,7 @@ Status: staged replacement payload. The live `runtimeatbootdataset` folder was n
 - Treat certification as a RuntimeAtBoot reading gate: the MCQ answer is deliberately easy, but the row must carry a rich invariant/rubric payload and the answer letters must be balanced enough to rule out fixed-letter passing.
 - Interpret the best-world target as targeted studying from injected class artifacts, not plain recall.
 - For v33 memory testing, build a separate dataset with memory shards and recall probes.
+
+## Next Dataset Intake
+
+See NEXT_DATASET_NOTES_V33.md for the notes-only v33 curation intake. The active v32 replacement payload remains unchanged here.

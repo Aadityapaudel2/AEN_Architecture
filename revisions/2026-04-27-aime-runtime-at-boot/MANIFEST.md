@@ -34,3 +34,7 @@ The Q1-Q30 score analysis describes archived April 27 current-run artifacts. The
 ## Added Diagnostic Note
 
 - LIVE_RUN_DIAGNOSTIC_20260428.md records why the pasted live run is useful controller evidence but not final RuntimeAtBoot memory-transfer proof.
+
+## Next Dataset Notes
+
+- untime_at_boot/NEXT_DATASET_NOTES_V33.md records the local v33 curation intake. This is notes-only and does not replace the committed v32 payload.

@@ -29,3 +29,8 @@ The old architecture certificate could reset role sessions at problem boundaries
 
 - Added the executable r4 wrapper for `_reset_sessions_for_new_question`, because the live controller reset happened after the r3 outer restore.
 - Added `cb11_5_controller_reset_boot_memory_restore` as a required certificate event for valid RuntimeAtBoot transfer reruns.
+
+## v33 Curation Notes
+
+- Added notes for the local untimeatboot_v33_curation_20260428 intake folder.
+- Preserved the boundary that actual v33 dataset promotion is still pending manual curation.

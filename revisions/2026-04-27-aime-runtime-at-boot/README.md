@@ -24,6 +24,7 @@
 | [Analysis](ANALYSIS.md) | what improved, what failed, and why the reset bug matters |
 | [Changelog](CHANGELOG.md) | concise delta from the frozen canon |
 | [Manifest](MANIFEST.md) | source paths, included assets, and boundary notes |
+| [Next Dataset Notes](runtime_at_boot/NEXT_DATASET_NOTES_V33.md) | notes-only v33 curation intake boundary |
 
 ## The Visual Story
 
