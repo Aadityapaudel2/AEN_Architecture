@@ -13,10 +13,84 @@ import csv
 import re
 import time
 from pathlib import Path
-from typing import Any, Callable, cast
+from typing import TYPE_CHECKING, Any, Callable, cast
 
 CB08_RUNTIME_REVISION = "2026-04-28-cb08-runtimeatboot-strict-ack-owned-hooks-75cert-v1.5.1"
 CB08_JSON_LOGS = bool(globals().get("CB08_JSON_LOGS", False))
+
+
+if TYPE_CHECKING:
+    # Injected by earlier notebook cells; declared only for static analyzers.
+    TORCH_DTYPE_NAME: str
+    VLLM_HOST: str
+    VLLM_TENSOR_PARALLEL_SIZE: int
+    AUTO_REMAP_SERVER_PORT_ON_MODEL_MISMATCH: bool
+    PORT_REMAP_START: int
+    PORT_REMAP_END: int
+    SERVER_START_TIMEOUT_SEC: int
+    CLIENT_TIMEOUT_SECONDS: int
+    ACTIVE_RUNTIME_PROFILE: str
+    PRELOAD_MODEL_WEIGHTS: bool
+
+    SOLVER_MODEL_DIR: str
+    SOLVER_MODEL_NAME: str
+    SOLVER_RUNTIME_CONTEXT_WINDOW_TOKENS: int
+    SOLVER_SERVER_PORT: int
+    SOLVER_GPU_MEMORY_UTILIZATION: str
+    SOLVER_KV_CACHE_DTYPE: str | None
+    SOLVER_REASONING_PARSER: str | None
+    SOLVER_ATTENTION_BACKEND: str | None
+    SOLVER_LANGUAGE_MODEL_ONLY: bool
+    SOLVER_CPU_OFFLOAD_GB: str | None
+    SOLVER_ENFORCE_EAGER: bool
+    SOLVER_COMPILATION_MODE: int | None
+    SOLVER_CUDAGRAPH_MODE: str | None
+    SOLVER_DISABLE_COMPILE_CACHE: bool
+    SOLVER_DISABLE_HYBRID_KV_CACHE_MANAGER: bool
+    SOLVER_ENABLE_THINKING: bool
+    SOLVER_ALLOW_ATTACH_MODEL_MISMATCH: bool
+    SOLVER_HF_OVERRIDES: dict[str, Any]
+    SOLVER_ENV_OVERRIDES: dict[str, Any]
+
+    CLERK_MODEL_DIR: str
+    CLERK_MODEL_NAME: str
+    CLERK_RUNTIME_CONTEXT_WINDOW_TOKENS: int
+    CLERK_SERVER_PORT: int
+    CLERK_GPU_MEMORY_UTILIZATION: str
+    CLERK_KV_CACHE_DTYPE: str | None
+    CLERK_REASONING_PARSER: str | None
+    CLERK_ATTENTION_BACKEND: str | None
+    CLERK_LANGUAGE_MODEL_ONLY: bool
+    CLERK_CPU_OFFLOAD_GB: str | None
+    CLERK_ENFORCE_EAGER: bool
+    CLERK_COMPILATION_MODE: int | None
+    CLERK_CUDAGRAPH_MODE: str | None
+    CLERK_DISABLE_COMPILE_CACHE: bool
+    CLERK_DISABLE_HYBRID_KV_CACHE_MANAGER: bool
+    CLERK_ENABLE_THINKING: bool
+    CLERK_ALLOW_ATTACH_MODEL_MISMATCH: bool
+    CLERK_HF_OVERRIDES: dict[str, Any]
+    CLERK_ENV_OVERRIDES: dict[str, Any]
+
+    AGENT_MODEL_DIR: str
+    AGENT_MODEL_NAME: str
+    AGENT_RUNTIME_CONTEXT_WINDOW_TOKENS: int
+    AGENT_SERVER_PORT: int
+    AGENT_GPU_MEMORY_UTILIZATION: str
+    AGENT_KV_CACHE_DTYPE: str | None
+    AGENT_REASONING_PARSER: str | None
+    AGENT_ATTENTION_BACKEND: str | None
+    AGENT_LANGUAGE_MODEL_ONLY: bool
+    AGENT_CPU_OFFLOAD_GB: str | None
+    AGENT_ENFORCE_EAGER: bool
+    AGENT_COMPILATION_MODE: int | None
+    AGENT_CUDAGRAPH_MODE: str | None
+    AGENT_DISABLE_COMPILE_CACHE: bool
+    AGENT_DISABLE_HYBRID_KV_CACHE_MANAGER: bool
+    AGENT_ENABLE_THINKING: bool
+    AGENT_ALLOW_ATTACH_MODEL_MISMATCH: bool
+    AGENT_HF_OVERRIDES: dict[str, Any]
+    AGENT_ENV_OVERRIDES: dict[str, Any]
 
 
 def _require_cb07_5_global(name: str) -> Any:
