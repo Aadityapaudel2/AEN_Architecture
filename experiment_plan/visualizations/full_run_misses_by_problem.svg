@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="360" viewBox="0 0 920 360">
+<rect width="100%" height="100%" fill="#fff"/>
+<text x="70" y="30" font-family="Segoe UI, Arial" font-size="20" font-weight="700" fill="#111827">Full-run miss set</text>
+<line x1="70" y1="296" x2="896" y2="296" stroke="#cbd5e1"/>
+<rect x="70.0" y="52.0" width="58.0" height="244.0" rx="3" fill="#dc2626"/>
+<text x="99.0" y="46.0" text-anchor="middle" font-family="Segoe UI, Arial" font-size="11" fill="#111827">1</text>
+<text x="99.0" y="314" text-anchor="middle" font-family="Segoe UI, Arial" font-size="10" fill="#334155" transform="rotate(-45 99.0,314)">9</text>
+<rect x="134.0" y="52.0" width="58.0" height="244.0" rx="3" fill="#dc2626"/>
+<text x="163.0" y="46.0" text-anchor="middle" font-family="Segoe UI, Arial" font-size="11" fill="#111827">1</text>
+<text x="163.0" y="314" text-anchor="middle" font-family="Segoe UI, Arial" font-size="10" fill="#334155" transform="rotate(-45 163.0,314)">10</text>
+<rect x="198.0" y="52.0" width="58.0" height="244.0" rx="3" fill="#dc2626"/>
+<text x="227.0" y="46.0" text-anchor="middle" font-family="Segoe UI, Arial" font-size="11" fill="#111827">1</text>
+<text x="227.0" y="314" text-anchor="middle" font-family="Segoe UI, Arial" font-size="10" fill="#334155" transform="rotate(-45 227.0,314)">15</text>
+<rect x="262.0" y="52.0" width="58.0" height="244.0" rx="3" fill="#dc2626"/>
+<text x="291.0" y="46.0" text-anchor="middle" font-family="Segoe UI, Arial" font-size="11" fill="#111827">1</text>
+<text x="291.0" y="314" text-anchor="middle" font-family="Segoe UI, Arial" font-size="10" fill="#334155" transform="rotate(-45 291.0,314)">17</text>
+<rect x="326.0" y="52.0" width="58.0" height="244.0" rx="3" fill="#dc2626"/>
+<text x="355.0" y="46.0" text-anchor="middle" font-family="Segoe UI, Arial" font-size="11" fill="#111827">1</text>
+<text x="355.0" y="314" text-anchor="middle" font-family="Segoe UI, Arial" font-size="10" fill="#334155" transform="rotate(-45 355.0,314)">29</text>
+<rect x="390.0" y="52.0" width="58.0" height="244.0" rx="3" fill="#dc2626"/>
+<text x="419.0" y="46.0" text-anchor="middle" font-family="Segoe UI, Arial" font-size="11" fill="#111827">1</text>
+<text x="419.0" y="314" text-anchor="middle" font-family="Segoe UI, Arial" font-size="10" fill="#334155" transform="rotate(-45 419.0,314)">30</text>
+<rect x="454.0" y="52.0" width="58.0" height="244.0" rx="3" fill="#dc2626"/>
+<text x="483.0" y="46.0" text-anchor="middle" font-family="Segoe UI, Arial" font-size="11" fill="#111827">1</text>
+<text x="483.0" y="314" text-anchor="middle" font-family="Segoe UI, Arial" font-size="10" fill="#334155" transform="rotate(-45 483.0,314)">7</text>
+<rect x="518.0" y="52.0" width="58.0" height="244.0" rx="3" fill="#dc2626"/>
+<text x="547.0" y="46.0" text-anchor="middle" font-family="Segoe UI, Arial" font-size="11" fill="#111827">1</text>
+<text x="547.0" y="314" text-anchor="middle" font-family="Segoe UI, Arial" font-size="10" fill="#334155" transform="rotate(-45 547.0,314)">11</text>
+<rect x="582.0" y="52.0" width="58.0" height="244.0" rx="3" fill="#dc2626"/>
+<text x="611.0" y="46.0" text-anchor="middle" font-family="Segoe UI, Arial" font-size="11" fill="#111827">1</text>
+<text x="611.0" y="314" text-anchor="middle" font-family="Segoe UI, Arial" font-size="10" fill="#334155" transform="rotate(-45 611.0,314)">18</text>
+<rect x="646.0" y="52.0" width="58.0" height="244.0" rx="3" fill="#dc2626"/>
+<text x="675.0" y="46.0" text-anchor="middle" font-family="Segoe UI, Arial" font-size="11" fill="#111827">1</text>
+<text x="675.0" y="314" text-anchor="middle" font-family="Segoe UI, Arial" font-size="10" fill="#334155" transform="rotate(-45 675.0,314)">21</text>
+<rect x="710.0" y="52.0" width="58.0" height="244.0" rx="3" fill="#dc2626"/>
+<text x="739.0" y="46.0" text-anchor="middle" font-family="Segoe UI, Arial" font-size="11" fill="#111827">1</text>
+<text x="739.0" y="314" text-anchor="middle" font-family="Segoe UI, Arial" font-size="10" fill="#334155" transform="rotate(-45 739.0,314)">23</text>
+<rect x="774.0" y="52.0" width="58.0" height="244.0" rx="3" fill="#dc2626"/>
+<text x="803.0" y="46.0" text-anchor="middle" font-family="Segoe UI, Arial" font-size="11" fill="#111827">1</text>
+<text x="803.0" y="314" text-anchor="middle" font-family="Segoe UI, Arial" font-size="10" fill="#334155" transform="rotate(-45 803.0,314)">24</text>
+<rect x="838.0" y="52.0" width="58.0" height="244.0" rx="3" fill="#dc2626"/>
+<text x="867.0" y="46.0" text-anchor="middle" font-family="Segoe UI, Arial" font-size="11" fill="#111827">1</text>
+<text x="867.0" y="314" text-anchor="middle" font-family="Segoe UI, Arial" font-size="10" fill="#334155" transform="rotate(-45 867.0,314)">28</text>
+</svg>

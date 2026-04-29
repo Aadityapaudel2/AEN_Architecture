@@ -12,3 +12,4 @@
 | [`revisions/2026-04-29-artifact-05-q17-q27-transcript-diagnostics/`](revisions/2026-04-29-artifact-05-q17-q27-transcript-diagnostics/) | April 29 Q17/Q27 transcript diagnostics and comparison figures |
 
 The root paper remains frozen. The revision folder is the living evidence package for the April 27/28 run sequence.
+- [Experiment Plan](experiment_plan/README.md) - April 29 V34 additive Runtime-at-Boot repair plan, failure diagnosis UI, and controller closeout proposal.

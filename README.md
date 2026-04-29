@@ -83,3 +83,7 @@ The build script runs `latexmk` from `paper/` when available, with a fallback to
 ## Source Boundary
 
 This repository preserves the preprint source package as a staged, Zenodo-aligned release: `v1.0-preprint-2026-04-22`. Later analysis belongs in [`revisions/`](revisions/) rather than mutating the frozen paper source in place. That split is deliberate: the paper stays reproducible, while the evidence ledger keeps growing.
+
+## Current Experiment Planning
+
+The April 29 V34 planning package is in [`experiment_plan/`](experiment_plan/README.md). It analyzes recorded transcript failures, proposes answer-blind Runtime-at-Boot additions, and isolates the CB7.5 closeout condition that prevents `GLOBAL_MAX_BIG_LOOPS=3` from producing additional loops.

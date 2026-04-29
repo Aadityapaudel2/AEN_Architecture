@@ -48,3 +48,7 @@ The frozen paper source is preserved as the Zenodo-aligned preprint package. Lat
 ## Artifact 05: Q17/Q27 Diagnostics
 
 The April 29 selected-slice transcript diagnostics are available at [`Artifact 05`](https://github.com/Aadityapaudel2/AEN_Architecture/tree/main/revisions/2026-04-29-artifact-05-q17-q27-transcript-diagnostics). The key result is narrow: Q27 was recovered as `223`, while Q17 remained an internally verified false-confidence miss (`32` vs `243`).
+
+## Experiment Planning
+
+The April 29 V34 planning package is available in [`experiment_plan`](../experiment_plan/README.md): it contains the failure diagnosis dashboard, proposed answer-blind boot additions, and a controller closeout patch proposal.

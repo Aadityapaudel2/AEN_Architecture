@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AEN Experiment Plan · V34 Additive Repair</title>
+<style>
+:root{--ink:#111827;--muted:#475569;--line:#d8dee9;--panel:#fff;--red:#b91c1c;--blue:#1d4ed8;--green:#15803d}
+*{box-sizing:border-box} body{margin:0;font-family:Segoe UI,Arial,sans-serif;color:var(--ink);background:#eef2f7;line-height:1.45}
+header{padding:34px 28px 22px;background:#0f172a;color:white} header h1{margin:0 0 8px;font-size:34px;letter-spacing:0} header p{margin:0;max-width:1050px;color:#cbd5e1}
+main{max-width:1220px;margin:0 auto;padding:24px} .grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.metric,section{background:var(--panel);border:1px solid var(--line);border-radius:8px} .metric{padding:16px} .metric .label{color:var(--muted);font-size:13px} .metric .value{font-size:28px;font-weight:800;margin-top:4px}
+section{padding:20px;margin-top:18px} h2{margin:0 0 12px;font-size:22px} a{color:var(--blue)} .callout{border-left:5px solid var(--red);background:#fff7ed;padding:14px 16px;margin:14px 0}
+.table-wrap{overflow:auto;border:1px solid var(--line);border-radius:8px} table{border-collapse:collapse;width:100%;min-width:960px} th,td{border-bottom:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top} th{background:#f1f5f9;font-size:13px}
+.case-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px} .case-card{border:1px solid var(--line);border-radius:8px;padding:16px;background:#fff} .case-card.stable{border-left:5px solid var(--red)} .case-card.recoverable{border-left:5px solid var(--green)} .case-kicker{color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.04em} .case-card h3{margin:8px 0;font-size:18px}
+.figures,.code-links{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px} .figures img{width:100%;border:1px solid var(--line);border-radius:8px;background:white} .code-links a{display:block;padding:14px;border:1px solid var(--line);border-radius:8px;background:#f8fafc;text-decoration:none;font-weight:700}
+@media(max-width:900px){.grid,.figures,.case-grid,.code-links{grid-template-columns:1fr} header h1{font-size:28px}}
+</style></head><body>
+<header><h1>AEN V34 Experiment Plan</h1><p>Preparing the next big run from certified Runtime-at-Boot V31/V33: preserve the canonical base, add answer-blind route-study records, and fix the controller closeout path that exits at loop 1 despite open blockers.</p></header>
+<main>
+<div class="grid"><div class="metric"><div class="label">Recorded AIME-2026 attempts</div><div class="value">77</div></div><div class="metric"><div class="label">Recorded run folders</div><div class="value">14</div></div><div class="metric"><div class="label">Full-run accuracy</div><div class="value">17/30</div></div><div class="metric"><div class="label">Stable zero-correct misses</div><div class="value">6</div></div></div>
+<section><h2>Decision Point</h2><div class="callout"><strong>The loop knob is not broken as a cap.</strong> It is bypassed by a permissive closeout condition: loop 1 closes whenever Athena finalization yields any selected candidate and <code>GLOBAL_MIN_BIG_LOOP_FOR_CLOSEOUT = 1</code>.</div><p>Review the exact line references and pseudocode in <a href="code_proposals/controller_loop_closeout_proposal.md">controller_loop_closeout_proposal.md</a>.</p></section>
+<section><h2>Failure Matrix</h2><div class="table-wrap"><table><thead><tr><th>Problem</th><th>Expected</th><th>Full-run answer</th><th>Attempts</th><th>Correct attempts</th><th>Stable miss</th><th>Peer status</th><th>V34 axis</th></tr></thead><tbody><tr><td>aime2025_09</td><td>29</td><td>4133</td><td>2</td><td>0</td><td>True</td><td>disagreement_open</td><td>conditional probability state DP</td></tr>
+<tr><td>aime2025_10</td><td>156</td><td>133</td><td>2</td><td>0</td><td>True</td><td>disagreement_open</td><td>oriented geometry finish check</td></tr>
+<tr><td>aime2025_15</td><td>83</td><td>1</td><td>2</td><td>0</td><td>True</td><td>confidence_aligned</td><td>tiling enumeration instead of uniqueness assertion</td></tr>
+<tr><td>aime2025_17</td><td>243</td><td>69</td><td>5</td><td>0</td><td>True</td><td>disagreement_open</td><td>state transfer for graph walks</td></tr>
+<tr><td>aime2025_29</td><td>157</td><td>5</td><td>2</td><td>0</td><td>True</td><td>peer_aligned_waiting_athena</td><td>state DP for custom operations</td></tr>
+<tr><td>aime2025_30</td><td>393</td><td>364</td><td>2</td><td>0</td><td>True</td><td>disagreement_open</td><td>finite-field exhaustive enumeration</td></tr>
+<tr><td>aime2025_07</td><td>396</td><td>341</td><td>2</td><td>1</td><td>False</td><td>confidence_aligned</td><td>enumerative completeness guard</td></tr>
+<tr><td>aime2025_11</td><td>896</td><td>584</td><td>3</td><td>2</td><td>False</td><td>disagreement_open</td><td>weighted rearrangement audit</td></tr>
+<tr><td>aime2025_18</td><td>503</td><td>505</td><td>2</td><td>1</td><td>False</td><td>disagreement_open</td><td>endpoint and inequality audit</td></tr>
+<tr><td>aime2025_21</td><td>50</td><td>18</td><td>3</td><td>1</td><td>False</td><td>peer_aligned_waiting_athena</td><td>analytic tangency normal route</td></tr>
+<tr><td>aime2025_23</td><td>245</td><td>125</td><td>2</td><td>1</td><td>False</td><td>disagreement_open</td><td>geometry-to-Diophantine audit</td></tr>
+<tr><td>aime2025_24</td><td>669</td><td>558</td><td>2</td><td>1</td><td>False</td><td>confidence_aligned</td><td>floor/tail carry discipline</td></tr>
+<tr><td>aime2025_28</td><td>107</td><td>12</td><td>2</td><td>1</td><td>False</td><td>disagreement_open</td><td>exact combinatorial construction audit</td></tr></tbody></table></div></section>
+<section><h2>Figures</h2><div class="figures"><img src="visualizations/recorded_attempts_by_problem.svg" alt="Recorded attempts by problem"><img src="visualizations/correct_attempts_by_problem.svg" alt="Correct attempts by problem"><img src="visualizations/full_run_misses_by_problem.svg" alt="Full run misses by problem"></div></section>
+<section><h2>Failure Diagnoses</h2><div class="case-grid"><article class="case-card stable">
+<div class="case-kicker">aime2025_09 - expected 29 - full run 4133</div>
+<h3>Conditional probability on die-face sticker survival</h3>
+<p><strong>What went wrong:</strong> Reports disagree about valid sequence counts and denominator construction. The math failure is conditioning under overwrites: visible stickers are survival events, not independent face choices.</p>
+<p><strong>Study material:</strong> State-space conditioning for overwrite processes; survival/no-future-hit events; denominator reconstruction by explicit face-state DP.</p>
+</article>
+<article class="case-card stable">
+<div class="case-kicker">aime2025_10 - expected 156 - full run 133</div>
+<h3>Rotated triangle and nonconvex hexagon area</h3>
+<p><strong>What went wrong:</strong> Both peer reports explicitly reported unresolved shoelace/orientation disagreement. Athena finalized from a non-closed geometry route.</p>
+<p><strong>Study material:</strong> Circumcenter rotation coordinates; oriented shoelace for named vertex order; validate sign and winding before nearest-integer closeout.</p>
+</article>
+<article class="case-card stable">
+<div class="case-kicker">aime2025_15 - expected 83 - full run 1</div>
+<h3>Partitioning a 10x10 grid into rectangular cell loops</h3>
+<p><strong>What went wrong:</strong> The roles assumed the concentric-square decomposition was unique and did not enumerate strip/frame alternatives.</p>
+<p><strong>Study material:</strong> Transfer/backtracking enumeration of loop tilings; boundary-frame recursion; counterexample search before uniqueness claims.</p>
+</article>
+<article class="case-card stable">
+<div class="case-kicker">aime2025_17 - expected 243 - full run 69</div>
+<h3>Directed path count in a ladder/diagonal graph without edge reuse</h3>
+<p><strong>What went wrong:</strong> The controller repeatedly accepted high-confidence wrong answers. The underlying math needs graph-state transfer because no-repeated-edge couples local choices across columns.</p>
+<p><strong>Study material:</strong> Transfer matrix on frontier states; directed edge-use constraints; compute N by column DP and only then take square root.</p>
+</article>
+<article class="case-card stable">
+<div class="case-kicker">aime2025_29 - expected 157 - full run 5</div>
+<h3>Left-associative custom operation over compositions of 12</h3>
+<p><strong>What went wrong:</strong> Reports compressed the process into a subtraction-sum invariant and did not enumerate accumulator states over all compositions.</p>
+<p><strong>Study material:</strong> Dynamic programming over partial sum, accumulator value, and parity; composition enumeration; verify invariants against DP.</p>
+</article>
+<article class="case-card stable">
+<div class="case-kicker">aime2025_30 - expected 393 - full run 364</div>
+<h3>Ordered 7-tuples modulo 3 with cyclic cubic sum</h3>
+<p><strong>What went wrong:</strong> Both peers reported unresolved enumeration under the mod-3 sum constraint. Athena emitted a number anyway.</p>
+<p><strong>Study material:</strong> Modulo-3 enumeration; condition on total sum; truth tables for cyclic cubic terms; exhaustive 3^7 or compressed DP.</p>
+</article>
+<article class="case-card recoverable">
+<div class="case-kicker">aime2025_07 - expected 396 - full run 341</div>
+<h3>Permutation cycle types / order divides 6</h3>
+<p><strong>What went wrong:</strong> All roles counted permutations whose cycle lengths divide 6, but omitted one legal cycle type. The method was right; the partition checklist was incomplete.</p>
+<p><strong>Study material:</strong> Cycle-type partition checklist; conjugacy class formula; mandatory exhaustive partition ledger before final summation.</p>
+</article>
+<article class="case-card recoverable">
+<div class="case-kicker">aime2025_11 - expected 896 - full run 584</div>
+<h3>Maximizing grid adjacent differences</h3>
+<p><strong>What went wrong:</strong> The route recognized bipartite separation but mishandled degree distribution by partition/color and assignment weights. Later runs recovered this, so it is a recoverable audit-route failure.</p>
+<p><strong>Study material:</strong> Checkerboard partitions on 8x8 grid; degree counts by color; rearrangement inequality with signed degree weights.</p>
+</article>
+<article class="case-card recoverable">
+<div class="case-kicker">aime2025_18 - expected 503 - full run 505</div>
+<h3>Nonconvex pentagon coordinates and modular area filter</h3>
+<p><strong>What went wrong:</strong> The route likely had the right coordinate family but leaked boundary cases through strict inequalities or area divisibility.</p>
+<p><strong>Study material:</strong> Coordinate parametrization of nonconvex pentagons; strict inequalities; modular area divisibility and endpoint audits.</p>
+</article>
+<article class="case-card recoverable">
+<div class="case-kicker">aime2025_21 - expected 50 - full run 18</div>
+<h3>Circle tangent to parabola, sum of possible radii</h3>
+<p><strong>What went wrong:</strong> The failed run did not consistently reduce tangency to normal-distance conditions and sum all real radii. A later selected run solved it.</p>
+<p><strong>Study material:</strong> Parabola normal parametrization; distance-to-center radius equation; discriminant/root-sum finish.</p>
+</article>
+<article class="case-card recoverable">
+<div class="case-kicker">aime2025_23 - expected 245 - full run 125</div>
+<h3>Isosceles triangle incenter and integer side constraints</h3>
+<p><strong>What went wrong:</strong> Peer reports identified a bad half-angle/inradius formula and unresolved integer constraints. The final answer was emitted despite no closed Diophantine route.</p>
+<p><strong>Study material:</strong> Incenter perimeter formulas; half-angle identities; integer side constraints; rationality checks before minimization.</p>
+</article>
+<article class="case-card recoverable">
+<div class="case-kicker">aime2025_24 - expected 669 - full run 558</div>
+<h3>Infinite decimal/geometric series floor modulo 1000</h3>
+<p><strong>What went wrong:</strong> The model extracted late coefficients but mishandled the tail/floor carry. The tail must be bounded tightly enough to know the floor modulo 1000.</p>
+<p><strong>Study material:</strong> Series coefficient extraction; tail bounds; floor carry audit under multiplication by 10^100.</p>
+</article>
+<article class="case-card recoverable">
+<div class="case-kicker">aime2025_28 - expected 107 - full run 12</div>
+<h3>Counting cousin sets for finite integer sets</h3>
+<p><strong>What went wrong:</strong> The route proved a lower bound and enough capacity, then invented an exact construction. Exact target count requires structural counting.</p>
+<p><strong>Study material:</strong> Matching-count DP for neighbor choices; exact construction counts; never use capacity as existence without a constructive count.</p>
+</article></div></section>
+<section><h2>Plan Files</h2><div class="code-links"><a href="dataset_proposal_v34.md">V34 additive dataset proposal</a><a href="code_proposals/controller_loop_closeout_proposal.md">Controller closeout proposal</a><a href="code_proposals/next_run_config.py">Next-run knob block</a></div></section>
+</main></body></html>
