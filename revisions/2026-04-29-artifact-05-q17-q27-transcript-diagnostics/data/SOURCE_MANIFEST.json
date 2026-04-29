@@ -1,0 +1,15 @@
+{
+  "artifact": "2026-04-29-artifact-05-q17-q27-transcript-diagnostics",
+  "generated_at_utc": "2026-04-29T04:39:01+00:00",
+  "canonical_repo": "N:\\Research\\AEN_paper\\github_push",
+  "primary_run": "N:\\Research\\colab_outputs\\AIME-2026_export_explicit_problem_indices_3q_20260429-032853",
+  "previous_apr29_run": "N:\\Research\\colab_outputs\\AIME-2026_export_explicit_problem_indices_3q_20260429-021145",
+  "data_sources": [
+    "N:\\Research\\AEN_paper\\github_push\\revisions\\data\\all_four_artifacts_q1_q30_long.csv",
+    "N:\\Research\\AEN_paper\\github_push\\revisions\\data\\artifact_comparison_q1_q30.csv",
+    "N:\\Research\\colab_outputs\\AIME-2026_export_explicit_problem_indices_3q_20260429-032853\\AIME-2026_PRIVATE_FULL.csv",
+    "N:\\Research\\colab_outputs\\AIME-2026_export_explicit_problem_indices_3q_20260429-032853\\result_payloads",
+    "N:\\Research\\colab_outputs\\AIME-2026_export_explicit_problem_indices_3q_20260429-032853\\transcripts"
+  ],
+  "note": "Derived tables and figures; full local transcripts are not republished here."
+}

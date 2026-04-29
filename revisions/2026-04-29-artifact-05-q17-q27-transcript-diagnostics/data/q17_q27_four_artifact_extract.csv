@@ -1,0 +1,9 @@
+run_key,run_label,idx,id,answer,expected_answer,correct,valid_answer,status,closeout_mode,total_tokens,time_taken_seconds,turns,loops,total_prompt_tokens,total_completion_tokens,peer_validation_ready,peer_candidates,athena_confidence_pct,question,source_family
+frozen,Frozen pruned,17,aime2026_17,10,243,False,True,closed_out_hierarchical_fallback_highest_confidence,Highest confidence,721538,210.1997,9,1,712055,9483,,,,Q17,four_artifact_ledger
+frozen,Frozen pruned,27,aime2026_27,97,223,False,True,closed_out_exact_integer_consensus_strict_confidence_on_athena_finalization,Strict consensus,714856,191.1712,9,1,706600,8256,,,,Q27,four_artifact_ledger
+unrestricted,Unrestricted,17,aime2026_17,243,243,True,True,closed_out_hierarchical_fallback_majority_vote,Majority vote,1228745,696.3507,11,1,1192697,36048,,,,Q17,four_artifact_ledger
+unrestricted,Unrestricted,27,aime2026_27,223,223,True,True,closed_out_exact_integer_consensus_strict_confidence_on_athena_finalization,Strict consensus,1105662,309.0078,11,1,1093093,12569,,,,Q27,four_artifact_ledger
+current,Apr27 current 0.2.3,17,aime2025_17,198,243,False,True,closed_out_simple_answer_arbitration,athena_mandatory_final_answer_turn,159387,470.4052,12,1,124146,35241,,,,Q17,four_artifact_ledger
+current,Apr27 current 0.2.3,27,aime2025_27,67,223,False,True,closed_out_simple_answer_arbitration,,142291,448.917,12,1,108356,33935,,,,Q27,four_artifact_ledger
+official,Apr28 official boot run,17,aime2025_17,69,243,False,True,closed_out_simple_answer_arbitration,athena_mandatory_final_answer_turn,170895,570.2475,12,1,128071,42824,False,Aria:/; Artemis:/,,Q17,four_artifact_ledger
+official,Apr28 official boot run,27,aime2025_27,223,223,True,True,closed_out_simple_answer_arbitration,athena_mandatory_final_answer_turn,178898,554.0758,12,1,137165,41733,False,Aria:/; Artemis:/,,Q27,four_artifact_ledger

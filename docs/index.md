@@ -44,3 +44,7 @@ That is the point of the architecture: make reasoning systems easier to audit, c
 ## Boundary
 
 The frozen paper source is preserved as the Zenodo-aligned preprint package. Later AIME runs, Runtime-at-Boot diagnostics, CSV tables, and visualizations live in the revision ledger so the historical record stays clean and followable.
+
+## Artifact 05: Q17/Q27 Diagnostics
+
+The April 29 selected-slice transcript diagnostics are available at [`Artifact 05`](https://github.com/Aadityapaudel2/AEN_Architecture/tree/main/revisions/2026-04-29-artifact-05-q17-q27-transcript-diagnostics). The key result is narrow: Q27 was recovered as `223`, while Q17 remained an internally verified false-confidence miss (`32` vs `243`).

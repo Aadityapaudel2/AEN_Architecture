@@ -1,0 +1,4 @@
+runtime_label,role_name,local_boot_bytes,memory_line_count,memory_chunk_count,expected_study_turns,study_committed_prompt_tokens,baseline_committed_prompt_tokens,boot_gate_elapsed_seconds,certified_probe_count
+clerk,Artemis,234022,95,13,26,223849,229955,1514.2889,30
+agent,Aria,233122,95,11,22,116452,122842,521.6483,30
+solver,Athena,233822,100,12,24,132654,141988,659.1317,30

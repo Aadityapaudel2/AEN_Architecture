@@ -19,6 +19,7 @@ traceability:
 | 02 | [`2026-04-27-artifact-02-unrestricted-reference/`](2026-04-27-artifact-02-unrestricted-reference/) | 22/30 | 73.33% | 1,125,451 | high-budget reference ceiling |
 | 03 | [`2026-04-27-artifact-03-benchmarkgrade-v023/`](2026-04-27-artifact-03-benchmarkgrade-v023/) | 21/30 | 70.00% | 128,625 | low-token benchmarkgrade run |
 | 04 | [`2026-04-28-artifact-04-runtime-at-boot-v33-experiment/`](2026-04-28-artifact-04-runtime-at-boot-v33-experiment/) | 17/30 | 56.67% | 134,446 | RuntimeAtBoot negative experiment |
+| 05 | [`2026-04-29-artifact-05-q17-q27-transcript-diagnostics/`](2026-04-29-artifact-05-q17-q27-transcript-diagnostics/) | 2/3 selected slice | 66.67% | ~2.21M on Q17 | Q17/Q27 transcript diagnostic; Q27 recovered, Q17 false-confidence miss |
 
 Artifact 02 remains the empirical accuracy ceiling at 22/30, but it spent about
 8.75x the tokens of Artifact 03. Artifact 03 is the strongest efficiency result:
@@ -65,3 +66,7 @@ The root `data/` directory contains the complete cross-artifact tables:
 
 Each artifact folder also contains a local `data/` slice and a `visualizations/`
 subfolder so it can be read independently.
+
+## Artifact 05 Transcript Diagnostic
+
+Artifact 05 adds the April 29 selected-slice transcript analysis for Q17 and Q27. It is deliberately narrow: Q27 is a corrected geometry-center success (`223`), while Q17 remains an internally verified but externally wrong loop-1 closeout (`32` vs `243`).
