@@ -47,6 +47,7 @@ Stable misses with no correct recorded AIME-2026 attempt: aime2025_09, aime2025_
 ## Folder Map
 
 - [`index.html`](index.html): visual planning UI.
+- [`session_prompt_search_manual_prompt_20260429/`](session_prompt_search_manual_prompt_20260429/README.md): manual-prompt transcript diagnosis and session prompt candidate.
 - [`dataset_proposal_v34.md`](dataset_proposal_v34.md): answer-blind V34 additive boot-record proposal for Athena, Aria, and Artemis.
 - [`code_proposals/controller_loop_closeout_proposal.md`](code_proposals/controller_loop_closeout_proposal.md): exact current CB7.5 line references and pseudocode patch.
 - [`code_proposals/next_run_config.py`](code_proposals/next_run_config.py): next-run knob block plus proposed closeout-safety toggles.

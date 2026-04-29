@@ -532,6 +532,7 @@ Stable misses with no correct recorded AIME-2026 attempt: {', '.join(failures[fa
 ## Folder Map
 
 - [`index.html`](index.html): visual planning UI.
+- [`session_prompt_search_manual_prompt_20260429/`](session_prompt_search_manual_prompt_20260429/README.md): manual-prompt transcript diagnosis and session prompt candidate.
 - [`dataset_proposal_v34.md`](dataset_proposal_v34.md): answer-blind V34 additive boot-record proposal for Athena, Aria, and Artemis.
 - [`code_proposals/controller_loop_closeout_proposal.md`](code_proposals/controller_loop_closeout_proposal.md): exact current CB7.5 line references and pseudocode patch.
 - [`code_proposals/next_run_config.py`](code_proposals/next_run_config.py): next-run knob block plus proposed closeout-safety toggles.
@@ -582,7 +583,7 @@ section{{padding:20px;margin-top:18px}} h2{{margin:0 0 12px;font-size:22px}} a{{
 <section><h2>Failure Matrix</h2><div class="table-wrap"><table><thead><tr><th>Problem</th><th>Expected</th><th>Full-run answer</th><th>Attempts</th><th>Correct attempts</th><th>Stable miss</th><th>Peer status</th><th>V34 axis</th></tr></thead><tbody>{rows_html}</tbody></table></div></section>
 <section><h2>Figures</h2><div class="figures"><img src="visualizations/recorded_attempts_by_problem.svg" alt="Recorded attempts by problem"><img src="visualizations/correct_attempts_by_problem.svg" alt="Correct attempts by problem"><img src="visualizations/full_run_misses_by_problem.svg" alt="Full run misses by problem"></div></section>
 <section><h2>Failure Diagnoses</h2><div class="case-grid">{cards}</div></section>
-<section><h2>Plan Files</h2><div class="code-links"><a href="dataset_proposal_v34.md">V34 additive dataset proposal</a><a href="code_proposals/controller_loop_closeout_proposal.md">Controller closeout proposal</a><a href="code_proposals/next_run_config.py">Next-run knob block</a></div></section>
+<section><h2>Plan Files</h2><div class="code-links"><a href="session_prompt_search_manual_prompt_20260429/README.md">Session prompt search artifact</a><a href="dataset_proposal_v34.md">V34 additive dataset proposal</a><a href="code_proposals/controller_loop_closeout_proposal.md">Controller closeout proposal</a><a href="code_proposals/next_run_config.py">Next-run knob block</a></div></section>
 </main></body></html>
 """
     (OUT / "index.html").write_text(index, encoding="utf-8")

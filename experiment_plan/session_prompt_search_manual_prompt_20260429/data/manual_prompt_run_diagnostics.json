@@ -1,0 +1,110 @@
+{
+  "artifact_source_local": "N:\\Research\\colab_outputs\\aime_2026_prompt_manual_prompt_001_20260429-053802",
+  "question_run_id": "qrun-20260429-053802-536",
+  "status": "closed_out_simple_answer_arbitration",
+  "verified": true,
+  "submission_answer": "0",
+  "submission_mode": "athena_mandatory_final_answer_turn",
+  "final_answer_text": "\\boxed{0}_confidence:0",
+  "loop_index": 1,
+  "turn_index": 12,
+  "elapsed_seconds": 3413.1249,
+  "peer_validation_ready": false,
+  "peer_validation_status": "disagreement_open",
+  "open_objections": [
+    "Aria and Artemis final reports are not yet distinct enough to count as independent proof-vs-audit validation.",
+    "Athena does not yet have an exact integer candidate."
+  ],
+  "athena_candidate": "0",
+  "athena_confidence": 0,
+  "aria_candidate": "none",
+  "aria_confidence": 0,
+  "aria_open_blocker": true,
+  "artemis_candidate": "none",
+  "artemis_confidence": 0,
+  "artemis_open_blocker": true,
+  "timing_summary": {
+    "enabled": true,
+    "total_turns_timed": 12,
+    "ok_turns_timed": 12,
+    "failed_turns_timed": 0,
+    "sum_turn_wall_seconds": 582.4775,
+    "speaker_wall_seconds": {
+      "Athena": 108.8718,
+      "Aria": 145.1782,
+      "Artemis": 328.4275
+    },
+    "runtime_wall_seconds": {
+      "solver": 108.8718,
+      "agent": 145.1782,
+      "clerk": 328.4275
+    }
+  },
+  "token_proof": {
+    "turns_with_usage": 12,
+    "total_prompt_tokens": 2153507,
+    "total_completion_tokens": 15303,
+    "total_tokens": 2168810,
+    "roles": {
+      "solver": {
+        "runtime_label": "solver",
+        "speaker": "Athena",
+        "turns": 3,
+        "prompt_tokens": 441323,
+        "completion_tokens": 3323,
+        "total_tokens": 444646
+      },
+      "agent": {
+        "runtime_label": "agent",
+        "speaker": "Aria",
+        "turns": 4,
+        "prompt_tokens": 519298,
+        "completion_tokens": 5380,
+        "total_tokens": 524678
+      },
+      "clerk": {
+        "runtime_label": "clerk",
+        "speaker": "Artemis",
+        "turns": 5,
+        "prompt_tokens": 1192886,
+        "completion_tokens": 6600,
+        "total_tokens": 1199486
+      }
+    }
+  },
+  "attached_test_summary": {
+    "event": "cb11_attached_test_dataset_summary",
+    "revision": "2026-04-13-cb11-v16-competition-submit-only",
+    "cases": 1,
+    "source_label": "explicit_dataframe_argument",
+    "submission_csv_path": "/content/drive/MyDrive/AthenaV5_colab/outputs/aime_2026_prompt_manual_prompt_001_20260429-053802/attached_test_submission.csv",
+    "results_csv_path": "/content/drive/MyDrive/AthenaV5_colab/outputs/aime_2026_prompt_manual_prompt_001_20260429-053802/attached_test_full_log.csv",
+    "artifact_dir": "/content/drive/MyDrive/AthenaV5_colab/outputs/aime_2026_prompt_manual_prompt_001_20260429-053802",
+    "runtime_at_boot_passed": true,
+    "total_wall_seconds": 3413.1311
+  },
+  "score_summary": {
+    "event": "benchmark_scored",
+    "revision": "2026-04-29-cb13-route-aware-score-package-r2",
+    "benchmark_name": "AIME-2026",
+    "route_name": "prompt",
+    "artifact_dir": "/content/drive/MyDrive/AthenaV5_colab/outputs/aime_2026_prompt_manual_prompt_001_20260429-053802",
+    "key_source": "",
+    "scored": false,
+    "unscored_reason": "No complete answer key was available for this artifact.",
+    "expected_rows": 1,
+    "rows": 1,
+    "correct": null,
+    "incorrect": null,
+    "invalid": 0,
+    "accuracy": null,
+    "accuracy_percent": null,
+    "correct_ids": [],
+    "incorrect_ids": [],
+    "extra_key_ids_ignored": [],
+    "runtime_at_boot_passed": true,
+    "transcript_dir": "/content/drive/MyDrive/AthenaV5_colab/outputs/aime_2026_prompt_manual_prompt_001_20260429-053802/transcripts",
+    "result_payload_dir": "/content/drive/MyDrive/AthenaV5_colab/outputs/aime_2026_prompt_manual_prompt_001_20260429-053802/result_payloads",
+    "packaged_at_utc": "2026-04-29T06:36:21Z"
+  }
+}
