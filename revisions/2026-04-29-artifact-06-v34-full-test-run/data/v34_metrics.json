@@ -1,0 +1,78 @@
+{
+  "artifact": "06",
+  "name": "V34 full test run",
+  "source_export": "N:\\Research\\colab_outputs\\aime_2026_export_full_dataset_30q_20260429-090719",
+  "notebook": "N:\\Research\\AENAIMO260_0_2_3_V34_NEXT_RUN.ipynb",
+  "packaged_at_utc": "2026-04-29T21:01:32Z",
+  "cases": 30,
+  "correct": 29,
+  "incorrect": 1,
+  "accuracy": 0.9666666666666667,
+  "misses": [
+    "aime_2026_04"
+  ],
+  "runtime_at_boot_passed": true,
+  "solve_wall_seconds": 42851.2295,
+  "runtime_at_boot_wall_seconds": 3396.755,
+  "end_to_end_wall_seconds": 46247.9845,
+  "total_tokens": 130647799,
+  "total_prompt_tokens": 129615060,
+  "total_completion_tokens": 1032739,
+  "mean_total_tokens": 4354926.633333334,
+  "mean_seconds": 1428.3743166666668,
+  "total_turns": 542,
+  "total_loops": 46,
+  "loop_counts": {
+    "1": 18,
+    "2": 8,
+    "3": 4
+  },
+  "status_counts": {
+    "closed_out_strict_trio_confidence": 28,
+    "closed_out_max_loop_best_confidence_arbitration": 2
+  },
+  "targeted_repair_questions": [
+    7,
+    9,
+    10,
+    11,
+    15,
+    17,
+    18,
+    21,
+    23,
+    24,
+    28,
+    29,
+    30
+  ],
+  "targeted_repair_correct": 13,
+  "targeted_repair_total": 13,
+  "artifact04_fixed_indices": [
+    7,
+    9,
+    10,
+    11,
+    15,
+    17,
+    18,
+    21,
+    23,
+    24,
+    28,
+    29,
+    30
+  ],
+  "artifact04_regressed_indices": [
+    4
+  ],
+  "code_revisions": {
+    "cb05_prompting": "2026-04-29-cb05-v1.4.4-adaptive-friction-session-prompts",
+    "cb07_5_dynamic": "2026-04-29-cb075-strict-confidence-loop-closeout-v1.5.2",
+    "cb08_runtime": "2026-04-29-cb08-runtimeatboot-synthetic-study-ack-v1.5.8",
+    "cb12_dataset": "2026-04-29-cb12-prompt-or-dataset-route-r2",
+    "cb13_package": "2026-04-29-cb13-route-aware-score-package-r2"
+  },
+  "source_file_count": 71,
+  "source_bytes": 23666690
+}

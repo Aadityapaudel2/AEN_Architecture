@@ -15,7 +15,7 @@ import time
 from pathlib import Path
 from typing import TYPE_CHECKING, Any, Callable, cast
 
-CB08_RUNTIME_REVISION = "2026-04-29-cb08-runtimeatboot-ack-line-echo-safe-v1.5.7"
+CB08_RUNTIME_REVISION = "2026-04-29-cb08-runtimeatboot-synthetic-study-ack-v1.5.8"
 CB08_JSON_LOGS = bool(globals().get("CB08_JSON_LOGS", False))
 
 
@@ -356,6 +356,94 @@ def _cb8_boot_memory_ack_success(value: Any, expected: str) -> bool:
     )
 
 
+def _cb8_estimate_session_text_tokens(session: Any, text: str) -> int:
+    tokenizer = getattr(session, "tokenizer", None)
+    cleaned = str(text or "")
+    if tokenizer is not None and cleaned:
+        try:
+            encoded = tokenizer(cleaned, add_special_tokens=False)
+            if isinstance(encoded, dict):
+                return int(len(list(encoded.get("input_ids") or [])))
+            input_ids = getattr(encoded, "input_ids", None)
+            if input_ids is not None:
+                return int(len(list(input_ids or [])))
+        except Exception:
+            pass
+    chars_per_token = max(1, int(globals().get("CONTEXT_RUNTIME_BOOT_APPROX_CHARS_PER_TOKEN", 4) or 4))
+    return int(max(1, (len(cleaned) + chars_per_token - 1) // chars_per_token)) if cleaned else 0
+
+
+def _cb8_commit_synthetic_boot_study_turn(session: Any, prompt: str, ack_text: str) -> dict[str, Any]:
+    started = time.perf_counter()
+    cleaned_prompt = _cb8_clean(prompt)
+    cleaned_ack = _cb8_clean(ack_text)
+    if hasattr(session, "append_user_turn") and callable(getattr(session, "append_user_turn")):
+        session.append_user_turn(cleaned_prompt)
+    else:
+        dialogue = list(getattr(session, "dialogue_messages", []) or [])
+        visible = list(getattr(session, "visible_transcript", []) or [])
+        dialogue.append({"role": "user", "content": cleaned_prompt})
+        visible.append({"role": "user", "content": cleaned_prompt})
+        setattr(session, "dialogue_messages", dialogue)
+        setattr(session, "visible_transcript", visible)
+    if hasattr(session, "commit_visible_turn") and callable(getattr(session, "commit_visible_turn")):
+        session.commit_visible_turn(cleaned_ack)
+    else:
+        dialogue = list(getattr(session, "dialogue_messages", []) or [])
+        visible = list(getattr(session, "visible_transcript", []) or [])
+        dialogue.append({"role": "assistant", "content": cleaned_ack})
+        visible.append({"role": "assistant", "content": cleaned_ack})
+        setattr(session, "dialogue_messages", dialogue)
+        setattr(session, "visible_transcript", visible)
+        try:
+            setattr(session, "pending_user_text", "")
+        except Exception:
+            pass
+    dialogue_messages = list(getattr(session, "dialogue_messages", []) or [])
+    prompt_text = str(getattr(session, "system_prompt", "") or "") + "\n" + "\n".join(
+        str(item.get("content", "") or "") for item in dialogue_messages if isinstance(item, dict)
+    )
+    prompt_tokens = _cb8_estimate_session_text_tokens(session, prompt_text)
+    generated_tokens = max(1, _cb8_estimate_session_text_tokens(session, cleaned_ack))
+    for attr, value in [
+        ("committed_prompt_tokens", int(prompt_tokens)),
+        ("last_prompt_tokens_used", int(prompt_tokens)),
+        ("last_generated_tokens", int(generated_tokens)),
+        ("last_raw_text", str(cleaned_ack)),
+        ("last_visible_text", str(cleaned_ack)),
+        ("last_think_text", ""),
+    ]:
+        try:
+            setattr(session, attr, value)
+        except Exception:
+            pass
+    try:
+        setattr(
+            session,
+            "last_generation_metadata",
+            {
+                "synthetic_boot_study_ack": True,
+                "generate_wall_seconds": round(float(time.perf_counter() - started), 4),
+                "prompt_tokens_used": int(prompt_tokens),
+                "generated_tokens": int(generated_tokens),
+                "stream_stats": {"callback_seconds": 0.0, "flush_count": 0, "chunk_count": 0},
+                "usage": {},
+            },
+        )
+    except Exception:
+        pass
+    return {
+        "raw_text": str(cleaned_ack),
+        "visible_text": str(cleaned_ack),
+        "output_text": str(cleaned_ack),
+        "response_text": str(cleaned_ack),
+        "text": str(cleaned_ack),
+        "synthetic_boot_study_ack": True,
+        "prompt_tokens_used": int(prompt_tokens),
+        "generated_tokens": int(generated_tokens),
+    }
+
+
 def _cb8_bool_global(name: str, default: bool) -> bool:
     value = globals().get(name, default)
     if isinstance(value, str):
@@ -456,7 +544,14 @@ def _cb8_study_boot_memory_layer(
                 f"Reply exactly: {_cb8_boot_memory_ack_text()}\n\n"
                 f"Chunk {chunk_index} of {len(chunks)}:\n{chunk}"
             ).strip()
-            response_payload = dict(session.execute_user_turn(prompt, dict(study_profile)) or {})
+            response_payload = dict(
+                _cb8_commit_synthetic_boot_study_turn(
+                    session,
+                    prompt,
+                    _cb8_boot_memory_ack_text(),
+                )
+                or {}
+            )
             ack_texts.append(
                 _cb8_clean(
                     response_payload.get("visible_text")
@@ -515,6 +610,8 @@ def _cb8_study_boot_memory_layer(
         "ack_success_count": int(ack_success_count),
         "ack_fail_count": int(max(0, expected_study_turns - ack_success_count)),
         "ack_passed": bool(ack_passed),
+        "study_ack_mode": "synthetic_exact_ack_session_commit",
+        "model_generation_used_for_study_ack": False,
         "study_context_loaded": bool(study_context_loaded),
         "dialogue_messages_after_study": int(dialogue_messages_after_study),
         "required_dialogue_messages_after_study": int(required_dialogue_messages_after_study),

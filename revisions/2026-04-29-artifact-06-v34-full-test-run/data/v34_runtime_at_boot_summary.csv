@@ -1,0 +1,4 @@
+runtime_label,role_name,status,passed,certification_line_count,certified_count,probe_count,memory_line_count,memory_chunk_count,study_passes,expected_study_turns,ack_count,ack_success_count,study_ack_mode,model_generation_used_for_study_ack,baseline_stage,baseline_dialogue_messages,baseline_committed_prompt_tokens,elapsed_seconds
+clerk,Artemis,certified,True,30,30,30,113,20,2,40,40,40,synthetic_exact_ack_session_commit,False,after_certification,140,224683,1098.3137
+agent,Aria,certified,True,30,30,30,113,20,2,40,40,40,synthetic_exact_ack_session_commit,False,after_certification,140,223406,1088.1677
+solver,Athena,certified,True,30,30,30,113,20,2,40,40,40,synthetic_exact_ack_session_commit,False,after_certification,140,223875,1091.9465

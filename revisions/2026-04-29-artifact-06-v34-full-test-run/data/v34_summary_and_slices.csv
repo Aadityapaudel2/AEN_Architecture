@@ -1,0 +1,8 @@
+run_key,run_label,slice,cases,correct,losses,accuracy,mean_total_tokens,mean_seconds,tokens_per_correct,mean_turns,mean_loops
+v34,Artifact 06 V34 full test run,Q1-Q30,30,29,1,0.966667,4354926.6,1428.362,4505096.5,18.067,1.533
+v34,Artifact 06 V34 full test run,Q1-Q5,5,4,1,0.8,3838257.4,1189.589,4797821.8,16.0,1.4
+v34,Artifact 06 V34 full test run,Q6-Q10,5,5,0,1.0,3355439.2,1065.693,3355439.2,14.2,1.2
+v34,Artifact 06 V34 full test run,Q11-Q15,5,5,0,1.0,6349846.0,1986.953,6349846.0,26.0,2.2
+v34,Artifact 06 V34 full test run,Q16-Q20,5,5,0,1.0,3397964.8,1050.735,3397964.8,14.4,1.2
+v34,Artifact 06 V34 full test run,Q21-Q25,5,5,0,1.0,4536324.4,1568.536,4536324.4,18.8,1.6
+v34,Artifact 06 V34 full test run,Q26-Q30,5,5,0,1.0,4651728.0,1708.665,4651728.0,19.0,1.6

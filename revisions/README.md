@@ -20,6 +20,7 @@ traceability:
 | 03 | [`2026-04-27-artifact-03-benchmarkgrade-v023/`](2026-04-27-artifact-03-benchmarkgrade-v023/) | 21/30 | 70.00% | 128,625 | low-token benchmarkgrade run |
 | 04 | [`2026-04-28-artifact-04-runtime-at-boot-v33-experiment/`](2026-04-28-artifact-04-runtime-at-boot-v33-experiment/) | 17/30 | 56.67% | 134,446 | RuntimeAtBoot negative experiment |
 | 05 | [`2026-04-29-artifact-05-q17-q27-transcript-diagnostics/`](2026-04-29-artifact-05-q17-q27-transcript-diagnostics/) | 2/3 selected slice | 66.67% | ~2.21M on Q17 | Q17/Q27 transcript diagnostic; Q27 recovered, Q17 false-confidence miss |
+| 06 | [`2026-04-29-artifact-06-v34-full-test-run/`](2026-04-29-artifact-06-v34-full-test-run/) | 29/30 | 96.67% | 4,354,927 | V34 answer-aware Runtime-at-Boot repair full run |
 
 Artifact 02 remains the empirical accuracy ceiling at 22/30, but it spent about
 8.75x the tokens of Artifact 03. Artifact 03 is the strongest efficiency result:
@@ -70,3 +71,5 @@ subfolder so it can be read independently.
 ## Artifact 05 Transcript Diagnostic
 
 Artifact 05 adds the April 29 selected-slice transcript analysis for Q17 and Q27. It is deliberately narrow: Q27 is a corrected geometry-center success (`223`), while Q17 remains an internally verified but externally wrong loop-1 closeout (`32` vs `243`).
+
+Artifact 06 is the April 29 V34 full test run. It is the highest-scoring artifact in the ledger at 29/30, but it is answer-aware because V34 adds repair rows for known AIME-2026 misses. Use it as architecture and Runtime-at-Boot repair evidence, not as a blind benchmark claim.

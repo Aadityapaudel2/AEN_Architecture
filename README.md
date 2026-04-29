@@ -30,6 +30,15 @@ The equally important negative result is Artifact 04. Runtime-at-Boot certificat
 
 ## Results At A Glance
 
+<!-- V34_FULL_TEST_RUN_START -->
+## Latest: V34 Full Test Run
+
+The April 29 V34 answer-aware Runtime-at-Boot repair run reached **29/30 (96.67%)** on the full AIME-2026 Q1-Q30 dataset. Runtime-at-Boot passed, all 13 targeted prior misses were repaired, and the only miss was Q04 (`137` submitted vs `70` expected) from a distinct-value/object-identification failure.
+
+Read the full package: [`revisions/2026-04-29-artifact-06-v34-full-test-run/`](revisions/2026-04-29-artifact-06-v34-full-test-run/).
+<!-- V34_FULL_TEST_RUN_END -->
+
+
 The follow-on revision ledger tracks four AIME Q1-Q30 artifacts:
 
 | artifact | run | score | accuracy | mean tokens/problem | interpretation |

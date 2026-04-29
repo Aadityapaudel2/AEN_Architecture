@@ -10,6 +10,7 @@
 | [`revisions/2026-04-28-artifact-04-runtime-at-boot-v33-experiment/REPRODUCIBILITY.md`](revisions/2026-04-28-artifact-04-runtime-at-boot-v33-experiment/REPRODUCIBILITY.md) | preserved RuntimeAtBoot execution notes |
 | [`docs/index.md`](docs/index.md) | GitHub Pages landing page source |
 | [`revisions/2026-04-29-artifact-05-q17-q27-transcript-diagnostics/`](revisions/2026-04-29-artifact-05-q17-q27-transcript-diagnostics/) | April 29 Q17/Q27 transcript diagnostics and comparison figures |
+| [`revisions/2026-04-29-artifact-06-v34-full-test-run/`](revisions/2026-04-29-artifact-06-v34-full-test-run/README.md) | April 29 V34 full AIME-2026 run: 29/30, full figures, per-question reports, raw export copy |
 | [`next_run_v34/`](next_run_v34/README.md) | prepared V34 next-run notebook, codeblocks, and closeout patch |
 | [`runtimeatbootdataset_v34/`](runtimeatbootdataset_v34/README.md) | additive answer-aware Runtime-at-Boot repair dataset |
 

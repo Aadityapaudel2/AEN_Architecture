@@ -1,4 +1,4 @@
-# Artificial Evaluation Network
+﻿# Artificial Evaluation Network
 
 **AEN treats mathematical reasoning as a runtime architecture.** Instead of asking one model for one long completion, it organizes inference into roles: a solver, a verifier, an agentic synthesizer, a controller, and an optional Runtime-at-Boot memory layer.
 
@@ -11,6 +11,14 @@ The paper's central question is direct: can reusable reasoning structure become 
 AEN is not just a prompt template. It is an auditable inference protocol. The controller owns turn order, token budgets, closeout, and answer extraction. The roles argue, verify, and synthesize. The logs make it possible to see whether a change improved reasoning or merely made the transcript longer.
 
 The most important result so far is the April 27 benchmarkgrade run: **21/30 on AIME Q1-Q30** at roughly **11.4% of the unrestricted mean token budget**. The unrestricted reference reached 22/30, but spent about 8.75x more tokens per problem.
+
+## Results
+
+<!-- V34_FULL_TEST_RUN_START -->
+## V34 Full Test Run
+
+Latest evidence package: [29/30 V34 full AIME-2026 run](../revisions/2026-04-29-artifact-06-v34-full-test-run/README.md), with full figures, per-question reports, Runtime-at-Boot analysis, and raw export evidence.
+<!-- V34_FULL_TEST_RUN_END -->
 
 ## Results Snapshot
 

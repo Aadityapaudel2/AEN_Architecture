@@ -1,0 +1,11 @@
+{
+  "event": "cb11_attached_test_dataset_summary",
+  "revision": "2026-04-13-cb11-v16-competition-submit-only",
+  "cases": 30,
+  "source_label": "explicit_dataframe_argument",
+  "submission_csv_path": "/content/drive/MyDrive/AthenaV5_colab/outputs/aime_2026_export_full_dataset_30q_20260429-090719/attached_test_submission.csv",
+  "results_csv_path": "/content/drive/MyDrive/AthenaV5_colab/outputs/aime_2026_export_full_dataset_30q_20260429-090719/attached_test_full_log.csv",
+  "artifact_dir": "/content/drive/MyDrive/AthenaV5_colab/outputs/aime_2026_export_full_dataset_30q_20260429-090719",
+  "runtime_at_boot_passed": true,
+  "total_wall_seconds": 42851.2295
+}
