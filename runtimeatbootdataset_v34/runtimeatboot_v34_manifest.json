@@ -1,0 +1,212 @@
+{
+  "event": "runtimeatboot_v34_manifest",
+  "revision": "runtimeatboot-v34-answer-aware-repair-20260429",
+  "created_at_utc": "2026-04-29T07:09:01Z",
+  "source_root": "N:\\Research\\runtimeatbootdataset",
+  "source_answer_key": "https://huggingface.co/datasets/MathArena/aime_2026",
+  "failure_indices": [
+    7,
+    9,
+    10,
+    11,
+    15,
+    17,
+    18,
+    21,
+    23,
+    24,
+    28,
+    29,
+    30
+  ],
+  "roles": {
+    "athena": {
+      "path": "boot/athena/Athena_epistemic_boot_100_final_hq.ndjson",
+      "added_records": 13,
+      "original_records": 100,
+      "total_records": 113,
+      "min_added_text_chars": 22493,
+      "max_added_text_chars": 27168,
+      "expected_problem_indices": [
+        7,
+        9,
+        10,
+        11,
+        15,
+        17,
+        18,
+        21,
+        23,
+        24,
+        28,
+        29,
+        30
+      ]
+    },
+    "artemis": {
+      "path": "boot/artemis/Artemis_problem_proof_boot_100_final_hq.ndjson",
+      "added_records": 13,
+      "original_records": 100,
+      "total_records": 113,
+      "min_added_text_chars": 22514,
+      "max_added_text_chars": 27189,
+      "expected_problem_indices": [
+        7,
+        9,
+        10,
+        11,
+        15,
+        17,
+        18,
+        21,
+        23,
+        24,
+        28,
+        29,
+        30
+      ]
+    },
+    "aria": {
+      "path": "boot/aria/Aria_problem_proof_boot_100_final.ndjson",
+      "added_records": 13,
+      "original_records": 100,
+      "total_records": 113,
+      "min_added_text_chars": 22434,
+      "max_added_text_chars": 27109,
+      "expected_problem_indices": [
+        7,
+        9,
+        10,
+        11,
+        15,
+        17,
+        18,
+        21,
+        23,
+        24,
+        28,
+        29,
+        30
+      ]
+    }
+  },
+  "notes": {
+    "7": {
+      "expected_answer": "396",
+      "observed_wrong_answer": "341",
+      "domain": "permutation cycle structure",
+      "skill": "surjection_to_permutation_cycle_length_divisibility",
+      "axis": "The phrase mapping A onto A on a six-element finite set means a permutation. The equation pi^6(a)=a for every a means every cycle length divides 6. Allowed cycle lengths are 1, 2, 3, and 6; lengths 4 and 5 are illegal even though they are common permutation cycle sizes.",
+      "why": "Counting permutations by cycle type gives 1 + 15 + 45 + 15 + 40 + 120 + 40 + 120 = 396. The answer is good because it uses the finite onto condition before counting and rejects all non-divisors of 6.",
+      "trap": "Counting arbitrary functions or allowing 4-cycles/5-cycles produces plausible but wrong totals such as 341."
+    },
+    "9": {
+      "expected_answer": "29",
+      "observed_wrong_answer": "4133",
+      "domain": "conditional probability on cube orientations",
+      "skill": "top-face_history_conditioned_visibility",
+      "axis": "The state is not six independent sticker events. Each roll selects the top face of a physical die orientation, and later stickers can cover earlier stickers. Condition on the final visibility of even stickers first, then count histories with exactly one blank face among those conditioned histories.",
+      "why": "The verified benchmark answer is 29, so the reduced conditional probability has m+n=29. The answer is good when the denominator is all histories in which stickers 2, 4, and 6 remain visible, and the numerator is the subset of those histories with exactly one never-stickered face.",
+      "trap": "Treating faces as independent coupon draws ignores covering order and changes the conditional denominator."
+    },
+    "10": {
+      "expected_answer": "156",
+      "observed_wrong_answer": "133",
+      "domain": "rotated triangle geometry",
+      "skill": "coordinate_rotation_about_circumcenter",
+      "axis": "Use a coordinate model for the 13-14-15 triangle, compute its circumcenter, rotate all three vertices by the angle constrained by AC perpendicular BC, then evaluate the oriented area of the hexagon AA'CC'BB'.",
+      "why": "The verified nearest integer is 156. This is good only after enforcing both rotation conditions: AC perpendicular to BC after rotation and A' and B on opposite sides of line B'C'.",
+      "trap": "Using the wrong rotated branch or treating the area as a simple triangle-area multiple gives 133-type answers."
+    },
+    "11": {
+      "expected_answer": "896",
+      "observed_wrong_answer": "584",
+      "domain": "grid extremal arrangement",
+      "skill": "checkerboard_cut_extremal_absolute_difference",
+      "axis": "Maximize the sum across the 112 adjacent edges of the 8 by 8 grid. The extremal arrangement separates high and low numbers across as many edges as possible, with a checkerboard/cut argument and a boundary correction rather than row-wise sorting.",
+      "why": "The maximum has remainder 896. The answer is good when the proof gives both an upper bound from the grid cut structure and a construction attaining that bound.",
+      "trap": "A local greedy placement can look smooth and high but miss the global cut upper bound, leading to remainders such as 584."
+    },
+    "15": {
+      "expected_answer": "83",
+      "observed_wrong_answer": "1",
+      "domain": "cell-loop tiling enumeration",
+      "skill": "partition_by_rectangular_loop_boundaries",
+      "axis": "A cell loop is the perimeter cells around an interior rectangle. Partitioning the 10 by 10 grid into five loops is a global tiling of cell sets, not a choice of five independent rectangles. The correct state must track coverage, containment, and shared boundaries.",
+      "why": "The verified count is 83. The answer is good when every cell belongs to exactly one loop and degenerate empty-interior loops are included with the same perimeter formula.",
+      "trap": "Assuming only the obvious nested pattern collapses the count toward 1 and misses non-nested legal partitions."
+    },
+    "17": {
+      "expected_answer": "243",
+      "observed_wrong_answer": "69",
+      "domain": "directed trail transfer matrix",
+      "skill": "edge-use_state_across_ladder_with_diagonals",
+      "axis": "The bug path is a directed trail, not a simple monotone vertex path. State must remember which vertical and diagonal edges in the current square have been consumed, because the path may move vertically and may revisit vertices while never repeating an edge.",
+      "why": "The verified value is sqrt(N)=243, so N=59049. The answer is good when the transfer state over ten identical squares counts all legal edge-simple directed trails from A to B.",
+      "trap": "Counting only monotone vertex paths or suppressing vertical detours produces small candidates such as 69 or 32."
+    },
+    "18": {
+      "expected_answer": "503",
+      "observed_wrong_answer": "505",
+      "domain": "nonconvex polygon geometry with modular area",
+      "skill": "coordinate_walk_angle_constraints_integer_filter",
+      "axis": "Represent the pentagon as a directed walk with right and 45-degree turns. Translate the side data into coordinates, use DE < AB and same-side constraints, then impose the area divisible by 16 and AB < 2026.",
+      "why": "The verified count is 503. The answer is good when the area congruence is applied after the nonconvex orientation and all integer AB values are filtered exactly.",
+      "trap": "A convex assumption or off-by-one in the DE < AB / AB < 2026 inequalities shifts the count to nearby values such as 505."
+    },
+    "21": {
+      "expected_answer": "50",
+      "observed_wrong_answer": "18",
+      "domain": "parabola-circle tangency",
+      "skill": "normal_distance_critical_values",
+      "axis": "Tangency to the parabola means the circle center lies on a normal line to the parabola. Parameterize the parabola, set the center on the normal, and sum the resulting real radii without confusing signed normal distance with radius.",
+      "why": "The verified sum is 50. The answer is good when every real tangency parameter is included and radius is nonnegative geometric distance.",
+      "trap": "Using only the nearest point or only one branch of the normal equation misses valid tangencies and can give 18."
+    },
+    "23": {
+      "expected_answer": "245",
+      "observed_wrong_answer": "125",
+      "domain": "incenter geometry and integer side search",
+      "skill": "isosceles_incenter_perimeter_ratio_diophantine",
+      "axis": "Let the equal sides and base be variables, express the incenter geometry of triangle AIC, and convert the perimeter ratio 125:6 into a Diophantine constraint. Then minimize AB under integrality of both triangles.",
+      "why": "The verified minimum is 245. The answer is good when the incenter distances and angle-bisector geometry are represented exactly before the integer minimization.",
+      "trap": "Minimizing an approximate ratio or the wrong triangle perimeter yields tempting smaller values such as 125."
+    },
+    "24": {
+      "expected_answer": "669",
+      "observed_wrong_answer": "558",
+      "domain": "infinite decimal series floor modulo",
+      "skill": "repunit_series_floor_carry_control",
+      "axis": "Rewrite 1/(10^k-1) or use repunit expansions and control the floor of 10^100 S. The final object is a remainder modulo 1000, so the proof must track carries near the floor, not only the first few decimal digits.",
+      "why": "The verified remainder is 669. The answer is good when the tail bound proves the exact floor and the last three digits are taken after the carry analysis.",
+      "trap": "Truncating the repeating-decimal expansion without a rigorous tail/carry bound gives remainders like 558."
+    },
+    "28": {
+      "expected_answer": "107",
+      "observed_wrong_answer": "12",
+      "domain": "finite set matching with path components",
+      "skill": "cousin_count_component_product",
+      "axis": "Each element of S can match to a neighboring integer not in S. The count of cousin sets factors over components in the graph of positions, with conflicts when elements of S are distance 2 apart.",
+      "why": "The verified least size is 107. The answer is good when the product of component counts is optimized to equal 4040 with the smallest number of selected elements.",
+      "trap": "Treating each element as independently having two choices ignores conflicts and gives much smaller false sizes like 12."
+    },
+    "29": {
+      "expected_answer": "157",
+      "observed_wrong_answer": "5",
+      "domain": "left-associative parity operation on compositions",
+      "skill": "dynamic_program_over_sum_and_running_value_parity",
+      "axis": "The operation is left-associative, so the state after each part is the running value, not a commutative sum. Use dynamic programming over total sum used, running value, and parity of the next part.",
+      "why": "The verified count is 157. The answer is good when all compositions of 12 are processed in order and the final running value is exactly 0.",
+      "trap": "Assuming associativity or replacing the operation by signed sum loses many sequences and can collapse to 5."
+    },
+    "30": {
+      "expected_answer": "393",
+      "observed_wrong_answer": "364",
+      "domain": "modular enumeration over ternary tuples",
+      "skill": "mod3_polynomial_count_with_cyclic_terms",
+      "axis": "Reduce each a_k modulo 3, with values 1, 2, 0 for original 1, 2, 3. Count length-7 cyclic tuples satisfying both the linear sum condition and the cubic cyclic condition modulo 3.",
+      "why": "The verified count is 393. The answer is good when the seven cyclic product terms keep their exact index pattern and the count is over ordered tuples, not multisets.",
+      "trap": "Dropping cyclic indices or over-symmetrizing ordered tuples produces nearby but wrong counts such as 364."
+    }
+  }
+}

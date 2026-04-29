@@ -1,0 +1,7 @@
+id,answer,original_answer,reason
+p03,90,Kestrel,"symbolic thief/name answer, not direct integer answer"
+p04,39,Sable,"symbolic thief/name answer, not direct integer answer"
+p07,71,QUILL,"symbolic codeword answer, not direct integer answer"
+p14,41,Aegis,"symbolic culprit/name answer, not direct integer answer"
+p19,61,Aletheia,"ring name answer before integer conversion, not direct integer answer"
+p24,62,AXIOM,"five-letter name answer before integer conversion, not direct integer answer"

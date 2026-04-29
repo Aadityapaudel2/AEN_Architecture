@@ -1,0 +1,20 @@
+{
+    "event":  "runtimeatboot_dataset_v33_boot_memory_boundary_sanitized",
+    "date":  "2026-04-27",
+    "canon_revision":  "runtimeatboot-v33-canon-100-distinct-all-roles-20260428",
+    "status":  "boot_memory_v33_canon_ready_with_separate_certification_gate",
+    "active_root_is_kaggle_payload":  true,
+    "boot_counts_after":  {
+                              "athena_study":  100,
+                              "athena_certification":  100,
+                              "aria_study":  100,
+                              "aria_certification":  100,
+                              "artemis_study":  100,
+                              "artemis_certification":  100
+                          },
+    "certification_files_contain_mcq_answer_keys":  true,
+    "study_files_answer_key_free":  true,
+    "solve_prompt_contract":  "Solve prompts may ingest only SAFE_RUNTIME_BOOT_MEMORY generated from v33 study text. Certification answer keys and test/ files must not be injected into solve prompts.",
+    "study_certification_split_rationale":  "The split is intentional boundary behavior: study rows are memory; certification rows are answer-bearing gates.",
+    "backup_before_sanitize":  "Updates_to_AEN/bootupdates/archives/runtimeatbootdataset_pre_v33_sanitize_20260427-214041"
+}

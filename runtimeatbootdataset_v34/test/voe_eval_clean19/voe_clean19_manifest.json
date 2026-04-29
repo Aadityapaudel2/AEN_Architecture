@@ -1,0 +1,40 @@
+{
+  "event": "voe_clean_integer_eval_built",
+  "dataset_name": "voe_eval_clean19",
+  "source_key": "D:\\AthenaPlayground\\AthenaV5\\kaggle_aimo3\\results\\runtime_dataset_archives\\voe_removed_20260419-200335\\test\\runtimeatboot_voe_test25_integer_key.csv",
+  "output_csv": "D:\\AthenaPlayground\\AthenaV5\\kaggle_aimo3\\runtimeatbootdataset\\test\\voe_eval_clean19\\voe_clean19_integer.csv",
+  "output_key_csv": "D:\\AthenaPlayground\\AthenaV5\\kaggle_aimo3\\runtimeatbootdataset\\test\\voe_eval_clean19\\voe_clean19_integer_key.csv",
+  "removed_rows_csv": "D:\\AthenaPlayground\\AthenaV5\\kaggle_aimo3\\runtimeatbootdataset\\test\\voe_eval_clean19\\voe_clean19_removed_rows.csv",
+  "kept_count": 19,
+  "removed_count": 6,
+  "kept_ids": [
+    "p01",
+    "p02",
+    "p05",
+    "p06",
+    "p08",
+    "p09",
+    "p10",
+    "p11",
+    "p12",
+    "p13",
+    "p15",
+    "p16",
+    "p17",
+    "p18",
+    "p20",
+    "p21",
+    "p22",
+    "p23",
+    "p25"
+  ],
+  "removed_ids": [
+    "p03",
+    "p04",
+    "p07",
+    "p14",
+    "p19",
+    "p24"
+  ],
+  "policy": "Clean19 is carried under runtimeatbootdataset/test/voe_eval_clean19 for upload clarity. It keeps only problems whose final deliverable can be framed as a direct benchmark integer, and preserves the archived integerized VaultDirective so the target question is not replaced by a generic output heuristic."
+}

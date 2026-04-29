@@ -87,3 +87,5 @@ This repository preserves the preprint source package as a staged, Zenodo-aligne
 ## Current Experiment Planning
 
 The April 29 V34 planning package is in [`experiment_plan/`](experiment_plan/README.md). It analyzes recorded transcript failures, proposes answer-blind Runtime-at-Boot additions, and isolates the CB7.5 closeout condition that prevents `GLOBAL_MAX_BIG_LOOPS=3` from producing additional loops.
+
+The prepared V34 next-run package is in [`next_run_v34/`](next_run_v34/README.md). It includes the new notebook, exact codeblocks, strict loop closeout patch, answer-aware Runtime-at-Boot v34 dataset, and the failure repair index for the next AIME-2026 dataset-route run.
