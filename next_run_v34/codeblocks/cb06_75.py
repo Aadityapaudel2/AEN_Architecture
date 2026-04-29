@@ -6,7 +6,7 @@ import os
 from pathlib import Path
 
 
-CB06_75_DATASET_PATH_OVERRIDE_REVISION = "2026-04-29-cb06_75-runtimeatboot-v34-study150-cert30-r6"
+CB06_75_DATASET_PATH_OVERRIDE_REVISION = "2026-04-29-cb06_75-runtimeatboot-v34-study150-cert30-ack4-r7"
 
 _DEFAULT_RUNTIME_AT_BOOT_V34_ROOT = "/kaggle/input/runtimeatbootdataset-v34"
 if not str(globals().get("RUNTIME_AT_BOOT_DATASET_ROOT", "") or "").strip():
@@ -126,7 +126,7 @@ def _resolve_certification_preset_line_limit(raw_value: object) -> tuple[str, in
 BOOT_MEMORY_STUDY_LINE_LIMIT = _resolve_positive_global("BOOT_MEMORY_STUDY_LINE_LIMIT", 150)
 BOOT_MEMORY_STUDY_PASSES = _resolve_positive_global("BOOT_MEMORY_STUDY_PASSES", 2)
 BOOT_MEMORY_STUDY_CHUNK_CHARS = _resolve_positive_global("BOOT_MEMORY_STUDY_CHUNK_CHARS", 24000)
-BOOT_MEMORY_STUDY_MAX_TOKENS = _resolve_positive_global("BOOT_MEMORY_STUDY_MAX_TOKENS", 32)
+BOOT_MEMORY_STUDY_MAX_TOKENS = _resolve_positive_global("BOOT_MEMORY_STUDY_MAX_TOKENS", 4)
 BOOT_MEMORY_ACK_REQUIRED = _bool_from_global("BOOT_MEMORY_ACK_REQUIRED", True)
 BOOT_MEMORY_ACK_TEXT = _resolve_boot_memory_ack_text()
 BOOT_MEMORY_REQUIRE_CERTIFICATION_TRANSCRIPT = _bool_from_global("BOOT_MEMORY_REQUIRE_CERTIFICATION_TRANSCRIPT", True)

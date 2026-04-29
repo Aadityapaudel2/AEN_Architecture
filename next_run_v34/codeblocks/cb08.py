@@ -15,7 +15,7 @@ import time
 from pathlib import Path
 from typing import TYPE_CHECKING, Any, Callable, cast
 
-CB08_RUNTIME_REVISION = "2026-04-28-cb08-runtimeatboot-role-selected-lines-validation-v1.5.6"
+CB08_RUNTIME_REVISION = "2026-04-29-cb08-runtimeatboot-ack-line-echo-safe-v1.5.7"
 CB08_JSON_LOGS = bool(globals().get("CB08_JSON_LOGS", False))
 
 
@@ -329,12 +329,31 @@ def _cb8_ack_normalized(value: Any) -> str:
 
 
 def _cb8_boot_memory_ack_success(value: Any, expected: str) -> bool:
-    # Strict gate: the model must return the requested acknowledgement exactly
-    # after normalization. Apr28 showed that accepting "I have read" or a
-    # truncated prefix lets failed study masquerade as certified memory.
-    observed = _cb8_ack_normalized(value)
+    # Echo-safe strict gate. The model must put the exact acknowledgement on
+    # the first nonempty line. Some vLLM runs then echo "USER:"/"SYSTEM:" after
+    # the ack; that should not turn a correct ack into a failed study. We still
+    # reject generic prefixes such as "BOOT_CERTIFIED I have read".
+    raw_text = _cb8_clean(value)
     target = _cb8_ack_normalized(expected)
-    return bool(observed and target and observed == target)
+    if not target:
+        return False
+    first_nonempty_line = ""
+    for raw_line in str(raw_text or "").splitlines():
+        line = str(raw_line or "").strip()
+        if line:
+            first_nonempty_line = str(line)
+            break
+    if _cb8_ack_normalized(first_nonempty_line) == target:
+        return True
+    observed = _cb8_ack_normalized(raw_text)
+    if observed == target:
+        return True
+    # Handle whitespace-collapsed transcript echo, e.g.
+    # BOOT_CERTIFIEDUSER:You are Artemis...
+    return any(
+        str(observed).startswith(str(target) + marker)
+        for marker in ("USER", "SYSTEM", "ASSISTANT")
+    )
 
 
 def _cb8_bool_global(name: str, default: bool) -> bool:
@@ -409,9 +428,9 @@ def _cb8_study_boot_memory_layer(
     chunks = _cb8_memory_chunks(records, max_chars=int(chunk_chars))
     study_profile = dict(generation_profile or {})
     try:
-        ack_tokens = max(1, int(globals().get("BOOT_MEMORY_STUDY_MAX_TOKENS", 32) or 32))
+        ack_tokens = max(1, int(globals().get("BOOT_MEMORY_STUDY_MAX_TOKENS", 4) or 4))
     except Exception:
-        ack_tokens = 32
+        ack_tokens = 4
     for token_key in ("max_tokens", "max_new_tokens"):
         if token_key in study_profile:
             study_profile[token_key] = int(ack_tokens)
@@ -1135,18 +1154,34 @@ AGENT_DISPLAY_NAME = resolve_role_name(AGENT_RUNTIME_LABEL, str(globals().get("A
 
 def initialize_cb08_role_prompts() -> dict[str, str]:
     identity_builder = globals().get("build_role_identity_prompt")
+    explicit_prompts = {
+        str(SOLVER_RUNTIME_LABEL): str(globals().get("ATHENA_SESSION_PROMPT", "") or "").strip(),
+        str(CLERK_RUNTIME_LABEL): str(globals().get("ARTEMIS_SESSION_PROMPT", "") or "").strip(),
+        str(AGENT_RUNTIME_LABEL): str(
+            globals().get("ARIA_SESSION_PROMPT", globals().get("AGENT_SESSION_PROMPT", "")) or ""
+        ).strip(),
+    }
     prompts = {
         str(SOLVER_RUNTIME_LABEL): (
+            explicit_prompts[str(SOLVER_RUNTIME_LABEL)]
+            if explicit_prompts[str(SOLVER_RUNTIME_LABEL)]
+            else
             str(identity_builder(str(SOLVER_RUNTIME_LABEL))).strip()
             if callable(identity_builder)
             else f"You are {SOLVER_DISPLAY_NAME}."
         ),
         str(CLERK_RUNTIME_LABEL): (
+            explicit_prompts[str(CLERK_RUNTIME_LABEL)]
+            if explicit_prompts[str(CLERK_RUNTIME_LABEL)]
+            else
             str(identity_builder(str(CLERK_RUNTIME_LABEL))).strip()
             if callable(identity_builder)
             else f"You are {CLERK_DISPLAY_NAME}."
         ),
         str(AGENT_RUNTIME_LABEL): (
+            explicit_prompts[str(AGENT_RUNTIME_LABEL)]
+            if explicit_prompts[str(AGENT_RUNTIME_LABEL)]
+            else
             str(identity_builder(str(AGENT_RUNTIME_LABEL))).strip()
             if callable(identity_builder)
             else f"You are {AGENT_DISPLAY_NAME}."
