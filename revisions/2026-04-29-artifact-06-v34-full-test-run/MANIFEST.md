@@ -5,6 +5,7 @@ Generated artifact folder: `N:\Research\AEN_paper\github_push\revisions\2026-04-
 | path | purpose |
 | --- | --- |
 | `README.md` | Full analysis report |
+| `CONTEXT_RECALL_DIAGNOSTIC.md` | Correction note documenting exact-answer boot recall and corrected V34 interpretation |
 | `VISUAL_INDEX.md` | Global and per-question figure index |
 | `per_question_reports/` | One report for each AIME-2026 question |
 | `visualizations/` | SVG and PNG figures |

@@ -1,11 +1,13 @@
-﻿# V34 Full Test Run
+# V34 Full Test Run
 
 This artifact is the full post-run analysis package for the April 29, 2026 V34 AIME-2026 run.
 It is based on the Colab export at `N:\Research\colab_outputs\aime_2026_export_full_dataset_30q_20260429-090719` and the notebook `N:\Research\AENAIMO260_0_2_3_V34_NEXT_RUN.ipynb`.
 
+**Correction / interpretation note:** V34 is an answer-aware Runtime-at-Boot repair replay, not a blind AIME solve. The transcripts show direct recall of exact boot answer anchors, including Q11's `Verified answer: 896`. Read the diagnostic: [V34 Context Recall Diagnostic](CONTEXT_RECALL_DIAGNOSTIC.md).
+
 ## Headline
 
-V34 scored **29/30 (96.67%)**. Runtime-at-Boot passed. The only miss was **Q04**, where the system closed on `137` while the expected distinct-integer answer was `70`.
+V34 scored **29/30 (96.67%)** in an answer-aware Runtime-at-Boot repair replay. Runtime-at-Boot passed. The only miss was **Q04**, where the system closed on `137` while the expected distinct-integer answer was `70`. This score is evidence of boot-memory recall and architecture preservation, not an answer-free benchmark score.
 
 ![Headline scoreboard](visualizations/01_headline_scoreboard.svg)
 
@@ -149,3 +151,4 @@ This should not be described as a blind public benchmark score. V34 contains add
 | cb08_runtime | 2026-04-29-cb08-runtimeatboot-synthetic-study-ack-v1.5.8 |
 | cb12_dataset | 2026-04-29-cb12-prompt-or-dataset-route-r2 |
 | cb13_package | 2026-04-29-cb13-route-aware-score-package-r2 |
+
