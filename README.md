@@ -35,7 +35,7 @@ The equally important negative result is Artifact 04. Runtime-at-Boot certificat
 
 The April 29 V34 answer-aware Runtime-at-Boot repair replay reached **29/30 (96.67%)** on the full AIME-2026 Q1-Q30 dataset. Runtime-at-Boot passed, all 13 targeted prior misses were repaired, and the only miss was Q04 (`137` submitted vs `70` expected) from a distinct-value/object-identification failure. This is the highest-scoring internal replay artifact, but it is **not** a blind benchmark claim: the transcripts show direct recall of exact boot answer anchors.
 
-Read the full package: [`revisions/2026-04-29-artifact-06-v34-full-test-run/`](revisions/2026-04-29-artifact-06-v34-full-test-run/). Read the correction note: [`CONTEXT_RECALL_DIAGNOSTIC.md`](revisions/2026-04-29-artifact-06-v34-full-test-run/CONTEXT_RECALL_DIAGNOSTIC.md).
+Read the full package: [`revisions/2026-04-29-artifact-06-v34-full-test-run/`](revisions/2026-04-29-artifact-06-v34-full-test-run/). Read the correction note: [`CONTEXT_RECALL_DIAGNOSTIC.md`](revisions/2026-04-29-artifact-06-v34-full-test-run/CONTEXT_RECALL_DIAGNOSTIC.md). Read the V34 forensic addendum: [`FORENSIC_ADDENDUM.md`](revisions/2026-04-29-artifact-06-v34-full-test-run/FORENSIC_ADDENDUM.md).
 <!-- V34_FULL_TEST_RUN_END -->
 
 
@@ -54,6 +54,7 @@ The follow-on revision ledger tracks four AIME Q1-Q30 artifacts:
 
 ## How To Read The Evidence
 
+For agent handoff, start with [`AGENT_START_HERE.md`](AGENT_START_HERE.md).
 Start with the frozen paper if you want the architecture and research framing. Then read the revision ledger if you want the empirical story after the preprint:
 
 1. **Paper source:** [`paper/`](paper/) contains the Zenodo-aligned preprint source. It is intentionally frozen.
@@ -61,6 +62,8 @@ Start with the frozen paper if you want the architecture and research framing. T
 3. **Revision ledger:** [`revisions/`](revisions/) contains dated AIME Q1-Q30 result packages, CSVs, README analysis, and SVG visualizations.
 4. **Navigation map:** [`NAVIGATION.md`](NAVIGATION.md) gives a compact route through the repository.
 5. **Reproducibility notes:** [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md) explains the boundary between the frozen preprint package and later experiment artifacts.
+6. **Agent Freeze protocol:** [`protocols/AGENT_FREEZE_PROTOCOL.md`](protocols/AGENT_FREEZE_PROTOCOL.md) defines when agents must halt, sanitize, ask, or checkpoint before external API use, long runs, dataset mutation, secrets, or claim escalation.
+7. **Research hygiene protocol:** [`protocols/RESEARCH_HYGIENE_PROTOCOL.md`](protocols/RESEARCH_HYGIENE_PROTOCOL.md) defines the repo organization and artifact hygiene rules for future agents.
 
 ## Runtime-at-Boot In Plain English
 

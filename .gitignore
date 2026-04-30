@@ -17,3 +17,8 @@ Thumbs.db
 
 # Local archive bundles
 *.zip
+
+# Local secrets
+.secrets/
+*.key
+*api_key*

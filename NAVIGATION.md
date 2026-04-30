@@ -2,6 +2,7 @@
 
 | destination | what to read there |
 | --- | --- |
+| [`AGENT_START_HERE.md`](AGENT_START_HERE.md) | shortest safe route for a new agent before claims, edits, external API use, or long runs |
 | [`paper/`](paper/) | frozen Zenodo-aligned preprint source |
 | [`artifacts/AEN_RAB_source_snapshot.pdf`](artifacts/AEN_RAB_source_snapshot.pdf) | rendered paper artifact |
 | [`revisions/`](revisions/) | dated AIME Q1-Q30 artifact ledger and executive summary |
@@ -11,8 +12,11 @@
 | [`docs/index.md`](docs/index.md) | GitHub Pages landing page source |
 | [`revisions/2026-04-29-artifact-05-q17-q27-transcript-diagnostics/`](revisions/2026-04-29-artifact-05-q17-q27-transcript-diagnostics/) | April 29 Q17/Q27 transcript diagnostics and comparison figures |
 | [`revisions/2026-04-29-artifact-06-v34-full-test-run/`](revisions/2026-04-29-artifact-06-v34-full-test-run/README.md) | April 29 V34 full AIME-2026 run: 29/30, full figures, per-question reports, raw export copy |
+| [`revisions/2026-04-29-artifact-06-v34-full-test-run/FORENSIC_ADDENDUM.md`](revisions/2026-04-29-artifact-06-v34-full-test-run/FORENSIC_ADDENDUM.md) | V34 forensic addendum: answer-anchor scan, compute profile, what went right/wrong |
 | [`next_run_v34/`](next_run_v34/README.md) | prepared V34 next-run notebook, codeblocks, and closeout patch |
 | [`runtimeatbootdataset_v34/`](runtimeatbootdataset_v34/README.md) | additive answer-aware Runtime-at-Boot repair dataset |
+| [`protocols/AGENT_FREEZE_PROTOCOL.md`](protocols/AGENT_FREEZE_PROTOCOL.md) | agent halt/checkpoint rules for external APIs, long runs, dataset mutation, secrets, and claims |
+| [`protocols/RESEARCH_HYGIENE_PROTOCOL.md`](protocols/RESEARCH_HYGIENE_PROTOCOL.md) | repo hygiene rules for future AEN agents and artifact organization |
 
 The root paper remains frozen. The revision folder is the living evidence package for the April 27/28 run sequence.
 - [Experiment Plan](experiment_plan/README.md) - April 29 V34 additive Runtime-at-Boot repair plan, failure diagnosis UI, and controller closeout proposal.

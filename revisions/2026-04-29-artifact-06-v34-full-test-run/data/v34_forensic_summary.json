@@ -1,0 +1,132 @@
+{
+  "event": "v34_forensic_summary",
+  "questions": 30,
+  "correct": 29,
+  "incorrect": 1,
+  "accuracy": 0.9666666666666667,
+  "direct_answer_anchor_questions": 17,
+  "any_answer_context_language_questions": 18,
+  "no_anchor_detected_questions": [
+    "aime_2026_01",
+    "aime_2026_02",
+    "aime_2026_03",
+    "aime_2026_05",
+    "aime_2026_06",
+    "aime_2026_08",
+    "aime_2026_12",
+    "aime_2026_14",
+    "aime_2026_16",
+    "aime_2026_19",
+    "aime_2026_20",
+    "aime_2026_27"
+  ],
+  "targeted_repair_questions": 13,
+  "targeted_repair_direct_anchor_questions": 12,
+  "nontargeted_direct_anchor_questions": 5,
+  "total_anchor_hits": 620,
+  "verified_answer_hits": 181,
+  "boot_record_hits": 283,
+  "mean_tokens_m": 4.355,
+  "median_tokens_m": 2.84,
+  "max_tokens_question": "aime_2026_29",
+  "max_tokens_m": 9.107,
+  "mean_minutes": 23.81,
+  "median_minutes": 18.38,
+  "slowest_question": "aime_2026_29",
+  "slowest_minutes": 56.19,
+  "role_summary": [
+    {
+      "role_key": "agent",
+      "turns": 184,
+      "wall_time": "3h 58m 54s",
+      "wall_share_pct": 34.37,
+      "tokens_m": 44.207,
+      "token_share_pct": 33.84
+    },
+    {
+      "role_key": "clerk",
+      "turns": 220,
+      "wall_time": "5h 6m 6s",
+      "wall_share_pct": 44.04,
+      "tokens_m": 54.239,
+      "token_share_pct": 41.52
+    },
+    {
+      "role_key": "solver",
+      "turns": 138,
+      "wall_time": "2h 30m 2s",
+      "wall_share_pct": 21.59,
+      "tokens_m": 32.202,
+      "token_share_pct": 24.65
+    }
+  ],
+  "top_phase_wall": [
+    {
+      "phase": "artemis_exchange_2",
+      "turns": 46,
+      "wall_time": "1h 22m 22s",
+      "wall_share_pct": 11.85
+    },
+    {
+      "phase": "artemis_exchange_3",
+      "turns": 46,
+      "wall_time": "1h 10m 42s",
+      "wall_share_pct": 10.17
+    },
+    {
+      "phase": "aria_exchange_1",
+      "turns": 46,
+      "wall_time": "1h 10m 5s",
+      "wall_share_pct": 10.08
+    },
+    {
+      "phase": "aria_exchange_2",
+      "turns": 46,
+      "wall_time": "1h 8m 45s",
+      "wall_share_pct": 9.89
+    },
+    {
+      "phase": "artemis_exchange_1",
+      "turns": 46,
+      "wall_time": "1h 5m 54s",
+      "wall_share_pct": 9.48
+    },
+    {
+      "phase": "athena_synthesis",
+      "turns": 46,
+      "wall_time": "1h 4m 47s",
+      "wall_share_pct": 9.32
+    },
+    {
+      "phase": "aria_exchange_3",
+      "turns": 46,
+      "wall_time": "1h 2m 58s",
+      "wall_share_pct": 9.06
+    },
+    {
+      "phase": "athena_open",
+      "turns": 46,
+      "wall_time": "51m 33s",
+      "wall_share_pct": 7.42
+    },
+    {
+      "phase": "artemis_forced_solve",
+      "turns": 36,
+      "wall_time": "48m 14s",
+      "wall_share_pct": 6.94
+    },
+    {
+      "phase": "artemis_report",
+      "turns": 46,
+      "wall_time": "38m 53s",
+      "wall_share_pct": 5.6
+    }
+  ],
+  "source_tables": [
+    "data/v34_answer_anchor_scan.csv",
+    "data/v34_compute_profile_by_question.csv",
+    "data/v34_problem_results.csv",
+    "data/v34_turn_timing_long.csv",
+    "data/v34_role_runtime_by_question.csv"
+  ]
+}
