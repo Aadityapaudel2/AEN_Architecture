@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="455" viewBox="0 0 1120 455">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="34.0" y="44.0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#0f172a" text-anchor="start">Token Efficiency And Score Across Five Full Runs</text>
+<text x="34.0" y="68.0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="13" font-weight="400" fill="#475569" text-anchor="start">Bar width is log-scaled by mean tokens/problem so V34&#x27;s high-compute replay can share the same frame.</text>
+<text x="34.0" y="135.0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="14" font-weight="600" fill="#0f172a" text-anchor="start">Frozen</text>
+<rect x="285.0" y="112.0" width="620.0" height="30.0" rx="4.0" fill="#eff6ff"/>
+<rect x="285.0" y="112.0" width="339.3" height="30.0" rx="4.0" fill="#6b7280"/>
+<text x="929.0" y="133.0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="14" font-weight="600" fill="#0f172a" text-anchor="start">711,100 avg tokens</text>
+<text x="285.0" y="161.0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="11" font-weight="400" fill="#475569" text-anchor="start">score 15/30 | tokens/correct 1,422,201 | avg seconds 183.0</text>
+<text x="34.0" y="200.0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="14" font-weight="600" fill="#0f172a" text-anchor="start">Unrestricted</text>
+<rect x="285.0" y="177.0" width="620.0" height="30.0" rx="4.0" fill="#eff6ff"/>
+<rect x="285.0" y="177.0" width="410.4" height="30.0" rx="4.0" fill="#2563eb"/>
+<text x="929.0" y="198.0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="14" font-weight="600" fill="#0f172a" text-anchor="start">1,125,451 avg tokens</text>
+<text x="285.0" y="226.0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="11" font-weight="400" fill="#475569" text-anchor="start">score 22/30 | tokens/correct 1,534,705 | avg seconds 380.4</text>
+<text x="34.0" y="265.0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="14" font-weight="600" fill="#0f172a" text-anchor="start">Apr27 benchmark</text>
+<rect x="285.0" y="242.0" width="620.0" height="30.0" rx="4.0" fill="#eff6ff"/>
+<rect x="285.0" y="242.0" width="74.4" height="30.0" rx="4.0" fill="#7e22ce"/>
+<text x="929.0" y="263.0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="14" font-weight="600" fill="#0f172a" text-anchor="start">128,625 avg tokens</text>
+<text x="285.0" y="291.0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="11" font-weight="400" fill="#475569" text-anchor="start">score 21/30 | tokens/correct 183,750 | avg seconds 343.6</text>
+<text x="34.0" y="330.0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="14" font-weight="600" fill="#0f172a" text-anchor="start">Apr28 RAB v33</text>
+<rect x="285.0" y="307.0" width="620.0" height="30.0" rx="4.0" fill="#eff6ff"/>
+<rect x="285.0" y="307.0" width="81.3" height="30.0" rx="4.0" fill="#ea580c"/>
+<text x="929.0" y="328.0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="14" font-weight="600" fill="#0f172a" text-anchor="start">134,446 avg tokens</text>
+<text x="285.0" y="356.0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="11" font-weight="400" fill="#475569" text-anchor="start">score 17/30 | tokens/correct 237,258 | avg seconds 385.2</text>
+<text x="34.0" y="395.0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="14" font-weight="600" fill="#0f172a" text-anchor="start">V34 answer-aware</text>
+<rect x="285.0" y="372.0" width="620.0" height="30.0" rx="4.0" fill="#eff6ff"/>
+<rect x="285.0" y="372.0" width="620.0" height="30.0" rx="4.0" fill="#16a34a"/>
+<text x="929.0" y="393.0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="14" font-weight="600" fill="#0f172a" text-anchor="start">4,354,927 avg tokens</text>
+<text x="285.0" y="421.0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="11" font-weight="400" fill="#475569" text-anchor="start">score 29/30 | tokens/correct 4,505,096 | avg seconds 1428.4</text>
+</svg>

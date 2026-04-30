@@ -1,4 +1,4 @@
-﻿# Artificial Evaluation Network
+# Artificial Evaluation Network
 
 **AEN treats mathematical reasoning as a runtime architecture.** Instead of asking one model for one long completion, it organizes inference into roles: a solver, a verifier, an agentic synthesizer, a controller, and an optional Runtime-at-Boot memory layer.
 
@@ -10,14 +10,14 @@ The paper's central question is direct: can reusable reasoning structure become 
 
 AEN is not just a prompt template. It is an auditable inference protocol. The controller owns turn order, token budgets, closeout, and answer extraction. The roles argue, verify, and synthesize. The logs make it possible to see whether a change improved reasoning or merely made the transcript longer.
 
-The most important result so far is the April 27 benchmarkgrade run: **21/30 on AIME Q1-Q30** at roughly **11.4% of the unrestricted mean token budget**. The unrestricted reference reached 22/30, but spent about 8.75x more tokens per problem.
+The most important answer-free efficiency result remains the April 27 benchmarkgrade run: **21/30 on AIME Q1-Q30** at roughly **11.4% of the unrestricted mean token budget**. The April 29 V34 run reached 29/30, but it is answer-aware context-recall replay rather than a blind benchmark.
 
 ## Results
 
 <!-- V34_FULL_TEST_RUN_START -->
 ## V34 Full Test Run
 
-Latest evidence package: [29/30 V34 full AIME-2026 run](../revisions/2026-04-29-artifact-06-v34-full-test-run/README.md), with full figures, per-question reports, Runtime-at-Boot analysis, and raw export evidence.
+Latest evidence package: [29/30 V34 full AIME-2026 run](../revisions/2026-04-29-artifact-06-v34-full-test-run/README.md), with full figures, per-question reports, Runtime-at-Boot analysis, raw export evidence, and a correction note showing it is answer-aware context-recall replay rather than a blind benchmark.
 <!-- V34_FULL_TEST_RUN_END -->
 
 ## Results Snapshot
@@ -28,14 +28,17 @@ Latest evidence package: [29/30 V34 full AIME-2026 run](../revisions/2026-04-29-
 | 02 | unrestricted reference | 22/30 | 73.33% | 1,125,451 |
 | 03 | April 27 benchmarkgrade v0.2.3 | 21/30 | 70.00% | 128,625 |
 | 04 | April 28 Runtime-at-Boot v33 experiment | 17/30 | 56.67% | 134,446 |
+| 06 | April 29 V34 answer-aware replay | 29/30 | 96.67% | 4,354,927 |
 
-![Four artifact scoreboard](https://raw.githubusercontent.com/Aadityapaudel2/AEN_Architecture/main/revisions/visualizations/four_run_scoreboard_q1_q30.svg)
+![Five full-run scoreboard](https://raw.githubusercontent.com/Aadityapaudel2/AEN_Architecture/main/revisions/visualizations/five_run_scoreboard_q1_q30.svg)
 
-![Token efficiency](https://raw.githubusercontent.com/Aadityapaudel2/AEN_Architecture/main/revisions/visualizations/token_efficiency_four_run.svg)
+![Five full-run result grid](https://raw.githubusercontent.com/Aadityapaudel2/AEN_Architecture/main/revisions/visualizations/q1_q30_five_run_result_grid.svg)
+
+![Five full-run token efficiency](https://raw.githubusercontent.com/Aadityapaudel2/AEN_Architecture/main/revisions/visualizations/token_efficiency_five_run.svg)
 
 ## Why It Matters
 
-The extraordinary part is not that every variant wins. It does not. The extraordinary part is that AEN makes the difference observable. Artifact 03 shows a highly efficient near-ceiling run. Artifact 04 shows a Runtime-at-Boot intervention that passed structural certification but still regressed final-answer performance. That negative result is not hidden. It is part of the evidence.
+The extraordinary part is not that every variant wins. It does not. The extraordinary part is that AEN makes the difference observable. Artifact 03 shows a highly efficient near-ceiling run. Artifact 04 shows a Runtime-at-Boot intervention that passed structural certification but still regressed final-answer performance. Artifact 06/V34 then shows the opposite risk: Runtime-at-Boot recall worked so well that exact-answer boot contamination dominated the interpretation. Both results are part of the evidence.
 
 That is the point of the architecture: make reasoning systems easier to audit, compare, and improve.
 

@@ -1,0 +1,151 @@
+run_key,run_label,run_short_label,claim_class,idx,expected_answer,submitted_answer,correct,total_tokens,seconds
+frozen,Artifact 01 frozen pruned,Frozen,blind/pruned baseline,1,277,277,True,695404,139.609
+unrestricted,Artifact 02 unrestricted,Unrestricted,high-budget reference,1,277,277,True,1049170,252.591
+current,Artifact 03 Apr27 benchmarkgrade,Apr27 benchmark,compact benchmarkgrade,1,277,277,True,98267,212.014
+official,Artifact 04 Apr28 RAB v33,Apr28 RAB v33,Runtime-at-Boot negative diagnostic,1,277,277,True,105380,228.912
+v34,Artifact 06 V34 answer-aware replay,V34 answer-aware,answer-aware context-recall replay,1,277,277,True,2536058,638.5549
+frozen,Artifact 01 frozen pruned,Frozen,blind/pruned baseline,2,62,62,True,710845,184.009
+unrestricted,Artifact 02 unrestricted,Unrestricted,high-budget reference,2,62,62,True,1074559,282.594
+current,Artifact 03 Apr27 benchmarkgrade,Apr27 benchmark,compact benchmarkgrade,2,62,62,True,117945,309.283
+official,Artifact 04 Apr28 RAB v33,Apr28 RAB v33,Runtime-at-Boot negative diagnostic,2,62,62,True,135253,357.715
+v34,Artifact 06 V34 answer-aware replay,V34 answer-aware,answer-aware context-recall replay,2,62,62,True,2790160,833.6364
+frozen,Artifact 01 frozen pruned,Frozen,blind/pruned baseline,3,79,79,True,702855,157.001
+unrestricted,Artifact 02 unrestricted,Unrestricted,high-budget reference,3,79,79,True,1031930,241.305
+current,Artifact 03 Apr27 benchmarkgrade,Apr27 benchmark,compact benchmarkgrade,3,79,79,True,114524,294.037
+official,Artifact 04 Apr28 RAB v33,Apr28 RAB v33,Runtime-at-Boot negative diagnostic,3,79,79,True,110137,273.909
+v34,Artifact 06 V34 answer-aware replay,V34 answer-aware,answer-aware context-recall replay,3,79,79,True,2786781,804.1518
+frozen,Artifact 01 frozen pruned,Frozen,blind/pruned baseline,4,70,70,True,699345,149.974
+unrestricted,Artifact 02 unrestricted,Unrestricted,high-budget reference,4,70,70,True,1038493,244.383
+current,Artifact 03 Apr27 benchmarkgrade,Apr27 benchmark,compact benchmarkgrade,4,70,137,False,99911,227.677
+official,Artifact 04 Apr28 RAB v33,Apr28 RAB v33,Runtime-at-Boot negative diagnostic,4,70,70,True,111291,279.119
+v34,Artifact 06 V34 answer-aware replay,V34 answer-aware,answer-aware context-recall replay,4,70,137,False,8535099,2970.1975
+frozen,Artifact 01 frozen pruned,Frozen,blind/pruned baseline,5,65,65,True,716821,196.344
+unrestricted,Artifact 02 unrestricted,Unrestricted,high-budget reference,5,65,65,True,1035256,232.821
+current,Artifact 03 Apr27 benchmarkgrade,Apr27 benchmark,compact benchmarkgrade,5,65,65,True,95915,209.728
+official,Artifact 04 Apr28 RAB v33,Apr28 RAB v33,Runtime-at-Boot negative diagnostic,5,65,65,True,116443,281.259
+v34,Artifact 06 V34 answer-aware replay,V34 answer-aware,answer-aware context-recall replay,5,65,65,True,2543189,701.4019
+frozen,Artifact 01 frozen pruned,Frozen,blind/pruned baseline,6,441,441,True,697554,143.927
+unrestricted,Artifact 02 unrestricted,Unrestricted,high-budget reference,6,441,441,True,1055694,259.121
+current,Artifact 03 Apr27 benchmarkgrade,Apr27 benchmark,compact benchmarkgrade,6,441,441,True,111256,265.097
+official,Artifact 04 Apr28 RAB v33,Apr28 RAB v33,Runtime-at-Boot negative diagnostic,6,441,441,True,110072,268.673
+v34,Artifact 06 V34 answer-aware replay,V34 answer-aware,answer-aware context-recall replay,6,441,441,True,2531716,643.9459
+frozen,Artifact 01 frozen pruned,Frozen,blind/pruned baseline,7,396,396,True,709711,181.294
+unrestricted,Artifact 02 unrestricted,Unrestricted,high-budget reference,7,396,396,True,1068798,289.676
+current,Artifact 03 Apr27 benchmarkgrade,Apr27 benchmark,compact benchmarkgrade,7,396,396,True,94277,206.635
+official,Artifact 04 Apr28 RAB v33,Apr28 RAB v33,Runtime-at-Boot negative diagnostic,7,396,341,False,99059,229.245
+v34,Artifact 06 V34 answer-aware replay,V34 answer-aware,answer-aware context-recall replay,7,396,396,True,2790287,813.6239
+frozen,Artifact 01 frozen pruned,Frozen,blind/pruned baseline,8,244,244,True,703053,159.918
+unrestricted,Artifact 02 unrestricted,Unrestricted,high-budget reference,8,244,244,True,1127006,356.82
+current,Artifact 03 Apr27 benchmarkgrade,Apr27 benchmark,compact benchmarkgrade,8,244,244,True,125208,313.103
+official,Artifact 04 Apr28 RAB v33,Apr28 RAB v33,Runtime-at-Boot negative diagnostic,8,244,244,True,105509,239.93
+v34,Artifact 06 V34 answer-aware replay,V34 answer-aware,answer-aware context-recall replay,8,244,244,True,2807431,880.9996
+frozen,Artifact 01 frozen pruned,Frozen,blind/pruned baseline,9,29,239,False,719314,206.901
+unrestricted,Artifact 02 unrestricted,Unrestricted,high-budget reference,9,29,13,False,1155566,385.459
+current,Artifact 03 Apr27 benchmarkgrade,Apr27 benchmark,compact benchmarkgrade,9,29,6,False,152775,433.079
+official,Artifact 04 Apr28 RAB v33,Apr28 RAB v33,Runtime-at-Boot negative diagnostic,9,29,4133,False,170542,579.213
+v34,Artifact 06 V34 answer-aware replay,V34 answer-aware,answer-aware context-recall replay,9,29,29,True,2842327,1154.7457
+frozen,Artifact 01 frozen pruned,Frozen,blind/pruned baseline,10,156,195,False,719486,209.824
+unrestricted,Artifact 02 unrestricted,Unrestricted,high-budget reference,10,156,134,False,1176005,421.393
+current,Artifact 03 Apr27 benchmarkgrade,Apr27 benchmark,compact benchmarkgrade,10,156,54,False,142654,426.42
+official,Artifact 04 Apr28 RAB v33,Apr28 RAB v33,Runtime-at-Boot negative diagnostic,10,156,133,False,174336,569.088
+v34,Artifact 06 V34 answer-aware replay,V34 answer-aware,answer-aware context-recall replay,10,156,156,True,5805435,1835.1494
+frozen,Artifact 01 frozen pruned,Frozen,blind/pruned baseline,11,896,8,False,711396,179.675
+unrestricted,Artifact 02 unrestricted,Unrestricted,high-budget reference,11,896,896,True,1112040,306.014
+current,Artifact 03 Apr27 benchmarkgrade,Apr27 benchmark,compact benchmarkgrade,11,896,896,True,130556,366.894
+official,Artifact 04 Apr28 RAB v33,Apr28 RAB v33,Runtime-at-Boot negative diagnostic,11,896,584,False,143201,384.999
+v34,Artifact 06 V34 answer-aware replay,V34 answer-aware,answer-aware context-recall replay,11,896,896,True,8415553,2736.2961
+frozen,Artifact 01 frozen pruned,Frozen,blind/pruned baseline,12,161,37,False,720114,209.948
+unrestricted,Artifact 02 unrestricted,Unrestricted,high-budget reference,12,161,161,True,1204749,463.928
+current,Artifact 03 Apr27 benchmarkgrade,Apr27 benchmark,compact benchmarkgrade,12,161,161,True,130977,341.098
+official,Artifact 04 Apr28 RAB v33,Apr28 RAB v33,Runtime-at-Boot negative diagnostic,12,161,161,True,123315,324.288
+v34,Artifact 06 V34 answer-aware replay,V34 answer-aware,answer-aware context-recall replay,12,161,161,True,5797540,1821.5278
+frozen,Artifact 01 frozen pruned,Frozen,blind/pruned baseline,13,39,58,False,720072,210.004
+unrestricted,Artifact 02 unrestricted,Unrestricted,high-budget reference,13,39,79,False,1131323,344.241
+current,Artifact 03 Apr27 benchmarkgrade,Apr27 benchmark,compact benchmarkgrade,13,39,39,True,145768,404.061
+official,Artifact 04 Apr28 RAB v33,Apr28 RAB v33,Runtime-at-Boot negative diagnostic,13,39,39,True,165446,470.173
+v34,Artifact 06 V34 answer-aware replay,V34 answer-aware,answer-aware context-recall replay,13,39,39,True,8900554,2565.8914
+frozen,Artifact 01 frozen pruned,Frozen,blind/pruned baseline,14,681,382,False,716369,198.876
+unrestricted,Artifact 02 unrestricted,Unrestricted,high-budget reference,14,681,676,False,1205032,563.267
+current,Artifact 03 Apr27 benchmarkgrade,Apr27 benchmark,compact benchmarkgrade,14,681,681,True,143609,391.578
+official,Artifact 04 Apr28 RAB v33,Apr28 RAB v33,Runtime-at-Boot negative diagnostic,14,681,681,True,110315,359.246
+v34,Artifact 06 V34 answer-aware replay,V34 answer-aware,answer-aware context-recall replay,14,681,681,True,2814568,936.4916
+frozen,Artifact 01 frozen pruned,Frozen,blind/pruned baseline,15,83,1,False,718849,205.303
+unrestricted,Artifact 02 unrestricted,Unrestricted,high-budget reference,15,83,2,False,1122386,411.893
+current,Artifact 03 Apr27 benchmarkgrade,Apr27 benchmark,compact benchmarkgrade,15,83,2,False,161614,463.827
+official,Artifact 04 Apr28 RAB v33,Apr28 RAB v33,Runtime-at-Boot negative diagnostic,15,83,1,False,106119,327.074
+v34,Artifact 06 V34 answer-aware replay,V34 answer-aware,answer-aware context-recall replay,15,83,83,True,5821015,1874.5556
+frozen,Artifact 01 frozen pruned,Frozen,blind/pruned baseline,16,178,178,True,695300,139.26
+unrestricted,Artifact 02 unrestricted,Unrestricted,high-budget reference,16,178,178,True,1023191,236.396
+current,Artifact 03 Apr27 benchmarkgrade,Apr27 benchmark,compact benchmarkgrade,16,178,178,True,83367,172.312
+official,Artifact 04 Apr28 RAB v33,Apr28 RAB v33,Runtime-at-Boot negative diagnostic,16,178,178,True,90200,192.13
+v34,Artifact 06 V34 answer-aware replay,V34 answer-aware,answer-aware context-recall replay,16,178,178,True,2784644,771.3522
+frozen,Artifact 01 frozen pruned,Frozen,blind/pruned baseline,17,243,10,False,721538,210.2
+unrestricted,Artifact 02 unrestricted,Unrestricted,high-budget reference,17,243,243,True,1228745,696.351
+current,Artifact 03 Apr27 benchmarkgrade,Apr27 benchmark,compact benchmarkgrade,17,243,198,False,159387,470.405
+official,Artifact 04 Apr28 RAB v33,Apr28 RAB v33,Runtime-at-Boot negative diagnostic,17,243,69,False,170895,570.247
+v34,Artifact 06 V34 answer-aware replay,V34 answer-aware,answer-aware context-recall replay,17,243,243,True,2871448,1232.2291
+frozen,Artifact 01 frozen pruned,Frozen,blind/pruned baseline,18,503,999,False,719602,209.487
+unrestricted,Artifact 02 unrestricted,Unrestricted,high-budget reference,18,503,997,False,1186776,450.346
+current,Artifact 03 Apr27 benchmarkgrade,Apr27 benchmark,compact benchmarkgrade,18,503,503,True,150956,423.309
+official,Artifact 04 Apr28 RAB v33,Apr28 RAB v33,Runtime-at-Boot negative diagnostic,18,503,505,False,168772,491.127
+v34,Artifact 06 V34 answer-aware replay,V34 answer-aware,answer-aware context-recall replay,18,503,503,True,2808940,872.9889
+frozen,Artifact 01 frozen pruned,Frozen,blind/pruned baseline,19,279,271,False,701936,157.695
+unrestricted,Artifact 02 unrestricted,Unrestricted,high-budget reference,19,279,279,True,1104156,314.492
+current,Artifact 03 Apr27 benchmarkgrade,Apr27 benchmark,compact benchmarkgrade,19,279,279,True,117174,283.292
+official,Artifact 04 Apr28 RAB v33,Apr28 RAB v33,Runtime-at-Boot negative diagnostic,19,279,279,True,122336,333.26
+v34,Artifact 06 V34 answer-aware replay,V34 answer-aware,answer-aware context-recall replay,19,279,279,True,2790170,774.9119
+frozen,Artifact 01 frozen pruned,Frozen,blind/pruned baseline,20,190,190,True,698679,143.804
+unrestricted,Artifact 02 unrestricted,Unrestricted,high-budget reference,20,190,190,True,1045000,246.768
+current,Artifact 03 Apr27 benchmarkgrade,Apr27 benchmark,compact benchmarkgrade,20,190,190,True,117312,266.565
+official,Artifact 04 Apr28 RAB v33,Apr28 RAB v33,Runtime-at-Boot negative diagnostic,20,190,190,True,123833,301.008
+v34,Artifact 06 V34 answer-aware replay,V34 answer-aware,answer-aware context-recall replay,20,190,190,True,5734622,1602.1934
+frozen,Artifact 01 frozen pruned,Frozen,blind/pruned baseline,21,50,50,True,717023,201.873
+unrestricted,Artifact 02 unrestricted,Unrestricted,high-budget reference,21,50,50,True,1125454,340.565
+current,Artifact 03 Apr27 benchmarkgrade,Apr27 benchmark,compact benchmarkgrade,21,50,37,False,116816,286.37
+official,Artifact 04 Apr28 RAB v33,Apr28 RAB v33,Runtime-at-Boot negative diagnostic,21,50,18,False,115795,354.395
+v34,Artifact 06 V34 answer-aware replay,V34 answer-aware,answer-aware context-recall replay,21,50,50,True,5503452,1578.7538
+frozen,Artifact 01 frozen pruned,Frozen,blind/pruned baseline,22,754,754,True,710160,175.681
+unrestricted,Artifact 02 unrestricted,Unrestricted,high-budget reference,22,754,754,True,1097586,310.099
+current,Artifact 03 Apr27 benchmarkgrade,Apr27 benchmark,compact benchmarkgrade,22,754,754,True,132885,415.823
+official,Artifact 04 Apr28 RAB v33,Apr28 RAB v33,Runtime-at-Boot negative diagnostic,22,754,754,True,153697,419.668
+v34,Artifact 06 V34 answer-aware replay,V34 answer-aware,answer-aware context-recall replay,22,754,754,True,5886407,2254.6374
+frozen,Artifact 01 frozen pruned,Frozen,blind/pruned baseline,23,245,125,False,719205,209.862
+unrestricted,Artifact 02 unrestricted,Unrestricted,high-budget reference,23,245,245,True,1259225,715.073
+current,Artifact 03 Apr27 benchmarkgrade,Apr27 benchmark,compact benchmarkgrade,23,245,245,True,148306,409.088
+official,Artifact 04 Apr28 RAB v33,Apr28 RAB v33,Runtime-at-Boot negative diagnostic,23,245,125,False,172481,592.714
+v34,Artifact 06 V34 answer-aware replay,V34 answer-aware,answer-aware context-recall replay,23,245,245,True,5876031,2061.9948
+frozen,Artifact 01 frozen pruned,Frozen,blind/pruned baseline,24,669,669,True,708800,174.69
+unrestricted,Artifact 02 unrestricted,Unrestricted,high-budget reference,24,669,669,True,1176383,437.793
+current,Artifact 03 Apr27 benchmarkgrade,Apr27 benchmark,compact benchmarkgrade,24,669,669,True,128769,332.249
+official,Artifact 04 Apr28 RAB v33,Apr28 RAB v33,Runtime-at-Boot negative diagnostic,24,669,558,False,123632,299.58
+v34,Artifact 06 V34 answer-aware replay,V34 answer-aware,answer-aware context-recall replay,24,669,669,True,2837717,1050.0529
+frozen,Artifact 01 frozen pruned,Frozen,blind/pruned baseline,25,850,850,True,703136,161.011
+unrestricted,Artifact 02 unrestricted,Unrestricted,high-budget reference,25,850,850,True,1149893,338.951
+current,Artifact 03 Apr27 benchmarkgrade,Apr27 benchmark,compact benchmarkgrade,25,850,850,True,128303,333.605
+official,Artifact 04 Apr28 RAB v33,Apr28 RAB v33,Runtime-at-Boot negative diagnostic,25,850,850,True,125317,341.206
+v34,Artifact 06 V34 answer-aware replay,V34 answer-aware,answer-aware context-recall replay,25,850,850,True,2578015,897.2401
+frozen,Artifact 01 frozen pruned,Frozen,blind/pruned baseline,26,132,132,True,706251,165.9
+unrestricted,Artifact 02 unrestricted,Unrestricted,high-budget reference,26,132,132,True,1143561,372.437
+current,Artifact 03 Apr27 benchmarkgrade,Apr27 benchmark,compact benchmarkgrade,26,132,132,True,150118,415.757
+official,Artifact 04 Apr28 RAB v33,Apr28 RAB v33,Runtime-at-Boot negative diagnostic,26,132,132,True,148839,483.858
+v34,Artifact 06 V34 answer-aware replay,V34 answer-aware,answer-aware context-recall replay,26,132,132,True,5903884,2100.1803
+frozen,Artifact 01 frozen pruned,Frozen,blind/pruned baseline,27,223,97,False,714856,191.171
+unrestricted,Artifact 02 unrestricted,Unrestricted,high-budget reference,27,223,223,True,1105662,309.008
+current,Artifact 03 Apr27 benchmarkgrade,Apr27 benchmark,compact benchmarkgrade,27,223,67,False,142291,448.917
+official,Artifact 04 Apr28 RAB v33,Apr28 RAB v33,Runtime-at-Boot negative diagnostic,27,223,223,True,178898,554.076
+v34,Artifact 06 V34 answer-aware replay,V34 answer-aware,answer-aware context-recall replay,27,223,223,True,2856930,1238.5088
+frozen,Artifact 01 frozen pruned,Frozen,blind/pruned baseline,28,107,4040,False,719067,209.931
+unrestricted,Artifact 02 unrestricted,Unrestricted,high-budget reference,28,107,107,True,1182933,525.031
+current,Artifact 03 Apr27 benchmarkgrade,Apr27 benchmark,compact benchmarkgrade,28,107,107,True,145529,407.937
+official,Artifact 04 Apr28 RAB v33,Apr28 RAB v33,Runtime-at-Boot negative diagnostic,28,107,12,False,116594,391.047
+v34,Artifact 06 V34 answer-aware replay,V34 answer-aware,answer-aware context-recall replay,28,107,107,True,2581925,907.1258
+frozen,Artifact 01 frozen pruned,Frozen,blind/pruned baseline,29,157,65,False,716415,196.226
+unrestricted,Artifact 02 unrestricted,Unrestricted,high-budget reference,29,157,34,False,1177801,512.795
+current,Artifact 03 Apr27 benchmarkgrade,Apr27 benchmark,compact benchmarkgrade,29,157,8,False,128377,364.451
+official,Artifact 04 Apr28 RAB v33,Apr28 RAB v33,Runtime-at-Boot negative diagnostic,29,157,5,False,166739,532.232
+v34,Artifact 06 V34 answer-aware replay,V34 answer-aware,answer-aware context-recall replay,29,157,157,True,9107281,3371.6908
+frozen,Artifact 01 frozen pruned,Frozen,blind/pruned baseline,30,393,153,False,719855,210.03
+unrestricted,Artifact 02 unrestricted,Unrestricted,high-budget reference,30,393,367,False,1169144,550.111
+current,Artifact 03 Apr27 benchmarkgrade,Apr27 benchmark,compact benchmarkgrade,30,393,70,False,143894,412.615
+official,Artifact 04 Apr28 RAB v33,Apr28 RAB v33,Runtime-at-Boot negative diagnostic,30,393,364,False,168932,527.685
+v34,Artifact 06 V34 answer-aware replay,V34 answer-aware,answer-aware context-recall replay,30,393,393,True,2808620,925.8209

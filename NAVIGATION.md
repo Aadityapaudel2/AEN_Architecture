@@ -5,7 +5,7 @@
 | [`AGENT_START_HERE.md`](AGENT_START_HERE.md) | shortest safe route for a new agent before claims, edits, external API use, or long runs |
 | [`paper/`](paper/) | frozen Zenodo-aligned preprint source |
 | [`artifacts/AEN_RAB_source_snapshot.pdf`](artifacts/AEN_RAB_source_snapshot.pdf) | rendered paper artifact |
-| [`revisions/`](revisions/) | dated AIME Q1-Q30 artifact ledger and executive summary |
+| [`revisions/`](revisions/) | dated AIME Q1-Q30 artifact ledger, five-full-run summary figures, and executive summary |
 | [`revisions/2026-04-27-artifact-03-benchmarkgrade-v023/`](revisions/2026-04-27-artifact-03-benchmarkgrade-v023/) | April 27 compact benchmarkgrade result |
 | [`revisions/2026-04-28-artifact-04-runtime-at-boot-v33-experiment/`](revisions/2026-04-28-artifact-04-runtime-at-boot-v33-experiment/) | April 28 RuntimeAtBoot diagnostic experiment |
 | [`revisions/2026-04-28-artifact-04-runtime-at-boot-v33-experiment/REPRODUCIBILITY.md`](revisions/2026-04-28-artifact-04-runtime-at-boot-v33-experiment/REPRODUCIBILITY.md) | preserved RuntimeAtBoot execution notes |
@@ -13,6 +13,7 @@
 | [`revisions/2026-04-29-artifact-05-q17-q27-transcript-diagnostics/`](revisions/2026-04-29-artifact-05-q17-q27-transcript-diagnostics/) | April 29 Q17/Q27 transcript diagnostics and comparison figures |
 | [`revisions/2026-04-29-artifact-06-v34-full-test-run/`](revisions/2026-04-29-artifact-06-v34-full-test-run/README.md) | April 29 V34 full AIME-2026 run: 29/30, full figures, per-question reports, raw export copy |
 | [`revisions/2026-04-29-artifact-06-v34-full-test-run/FORENSIC_ADDENDUM.md`](revisions/2026-04-29-artifact-06-v34-full-test-run/FORENSIC_ADDENDUM.md) | V34 forensic addendum: answer-anchor scan, compute profile, what went right/wrong |
+| [`revisions/visualizations/five_run_scoreboard_q1_q30.svg`](revisions/visualizations/five_run_scoreboard_q1_q30.svg) | five-full-run scoreboard replacing the older four-run public figure |
 | [`next_run_v34/`](next_run_v34/README.md) | prepared V34 next-run notebook, codeblocks, and closeout patch |
 | [`runtimeatbootdataset_v34/`](runtimeatbootdataset_v34/README.md) | additive answer-aware Runtime-at-Boot repair dataset |
 | [`protocols/AGENT_FREEZE_PROTOCOL.md`](protocols/AGENT_FREEZE_PROTOCOL.md) | agent halt/checkpoint rules for external APIs, long runs, dataset mutation, secrets, and claims |

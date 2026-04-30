@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="210" viewBox="0 0 1120 210">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="34.0" y="42.0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#0f172a" text-anchor="start">V34 vs Artifact 04: Problem-Level Delta</text>
+<text x="34.0" y="66.0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="13" font-weight="400" fill="#475569" text-anchor="start">Blue = V34 fixed an Artifact 04 miss, red = V34 lost an Artifact 04 win, green = unchanged win, gray = unchanged miss.</text>
+<text x="122.0" y="90.0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="10" font-weight="400" fill="#334155" text-anchor="middle">1</text>
+<text x="156.0" y="90.0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="10" font-weight="400" fill="#334155" text-anchor="middle">2</text>
+<text x="190.0" y="90.0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="10" font-weight="400" fill="#334155" text-anchor="middle">3</text>
+<text x="224.0" y="90.0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="10" font-weight="400" fill="#334155" text-anchor="middle">4</text>
+<text x="258.0" y="90.0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="10" font-weight="400" fill="#334155" text-anchor="middle">5</text>
+<text x="292.0" y="90.0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="10" font-weight="400" fill="#334155" text-anchor="middle">6</text>
+<text x="326.0" y="90.0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="10" font-weight="400" fill="#334155" text-anchor="middle">7</text>
+<text x="360.0" y="90.0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="10" font-weight="400" fill="#334155" text-anchor="middle">8</text>
+<text x="394.0" y="90.0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="10" font-weight="400" fill="#334155" text-anchor="middle">9</text>
+<text x="428.0" y="90.0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="10" font-weight="400" fill="#334155" text-anchor="middle">10</text>
+<text x="462.0" y="90.0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="10" font-weight="400" fill="#334155" text-anchor="middle">11</text>
+<text x="496.0" y="90.0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="10" font-weight="400" fill="#334155" text-anchor="middle">12</text>
+<text x="530.0" y="90.0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="10" font-weight="400" fill="#334155" text-anchor="middle">13</text>
+<text x="564.0" y="90.0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="10" font-weight="400" fill="#334155" text-anchor="middle">14</text>
+<text x="598.0" y="90.0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="10" font-weight="400" fill="#334155" text-anchor="middle">15</text>
+<text x="632.0" y="90.0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="10" font-weight="400" fill="#334155" text-anchor="middle">16</text>
+<text x="666.0" y="90.0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="10" font-weight="400" fill="#334155" text-anchor="middle">17</text>
+<text x="700.0" y="90.0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="10" font-weight="400" fill="#334155" text-anchor="middle">18</text>
+<text x="734.0" y="90.0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="10" font-weight="400" fill="#334155" text-anchor="middle">19</text>
+<text x="768.0" y="90.0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="10" font-weight="400" fill="#334155" text-anchor="middle">20</text>
+<text x="802.0" y="90.0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="10" font-weight="400" fill="#334155" text-anchor="middle">21</text>
+<text x="836.0" y="90.0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="10" font-weight="400" fill="#334155" text-anchor="middle">22</text>
+<text x="870.0" y="90.0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="10" font-weight="400" fill="#334155" text-anchor="middle">23</text>
+<text x="904.0" y="90.0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="10" font-weight="400" fill="#334155" text-anchor="middle">24</text>
+<text x="938.0" y="90.0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="10" font-weight="400" fill="#334155" text-anchor="middle">25</text>
+<text x="972.0" y="90.0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="10" font-weight="400" fill="#334155" text-anchor="middle">26</text>
+<text x="1006.0" y="90.0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="10" font-weight="400" fill="#334155" text-anchor="middle">27</text>
+<text x="1040.0" y="90.0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="10" font-weight="400" fill="#334155" text-anchor="middle">28</text>
+<text x="1074.0" y="90.0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="10" font-weight="400" fill="#334155" text-anchor="middle">29</text>
+<text x="1108.0" y="90.0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="10" font-weight="400" fill="#334155" text-anchor="middle">30</text>
+<rect x="108.0" y="104.0" width="28.0" height="32.0" rx="4.0" fill="#15803d"/>
+<text x="122.0" y="124.0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="8" font-weight="700" fill="#ffffff" text-anchor="middle">WIN</text>
+<rect x="142.0" y="104.0" width="28.0" height="32.0" rx="4.0" fill="#15803d"/>
+<text x="156.0" y="124.0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="8" font-weight="700" fill="#ffffff" text-anchor="middle">WIN</text>
+<rect x="176.0" y="104.0" width="28.0" height="32.0" rx="4.0" fill="#15803d"/>
+<text x="190.0" y="124.0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="8" font-weight="700" fill="#ffffff" text-anchor="middle">WIN</text>
+<rect x="210.0" y="104.0" width="28.0" height="32.0" rx="4.0" fill="#dc2626"/>
+<text x="224.0" y="124.0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="8" font-weight="700" fill="#ffffff" text-anchor="middle">LOST</text>
+<rect x="244.0" y="104.0" width="28.0" height="32.0" rx="4.0" fill="#15803d"/>
+<text x="258.0" y="124.0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="8" font-weight="700" fill="#ffffff" text-anchor="middle">WIN</text>
+<rect x="278.0" y="104.0" width="28.0" height="32.0" rx="4.0" fill="#15803d"/>
+<text x="292.0" y="124.0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="8" font-weight="700" fill="#ffffff" text-anchor="middle">WIN</text>
+<rect x="312.0" y="104.0" width="28.0" height="32.0" rx="4.0" fill="#2563eb"/>
+<text x="326.0" y="124.0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="8" font-weight="700" fill="#ffffff" text-anchor="middle">FIX</text>
+<rect x="346.0" y="104.0" width="28.0" height="32.0" rx="4.0" fill="#15803d"/>
+<text x="360.0" y="124.0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="8" font-weight="700" fill="#ffffff" text-anchor="middle">WIN</text>
+<rect x="380.0" y="104.0" width="28.0" height="32.0" rx="4.0" fill="#2563eb"/>
+<text x="394.0" y="124.0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="8" font-weight="700" fill="#ffffff" text-anchor="middle">FIX</text>
+<rect x="414.0" y="104.0" width="28.0" height="32.0" rx="4.0" fill="#2563eb"/>
+<text x="428.0" y="124.0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="8" font-weight="700" fill="#ffffff" text-anchor="middle">FIX</text>
+<rect x="448.0" y="104.0" width="28.0" height="32.0" rx="4.0" fill="#2563eb"/>
+<text x="462.0" y="124.0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="8" font-weight="700" fill="#ffffff" text-anchor="middle">FIX</text>
+<rect x="482.0" y="104.0" width="28.0" height="32.0" rx="4.0" fill="#15803d"/>
+<text x="496.0" y="124.0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="8" font-weight="700" fill="#ffffff" text-anchor="middle">WIN</text>
+<rect x="516.0" y="104.0" width="28.0" height="32.0" rx="4.0" fill="#15803d"/>
+<text x="530.0" y="124.0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="8" font-weight="700" fill="#ffffff" text-anchor="middle">WIN</text>
+<rect x="550.0" y="104.0" width="28.0" height="32.0" rx="4.0" fill="#15803d"/>
+<text x="564.0" y="124.0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="8" font-weight="700" fill="#ffffff" text-anchor="middle">WIN</text>
+<rect x="584.0" y="104.0" width="28.0" height="32.0" rx="4.0" fill="#2563eb"/>
+<text x="598.0" y="124.0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="8" font-weight="700" fill="#ffffff" text-anchor="middle">FIX</text>
+<rect x="618.0" y="104.0" width="28.0" height="32.0" rx="4.0" fill="#15803d"/>
+<text x="632.0" y="124.0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="8" font-weight="700" fill="#ffffff" text-anchor="middle">WIN</text>
+<rect x="652.0" y="104.0" width="28.0" height="32.0" rx="4.0" fill="#2563eb"/>
+<text x="666.0" y="124.0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="8" font-weight="700" fill="#ffffff" text-anchor="middle">FIX</text>
+<rect x="686.0" y="104.0" width="28.0" height="32.0" rx="4.0" fill="#2563eb"/>
+<text x="700.0" y="124.0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="8" font-weight="700" fill="#ffffff" text-anchor="middle">FIX</text>
+<rect x="720.0" y="104.0" width="28.0" height="32.0" rx="4.0" fill="#15803d"/>
+<text x="734.0" y="124.0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="8" font-weight="700" fill="#ffffff" text-anchor="middle">WIN</text>
+<rect x="754.0" y="104.0" width="28.0" height="32.0" rx="4.0" fill="#15803d"/>
+<text x="768.0" y="124.0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="8" font-weight="700" fill="#ffffff" text-anchor="middle">WIN</text>
+<rect x="788.0" y="104.0" width="28.0" height="32.0" rx="4.0" fill="#2563eb"/>
+<text x="802.0" y="124.0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="8" font-weight="700" fill="#ffffff" text-anchor="middle">FIX</text>
+<rect x="822.0" y="104.0" width="28.0" height="32.0" rx="4.0" fill="#15803d"/>
+<text x="836.0" y="124.0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="8" font-weight="700" fill="#ffffff" text-anchor="middle">WIN</text>
+<rect x="856.0" y="104.0" width="28.0" height="32.0" rx="4.0" fill="#2563eb"/>
+<text x="870.0" y="124.0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="8" font-weight="700" fill="#ffffff" text-anchor="middle">FIX</text>
+<rect x="890.0" y="104.0" width="28.0" height="32.0" rx="4.0" fill="#2563eb"/>
+<text x="904.0" y="124.0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="8" font-weight="700" fill="#ffffff" text-anchor="middle">FIX</text>
+<rect x="924.0" y="104.0" width="28.0" height="32.0" rx="4.0" fill="#15803d"/>
+<text x="938.0" y="124.0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="8" font-weight="700" fill="#ffffff" text-anchor="middle">WIN</text>
+<rect x="958.0" y="104.0" width="28.0" height="32.0" rx="4.0" fill="#15803d"/>
+<text x="972.0" y="124.0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="8" font-weight="700" fill="#ffffff" text-anchor="middle">WIN</text>
+<rect x="992.0" y="104.0" width="28.0" height="32.0" rx="4.0" fill="#15803d"/>
+<text x="1006.0" y="124.0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="8" font-weight="700" fill="#ffffff" text-anchor="middle">WIN</text>
+<rect x="1026.0" y="104.0" width="28.0" height="32.0" rx="4.0" fill="#2563eb"/>
+<text x="1040.0" y="124.0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="8" font-weight="700" fill="#ffffff" text-anchor="middle">FIX</text>
+<rect x="1060.0" y="104.0" width="28.0" height="32.0" rx="4.0" fill="#2563eb"/>
+<text x="1074.0" y="124.0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="8" font-weight="700" fill="#ffffff" text-anchor="middle">FIX</text>
+<rect x="1094.0" y="104.0" width="28.0" height="32.0" rx="4.0" fill="#2563eb"/>
+<text x="1108.0" y="124.0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="8" font-weight="700" fill="#ffffff" text-anchor="middle">FIX</text>
+<text x="34.0" y="170.0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12" font-weight="400" fill="#334155" text-anchor="start">V34 fixes vs Artifact 04: Q7, Q9, Q10, Q11, Q15, Q17, Q18, Q21, Q23, Q24, Q28, Q29, Q30. V34 regressions: Q4. Unchanged misses: none.</text>
+<text x="34.0" y="190.0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12" font-weight="400" fill="#b45309" text-anchor="start">Interpretation caveat: V34 is answer-aware context-recall replay, so fixes are architectural/memory evidence, not blind-solve evidence.</text>
+</svg>

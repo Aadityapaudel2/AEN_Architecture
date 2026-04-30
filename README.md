@@ -39,18 +39,21 @@ Read the full package: [`revisions/2026-04-29-artifact-06-v34-full-test-run/`](r
 <!-- V34_FULL_TEST_RUN_END -->
 
 
-The follow-on revision ledger tracks four AIME Q1-Q30 artifacts:
+The follow-on revision ledger now tracks five full AIME Q1-Q30 artifacts; Artifact 05 remains a selected-slice transcript diagnostic and is not included in the full-run figure set:
 
 | artifact | run | score | accuracy | mean tokens/problem | interpretation |
 | --- | --- | ---: | ---: | ---: | --- |
 | 01 | frozen pruned baseline | 15/30 | 50.00% | 711,100 | paper baseline under tighter pruning |
-| 02 | unrestricted reference | 22/30 | 73.33% | 1,125,451 | high-budget empirical ceiling |
+| 02 | unrestricted reference | 22/30 | 73.33% | 1,125,451 | high-budget answer-free reference |
 | 03 | April 27 benchmarkgrade v0.2.3 | 21/30 | 70.00% | 128,625 | strongest efficiency result |
 | 04 | April 28 Runtime-at-Boot v33 experiment | 17/30 | 56.67% | 134,446 | negative diagnostic: boot memory did not preserve accuracy |
+| 06 | April 29 V34 full run | 29/30 | 96.67% | 4,354,927 | answer-aware context-recall replay, not blind benchmark |
 
-![Four artifact scoreboard](revisions/visualizations/four_run_scoreboard_q1_q30.svg)
+![Five full-run scoreboard](revisions/visualizations/five_run_scoreboard_q1_q30.svg)
 
-![Token efficiency](revisions/visualizations/token_efficiency_four_run.svg)
+![Five full-run result grid](revisions/visualizations/q1_q30_five_run_result_grid.svg)
+
+![Five full-run token efficiency](revisions/visualizations/token_efficiency_five_run.svg)
 
 ## How To Read The Evidence
 

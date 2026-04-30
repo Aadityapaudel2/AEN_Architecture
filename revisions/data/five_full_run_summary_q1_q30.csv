@@ -1,0 +1,6 @@
+run_key,run_label,run_short_label,claim_class,cases,correct,incorrect,accuracy,mean_total_tokens,total_tokens,mean_seconds,total_seconds,tokens_per_correct
+frozen,Artifact 01 frozen pruned,Frozen,blind/pruned baseline,30,15,15,0.5,711100.4,21333011,182.981,5489.428,1422200.7
+unrestricted,Artifact 02 unrestricted,Unrestricted,high-budget reference,30,22,8,0.733333,1125450.6,33763517,380.391,11411.722,1534705.3
+current,Artifact 03 Apr27 benchmarkgrade,Apr27 benchmark,compact benchmarkgrade,30,21,9,0.7,128624.7,3858740,343.574,10307.226,183749.5
+official,Artifact 04 Apr28 RAB v33,Apr28 RAB v33,Runtime-at-Boot negative diagnostic,30,17,13,0.566667,134445.9,4033378,385.236,11557.076,237257.5
+v34,Artifact 06 V34 answer-aware replay,V34 answer-aware,answer-aware context-recall replay,30,29,1,0.966667,4354926.6,130647799,1428.362,42850.851,4505096.5

@@ -1,0 +1,22 @@
+{
+  "event": "five_full_run_summary_generated",
+  "runs": [
+    "frozen",
+    "unrestricted",
+    "current",
+    "official",
+    "v34"
+  ],
+  "figures": [
+    "revisions/visualizations/five_run_scoreboard_q1_q30.svg",
+    "revisions/visualizations/q1_q30_five_run_result_grid.svg",
+    "revisions/visualizations/token_efficiency_five_run.svg",
+    "revisions/visualizations/v34_vs_artifact04_delta.svg"
+  ],
+  "data": [
+    "revisions/data/all_five_full_run_artifacts_q1_q30_long.csv",
+    "revisions/data/five_full_run_artifact_comparison_q1_q30.csv",
+    "revisions/data/five_full_run_summary_q1_q30.csv"
+  ],
+  "caveat": "Artifact 05 omitted because selected-slice diagnostic; V34 included as answer-aware context-recall replay, not blind benchmark."
+}
