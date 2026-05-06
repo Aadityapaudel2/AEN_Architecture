@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="470" viewBox="0 0 1120 470">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="34.0" y="44.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="25" font-weight="700" fill="#0f172a" text-anchor="start">How Many Full Runs Fit In A 600 CU / $50 Colab Pack?</text>
+<text x="34.0" y="70.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" fill="#475569" text-anchor="start">At 8.71 CU/hour, one 600 CU pack covers about 68.89 runtime hours.</text>
+<text x="34.0" y="132.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f172a" text-anchor="start">Frozen</text>
+<text x="34.0" y="151.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11" font-weight="400" fill="#64748b" text-anchor="start">13.3 CU/run | $1.11/run</text>
+<rect x="300.0" y="112.0" width="620.0" height="28.0" rx="4.0" fill="#f0fdf4"/>
+<rect x="300.0" y="112.0" width="620.0" height="28.0" rx="4.0" fill="#4b5563"/>
+<text x="942.0" y="132.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f172a" text-anchor="start">45.2 runs</text>
+<text x="34.0" y="195.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f172a" text-anchor="start">Unrestricted</text>
+<text x="34.0" y="214.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11" font-weight="400" fill="#64748b" text-anchor="start">27.6 CU/run | $2.30/run</text>
+<rect x="300.0" y="175.0" width="620.0" height="28.0" rx="4.0" fill="#f0fdf4"/>
+<rect x="300.0" y="175.0" width="298.2" height="28.0" rx="4.0" fill="#2563eb"/>
+<text x="942.0" y="195.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f172a" text-anchor="start">21.7 runs</text>
+<text x="34.0" y="258.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f172a" text-anchor="start">Apr27 benchmark</text>
+<text x="34.0" y="277.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11" font-weight="400" fill="#64748b" text-anchor="start">24.9 CU/run | $2.08/run</text>
+<rect x="300.0" y="238.0" width="620.0" height="28.0" rx="4.0" fill="#f0fdf4"/>
+<rect x="300.0" y="238.0" width="330.2" height="28.0" rx="4.0" fill="#7e22ce"/>
+<text x="942.0" y="258.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f172a" text-anchor="start">24.1 runs</text>
+<text x="34.0" y="321.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f172a" text-anchor="start">Apr28 RAB v33</text>
+<text x="34.0" y="340.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11" font-weight="400" fill="#64748b" text-anchor="start">28.0 CU/run | $2.33/run</text>
+<rect x="300.0" y="301.0" width="620.0" height="28.0" rx="4.0" fill="#f0fdf4"/>
+<rect x="300.0" y="301.0" width="294.5" height="28.0" rx="4.0" fill="#ea580c"/>
+<text x="942.0" y="321.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f172a" text-anchor="start">21.5 runs</text>
+<text x="34.0" y="384.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f172a" text-anchor="start">V34 answer-aware</text>
+<text x="34.0" y="403.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11" font-weight="400" fill="#64748b" text-anchor="start">103.7 CU/run | $8.64/run</text>
+<rect x="300.0" y="364.0" width="620.0" height="28.0" rx="4.0" fill="#f0fdf4"/>
+<rect x="300.0" y="364.0" width="79.4" height="28.0" rx="4.0" fill="#16a34a"/>
+<text x="942.0" y="384.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f172a" text-anchor="start">5.8 runs</text>
+</svg>

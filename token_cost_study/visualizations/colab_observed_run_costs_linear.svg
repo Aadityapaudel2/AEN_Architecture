@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="520" viewBox="0 0 1040 520">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="34.0" y="44.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="25" font-weight="700" fill="#0f172a" text-anchor="start">Observed Colab Cost Across Five AEN Runs</text>
+<text x="34.0" y="70.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" fill="#475569" text-anchor="start">Using 600 CU for $50 and 8.71 CU/hour: $0.725833/hour. The V34 29/30 run costs about $8.64.</text>
+<line x1="90.0" y1="88.0" x2="90.0" y2="422.0" stroke="#94a3b8" stroke-width="1.2"/>
+<line x1="90.0" y1="422.0" x2="988.0" y2="422.0" stroke="#94a3b8" stroke-width="1.2"/>
+<text x="22.0" y="255.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" fill="#334155" text-anchor="start">USD</text>
+<line x1="85.0" y1="422.0" x2="988.0" y2="422.0" stroke="#e2e8f0" stroke-width="1"/>
+<text x="78.0" y="426.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="400" fill="#64748b" text-anchor="end">$0</text>
+<line x1="85.0" y1="353.0" x2="988.0" y2="353.0" stroke="#e2e8f0" stroke-width="1"/>
+<text x="78.0" y="357.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="400" fill="#64748b" text-anchor="end">$2</text>
+<line x1="85.0" y1="283.9" x2="988.0" y2="283.9" stroke="#e2e8f0" stroke-width="1"/>
+<text x="78.0" y="287.9" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="400" fill="#64748b" text-anchor="end">$4</text>
+<line x1="85.0" y1="214.9" x2="988.0" y2="214.9" stroke="#e2e8f0" stroke-width="1"/>
+<text x="78.0" y="218.9" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="400" fill="#64748b" text-anchor="end">$6</text>
+<line x1="85.0" y1="145.9" x2="988.0" y2="145.9" stroke="#e2e8f0" stroke-width="1"/>
+<text x="78.0" y="149.9" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="400" fill="#64748b" text-anchor="end">$8</text>
+<line x1="85.0" y1="76.8" x2="988.0" y2="76.8" stroke="#e2e8f0" stroke-width="1"/>
+<text x="78.0" y="80.8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="400" fill="#64748b" text-anchor="end">$10</text>
+<polyline points="179.8,383.8 359.4,342.6 539.0,350.3 718.6,341.6 898.2,123.8" fill="none" stroke="#16a34a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="179.8" cy="383.8" r="7.0" fill="#4b5563" stroke="#ffffff" stroke-width="2"/>
+<text x="179.8" y="450.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="700" fill="#334155" text-anchor="middle">Frozen</text>
+<text x="179.8" y="371.8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a" text-anchor="middle">$1.11</text>
+<text x="179.8" y="407.8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="400" fill="#64748b" text-anchor="middle">13.3 CU</text>
+<circle cx="359.4" cy="342.6" r="7.0" fill="#2563eb" stroke="#ffffff" stroke-width="2"/>
+<text x="359.4" y="450.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="700" fill="#334155" text-anchor="middle">Unrestricted</text>
+<text x="359.4" y="330.6" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a" text-anchor="middle">$2.30</text>
+<text x="359.4" y="366.6" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="400" fill="#64748b" text-anchor="middle">27.6 CU</text>
+<circle cx="539.0" cy="350.3" r="7.0" fill="#7e22ce" stroke="#ffffff" stroke-width="2"/>
+<text x="539.0" y="450.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="700" fill="#334155" text-anchor="middle">Apr27 benchmark</text>
+<text x="539.0" y="338.3" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a" text-anchor="middle">$2.08</text>
+<text x="539.0" y="374.3" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="400" fill="#64748b" text-anchor="middle">24.9 CU</text>
+<circle cx="718.6" cy="341.6" r="7.0" fill="#ea580c" stroke="#ffffff" stroke-width="2"/>
+<text x="718.6" y="450.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="700" fill="#334155" text-anchor="middle">Apr28 RAB v33</text>
+<text x="718.6" y="329.6" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a" text-anchor="middle">$2.33</text>
+<text x="718.6" y="365.6" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="400" fill="#64748b" text-anchor="middle">28.0 CU</text>
+<circle cx="898.2" cy="123.8" r="7.0" fill="#16a34a" stroke="#ffffff" stroke-width="2"/>
+<text x="898.2" y="450.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="700" fill="#334155" text-anchor="middle">V34 answer-aware</text>
+<text x="898.2" y="111.8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a" text-anchor="middle">$8.64</text>
+<text x="898.2" y="147.8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="400" fill="#64748b" text-anchor="middle">103.7 CU</text>
+</svg>

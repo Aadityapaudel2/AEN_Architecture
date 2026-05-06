@@ -1,0 +1,51 @@
+run_key,run_short_label,price_key,price_label,hourly_usd,run_hours,run_cost_usd,total_logged_tokens,cost_per_million_logged_tokens_usd,score
+frozen,Frozen,colab_observed_cu_rate,Observed Colab CU rate,0.725833,1.524841,1.106781,21333011,0.051881,15/30
+frozen,Frozen,colab_enterprise_a100_80gb_accelerator,Colab Enterprise A100 80GB GPU,4.713696,1.524841,7.187637,21333011,0.336926,15/30
+frozen,Frozen,vertex_g4_standard_48_rtx_pro_6000_1g,G4 RTX PRO 6000 96GB 1x,5.175088,1.524841,7.891186,21333011,0.369905,15/30
+frozen,Frozen,vertex_a2_ultra_a100_80gb_1g,A2 Ultra A100 80GB 1x,5.781847,1.524841,8.816399,21333011,0.413275,15/30
+frozen,Frozen,vertex_a3_high_h100_80gb_1g_derived,A3 High H100 80GB 1x,12.625919,1.524841,19.252520,21333011,0.902476,15/30
+frozen,Frozen,vertex_g4_standard_384_rtx_pro_6000_8g,G4 RTX PRO 6000 96GB 8x,41.400701,1.524841,63.129491,21333011,2.959240,15/30
+frozen,Frozen,vertex_a4x_gb200_4g,A4X GB200 186GB 4x,74.750000,1.524841,113.981873,21333011,5.342981,15/30
+frozen,Frozen,vertex_a3_ultra_h200_141gb_8g,A3 Ultra H200 141GB 8x,99.773930,1.524841,152.139390,21333011,7.131642,15/30
+frozen,Frozen,vertex_a3_high_h100_80gb_8g,A3 High H100 80GB 8x,101.007352,1.524841,154.020163,21333011,7.219804,15/30
+frozen,Frozen,vertex_a4_b200_180gb_8g,A4 B200 180GB 8x,148.212000,1.524841,225.999751,21333011,10.593898,15/30
+unrestricted,Unrestricted,colab_observed_cu_rate,Observed Colab CU rate,0.725833,3.169923,2.300836,33763517,0.068146,22/30
+unrestricted,Unrestricted,colab_enterprise_a100_80gb_accelerator,Colab Enterprise A100 80GB GPU,4.713696,3.169923,14.942052,33763517,0.442550,22/30
+unrestricted,Unrestricted,vertex_g4_standard_48_rtx_pro_6000_1g,G4 RTX PRO 6000 96GB 1x,5.175088,3.169923,16.404628,33763517,0.485868,22/30
+unrestricted,Unrestricted,vertex_a2_ultra_a100_80gb_1g,A2 Ultra A100 80GB 1x,5.781847,3.169923,18.328010,33763517,0.542835,22/30
+unrestricted,Unrestricted,vertex_a3_high_h100_80gb_1g_derived,A3 High H100 80GB 1x,12.625919,3.169923,40.023188,33763517,1.185397,22/30
+unrestricted,Unrestricted,vertex_g4_standard_384_rtx_pro_6000_8g,G4 RTX PRO 6000 96GB 8x,41.400701,3.169923,131.237025,33763517,3.886948,22/30
+unrestricted,Unrestricted,vertex_a4x_gb200_4g,A4X GB200 186GB 4x,74.750000,3.169923,236.951728,33763517,7.017981,22/30
+unrestricted,Unrestricted,vertex_a3_ultra_h200_141gb_8g,A3 Ultra H200 141GB 8x,99.773930,3.169923,316.275652,33763517,9.367379,22/30
+unrestricted,Unrestricted,vertex_a3_high_h100_80gb_8g,A3 High H100 80GB 8x,101.007352,3.169923,320.185506,33763517,9.483180,22/30
+unrestricted,Unrestricted,vertex_a4_b200_180gb_8g,A4 B200 180GB 8x,148.212000,3.169923,469.820595,33763517,13.915037,22/30
+current,Apr27 benchmark,colab_observed_cu_rate,Observed Colab CU rate,0.725833,2.863118,2.078147,3858740,0.538556,21/30
+current,Apr27 benchmark,colab_enterprise_a100_80gb_accelerator,Colab Enterprise A100 80GB GPU,4.713696,2.863118,13.495869,3858740,3.497481,21/30
+current,Apr27 benchmark,vertex_g4_standard_48_rtx_pro_6000_1g,G4 RTX PRO 6000 96GB 1x,5.175088,2.863118,14.816888,3858740,3.839826,21/30
+current,Apr27 benchmark,vertex_a2_ultra_a100_80gb_1g,A2 Ultra A100 80GB 1x,5.781847,2.863118,16.554113,3858740,4.290031,21/30
+current,Apr27 benchmark,vertex_a3_high_h100_80gb_1g_derived,A3 High H100 80GB 1x,12.625919,2.863118,36.149500,3858740,9.368214,21/30
+current,Apr27 benchmark,vertex_g4_standard_384_rtx_pro_6000_8g,G4 RTX PRO 6000 96GB 8x,41.400701,2.863118,118.535106,3858740,30.718604,21/30
+current,Apr27 benchmark,vertex_a4x_gb200_4g,A4X GB200 186GB 4x,74.750000,2.863118,214.018095,3858740,55.463207,21/30
+current,Apr27 benchmark,vertex_a3_ultra_h200_141gb_8g,A3 Ultra H200 141GB 8x,99.773930,2.863118,285.664567,3858740,74.030530,21/30
+current,Apr27 benchmark,vertex_a3_high_h100_80gb_8g,A3 High H100 80GB 8x,101.007352,2.863118,289.196001,3858740,74.945708,21/30
+current,Apr27 benchmark,vertex_a4_b200_180gb_8g,A4 B200 180GB 8x,148.212000,2.863118,424.348494,3858740,109.970740,21/30
+official,Apr28 RAB v33,colab_observed_cu_rate,Observed Colab CU rate,0.725833,3.210299,2.330142,4033378,0.577715,17/30
+official,Apr28 RAB v33,colab_enterprise_a100_80gb_accelerator,Colab Enterprise A100 80GB GPU,4.713696,3.210299,15.132373,4033378,3.751786,17/30
+official,Apr28 RAB v33,vertex_g4_standard_48_rtx_pro_6000_1g,G4 RTX PRO 6000 96GB 1x,5.175088,3.210299,16.613578,4033378,4.119023,17/30
+official,Apr28 RAB v33,vertex_a2_ultra_a100_80gb_1g,A2 Ultra A100 80GB 1x,5.781847,3.210299,18.561458,4033378,4.601963,17/30
+official,Apr28 RAB v33,vertex_a3_high_h100_80gb_1g_derived,A3 High H100 80GB 1x,12.625919,3.210299,40.532974,4033378,10.049386,17/30
+official,Apr28 RAB v33,vertex_g4_standard_384_rtx_pro_6000_8g,G4 RTX PRO 6000 96GB 8x,41.400701,3.210299,132.908625,4033378,32.952187,17/30
+official,Apr28 RAB v33,vertex_a4x_gb200_4g,A4X GB200 186GB 4x,74.750000,3.210299,239.969842,4033378,59.495996,17/30
+official,Apr28 RAB v33,vertex_a3_ultra_h200_141gb_8g,A3 Ultra H200 141GB 8x,99.773930,3.210299,320.304135,4033378,79.413369,17/30
+official,Apr28 RAB v33,vertex_a3_high_h100_80gb_8g,A3 High H100 80GB 8x,101.007352,3.210299,324.263790,4033378,80.395091,17/30
+official,Apr28 RAB v33,vertex_a4_b200_180gb_8g,A4 B200 180GB 8x,148.212000,3.210299,475.804819,4033378,117.966831,17/30
+v34,V34 answer-aware,colab_observed_cu_rate,Observed Colab CU rate,0.725833,11.903014,8.639604,130647799,0.066129,29/30
+v34,V34 answer-aware,colab_enterprise_a100_80gb_accelerator,Colab Enterprise A100 80GB GPU,4.713696,11.903014,56.107190,130647799,0.429454,29/30
+v34,V34 answer-aware,vertex_g4_standard_48_rtx_pro_6000_1g,G4 RTX PRO 6000 96GB 1x,5.175088,11.903014,61.599141,130647799,0.471490,29/30
+v34,V34 answer-aware,vertex_a2_ultra_a100_80gb_1g,A2 Ultra A100 80GB 1x,5.781847,11.903014,68.821412,130647799,0.526771,29/30
+v34,V34 answer-aware,vertex_a3_high_h100_80gb_1g_derived,A3 High H100 80GB 1x,12.625919,11.903014,150.286493,130647799,1.150318,29/30
+v34,V34 answer-aware,vertex_g4_standard_384_rtx_pro_6000_8g,G4 RTX PRO 6000 96GB 8x,41.400701,11.903014,492.793131,130647799,3.771921,29/30
+v34,V34 answer-aware,vertex_a4x_gb200_4g,A4X GB200 186GB 4x,74.750000,11.903014,889.750309,130647799,6.810297,29/30
+v34,V34 answer-aware,vertex_a3_ultra_h200_141gb_8g,A3 Ultra H200 141GB 8x,99.773930,11.903014,1187.610497,130647799,9.090168,29/30
+v34,V34 answer-aware,vertex_a3_high_h100_80gb_8g,A3 High H100 80GB 8x,101.007352,11.903014,1202.291942,130647799,9.202543,29/30
+v34,V34 answer-aware,vertex_a4_b200_180gb_8g,A4 B200 180GB 8x,148.212000,11.903014,1764.169536,130647799,13.503247,29/30
