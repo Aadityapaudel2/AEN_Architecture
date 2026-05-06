@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="460" viewBox="0 0 1120 460">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="34.0" y="44.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="25" font-weight="700" fill="#0f172a" text-anchor="start">Normalized Cost Per Million Logged Tokens</text>
+<text x="34.0" y="70.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" fill="#475569" text-anchor="start">Coefficient shown for one GPU-equivalent worker at $1 per GPU-hour; actual cost = coefficient * G * C.</text>
+<text x="34.0" y="133.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f172a" text-anchor="start">Frozen</text>
+<text x="34.0" y="152.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11" font-weight="400" fill="#64748b" text-anchor="start">blind/pruned baseline</text>
+<rect x="330.0" y="112.0" width="610.0" height="28.0" rx="4.0" fill="#eef2ff"/>
+<rect x="330.0" y="112.0" width="54.8" height="28.0" rx="4.0" fill="#4b5563"/>
+<text x="964.0" y="132.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f172a" text-anchor="start">0.0715 dollars/M at G=1, C=$1/hr</text>
+<text x="330.0" y="161.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11" font-weight="400" fill="#475569" text-anchor="start">score 15/30 | total logged tokens 21,333,011 | total seconds 5,489.4</text>
+<text x="34.0" y="196.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f172a" text-anchor="start">Unrestricted</text>
+<text x="34.0" y="215.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11" font-weight="400" fill="#64748b" text-anchor="start">high-budget reference</text>
+<rect x="330.0" y="175.0" width="610.0" height="28.0" rx="4.0" fill="#eef2ff"/>
+<rect x="330.0" y="175.0" width="72.0" height="28.0" rx="4.0" fill="#2563eb"/>
+<text x="964.0" y="195.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f172a" text-anchor="start">0.0939 dollars/M at G=1, C=$1/hr</text>
+<text x="330.0" y="224.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11" font-weight="400" fill="#475569" text-anchor="start">score 22/30 | total logged tokens 33,763,517 | total seconds 11,411.7</text>
+<text x="34.0" y="259.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f172a" text-anchor="start">Apr27 benchmark</text>
+<text x="34.0" y="278.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11" font-weight="400" fill="#64748b" text-anchor="start">compact benchmarkgrade</text>
+<rect x="330.0" y="238.0" width="610.0" height="28.0" rx="4.0" fill="#eef2ff"/>
+<rect x="330.0" y="238.0" width="568.7" height="28.0" rx="4.0" fill="#7e22ce"/>
+<text x="964.0" y="258.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f172a" text-anchor="start">0.7420 dollars/M at G=1, C=$1/hr</text>
+<text x="330.0" y="287.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11" font-weight="400" fill="#475569" text-anchor="start">score 21/30 | total logged tokens 3,858,740 | total seconds 10,307.2</text>
+<text x="34.0" y="322.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f172a" text-anchor="start">Apr28 RAB v33</text>
+<text x="34.0" y="341.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11" font-weight="400" fill="#64748b" text-anchor="start">Runtime-at-Boot negative diagnostic</text>
+<rect x="330.0" y="301.0" width="610.0" height="28.0" rx="4.0" fill="#eef2ff"/>
+<rect x="330.0" y="301.0" width="610.0" height="28.0" rx="4.0" fill="#ea580c"/>
+<text x="964.0" y="321.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f172a" text-anchor="start">0.7959 dollars/M at G=1, C=$1/hr</text>
+<text x="330.0" y="350.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11" font-weight="400" fill="#475569" text-anchor="start">score 17/30 | total logged tokens 4,033,378 | total seconds 11,557.1</text>
+<text x="34.0" y="385.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f172a" text-anchor="start">V34 answer-aware</text>
+<text x="34.0" y="404.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11" font-weight="400" fill="#64748b" text-anchor="start">answer-aware context-recall replay</text>
+<rect x="330.0" y="364.0" width="610.0" height="28.0" rx="4.0" fill="#eef2ff"/>
+<rect x="330.0" y="364.0" width="69.8" height="28.0" rx="4.0" fill="#16a34a"/>
+<text x="964.0" y="384.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f172a" text-anchor="start">0.0911 dollars/M at G=1, C=$1/hr</text>
+<text x="330.0" y="413.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11" font-weight="400" fill="#475569" text-anchor="start">score 29/30 | total logged tokens 130,647,799 | total seconds 42,850.9</text>
+<text x="34.0" y="432.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#475569" text-anchor="start">Lower normalized cost coefficient is better. Actual cost multiplies this coefficient by GPU-equivalent workers and dollars per GPU-hour.</text>
+</svg>
